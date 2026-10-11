@@ -1214,6 +1214,7 @@ dsh plugin --profile web add dshmarket
 - [readfish/dsh-client-theme-cyber](https://github.com/readfish/dsh-client-theme-cyber) — 深海军蓝半透明面板承载赛博城市夜景背景、全息立方体青色辉光作为点缀的暗色主题。
 - [RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) — 一键换肤插件：8 套原创主题、背景壁纸（透明度/模糊）、强调色、主题包导入/导出+分享链接、收藏与随机，纯原生 token 系统接入。
 - [RexCue/dsh-wallpaper](https://github.com/RexCue/dsh-wallpaper) — DSH Web 壁纸皮肤：图片背景，可调透明度、压暗遮罩与模糊。
+- [rinDBeans/codex-ui](https://github.com/rinDBeans/codex-ui) — 为 DSH Web 界面复刻 Codex 外观：窗口边缘发丝线与阴影、侧栏配色与行对齐、带推理强度功率轨的模型选择器、输入区与右栏几何、设置模态框全页改造、轨迹视图退出出口，以及可调主题、强调色、背景、前景、字体、侧栏半透明与对比度的设置卡。
 - [RizenHNT/dsh-skin-digital-arcade](https://github.com/RizenHNT/dsh-skin-digital-arcade) — 数码电玩风 HUD 皮肤：霓虹青/紫/品红配色、Fusion Pixel 像素字体、动画精灵（背景城市/数据核心/吉祥物）、自定义十字准星光标，浅深双主题跟随系统。
 - [ruijiaang-lab/dsh-wallpaper-engine](https://github.com/ruijiaang-lab/dsh-wallpaper-engine) — DSH Web 聊天背景壁纸。Windows：直接读取你的 Wallpaper Engine（Steam）库，把视频/网页壁纸渲染到聊天界面背后。macOS：自动扫描 WaifuX 下载目录和媒体文件夹——在 WaifuX 里保存的壁纸零配置即可成为 DSH 背景，支持视频与图片。带毛玻璃模糊、压暗、边框调节滑块。
 - [runcat-tommy/dsh-theme-manager](https://github.com/runcat-tommy/dsh-theme-manager) — DSH Web 两级主题管理器：先选文化 / 场景、国旗、开发者配色或强烈对比配色，再选具体风格，内置 58 套浅色 / 深色配色。
@@ -1411,6 +1412,7 @@ dsh plugin --profile web add dshmarket
 - [OPaimon/dsh-model-gate](https://github.com/OPaimon/dsh-model-gate) — 提供模型粒度的启用禁用机制：从 DSH 模型目录隐藏被禁用的模型，以协议内错误块拦截直接分发请求，并提供UI设置界面。
 - [OpenTritium/dsh-codex-shim](https://github.com/OpenTritium/dsh-codex-shim) — 为选定的模型路由模拟 Codex 环境，以提升 GPT 系列模型的工具调用成功率。
 - [oppnc/dsh-kernel-mesh](https://github.com/oppnc/dsh-kernel-mesh) — 把 Kimi、Grok、Codex、MiniMax 注册成 DeepSeek Harness 的模型路由、各家子代理配方，以及 kernel_status / kernel_run / kernel_switch 工具。
+- [orzgithub/dsh-ollama](https://github.com/orzgithub/dsh-ollama) — 在DSH中使用带有原生API和参数设置的Ollama。
 - [oxlyn/dsh-model-health](https://github.com/oxlyn/dsh-model-health) — 设置页「模型健康」面板：列出 settings.yaml 配置的全部模型，一键批量测试可用性与延迟。
 - [passingby000/dsh-nl-model-switch](https://github.com/passingby000/dsh-nl-model-switch) — 用一句自然语言切换当前 DSH 会话模型，可在 Web、TUI 及 IM 桥接的微信、飞书等对话框中使用，无需操作面板。
 - [penguin-oo/dsh-delegate-router](https://github.com/penguin-oo/dsh-delegate-router) — 给 DeepSeek Harness 的子代理调用做 Flash/Pro 自动分派：轻任务自动用便宜模型、重任务留在强模型，支持手动覆盖与 /delegate 会话模式。
