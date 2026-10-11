@@ -657,6 +657,7 @@ dsh plugin --profile web add dshmarket
 - [shengyvself/dsh-reading-pad](https://github.com/shengyvself/dsh-reading-pad) — DSH 沉浸式只读阅读板：模型用 `reading_pad_send` 把已排版 Markdown 推到原生右侧栏「📖 阅读板」tab，三套低蓝光主题、30em 限宽排版；也可只读浏览当前写作工程的章节。
 - [SherUnlocked-4869/dsh-plugin-msg-nav](https://github.com/SherUnlocked-4869/dsh-plugin-msg-nav) — 对话节点导航条：对话区右缘一列短横线节点对应每条用户消息，支持阅读位置跟踪、悬停预览卡片、点击跳转高亮、滑动窗口与自动隐藏。
 - [shimingming520/dsh-conversation-process-collapse](https://github.com/shimingming520/dsh-conversation-process-collapse) — 将 DeepSeek Harness Web 对话中已结束回合的过程行折叠成一个可展开的总结，同时保留最终答案可见。
+- [shinelon/dsh-mcp-plugin](https://github.com/shinelon/dsh-mcp-plugin) — 在 Web 设置面板管理 DSH 的 MCP 服务器：实时状态、新增、编辑、删除、启用/禁用。
 - [shinelon/dsh-mermaid-plugin](https://github.com/shinelon/dsh-mermaid-plugin) — 将 DSH 会话消息中的 mermaid 代码块渲染为 SVG 图形，支持图形与源码切换、跟随深浅色主题，渲染失败时保留源码并显示错误。
 - [shyuan-hub/dsh-compact-button](https://github.com/shyuan-hub/dsh-compact-button) — 在上下文计量面板中添加「压缩上下文」与「新建会话」两个按钮：压缩按钮通过与手敲 /compact 相同的通道提交命令，新建会话按钮在同一 workspace 中开启新会话。
 - [siberiah2o/dsh-plugin-terminal](https://github.com/siberiah2o/dsh-plugin-terminal) — 底部多标签终端面板（node-pty + xterm.js）：贴底全宽，输入框始终在终端上方。
@@ -4079,7 +4080,7 @@ dsh plugin --profile web add dshmarket
 - [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) — 开发配套守护：滚动快照、插件失败自动回退、启动失败救援、设置页管理面板。
 - [x2802490130-prog/dsh-shield](https://github.com/x2802490130-prog/dsh-shield) — 脱手模式安全网：agent 删除的目录先进回收站、链接绝不跟随，零审批。
 - [xiaoso456/dsh-run-config](https://github.com/xiaoso456/dsh-run-config) — DSH 的 IDE 风格运行配置：把常用 LLM 提示词和 Shell 命令保存为可复用的运行配置（全局或按工作区），在会话头部或新会话页一键运行，大模型可通过 task_run_config 工具管理（写操作走审批）。
-- [xiaoyuyu6420/dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) — 一键备份与恢复 DSH 用户数据，附可视化设置面板：定时自动备份、sha256 校验、失败自动回滚的加固恢复、分类型子集备份（--types skills）、凭据脱敏进本机 vault、GitHub 同步跨机迁移、宿主起不来也能用的进程外救援通道。/backup doctor 从已知良好备份体检并定点修复损坏会话日志；migrate-check 迁移预检在升级前静态预测哪些会话会打不开（冻结清单规则、文件名代际、硬链接支持、旧版凭据布局），凭据哨兵在宿主改写前自动存底；智能备份在宿主升级前自动快照、损坏日志先隔离再轮换。macOS/Linux/Windows。
+- [xiaoyuyu6420/dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) — 一键备份与恢复 DSH 用户数据，附可视化设置面板：定时自动备份、sha256 校验、失败自动回滚的加固恢复、分类型子集备份（--types）、凭据脱敏进本机 vault、GitHub 同步跨机迁移、宿主起不来时的进程外救援通道。/backup doctor 从已知良好备份体检并定点修复损坏会话日志；migrate-check 迁移预检在升级前预测哪些会话打不开（冻结清单、文件名代际等）；凭据哨兵在宿主改写前自动存底；智能备份在宿主升级前快照、损坏日志先隔离再轮换；/backup check-update 与 /backup update 感知并一键更新（先留快照）；覆盖 DSH 0.1.1-rc.2–0.2.0-rc.1，含 0.2.0 起的安装期 peer 闸门。macOS/Linux/Windows。
 - [xiaxingtianxia2-glitch/dsh-auto-exit](https://github.com/xiaxingtianxia2-glitch/dsh-auto-exit) — 关闭 DSH Web UI 后自动退出 CLI 进程（等效 Ctrl+C），支持可配置宽限期与试运行模式。
 - [xingyingyuzhui/dsh-updater-ui](https://github.com/xingyingyuzhui/dsh-updater-ui) — 设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。
 - [xingzhen199186/dsh-insight-tree](https://github.com/xingzhen199186/dsh-insight-tree) — DeepSeek Harness 的运行可观测与插件运维面板：展示 Profile 插件树、Loader 真实 fiber 状态、能力/依赖/兼容性、本轮会话插件活动与上游来源/版本核验，支持一键关闭/启用/更新/卸载，并提供 DSH 未运行时也能打开的独立启动失败诊断页。
