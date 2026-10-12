@@ -1476,6 +1476,7 @@ dsh plugin --profile web add dshmarket
 - [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) — 通过 ChatGPT OAuth 在 DSH 中使用 Codex 模型，提供订阅联网搜索、额度与安全重置、图片工具、高速模式和模型感知上下文；无需 API Key 或 Codex CLI。
 - [wss534857356/dsh-plugin-codex](https://github.com/wss534857356/dsh-plugin-codex) — 使用本地 Codex 登录的 Codex App Server 模型提供方，支持会话复用、Harness 工具桥接、原生动作轨迹和生成图片持久化。
 - [wyouwd1/dsh-opencode-models](https://github.com/wyouwd1/dsh-opencode-models) — 在 settings.yaml 中管理 OpenCode Zen 免费档与 Go 档模型——实时拉取 opencode.ai 的最新模型列表，按路由对比已配置与线上差异，通过四个 agent 工具和设置页分区增删模型条目。
+- [XDTrees/dsh-opencode-xdbridge](https://github.com/XDTrees/dsh-opencode-xdbridge) — 把 OpenCode Zen 的免费模型作为一组 provider 接入 DeepSeek Harness，底层是受管、隔离的 OpenCode 运行时，并在设置页列出每个模型并可逐个检测。
 - [XDTrees/dsh-workbuddy-xdpool](https://github.com/XDTrees/dsh-workbuddy-xdpool) — 把本机 WorkBuddy 桌面 App 登录过的所有账号自动并入 DSH 模型池：多账号轮换自动容错、实时积分，模型目录按模型标注积分倍率与限时免费 / 夜间折扣。
 - [XiangSu-ce/dsh-plugin-freecodego#bundle-latest](https://github.com/XiangSu-ce/dsh-plugin-freecodego/tree/main/plugin/packages/freecodego/bundle-latest) — 面向 DeepSeek Harness 的非官方 FreeCodeGo：可托管的免费模型网关与供应商目录、由一个设置开关控制的生图与生视频、DeepSeek/Codex/Claude 引擎路由、独立 Advisor 评审、代码审查、代码图谱、工程记忆与工程团队工具链。
 - [xiaobbl/dsh-opencode-go-model-list](https://github.com/xiaobbl/dsh-opencode-go-model-list) — 让 DSH 自带的 opencode-go 供应商跟随 opencode Go 套餐的实时模型列表，opencode 上架新模型后无需改配置即可使用。
@@ -3311,6 +3312,7 @@ dsh plugin --profile web add dshmarket
 - [godv61/dsh-task-engine](https://github.com/godv61/dsh-task-engine) — 为 DeepSeek Harness 提供预设工程流程：dev_task 工具把阶段流转、产物、验证、审核与提交范围做成硬门禁，并带一个安装项目级与个人级技能和规则的工作台。
 - [GooDAnDReaDY/dsh-cron](https://github.com/GooDAnDReaDY/dsh-cron) — 为 DeepSeek Harness 提供定时任务、后台自动化与 Agent 执行。
 - [GooDAnDReaDY/dsh-kanban](https://github.com/GooDAnDReaDY/dsh-kanban) — 为 DeepSeek Harness 提供可视化看板，支持 Gitea 任务、工作流列和每任务独立 Agent 会话。
+- [gqallen931/paper-gogo-plugin](https://github.com/gqallen931/paper-gogo-plugin) — 把 Paper-gogo「审稿人倒推、证据优先」的论文工作流做成原生工具：18 个 Phase 与 7 道 G0-G6 门禁可直接调用，门禁结果会被归一化，任一门禁 FAIL 时拒绝推进；主张按 SUPPORTED、INFERRED、VERIFY、MISSING 四态证据审计。工作流正文与 57 个技能内置在自己的目录中，安装时无需另装 Paper-gogo 包。
 - [gsh150801/dsh-bioinf-verify](https://github.com/gsh150801/dsh-bioinf-verify) — 面向科研报告的整篇校验工作流：逐条核对 Crossref、PubMed（含撤稿扫描）、ClinicalTrials.gov、UniProtKB、GEO/SRA 和 PatentsView，核验 URL 可访问性与标题一致性，以温度 0 判定声明与原文含义一致，输出可恢复的审计账本与标注版校验报告。
 - [Guard42/dsh-humanize](https://github.com/Guard42/dsh-humanize) — 把多阶段目标编排为可恢复 Flow 的 agent 预设：阶段带裁判、SHA-256 流锁身份、HMAC 终局评审门禁、事件溯源运行日志；附 15 个工具。
 - [gulagala001/oh-my-dsh](https://github.com/gulagala001/oh-my-dsh) — Oh My DSH（OMD）提供可回查原文的上下文摘要、任务关联验证、提示词优化、CodeGraph 代码理解、OpenCU 电脑操作，以及四套覆盖布局、侧栏和设置的主题。
