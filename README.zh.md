@@ -125,6 +125,7 @@ dsh plugin --profile web add dshmarket
 - [a903067276-rgb/dsh-hud](https://github.com/a903067276-rgb/dsh-hud) — HUD 状态面板：Git 状态、MCP 服务器、技能列表、模型与 token 用量，悬浮侧栏一览无余。
 - [a903067276-rgb/dsh-plan-switch](https://github.com/a903067276-rgb/dsh-plan-switch) — 输入框一键进/出 Plan 模式（/plan 的快捷点击），常驻小按钮。
 - [aa2246740/dsh-better-display](https://github.com/aa2246740/dsh-better-display) — 更安静的 DeepSeek Harness 阅读视图：原生过程细节、实时推理，以及干净的最终回答。
+- [aa2246740/dsh-dragndrop-attachments](https://github.com/aa2246740/dsh-dragndrop-attachments) — 支持拖放本地文件、文件夹、ZIP 压缩包和 Office 文档作为附件。
 - [aa2246740/dsh-watcher](https://github.com/aa2246740/dsh-watcher) — 只读会话工作路径观察器：收起轮次看阶段数、执行数、耗时与 tok/s，展开看并行分支、工具结果与供应商可见推理。
 - [Aafff623/dsh-callout](https://github.com/Aafff623/dsh-callout) — 把 DSH 助手 Markdown 里合格的 `> [!NOTE]`、TIP、IMPORTANT、WARNING、CAUTION 块引用渲染成跟随主题的 GitHub 风格提示卡片，不改会话存档。
 - [Aafff623/dsh-keyboard-manager](https://github.com/Aafff623/dsh-keyboard-manager) — 为 DSH Web UI 提供快捷键：Ctrl+Q 切换左侧栏，Ctrl+E 切换右侧栏，Ctrl+S 打开设置。物理键码可在 profile 补丁中覆盖。
@@ -2736,6 +2737,7 @@ dsh plugin --profile web add dshmarket
 - [263311487-ux/dsh-verify](https://github.com/263311487-ux/dsh-verify) — Agent 交付物的独立浏览器验收测试：JSON 规格进，真实 Chromium 结论出。
 - [2672243194/dsh-read-url](https://github.com/2672243194/dsh-read-url) — 读取网页返回干净正文：中文编码自动识别（GBK/GB2312/UTF-8/Big5）、噪音过滤、紧凑文本/Markdown、offset 续读、可选 SPA 渲染、批量读取与整站爬取。
 - [A3Boy/dsh-web-tools](https://github.com/A3Boy/dsh-web-tools) — 统一的多供应商网络搜索与抓取：多 Key 轮询容灾、用量与健康监控、原生设置面板及搜索模式。
+- [aa2246740/dsh-firecrawl](https://github.com/aa2246740/dsh-firecrawl) — 提供 Firecrawl 搜索服务及多账户 API Key 设置。
 - [alllllinnrann/dsh-inapp-browser](https://github.com/alllllinnrann/dsh-inapp-browser) — 通过 Better Sidebar 为 DeepSeek Harness 提供共享浏览器面板，支持本地 Chromium、人和 AI 的鼠标键盘操作、页面快照、截图及按聊天持久保存的浏览器资料。
 - [ankye/dsh_use_browser#use-browser](https://github.com/ankye/dsh_use_browser/tree/main/packages/use-browser) — 通用浏览器自动化：browser_open、browser_click、browser_type、browser_extract、browser_screenshot、browser_eval 六个工具，@e 元素引用，Playwright 无头与 CDP（连接本机 Chrome）双后端。
 - [anweat/dsh-browser](https://github.com/anweat/dsh-browser) — 自包含浏览器运行时：Playwright（chromium）+ OpenCLI 作为插件本地依赖（全局复用回退），提供 `browser` 服务与 9 个交互式浏览器工具。
