@@ -2825,6 +2825,7 @@ dsh plugin --profile web add dshmarket
 - [SZMY-haruhi/dsh-tavily](https://github.com/SZMY-haruhi/dsh-tavily) — 为 DSH 提供 Tavily 网页搜索：设置开关、默认无 Key，以及连通测试。
 - [T-Markus-Liang/dsh-webmcp](https://github.com/T-Markus-Liang/dsh-webmcp) — WebMCP 桥接器：让 agent 通过内置无头 Chromium，发现并调用网站按 W3C WebMCP 协议暴露的站点工具。
 - [Tabbit-Browser/dsh-tabbit](https://github.com/Tabbit-Browser/dsh-tabbit) — 让 DeepSeek Harness 能够控制 Tabbit 浏览器：安装即自动加载 tabbit-browser skill，检测国际版 Tabbit 与国内版 Tabbit Browser 正式版（>= 1.9.0），检查 tabbit-cli 常驻运行时，按平台诊断调用 CLI 所需的 DSH sandbox 模式，并在没有合格版本时通过后台任务下载与系统地区匹配的正式版安装包。
+- [TC635807/better-crawler4agent](https://github.com/TC635807/better-crawler4agent) — 把真实浏览器抓取注册进 DSH profile：fetch_url 与 fetch_urls 渲染 JS 页面与中文反爬站点（知乎、CSDN、掘金、博客园），返回带分层诊断的干净正文 JSON，crawler_status 报告浏览器是否可用。装好后需要一次性安装 Python 依赖。
 - [Tencent/BrowserSkill#dsh-plugin-browserskill](https://github.com/Tencent/BrowserSkill/tree/main/packages/dsh-plugin-browserskill) — BrowserSkill 的 DeepSeek Harness 浏览器自动化桥接插件，通过原生浏览器工具控制可见的 Chrome 和 Edge Agent Window，支持可访问性与 VOM 页面观察、截图、隔离的多会话控制和 Web UI 实时观察浮层。
 - [TonyDua/dsh-web-search-exa](https://github.com/TonyDua/dsh-web-search-exa) — ctx.web 接缝的零配置 Exa 网页搜索提供方：无 API key 时走匿名 MCP 兜底，配 key 时走 REST 搜索。
 - [TZHR-invest/dsh-plugins#dsh-web-search-metaso](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-web-search-metaso) — 秘塔AI搜索 providers for ctx.web：web_search 返回网页摘要，web_fetch 读取网页全文 markdown，多范围搜索（网页/文库/论文/图片/视频/播客）。
@@ -4689,6 +4690,7 @@ dsh plugin --profile web add dshmarket
 - [X1A0BAN/dsh-survival-mode](https://github.com/X1A0BAN/dsh-survival-mode) — 生存模式：全局共享一条饱食度与生命，模型每步思考消耗饱食度，饿死后全局工具被冻结，通过 MC 采集小游戏获取食物喂食复活。
 - [xczhanjun/lazeword](https://github.com/xczhanjun/lazeword) — 舒服的离线背单词全家桶：1094 个精选单词、间隔重复、6 种题型、拼写游戏和躺着背大字模式；侧边栏面板打开，也可作为单个 HTML 文件独立运行。
 - [xiaoshihou514/dsh-desktop-pet](https://github.com/xiaoshihou514/dsh-desktop-pet) — 鲸鱼娘桌宠，桌面端！
+- [XIAOZHAOXSXH/dsh-moyu-reader](https://github.com/XIAOZHAOXSXH/dsh-moyu-reader) — 在右侧栏阅读本地 txt 小说：自动识别 UTF-8/GBK/Big5 编码，支持章节切分、全文搜索、阅读进度与书签，并可用老板键一键隐藏阅读器或整个右侧栏。
 - [xiekai886/dsh-MusicPlayer](https://github.com/xiekai886/dsh-MusicPlayer) — 可折叠/展开、自由拖动的悬浮音乐播放器，接入网易云音乐，支持歌单导入和按歌名或歌手搜索单曲导入，边对话边听歌。
 - [xling001/dsh-reading-companion](https://github.com/xling001/dsh-reading-companion) — 右侧栏本地 TXT 阅读器 + 不剧透的 AI 陪读：模型只能看到你已经读到的部分（本章全文、上一章结尾，以及随进度增量补齐的背景认识）；摘抄、感想与 AI 回应写成结构化 Markdown 笔记，可导出到 Obsidian。只有你标记「已读完」的那一本才向它放开原文。
 - [xrn1997/dsh-novel](https://github.com/xrn1997/dsh-novel) — 在 DSH Web GUI 里读网络小说：导入 legado 书源、跨源聚合搜索、带进度的书架与连续滚动阅读，并给 AI 助手五个小说工具——搜索、读章、导入与探针验证书源、查书架。
