@@ -3642,7 +3642,7 @@ dsh plugin --profile web add dshmarket
 - [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) — 在对话框左下角一键连接你的 GitHub 账号（OAuth 设备流或 Personal Access Token），之后 AI 可通过 github_api 工具读取和操作你的 GitHub。
 - [MoonlitDropOfBlood/dsh-git-manager](https://github.com/MoonlitDropOfBlood/dsh-git-manager) — DeepSeek Harness 的 Git 工作区管理：输入框「模式」选择器旁的仓库感知入口，打开与设置同规格的面板，覆盖 diff/commit、分支、冲突、worktree 管理与带分支线的提交历史。
 - [NEAZ71eve/dsh-tool-github](https://github.com/NEAZ71eve/dsh-tool-github) — GitHub REST API 工具 + 浏览器侧边栏面板：仓库/搜索/Issue/PR/评论、账号绑定（凭据库）与一键克隆为工作区。
-- [nightosong/gord-dsh-worktree](https://github.com/nightosong/gord-dsh-worktree) — 为 DeepSeek Harness 管理 git worktree：五个 agent 工具、在新会话行直接开一个工作树会话的选择器、查看未提交 diff 的侧栏标签页、取消归档或删除归档会话的面板，以及双击重命名。删除时拒绝未提交或未跟踪改动，主工作树永不删除。
+- [nightosong/gord-dsh-worktree](https://github.com/nightosong/gord-dsh-worktree) — 为 DeepSeek Harness 提供 Git worktree 管理：把并行开发放进各自独立的目录与分支。随包发布快速模式（Fast mode）。
 - [No-PRM/dsh-explorer#dsh-explorer](https://github.com/No-PRM/dsh-explorer/tree/main/dsh-plugins/dsh-explorer) — Git 优先的文件树侧栏：VS Code 风格层级线、M/A/U/D/R git 状态装饰、HEAD 与工作区对照预览、媒体预览、拖拽引用（文件/文件夹/选中代码带行号）—— 纯插件。
 - [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) — 零终端的 GitHub 可视化登录插件：窗口内完成设备码授权，令牌同步进 gh CLI，附宿主端状态与唤起接口。
 - [OMSociety/dsh-git-forge](https://github.com/OMSociety/dsh-git-forge) — 为 DeepSeek Harness 提供项目级 Git 凭据：forge 账号（GitHub、Gitea、GitLab、Bitbucket 或自定义域名）在右侧栏「Git 凭据」标签页里管理并可按项目授权，再由生成的凭据 helper 交给 agent 走 HTTPS 推送，token 不进对话；未授权 host 的推送会被拦截器直接拒绝。
@@ -4065,7 +4065,7 @@ dsh plugin --profile web add dshmarket
 - [muyuanjin/dsh-ptc-plus](https://github.com/muyuanjin/dsh-ptc-plus) — 把 DSH PTC 模式的顶层 run_code 变成会话绑定的持久 TypeScript REPL：变量与导入在多次 run_code 调用间保持可用，edit_run_code 只替换一行而无需重发整段，import/export 模块语法经 AST 改写适配，持久绑定在冷重启后由会话日志恢复。
 - [myd74108520/cadence-skill](https://github.com/myd74108520/cadence-skill) — 面向 Cadence Virtuoso 版图工程师的 SKILL 脚本助手：官方文档锚定的 API 检索（5 本 IC6.1.8 手册 3557 条，签名带置信度，查不到绝不臆造）＋不执行代码的深度静态检查——词法深度坐标系可精确判定跨行循环体与同行闭合，覆盖迭代中删除（copy 位置敏感）、printf 占位符与实参对账、循环内 nth O(N^2)、废弃 API（带页码引用），另有危险需求拦截与 CIW 错误日志定位修复。宿主半区零第三方依赖。
 - [mzzsfy/dsh-plugin#dsh-maintain](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-maintain) — DSH 版本与运维一体化：自动发现新版本、一键升级、安全重启，重启后页面自动恢复。
-- [NamesMT/dsh-home-hosted](https://github.com/NamesMT/dsh-home-hosted) — 通过 home-hosted 让 dsh web 随开机自动启动：用随包固定版本的依赖运行该面板，安装或移除其开机自启项（systemd、launchd、XDG autostart、Windows 运行键或任务计划程序），并通过 dsh 设置页与 6 个 agent 工具管理其服务器、自启项与界面。
+- [NamesMT/dsh-home-hosted](https://github.com/NamesMT/dsh-home-hosted) — 让 dsh web 与其他服务器随开机自动启动；只需一句提示就能搭建和管理 Gitea、Jellyfin 等服务，并统一收纳到一个 home-hosted 面板中。
 - [Neo65536-engineer/dsh-agent-log](https://github.com/Neo65536-engineer/dsh-agent-log) — 从本机会话日志只读还原的工作报告：用了哪些工具、各调用多少次、执行了哪些命令、读写哪些文件、测试有没有通过、失败了几次及原因、消耗多少 Token，以及最后完成了没有。
 - [netori/galfree](https://github.com/netori/galfree) — 在 DSH 里制作 Ren'Py galgame 的工作台：宿主侧项目服务（写网关 + git 快照、方言子集解析器、推导进度、只由人盖的审读戳、钉版 SDK 校验与试玩、本地发布）收在一条接缝后面，由内置 Web 工作台面板与 agent 工具驱动。
 - [nicecx/dsh-auto-approver](https://github.com/nicecx/dsh-auto-approver) — DSH 权限请求自动审批代理：规则层（黑名单/白名单）+ Hermes Pro 语义裁决（快速失败重试），Hermes 不可用时 fail-closed 转人工；拒绝原因回传发起会话；审批任务入队并与消费端共用忙锁串行化。
