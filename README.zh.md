@@ -1234,6 +1234,7 @@ dsh plugin --profile web add dshmarket
 - [Liu-ZA-81/dsh-theme-firefly](https://github.com/Liu-ZA-81/dsh-theme-firefly) — 崩坏：星穹铁道「流萤」主题：立绘/动态壁纸、萤火绿霓虹配色、开屏变身动画、萤火氛围粒子、背景音乐、打字音效与按对话触发的表情包彩蛋。
 - [longgege-cd/dsh-skin-pixel-anime](https://github.com/longgege-cd/dsh-skin-pixel-anime) — 像素动态星空主题：五套配色、四套分层文字方案、五款像素字体（含简体中文像素字体）、方角与圆角可选、旋转像素星空与流星、顶栏像素时钟，均在插件设置页配置。
 - [LoveIrishCoffee/dsh-effort-ultra-skin](https://github.com/LoveIrishCoffee/dsh-effort-ultra-skin) — 给 hytime/dsh-thinking-effort 已经画出来的推理等级控件换一层 CSS 皮肤：蓝紫渐变胶囊、 星点与流光，浅色与深色主题各一套配色。需先安装该插件，自身不新增任何界面。
+- [LX-HMKK/DSH-appearance](https://github.com/LX-HMKK/DSH-appearance) — 轻量的 DSH 字体与主题插件：中英文与代码字体选择器（只列本机已安装的字体），以及 One Dark Pro、Dracula、Nord、GitHub、Catppuccin 五套官方色板预设，全部走官方主题 token（含代码块语法高亮），不打包字体、零依赖、零构建。需要 DSH 0.2.0-rc.2 或更新。
 - [lxxz1918/dsh-theme-customizer](https://github.com/lxxz1918/dsh-theme-customizer) — DeepSeek Harness Web 界面自定义主题插件：背景/文字/框线/细节全可视化调整，可导入导出预设，持久化保存。
 - [lyingice/dsh-client-ui-mc-skin](https://github.com/lyingice/dsh-client-ui-mc-skin) — 给 DSH Web 客户端用的 Minecraft 风格皮肤：MC 调色板与像素立体边框、像素标志图、开关图案、设置里两个可持久化的开关，以及由 Host 半边按需发货的 16 MB Minecraft AE 像素字体。
 - [lyq3/dsh-skin-nebula](https://github.com/lyq3/dsh-skin-nebula) — 动漫皮肤包：忍者、樱花、竹林、落日、苍龙五套 AI 生成高清主题，各配专属点缀色，右上角衣服图标一键切换，透明度可调。
@@ -3039,6 +3040,7 @@ dsh plugin --profile web add dshmarket
 - [jypjypjypjyp/dsh-music-studio](https://github.com/jypjypjypjyp/dsh-music-studio) — 在对话里作曲：模型按内置作曲规范写出乐谱 JSON，play_score 工具校验后渲染成对话内的卡片，含卷帘图、Web Audio 实时播放与 WAV/JSON 导出。
 - [Laplace-bit/dsh-pianist](https://github.com/Laplace-bit/dsh-pianist) — 让 Agent 弹一曲真钢琴：Salamander Grand 真实采样音色，Canvas2D 三角钢琴与沉浸式舞台渲染，88 键可弹。
 - [ldchaowin/dsh-plugin-notify-sound](https://github.com/ldchaowin/dsh-plugin-notify-sound) — 按工作区定制的任务完成铃声，以及审批、提问、计划评审、目标受阻、任务失败等需要人介入事件的注意提示音，支持内置合成音、语音播报与自定义音频。
+- [lengmodkx/dsh-mimo-tts](https://github.com/lengmodkx/dsh-mimo-tts) — 给 DeepSeek Harness 的小米 MiMo 语音插件：把每段回答念出来、把输入框里的口述变成文字，带 9 个内置音色和一个克隆音色槽位。
 - [lgquan/dsh-voco](https://github.com/lgquan/dsh-voco) — 为 DSH 提供持续语音对话，支持免提监听、按住说话、语音识别、TTS 语音回复和后台 Agent 任务委派。
 - [loyalchiiina/dsh-voice-alert](https://github.com/loyalchiiina/dsh-voice-alert) — 每个 turn 结束自动语音/音效提醒，出错时播失败提示；内置 20 个音效（提醒 10 + 大自然 10）且默认「音效」模式，零配置开箱即用、不需要任何 API Key 与音频文件；进阶可用火山「声音复刻」克隆自己的音色并一键生成三条播报语音；走 winmm/waveOut 原样播放，绝不改动系统音量或静音状态。仅 Windows。
 - [maoyuching/dsh-voice-chat](https://github.com/maoyuching/dsh-voice-chat) — 豆包式语音对话插件：聊天框麦克风按钮（按住说话）语音转文字并自动发送，AI 回复自动朗读。可选 LLM 转述精简（长回复压缩成口语再播，跟随当前对话模型）、朗读前清洗 markdown/emoji/特殊符号、Edge TTS 多种音色、静音自动结束时长可调，设置嵌入 DSH 自带设置弹窗（voice chat 类目）。
