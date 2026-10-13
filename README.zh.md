@@ -1953,7 +1953,7 @@ dsh plugin --profile web add dshmarket
 - [JohnXu22786/memory-standard](https://github.com/JohnXu22786/memory-standard) — DeepSeek Harness 记忆标准协议（mm）：分层 MEMORY.md 与硬性预算、冻结快照、mm:// URI 互认、会话日志摄取，附带 mem_* 工具与独立 CLI。
 - [JunNanLYS/dsh-layered-memory](https://github.com/JunNanLYS/dsh-layered-memory) — dsh 长期记忆：对话自动蒸馏为原子事实、场景摘要与用户画像，每步模型调用前自动注入相关记忆。开箱零配置——BM25 + 向量混合检索，可选本地离线嵌入，chat/work 双族隔离。
 - [KLRSL/dsh-biomemory](https://github.com/KLRSL/dsh-biomemory) — 为 DeepSeek Harness 打造的生物仿生记忆系统：以单一 SQLite 库为唯一事实来源（node:sqlite，WAL），Markdown 树仅作只读镜像；含 memory 工具、会话启动时的冻结快照注入、分级审批门、按需把当前会话抽取成记忆、近重复合并、归档与取代生命周期、记忆代谢（dream）、记忆钉、基于本地嵌入的语义检索，以及 /memory 命令。
-- [knighthongyu/dsh-handoff-compaction](https://github.com/knighthongyu/dsh-handoff-compaction) — 将较早的 DSH 上下文压缩为结构化交接，保留最近消息，并让会话历史保持可搜索。
+- [knighthongyu/dsh-handoff-compaction](https://github.com/knighthongyu/dsh-handoff-compaction) — 面向小上下文模型的 DSH 上下文压缩插件：压缩大小可视化配置，默认 8k 交接摘要 + 16k 最近上下文，完整历史仍可查询。
 - [lanyun077/dsh-project](https://github.com/lanyun077/dsh-project) — 把多个文件夹与会话收纳为「项目」，共享 PROJECT.md 记忆与 AGENTS.md 指令并注入每个会话，附带项目树侧边栏。
 - [LAYZR114/dsh-project-memory](https://github.com/LAYZR114/dsh-project-memory) — 北极星记忆：DeepSeek Harness 本地优先项目记忆插件。每项目一份 .dsh-memory.json（按 cwd 隔离），提供 memory_read/recall/write/update/delete 工具、/memory 命令与设置页；分级注入（用户画像常驻 + 场景触发记忆带 P1/P2/P3 等级）、语义召回（IDF+同义词层）、底线记忆硬守卫机制（识别禁止语义→授权→拦截 AI 删除；用户可确认绕过）。
 - [lcthe/dsh-hermes-memory](https://github.com/lcthe/dsh-hermes-memory) — DSH 有界持久记忆：memory_save/search/replace/remove/list 覆盖全局、用户、项目、失败四类范围，基于 DSH storage-domain 持久化，写入前做密钥与提示注入扫描，支持会话范围检索、保留期清理与可选的会话开始注入；常驻上下文用 memory_pin/memory_pins/memory_unpin 管理。
@@ -3789,6 +3789,7 @@ dsh plugin --profile web add dshmarket
 - [mingzeng21/dsh-notion](https://github.com/mingzeng21/dsh-notion) — 通过官方 Notion MCP（OAuth + PKCE）把 dsh 连接到 Notion：通过 `mcp__notion__*` 工具搜索、读写页面、数据库与评论。
 - [moon09300731/dsh-peak-cost-mode](https://github.com/moon09300731/dsh-peak-cost-mode) — 在 DeepSeek 高峰计价时段（北京时间 09:00–12:00、14:00–18:00，价格 ×2）自动切换 caveman 超精简输出省 token，标题栏常驻状态徽章，档位切换时弹提醒。
 - [MurasakiIzumi/dsh-quake-alert](https://github.com/MurasakiIzumi/dsh-quake-alert) — DeepSeek Harness 的实时灾害预警：日本地震（P2PQuake）与 JMA 紧急地震速报、海啸、气象电文，全球地震（EMSC/USGS）与 NOAA 海啸，中国大陆地震（CENC via Wolfx）及 nmc.cn 暴雨、地质灾害预警，美国 NWS 与加拿大 ECCC 的洪水、降雨、风暴潮预警——按你关注的地域与阈值匹配播报。
+- [Mvyvn/dsh-desktop-notify](https://github.com/Mvyvn/dsh-desktop-notify) — 为 11 类可配置的 DSH agent 事件（任务完成、提问、审批被拒、后台子代理/目标/任务、团队任务、上下文压缩、定时任务触发、插件挂载、权限变更）发送桌面通知，优先走自带 Service Worker 的浏览器 Web Notification，降级到 Windows Toast 或 Linux D-Bus，支持三档静默与点击跳转。
 - [mzzsfy/dsh-plugin#dsh-turn-notify](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-turn-notify) — 回合事件通知：完成/出错/被中断/等待审批/AI 提问/达到上限六类事件，经声音、系统弹窗、页内提示、webhook、IM、宿主桌面通知通道推送，多窗口只响一次。
 - [NattoCB/dsh-plugin-notifications](https://github.com/NattoCB/dsh-plugin-notifications) — 在设置中新增卡片，对话轮次完成时弹出系统通知与可选提示音。
 - [nicecx/dsh-relay](https://github.com/nicecx/dsh-relay) — 把 agent 的审批与提问诉求推送到 iMessage / 邮件 / 微信通道，回复 `#编号 批准/拒绝/回答` 即可处理，无需打开网页。
