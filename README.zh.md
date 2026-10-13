@@ -1116,6 +1116,7 @@ dsh plugin --profile web add dshmarket
 - [xueccci/dsh-prompt-lab](https://github.com/xueccci/dsh-prompt-lab) — DeepSeek Harness 的 Agent 结构化提示词优化：将输入栏草稿改写为角色/任务/上下文/约束/格式，支持普通/精简/扩写，弹窗含评分与继续优化，引擎可选本地、hybrid、DSH 或云端 API。
 - [xxvk/dsh-cost-crystal](https://github.com/xxvk/dsh-cost-crystal) — Web UI 成本水晶球:余额卡片、实时 tok/s 速率、波峰/低峰计费倒计时、近 24h 消耗,以及 🔮 下一条消息消耗预测,全部时区感知。
 - [y2zyyr/dsh-token-usage-sidebar](https://github.com/y2zyyr/dsh-token-usage-sidebar) — 为 DSH Web 提供自动发现历史记录的本地持久化 Token 用量统计与紧凑的供应商/模型明细。
+- [YangShen-SWE/dsh-plugin-simple-pet](https://github.com/YangShen-SWE/dsh-plugin-simple-pet) — Windows 桌宠支持可选安静模式、经典／温和反馈，以及减少动态、关闭闪光和飘字的独立舒适选项；默认保留经典，真实数据持续更新，退出静态状态不补播旧事件。信息框 cardTheme 可与六款 2D 人物 skin 任意搭配，提供海盐蓝（default，保留原色）、苔庭墨绿（forest）、焦糖暖棕（amber）、暮云紫灰（violet）、月笺雾白（paper）五版；每版均支持 DeepSeek 钱包、峰谷价牌与缓存信息，以及 Codex 5 小时／周额度与重置时间双模式。DSH 原生设置中的主题图库同时展示双模式及人物／信息框小组合预览，明确标注合成示例数字，点击保存后热更新，不新增模型请求或账号变更。v0.6.5 将写盘成功、草稿与桌宠近期实际应用回执分开，通过自己启动的进程／启动／profile、原始修订、实际偏好和短租约核验，过期或失败不误报成功。保留拖动与独立坐标、右键无菜单或弹窗、四档尺寸、偏好／统计、深浅主题与窄屏适配、鉴权原子保存、可配置额度检测，以及默认关闭、持久去重的独立预热。
 - [yangyongzhen/dsh-session-report](https://github.com/yangyongzhen/dsh-session-report) — 会话成本与耗时报表：tokens / 缓存命中 / 耗时。
 - [Ychris12138/dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats) — 多供应商用量看板：按供应商/模型统计 Token 与日期下钻，统一展示账户余额，并追踪 OpenCode Go / Z.ai 订阅额度。
 - [yflmq001/dsh-cost-tracker](https://github.com/yflmq001/dsh-cost-tracker) — 按模型追踪 token 成本：可配置缓存命中/未命中、输出与高峰时段单价，实时会话花费条，并标记未配置价格的模型。
