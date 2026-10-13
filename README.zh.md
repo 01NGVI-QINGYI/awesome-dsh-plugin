@@ -1552,6 +1552,7 @@ dsh plugin --profile web add dshmarket
 - [598829314/oil-dsh-title](https://github.com/598829314/oil-dsh-title) — 在用户消息后为 DeepSeek Harness 维护稳定的 emoji 会话标题，不向原会话追加命名消息。
 - [643048695/dsh-compaction-route](https://github.com/643048695/dsh-compaction-route) — 在 Web 设置页里为会话压缩指定摘要模型，并在主模型出错时改用配置的兜底模型重试。
 - [9Ashwin/dsh-session-rename](https://github.com/9Ashwin/dsh-session-rename) — 给模型一个 rename_session 工具，让 agent 在对话中直接重命名会话。
+- [aa2246740/dsh-compact-saviour](https://github.com/aa2246740/dsh-compact-saviour) — 使用专用模型处理上下文压缩恢复，并在原生上下文弹窗提供手动压缩。
 - [aa2246740/dsh-resume](https://github.com/aa2246740/dsh-resume) — 导入本地编程 Agent 的会话历史，在 DSH 中继续工作。
 - [Aeroscis/dsh-temptask](https://github.com/Aeroscis/dsh-temptask) — DeepSeek Harness 的临时任务模式：一键创建一次性的时间戳工作区并开会话，直接成为侧边栏原生工作区节点。
 - [AKS1st/dsh-archived-conversations](https://github.com/AKS1st/dsh-archived-conversations) — 侧边栏底部的已归档对话列表，可只读预览最近消息；针对产品刻意隐藏且无法重新打开的归档会话。
@@ -3285,6 +3286,7 @@ dsh plugin --profile web add dshmarket
 - [988hj7tczd-oss/dsh-workflow-templates](https://github.com/988hj7tczd-oss/dsh-workflow-templates) — 预置 Workflow 模板库：12 个可复用编排脚本模板，提供 wf_template_list / wf_template_search / wf_template_run / wf_template_validate 工具与模板格式静态校验。
 - [9931666/dsh-plugin-roundtable](https://github.com/9931666/dsh-plugin-roundtable) — 把 DeepSeek Harness 会话变成可视化圆桌会议：环形专家拓扑、连线协作、汇聚网关、代理思考，以及「针锋相对」红队评审（观点支持/驳回）。
 - [a792883583/dsh-cron-panel](https://github.com/a792883583/dsh-cron-panel) — 定时任务面板：分区管理 DSH 与系统 crontab、自然语言生成表达式、执行日志与完成后消息推送。
+- [aa2246740/dsh-autoresearch](https://github.com/aa2246740/dsh-autoresearch) — 在 DSH Web 界面创建、运行和监控可持久化的研究实验循环。
 - [aa2246740/pstack-dsh](https://github.com/aa2246740/pstack-dsh) — 将 poteto 的 pstack 工程工作流移植到 DSH，涵盖规划、审查、验证与发布。
 - [adithyanraj03/dsh-schedule-later](https://github.com/adithyanraj03/dsh-schedule-later) — 把消息排进 dsh 会话稍后再发：消息框里带日期与时间选择器的「定时」按钮、跨会话列出待发消息的侧栏面板、浏览器关着也由宿主按时投递成一条普通用户消息，以及 schedule_message / list_scheduled_messages / cancel_scheduled_message 三个工具，模型因而能自己回到某个会话。
 - [alib8b8/dsh-plugin-aflare](https://github.com/alib8b8/dsh-plugin-aflare) — aflare 工作流工具：通过本地 aflare 二进制生成、校验并执行本地优先的确定性 YAML 工作流 DAG（WAL 崩溃恢复、Saga 补偿），内置 300+ 模板。
@@ -4181,6 +4183,7 @@ dsh plugin --profile web add dshmarket
 - [863683348/dsh-plugin-gate](https://github.com/863683348/dsh-plugin-gate) — DSH 插件的安装安全闸门：在 "dsh plugin add" 前对本地目录或 npm 包做"杀毒"式扫描（安装脚本、权限、密钥、网络回连），给出 BLOCK/WARN/PASS 判定。
 - [940842546/dsh-permissions](https://github.com/940842546/dsh-permissions) — Claude Code 风格权限规则引擎：hard/deny/ask/allow 四级规则（hard 高于全访问、不可豁免）、workspace 作用域、通配符路径保护、可视化草稿式编辑器，规则持久化于 settings.yaml。
 - [a903067276-rgb/dsh-perm-guard](https://github.com/a903067276-rgb/dsh-perm-guard) — 自动审批权限守卫：介于 workspace-write 与 danger-full-access 之间的中间档——信任目录内安全操作自动放行，危险操作一律人工确认；11 个分类开关可调，自带审计记录。
+- [aa2246740/dsh-auto-review](https://github.com/aa2246740/dsh-auto-review) — 为 DSH 工具调用提供 Auto-review 和 Approve for me 模式。
 - [accpowered/dsh-auto-review](https://github.com/accpowered/dsh-auto-review) — 沙箱越权审批的 LLM 应答器：先过确定性正则过滤，再交给干净上下文的审核模型；拿不准才转人工。需要随附的核心补丁。
 - [accpowered/dsh-credential-manager](https://github.com/accpowered/dsh-credential-manager) — 具名凭据按引用使用：秘密值在「设置 → 凭据」页录入，按次注入 shell 执行环境的 DSH_CM_* 变量而不打印进对话，credential_read 是文档化的最后手段。
 - [ADWMC/helm-d#helmd](https://github.com/ADWMC/helm-d/tree/main/packages/helmd) — 单包逆向与渗透测试安全分析插件：首轮工具收敛、领域路由与 33 个工具，覆盖 APK、Web、原生二进制、协议、恶意样本与 LLM 场景的逆向分析、加壳脱壳与 License 破解绕过；内置 H-CoT 评估引擎（语义路由、/hcot 命令）、账本驱动的 Web 工作台与工具货架、磁盘案件工作区（证据链自动存证、E 编号结论校验、上下文压缩后恢复）、GitHub 工具检索与 361 篇按需参考文档。
