@@ -2384,6 +2384,7 @@ dsh plugin --profile web add dshmarket
 - [LuminariSoftwares/tool-guardian](https://github.com/LuminariSoftwares/tool-guardian) — 用三个路由工具（list_capabilities、describe_tool、call_tool）代理 stdio MCP 服务器，schema 按需加载，不再随每次请求发送；所有工具结果经过确定性输出阶梯压缩，有损处理前先归档原文（retrieve_spill 可读回）；按 token 为工具分组标价，并可按 agent 隐藏内置分组。桥接到纯标准库的 Python 路由器，需要 Python 3.9+。
 - [lussey820/dsh-http-tools](https://github.com/lussey820/dsh-http-tools) — HTTP/API 调试工具集：全参数 HTTP 请求（method/headers/body/auth）、curl 命令解析与一步执行、会话内请求历史与响应并排对比、分页 Link 头透出；配合可选 dsh-http-tools-ui 提供 DeepSeek 风格工具卡片。
 - [lxfu1/dsh-plugin-chart](https://github.com/lxfu1/dsh-plugin-chart) — 增强 DeepSeek Harness 数据可视化能力，根据用户输入自动选择图表类型并生成图片，支持趋势、比较、占比、关系和流程等可视化场景。
+- [lyjsyyds/dsh-novel-studio](https://github.com/lyjsyyds/dsh-novel-studio) — 小说创作工作区：一本书一个文件夹、YAML/Markdown 分区、关系图自动连边、一致性校验、四个 AI 任务与四种导出格式。
 - [lynote-ai/dsh-humanizer](https://github.com/lynote-ai/dsh-humanizer) — 写作工具：去除 AI 腔并贴合个人文风。8 个确定性工具扫描文本、从样本提取文风指纹，并返回改写 brief。
 - [lzszq/dsh-scholar](https://github.com/lzszq/dsh-scholar) — 学术助手插件。
 - [m1452700576/dsh-app-updater](https://github.com/m1452700576/dsh-app-updater) — 侧边栏按钮：启动时自动检查DSH更新并显示红点提示，支持忽略特定版本、预览更新日志，带实时下载进度、国内镜像加速和下载安全校验。
@@ -4061,6 +4062,7 @@ dsh plugin --profile web add dshmarket
 - [lucky8197/dsh-weekly-digest](https://github.com/lucky8197/dsh-weekly-digest) — 周报生成器：聚合最近 N 天的 git 提交、会话活动与每日记忆，自动生成 Markdown 周报，全程只读。
 - [luumod/dsh-desktop-lifecycle](https://github.com/luumod/dsh-desktop-lifecycle) — 在 Windows 上为 DeepSeek Harness Desktop 与 Web 提供「关闭程序」和「重启程序」控制，位于「设置 → 通用设置」。
 - [lxp731/agents-plugins#dsh-service-control](https://github.com/lxp731/agents-plugins/tree/main/dsh-service-control) — 通过 `dsh --profile ctl` 管理 DSH 服务：systemd 生命周期（安装、启停、重启、自启、卸载）、持久化配置、健康探测与日志，附带 shell 补全与自更新。
+- [lyjsyyds/dsh-quick-reload](https://github.com/lyjsyyds/dsh-quick-reload) — DSH Web UI 的一键刷新：先清掉可重建的缓存（Cache Storage、Service Worker、/plugins/** 的 bundle 字节）再重载页面，热注入的客户端插件立刻生效，无需重启应用。
 - [Mandarin715/dsh-autostart](https://github.com/Mandarin715/dsh-autostart) — Windows 平台的 DSH 服务开机自启与一键重启（都在 DSH 设置页内）：由常驻看护进程启动 DSH，它活得比 DSH 久，因此重启失败不会让 DSH 停摆；DSH 依附在看护进程的隐藏控制台上，不再每条命令弹一个控制台窗口；另有设置页重启按钮、当前带 token 的访问地址与可选的服务启动后钩子。
 - [mangomt/dsh-power](https://github.com/mangomt/dsh-power) — DSH Web 悬浮电源坞:一键重启或优雅关机,仅限环回访问,零依赖。
 - [MarchLiu/dsh-farm](https://github.com/MarchLiu/dsh-farm) — DSH 服务农场：注册、启动、停止、重启长驻项目服务，提供 agent 工具（farm_status/start/stop/restart/logs/register）与 farm.yaml 声明式服务，总览抽屉支持按工作区分组、实时日志 follow、搜索与导出。
