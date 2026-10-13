@@ -2481,6 +2481,7 @@ dsh plugin --profile web add dshmarket
 - [seven282/oss-prompt-optimizer](https://github.com/seven282/oss-prompt-optimizer) — 把原始指令一键优化为专业提示词——支持三种输出形态、情境感知画像、自迭代学习，以及 /template 等命令与一键工具/钩子/自动语言。
 - [shengyvself/dsh-prompt-only-forge](https://github.com/shengyvself/dsh-prompt-only-forge) — 点会话输入框右座 ✨，把「打磨提示词」模板写进输入栏——当前草稿自动嵌进 `<内容>` 位置，不发送、不联网、不调模型，由当前会话的主 agent 带着全部上下文改写。替代 narrative-prompt-polish（2026-09-14 更名并整体重构）。
 - [ShiXiangYu2/dsh-translate-pro](https://github.com/ShiXiangYu2/dsh-translate-pro) — 专业翻译：18 种目标语言、4 种风格（正式/口语/技术/直译）、术语表控制译名、整文件翻译（README/文档/字幕）并保留 Markdown 与代码块格式；经 SiliconFlow 调用 DeepSeek。
+- [Shiyuedong-Jade/DM-inspect](https://github.com/Shiyuedong-Jade/DM-inspect) — 只读巡检达梦 DM8 数据库：85 项检查项，生成 HTML 报告。
 - [shlouai/dsh-debate](https://github.com/shlouai/dsh-debate) — 通过一场正式辩论来回答难题：两个对抗性子代理各自调研并论证对立立场，最后由主代理依据辩论记录作出裁决，提供 debate_open、debate_round、debate_verdict 三个工具。
 - [SIMON-WORLD/dsh-eco-indicator](https://github.com/SIMON-WORLD/dsh-eco-indicator) — 世界银行开放数据经济指标查询：GDP、通胀、贸易、人口等，无需 API 密钥。
 - [SIMON-WORLD/dsh-journal-monitor](https://github.com/SIMON-WORLD/dsh-journal-monitor) — 经济学优先的期刊/工作论文监控插件：NBER RSS + arXiv 经济学（4 类目）+ 中文经管期刊（世界经济-玛格泰克平台，中国农村观察/财贸经济/中国人口科学/经济管理-ajcass 平台）抓取、关键词过滤、dry-run/Webhook 推送、去重持久化、定时简报（schedule_create 兼容）。
