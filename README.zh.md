@@ -1154,6 +1154,7 @@ dsh plugin --profile web add dshmarket
 - [B-TQ/dsh-wallpaper](https://github.com/B-TQ/dsh-wallpaper) — 把本地视频/图片变成全屏动态壁纸，支持实时效果调节、壁纸切换与 Wallpaper Engine 工坊导入，设置自动保存永久生效。
 - [baisama-cloud/dsh-custom-brand](https://github.com/baisama-cloud/dsh-custom-brand) — Web UI 品牌区自定义：鲸鱼 logo 与 DeepSeek 文字可换成本地图片，HARNESS 徽章文字可双击编辑（双击修改，右键恢复）。
 - [BarneyZhaoooo/dsh-theme-native#plugin](https://github.com/BarneyZhaoooo/dsh-theme-native/tree/main/plugin) — 基于原生令牌的 DeepSeek Harness 主题插件，提供十套预设、自定义配色与系统字体选择。
+- [bauerelizabeth07139/MDSM](https://github.com/bauerelizabeth07139/MDSM) — MDSM(DeepSeek 男性吉祥物)美化插件：把内置角色形象铺成界面背景（表面令牌淡出，配合不透明度、模糊、遮罩与位置调节），将方形头像换到侧栏与会话标题的品牌标识位，并在设置页统一配置；素材与配置由宿主在 /api/MDSM 下本地提供，配置文件位于 $DSH_HOME/MDSM.json。
 - [bauerelizabeth07139/nai](https://github.com/bauerelizabeth07139/nai) — DeepSeek Harness 网页端的奶蛙美化形象插件：把内置奶蛙素材铺成界面背景（表面令牌淡出，配合不透明度、模糊、遮罩与位置调节），将方形头像换到侧栏与会话标题的品牌标识位，并在设置页统一配置；素材与配置由宿主在 /api/nai 下本地提供，配置文件位于 $DSH_HOME/nai.json。
 - [bauerelizabeth07139/tangsan](https://github.com/bauerelizabeth07139/tangsan) — DeepSeek Harness 网页端的唐三美化形象插件：把生成的唐三插画铺成界面背景（表面令牌淡出，配合不透明度、模糊、遮罩与位置调节），将同系列方形头像换到侧栏与会话标题的品牌标识位，并在设置页统一配置；素材与配置由宿主在 /api/tangsan 下本地提供，配置文件位于 $DSH_HOME/tangsan.json。
 - [BeiZi6/dsh-theme-plugin](https://github.com/BeiZi6/dsh-theme-plugin) — DSH Web GUI 主题工作室：5 套内置预设 + 完全可自定义的浅/深配色（强调色、背景、前景、UI 与代码字体、半透明侧栏、对比度），即时热切换并持久化到 localStorage。
