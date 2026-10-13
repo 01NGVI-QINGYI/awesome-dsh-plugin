@@ -426,6 +426,7 @@ dsh plugin --profile web add dshmarket
 - [johnnycls/dsh-no-setup-mode](https://github.com/johnnycls/dsh-no-setup-mode) — DSH 网页免设置模式：隐藏复杂界面、自动套用最佳设置（聊天模式、Full Access、账户余额），并提供一键人设角色扮演（女僕/管家）。
 - [Js2Hou/dsh-mcp-manager](https://github.com/Js2Hou/dsh-mcp-manager) — DSH 网页 MCP 可视化管理插件：在「设置 → MCP」中查看/新增/删除/启停 MCP 服务器，实时显示连接状态与工具数。
 - [jsdvjx/dsh-strata](https://github.com/jsdvjx/dsh-strata) — 滚动条槽位里的会话缩略图：按事件类型着色的等比色块、用户与失败锚点、滚到顶自动补载历史、悬停线索墙铺开全部发言，附近/中/全三档地图尺度切换。
+- [Justin-Mai/dsh-stock-view](https://github.com/Justin-Mai/dsh-stock-view) — A 股 / ETF / 港股 / 美股 / 加密货币行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面右上角显示可折叠、可拖动的弹窗，同时盯多个市场——实时行情、分时与日/周/月 K 线（含均线）、买卖目标价、分组管理（切换、拖动排序、重命名、删除）、跨市场搜索、明暗主题。fork 自 Awu12277/dsh-stock-watch，新增东方财富美股行情与 OKX 现货加密货币行情。
 - [k-ying/dsh-vsceditor](https://github.com/k-ying/dsh-vsceditor) — 在 GUI 页签内嵌真实的 VSCode 编辑器（code-server，或通过自带 bridge 扩展连接本机桌面 VS Code）：Agent 的文件改动弹出按对话轮次累计的红绿 diff，关标签、刷新页面都不丢，写入期间文件自动锁定，看门狗托管进程、崩溃升级不留孤儿。
 - [kahomesl/dsh-chat-diff-summary-legacy](https://github.com/kahomesl/dsh-chat-diff-summary-legacy) — 输入框上方的本轮改动统计条，显示这一轮改了哪些文件、增删多少行，适配 DeepSeek Harness 0.1.5-rc.1 至 0.1.7。
 - [Kaiji-Z/dsh-plugin-lookatstudy](https://github.com/Kaiji-Z/dsh-plugin-lookatstudy) — 学习页签（课程｜导师｜黑板三栏）：把 markdown 文件、本地文件夹或 GitHub 仓库变成导学课程，提供课时解锁、掌握度追踪、间隔重复和导师设计式课程导入。
@@ -1219,6 +1220,7 @@ dsh plugin --profile web add dshmarket
 - [Lhy723/dsh-neu-theme](https://github.com/Lhy723/dsh-neu-theme) — DSH Web 轻拟物主题：提供浅色与深色配色、环境光影、材质阴影、纹理、磨砂玻璃表面与微交互。
 - [Lichtspur/deepseek-style-theme](https://github.com/Lichtspur/deepseek-style-theme) — 为 dsh web GUI 复刻 DeepSeek 官网风格的主题皮肤：流体粒子背景、玻璃拟态侧边栏与输入框、运行中子代理面板与 DSTT 高峰时段配色。
 - [lilcandi/dsh-any-background-plus](https://github.com/lilcandi/dsh-any-background-plus) — dsh-any-background 的增强分支。v0.4.0 起的改动为本 fork 自作，新增左右双图轮播：同一轮播在窗口两侧各推进一步，以绝对中心为分界，壁纸不再被会话区完全挡住。两条车道还可各读一个文件夹（左右各一），共用同一轮播频率与模式，左右边缘淡化效果完全一致。
+- [lildanger/dsh-skin-win2000](https://github.com/lildanger/dsh-skin-win2000) — 给 DSH Web GUI 换上 Windows 2000 桌面外观：按度量表还原的灰色控件、双色渐变标题栏、1px 立体边框、直角、16px 滚动条，以及由插件自身路由提供的点阵字体。
 - [linhut/dsh-stock-terminal](https://github.com/linhut/dsh-stock-terminal) — 股市行情皮肤与功能插件：全局交易终端皮肤 + 跑马灯 + 个股 K 线弹窗（日K/周K/月K 切换）、自选拼音首字母模糊搜索、持仓盈亏管理、交易时段指示，支持 A股 / 港股 / 美股 / 加密货币 / 外汇。
 - [lisongxuan/ds-hentai](https://github.com/lisongxuan/ds-hentai) — ExHentai 皮肤 for DeepSeek Harness。DS Hentai / DeepSeek Hentai，深炭底、浅灰文字、灰色边框；会话列表像画廊索引，发送框像搜索栏。预览Demo：https://dshentai-demo.arkady14.site/
 - [lispking/dsh-qq-skin](https://github.com/lispking/dsh-qq-skin) — 为 DeepSeek Harness 打造的 QQ NT 皮肤：浅色与深色共用一套 QQ NT 语言——浅色干净克制（品牌蓝 #12B7F5、浅蓝气泡），深色为沉稳蓝灰（#101822）——以可逆的 token 与布局两层实现，不改变你的浅色/深色偏好。
@@ -4088,6 +4090,7 @@ dsh plugin --profile web add dshmarket
 - [MiraculousGarfield/dsh-ops-health](https://github.com/MiraculousGarfield/dsh-ops-health) — 一键健康检查：侧边栏按钮经纯 HTTP 路由（独立于工具注册表）调用 check-health.ps1 并渲染结构化报告卡片；配色跟随当前主题，Windows/PowerShell。
 - [mkiea/dsh-forge](https://github.com/mkiea/dsh-forge) — DeepSeek Harness 插件组合分析工具：依赖树、冲突检测、风险评估（含预测）、可视化与组合模拟。
 - [moonquake2004/dsh-doctor#plugin](https://github.com/moonquake2004/dsh-doctor/tree/main/plugin) — 离线诊断工具：环境/Profile/会话共 19 项检查，带设置「诊断」面板与只读 JSON API。
+- [MrYangyt/dsh-k8s](https://github.com/MrYangyt/dsh-k8s) — 基于本地 kubectl 的 Kubernetes 多集群管理面板：资源筛选、YAML 编辑、Pod 实时日志、交互式容器终端、工作负载重启与扩缩容，并同步 DSH 主题；支持侧栏入口和会话视图。需要 DSH 0.2.0-rc.2。
 - [multica-ai/dsh-multica-runtime](https://github.com/multica-ai/dsh-multica-runtime) — 让 dsh 运行时跑在 Multica 上。
 - [MutaLucem/dsh-plugin-integration](https://github.com/MutaLucem/dsh-plugin-integration) — 动态发现已装插件并打标分类，检测功能重叠与兼容冲突，一键启停切换、失效诊断与更新检测。
 - [muyuanjin/dsh-ptc-plus](https://github.com/muyuanjin/dsh-ptc-plus) — 把 DSH PTC 模式的顶层 run_code 变成会话绑定的持久 TypeScript REPL：变量与导入在多次 run_code 调用间保持可用，edit_run_code 只替换一行而无需重发整段，import/export 模块语法经 AST 改写适配，持久绑定在冷重启后由会话日志恢复。
