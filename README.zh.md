@@ -3869,6 +3869,7 @@ dsh plugin --profile web add dshmarket
 - [a1113622001/dsh-auto-update](https://github.com/a1113622001/dsh-auto-update) — Harness 启动器自更新插件；检查 npm 上的 @deepseek-ai/dsh 新版本，暂存 tarball，并在退出或通过面板「更新并重启」时应用。
 - [a179-sanae/dsh-code-check](https://github.com/a179-sanae/dsh-code-check) — 自动类型检查诊断：模型编辑/创建 TS 文件后后台防抖运行 `tsc --noEmit`，经 `code_check` 工具按文件分组汇报错误（行列号 + 严重级别 + TS 错误码），形成「改 → 查 → 修」闭环。
 - [aa2246740/dsh-creator-mode-plus](https://github.com/aa2246740/dsh-creator-mode-plus) — 通过对话中的固定工具创建、激活、检查和移除外部 DSH 插件，需要外部 DSHX 开发工具。
+- [aa2246740/dsh-opendesigner](https://github.com/aa2246740/dsh-opendesigner) — 提供本地 React 与 Tailwind 可视化设计及限制在项目内的文件工具，现有文档面向 DSH 0.1.5-rc.2。
 - [AaronandWork/dsh-evidence-gate](https://github.com/AaronandWork/dsh-evidence-gate) — 实证门——按会话将第一手结论与持久工具活动索引交叉核验、拦截未验证猜测并以台账统计拦截与转化，中英双语界面。
 - [AgentDebugX/AgentDebugX#dsh-agentdebugx](https://github.com/AgentDebugX/AgentDebugX/tree/main/integrations/dsh-agentdebugx) — 使用 AgentDebugX 诊断当前及已保存的 DeepSeek Harness 轨迹，并在其仪表盘中打开结构化报告。
 - [Airmetro/dsh-update-checker](https://github.com/Airmetro/dsh-update-checker) — DeepSeek Harness 主程序与插件更新管理：对主程序与每个已装插件做 npm/GitHub Release 双源 semver 比对，GUI 横幅按系统语言（中/英）列出可更新项；一键更新——主程序自动备份、完整性校验、失败回滚，插件经临时目录安装不碰其它包；更新后看门狗自动重启服务。「检查更新」设置页提供逐插件版本状态灯、实时更新进度与横幅/通知开关。
