@@ -113,6 +113,7 @@ dsh plugin --profile web add dshmarket
 - [2002XiaoYu/dsh-session-diff](https://github.com/2002XiaoYu/dsh-session-diff) — 为 DSH Web 右侧栏提供按会话的 diff 视图：打开当前对话改动过的文件时原位渲染，按 git 风格显示新增/删除行底色、+/− 行标记、新旧双行号与语法高亮，头部带 +新增 −删除 计数、「仅看改动 / 整个文件」切换和「重新读取」按钮；另有一个配套标签页列出本次会话改动过的所有文件，点开即进入同一视图。当前对话没有改动过的文件仍使用自带文本查看器。
 - [2768651338/dsh-effort-slider](https://github.com/2768651338/dsh-effort-slider) — 仿 Claude Code 的推理等级滑块：无极拖动、松手吸附、WebGL 火焰跟随，任何自定义第三方模型/提供商都能获得真实生效的思考强度调节。
 - [2nd1st/dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app) — 把 open-mcp-apps 接进 DSH：每个 MCP app 都是侧边栏里自己的容器，带独立 workspace、会话与 App mode，应用下方是 agent 状态条，普通聊天里也能行内渲染 app。
+- [439436269-ctrl/dsh-pinned-sessions](https://github.com/439436269-ctrl/dsh-pinned-sessions) — 侧栏「工作区」上方的一个置顶分组：跨工作区汇总所有置顶会话，可折叠、可就地搜索，点行打开、悬停出现取消置顶按钮。
 - [5101good/amoji#amoji](https://github.com/5101good/amoji/tree/main/adapters/dsh) — 用于双向聊天的 AI 原生表情：人看图片，纯文本模型读取固定语义；支持表情选择、自建表情、导入导出和两套画风。
 - [534119219/chicheng-peak](https://github.com/534119219/chicheng-peak) — DeepSeek 峰谷提醒：贴屏呼吸边框（高峰橙/低峰蓝）、流光效果与消息推送提醒。
 - [534119219/chicheng-quickinput](https://github.com/534119219/chicheng-quickinput) — 输入栏旁的保险箱按钮：保存密钥、服务器、手机号、地址与网址，自动识别会话中的敏感信息提醒收录，密码保护并支持 WebDAV 备份；点击填入输入框，Ctrl+点击直接发送。
@@ -3188,6 +3189,7 @@ dsh plugin --profile web add dshmarket
 - [Bingtang1019/dsh-ppt-fusion](https://github.com/Bingtang1019/dsh-ppt-fusion) — 从需求生成 PPTX：规划与分镜门、pptwise + ppt-master 页级作者、设计档案 pass、渲染页图快照与渲染审计，以及把页图交给支持图片的模型自评的工具。
 - [Cavan-Ou/hermes-dsh-collab](https://github.com/Cavan-Ou/hermes-dsh-collab) — 把 DeepSeek Harness 接进 Hermes 管线：派单 spec 模板、模型档位路由、质量门、git 唯一写者约定，SKILL.md 技能包（bundle 可安装）。
 - [changliang-c/zemingxingxiao-brand-diagnosis](https://github.com/changliang-c/zemingxingxiao-brand-diagnosis) — 注册择命行效五行品牌诊断技能及五个伴随参考技能（理论、诊断手册、二百四十案案例库、可视化模板、术语表），带提示词路由与强制 HTML 报告模板、13 张理论配图。
+- [chen112233usa/dsh-typesafe-ai-skill](https://github.com/chen112233usa/dsh-typesafe-ai-skill) — 把 TypeSafe / Jev（System One 判断模型）的构建技能注册进 DeepSeek Harness 的全局技能层，让每个会话都能用带类型的判断做分类、路由、打分、抽取和置信度门控，取代「调大模型再解析回复」。不含任何密钥，API key 由使用者通过 OPENROUTER_API_KEY 提供。
 - [cheshireez/dsh-skill-hub](https://github.com/cheshireez/dsh-skill-hub) — DSH Web GUI 技能中枢：基于官方 ctx.skills 注册表浏览、搜索、启停、查看、诊断并新建本地技能，附技能市场：来源快照跟踪、一键全量更新。
 - [Chu-Xin-r/wanjiqi-meme](https://github.com/Chu-Xin-r/wanjiqi-meme) — 玩机器（6657 直播间）烂梗技能包：22771 条真实弹幕蒸馏而成，涵盖玩机器式弹幕烂梗、CS×DOTA 双料梗、选手锐评与解说吐槽。
 - [Crayonnan/dsh-math-modeling-skills-Gatecraft-](https://github.com/Crayonnan/dsh-math-modeling-skills-Gatecraft-) — 面向 DeepSeek Harness 的门控式数学建模 skill 套件：五阶段流水线、阶段门、国奖写作范式、灵敏度分析、统计诊断与竞赛预设。
@@ -4540,6 +4542,7 @@ dsh plugin --profile web add dshmarket
 - [toddpan/dsh-webapi](https://github.com/toddpan/dsh-webapi) — 让任何会说 HTTP 的东西驱动 DSH：47 条路由（REST + SSE），覆盖工作区、会话（创建/提示、SSE 实时生成、历史、统计、任务清单、中止、问答）、模型与全局默认模型、提供方、Agent Preset、设置命名空间、技能与工作区文件（含分片续传上传），另有 OpenAI 兼容的 /chat/completions、内置 OpenAPI 3.0 规范与在线调试页。它只 inject 宿主的 webServer 与 tools，挂在宿主 webserver（默认前缀 /api/v1）或独立端口，可选 API Key 鉴权，并自带一份教会 DSH 里 Agent 调用本 API 的 SKILL。
 - [TongaiLinC/dsh-mobile-access](https://github.com/TongaiLinC/dsh-mobile-access) — 移动端访问网关：独立子进程反向代理 + 首次访问 PC 审批（管理 token 认证、DNS rebinding 防护）+ 局域网/VPN/公网自动识别与网络模式切换 + 扫码访问 + WebSocket 实时转发 + 窄屏 UI 适配（输入区重排、第三方插件弹窗适配、crypto.randomUUID polyfill）。
 - [tonytanglab/deepseek-harness-relay-mcp](https://github.com/tonytanglab/deepseek-harness-relay-mcp) — 在 Web profile 中安装适配层，检测并写入 MCP 配置，供 Codex、Cursor 或 Claude Code 拉起 dsh --profile codex.
+- [TwinsEarth/dsh-windows2macos](https://github.com/TwinsEarth/dsh-windows2macos) — 一条指令同时下发给所有在线的 Windows 与 macOS 机器，可跨网络跨区域：零依赖中继只通过出站连接与各机通信（Tailscale 内网、公网 VPS + TLS、或隧道），各机在各自的项目副本上执行，结果连同 commit、工作区指纹与命令哈希一并回传，因此"环境不一致"会被判为 unverifiable，而不会被误当成结果分歧。下发指令需要独立于设备令牌的 operator token。
 - [TZHR-invest/dsh-plugins#dsh-lan-gateway](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-lan-access) — 完整的 Web GUI 局域网/远程访问方案：0.0.0.0 绑定、crypto.randomUUID polyfill、令牌门卫（401 登录页 + WebSocket 拦截，回环豁免）、特权围栏与设置持久化放行，附带幂等安装器与升级恢复。
 - [wangzhishou/onebox-dsh-bridge](https://github.com/wangzhishou/onebox-dsh-bridge) — DeepSeek Harness 的 Android 客户端实现:扫码配对 + 端到端加密云端中继,把本机 dsh web 桥接到万宝盒 App。
 - [wanjiaju3108/dsh-feishu-assistant](https://github.com/wanjiaju3108/dsh-feishu-assistant) — 给同事的运维请求通道——同事在飞书私聊里提的事先排进串行队列，由已配对的管理员在审批卡上放行后才进入那条共享的 DSH 会话（带注入的人设执行），回答回到提交人。
