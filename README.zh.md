@@ -689,6 +689,7 @@ dsh plugin --profile web add dshmarket
 - [skyhancloud/dsh-client-ui-quote](https://github.com/skyhancloud/dsh-client-ui-quote) — 在网页聊天输入框上方为选中的 AI 回复内容添加可移除的引用横幅，随下一条消息一并发送。
 - [SmailPang/dsh-effort-slider](https://github.com/SmailPang/dsh-effort-slider) — 在原位置将 DSH 原生推理等级选项替换为可拖动的 Off、Low、High、Max 滑块，并保留官方模型选择流程。
 - [SmileBuild/dsh-planchart](https://github.com/SmileBuild/dsh-planchart) — 把 agent 写出的项目规划显示出来：有序步骤在窗口右侧停靠的面板里，框架图在单独的中间标签页中自动排版，可下载为 SVG 或 PNG。图表由会话日志重建，重启与恢复后依然保留。
+- [smj-1680/dsh-plugin-liquid-glass](https://github.com/smj-1680/dsh-plugin-liquid-glass) — 适用于 DSH 桌面端的液态玻璃 UI 美化插件，可与大部分壁纸插件联动使用，目前仅适配深色模式。
 - [SnowCrescenter-tech/dsh-milestone](https://github.com/SnowCrescenter-tech/dsh-milestone) — DSH Web UI 右侧的圆点时间轴：每条提问一个圆点，悬停查看内容与元信息（时间、轮次、耗时、TTFT、token），点击即跳转。附带全会话消息列表、站内与跨会话搜索、书签深链接（#msg=）和键盘导航。
 - [SongMiao-tech/dsh-prompt-optimizer](https://github.com/SongMiao-tech/dsh-prompt-optimizer) — 输入框下方「优化提示词」按钮：一键把草稿重写为更清晰、更可执行的提示词，弹出前后对比，支持一键替换回输入框。
 - [songoao25/dsh-bottom-info-bar#plugin](https://github.com/songoao25/dsh-bottom-info-bar/tree/main/plugin) — DSH 底部信息栏：一行显示服务商/模型、真实余额、高峰(琥珀)/空闲(绿)价与倒计时，以及本对话·今日·近一月·全部花费（真实落盘统计）。
@@ -1119,6 +1120,7 @@ dsh plugin --profile web add dshmarket
 - [wawo77/dsh-opencode-go-usage](https://github.com/wawo77/dsh-opencode-go-usage) — DSH 网页界面的桌宠用量小窗：悬浮的骨骼动画角色用气泡报出套餐用量，按 DSH 里配置的 provider 自动匹配（OpenCode Go / Command Code / DeepSeek 官方），套餐制显示百分比、按量计费显示余额，取不到官方数字时降级为本地 token 统计；可拖动、滚轮缩放（90–260px），音效现场合成，HTTP 路由只开 loopback。
 - [wbycloud/dsh-composer-tokens](https://github.com/wbycloud/dsh-composer-tokens) — 为 DSH 对话输入框实时估算 token 数，将当前上下文基线与草稿合并计算，并区分精确计数与启发式估算。
 - [wenzetan/dsh-quota-panel](https://github.com/wenzetan/dsh-quota-panel) — 右下角额度胶囊：自动发现所有已配置 Key 的供应商（DeepSeek、OpenRouter、SiliconFlow、GLM、one-api/new-api、各类 Coding 套餐），显示余额或 5 小时/周滚动用量，支持按供应商设置可见性、告警阈值与代理；另支持火山方舟 Agent Plan / Coding Plan 用量查询（AK/SK 签名 OpenAPI）与 ChatGPT Plus/Pro 订阅用量（插件内设备码登录，或读取 Codex CLI 登录态）。
+- [WihteCo/dsh-opencode-go-quota](https://github.com/WihteCo/dsh-opencode-go-quota) — 在侧边栏「工作区」列表下方显示 OpenCode Go 的滚动 5 小时 / 每周 / 每月额度百分比与重置倒计时，每档带用量条与时间进度标记，60 秒从 OpenCode 官方用量接口刷新，密钥复用 DSH 凭据库。
 - [wingsky-1/dsh-plugin-hub#packages/dsh-provider-usage](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-provider-usage) — 多 provider 用量统计框架（v2 适配器契约）：常驻胶囊 + 详情面板；内置 DeepSeek 官方（区间记账法推算每日用量 + 峰谷倒计时徽标，官方无用量接口也能算）与 OpenCode Go；其他数据源只需放入一个 mjs 适配器文件即可接入，设置页热插拔，密钥只留在宿主端。
 - [wjingshan/dsh-cost-gauge](https://github.com/wjingshan/dsh-cost-gauge) — 峰谷计费表盘：DSH Web 浮动窗按 DeepSeek 官方峰谷（高峰/空闲）费率对会话花费（token 费用）实时计费，指针配费率切换倒计时，余额环带低余额报警，支持拖拽缩放与最小化状态灯。
 - [wkscc310/dsh-client-ui-cpa-quota](https://github.com/wkscc310/dsh-client-ui-cpa-quota) — 模型选择器旁的 CLIProxyAPI 额度圆环，设置面板仿 CPA 管理页列出全部账号的额度窗口、套餐与刷新时间。
