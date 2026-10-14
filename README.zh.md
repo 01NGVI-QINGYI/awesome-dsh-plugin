@@ -3640,6 +3640,7 @@ dsh plugin --profile web add dshmarket
 - [alpacachen/dsh-worktree](https://github.com/alpacachen/dsh-worktree) — 极简 worktree 管理方案，只有一个按钮和一个弹窗。
 - [andyfan1094/dsh-github](https://github.com/andyfan1094/dsh-github) — Web GUI 的 GitHub 账号与本地 Git 工作流插件，支持 clone、快进 pull、status、commit、push，推送默认关闭并有宿主侧开关保护。
 - [AngelosZou/dsh-github-router](https://github.com/AngelosZou/dsh-github-router) — 面向 agent 的只读 GitHub 访问，封装多个工具。在工具内部自动探测与选择本地可用的 GitHub 访问设施，并自动尝试网络代理。减少 Agent 在访问 GitHub 时可能遇到的网络问题或解析问题，减少 Agent 频繁尝试不同方案的开销。
+- [ashllll/dsh-open-code-review](https://github.com/ashllll/dsh-open-code-review) — 用 Open Code Review 评审代码：确定性的范围与规则解析，由你自己的 DSH 模型判断，无需 API Key。
 - [Binaryinject/dsh-review-checkout](https://github.com/Binaryinject/dsh-review-checkout) — Codex 风格的会话文件修改审查：每轮变更卡片（可接管 shell 的 edited 卡片），统计口径为本轮净差异；审查 tab 的 diff 不自动换行、真实行号、按行打开、可拖拽分栏；悬停预览显示整文件差异（每处改动前后 3 行上下文）；按轮一键撤回；工具条显示记录占用并可一键清空。记录按会话分片存储，快照用内容寻址 blob 去重并自动 GC。深浅两套配色跟随 DSH 主题，字体跟随 DSH 与已装皮肤（也可选机器上的任意字体并微调字号）；设置里可把「用简体中文思考」规则注入全局 AGENTS.md。
 - [BOWLUNA/dsh-zcode-git](https://github.com/BOWLUNA/dsh-zcode-git) — 给 DeepSeek Harness 智能体用的结构化 Git 工具：status、diff、log、branch、commit 与 stash。输出由十项 `git -c` 覆盖钉死，因此用户的 pager、颜色或 quotepath 设置无法改变智能体读到的东西；每次调用都是 argv 数组，任何 shell 都不解析参数；写入动作走 harness 的审批服务，没有装审批服务时拒绝执行而不是放行。
 - [BrambleXu/dsh-revdiff](https://github.com/BrambleXu/dsh-revdiff) — DeepSeek Harness 原生交互式 Git diff 审查，支持结构化批注并回传当前 Agent 会话。
@@ -4310,6 +4311,7 @@ dsh plugin --profile web add dshmarket
 - [drscrewdriver/dsh-perm-gate](https://github.com/drscrewdriver/dsh-perm-gate) — P0–P4 确定性优先权限门控，含 Permissive 档位、学习沉淀与审批历史 UI；凭据/受保护路径硬拒绝，内部只读工具自动放行。
 - [DWJZ/dsh-allow](https://github.com/DWJZ/dsh-allow) — 按路径与能力（read / write / create / delete / execute）授予 shell 调用的文件权限，而不是按命令名判断。命令行的文件效果由解析得出，缺哪个能力就出审批卡片而不是一律拒绝，同一套规则还会编译成进程、它的子进程、以及命令行根本没露出来的代码共同运行其下的 macOS Seatbelt profile。会话里的「审批」标签页把审计日志读回来，显示每次判定是规则、自动复核还是人拍的板。
 - [Eligahyu/dsh-sentinel-scanner](https://github.com/Eligahyu/dsh-sentinel-scanner) — DSH 插件安全扫描器：只读静态审计（执行、凭据、外传、混淆、安装脚本、bundle 清单），输出 0-100 风险分。
+- [ethanrise/dsh-privacy-gateway](https://github.com/ethanrise/dsh-privacy-gateway) — 在对话消息发给模型前，把个人信息替换为占位符（按上下文识别的中文姓名、大陆手机号与身份证号、邮箱、银行卡号，以及用户词库中的词），原文只在本机界面还原显示；并可生成 CSV/XLSX 的脱敏副本。
 - [fb0sh/dsh-pentester](https://github.com/fb0sh/dsh-pentester) — 基于 PTES 的渗透测试插件，采用 Root-Orchestrator 架构，用于 DeepSeek Harness。
 - [GDWhisper/dsh-web-startup-auth](https://github.com/GDWhisper/dsh-web-startup-auth) — 替换 dsh web 启动器以允许绑定 0.0.0.0，并以账号密码登录为门槛：签名会话 cookie、/api 路由保护、设置面板认证标签页，以及轮换签名密钥使全部会话失效的重置 CLI。
 - [gengwg/dsh-kubectl-guard](https://github.com/gengwg/dsh-kubectl-guard) — 按 kubeconfig context 管控 kubectl 调用的策略插件：本地集群外硬拒绝不可逆操作，其余写操作请求人工确认。
