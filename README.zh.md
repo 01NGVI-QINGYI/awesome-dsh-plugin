@@ -592,6 +592,7 @@ dsh plugin --profile web add dshmarket
 - [openAGFS/dsh-agfs](https://github.com/openAGFS/dsh-agfs) — 文件浏览器 Web 应用：React 前端与 REST API 由宿主 webserver 托管，/dsh-agfs 命令自动定位当前工作区，附 browse_files 模型工具。
 - [opencues/opencues#integrations-dsh](https://github.com/opencues/opencues/tree/master/integrations/dsh) — 在输入框内提供同义词替换与以下划线触发的补全：一行以 _ 结尾即自动补全，拼写错误在输入时即时标出。它走 dsh 已配置好的模型，因此无需额外的 API key。
 - [openma-ai/Martty#npm](https://github.com/openma-ai/Martty/tree/main/npm) — 面向 DeepSeek Harness 的 Rust/ratatui Agent TUI，支持流式工具调用、子代理、持久会话和可扩展的 Cordis 客户端界面。
+- [orphiczhou/dsh-session-tree](https://github.com/orphiczhou/dsh-session-tree) — 把左侧栏的会话列表替换为完整会话树：展示全部会话及其多层子智能体，点击节点即可进入该会话的多轮对话；并附带 tree_send 工具，可向树中任意可续接的子会话投递消息。
 - [oxlyn/dsh-flyout-sidebar](https://github.com/oxlyn/dsh-flyout-sidebar) — 可弹出侧边栏：文件树、Git 未提交变更列表与多标签文件/diff 预览，一键弹出为独立浏览器标签页。
 - [Paimonshen/dsh-coding-plugin](https://github.com/Paimonshen/dsh-coding-plugin) — 编程学习悬浮面板：编辑并运行 Python/JavaScript/TypeScript/PowerShell（含退出码与耗时），JSON 课程包关卡自动评判并可导出进度，提供 Markdown 笔记与代码片段库；代码分析以用户消息直投当前对话，由对话主模型直接输出。
 - [PangXitong/dsh-restart-button](https://github.com/PangXitong/dsh-restart-button) — DSH Web UI 会话头部的关机按钮，点击可关闭或重启整个 DSH 进程。
@@ -1886,6 +1887,7 @@ dsh plugin --profile web add dshmarket
 - [yxv1203-collab/dsh-conversation-archive](https://github.com/yxv1203-collab/dsh-conversation-archive) — 在 Windows 上管理 DSH 已归档会话，支持搜索、批量取消归档与删除、AI 辅助文件保留，以及经过校验的本地或网络目录备份。
 - [zaizaizhao/dsh-branchmark#dsh-branchmark](https://github.com/zaizaizhao/dsh-branchmark/tree/main/packages/bundle) — Vibe Coding 时，如果突然想到另一个问题，或者看到一段以后还会用到的回答，可以先保存下来、在 Side Chat 里快速问清楚，或另开一个相关会话继续研究，不打断当前任务的开发思路和注意力。
 - [zangxx66/dsh-prompt-setting#dsh-prompt-setting](https://github.com/zangxx66/dsh-prompt-setting/tree/main/packages/dsh-prompt-setting) — DeepSeek Harness 默认 System Prompt 管理插件：在 Web GUI「设置」里浏览、检索并覆盖最终装配进每轮会话的系统提示词。
+- [zchuxi/dsh-restart-task](https://github.com/zchuxi/dsh-restart-task) — 修复被打断的 DSH 回合：放大产品自带的重试预算并把等待渲染成同一步内的实时倒计时，输出被截断时在同一轮内续写，回合已结束时可选地新开一轮继续；输入框为空时把「继续」交给发送键。
 - [zhaolianghz/dsh-turnscope](https://github.com/zhaolianghz/dsh-turnscope) — 逐轮次文件变更与逐文件差异、确定性安全结论，外加 preview-first 安全回退：预览不写盘，确认后才应用，工作区在预览后发生漂移则直接拒绝。
 - [zhengjy01/dsh-period-report](https://github.com/zhengjy01/dsh-period-report) — 自由周期会话报告：任意日期区间的 AI 叙事日报/周报/月报，支持每隔 N 天定时提醒并弹系统通知（macOS / Linux）。
 - [zhou1736948757-cpu/dsh-auto-continue](https://github.com/zhou1736948757-cpu/dsh-auto-continue) — 回答因达到单次输出 token 上限被截断时自动发送"继续"续写，无需手动操作；面向自部署 Ollama 等小输出上限场景。
