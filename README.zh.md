@@ -3813,6 +3813,7 @@ dsh plugin --profile web add dshmarket
 - [Archaofan/dsh-notify-relay](https://github.com/Archaofan/dsh-notify-relay) — 把 DSH 的八类生命周期事件过去重、免打扰、摘要合批三道关后外发到七个通道。严重度映射到 Bark、ntfy、Telegram 和 webhook 真正支持的字段；失败投递带抖动退避重试并可跨重启恢复；单通道熔断避免反复敲一个已死的地址；自检发现中继降级时主动报告而不是静默。
 - [baisama-cloud/dsh-omni-bridge](https://github.com/baisama-cloud/dsh-omni-bridge) — 多通道消息桥接插件：将微信 ClawBot / QQ / 飞书的消息接入 DSH agent，并把回复回传给发送者，按通道独立会话、回复去重。
 - [baosfeng/my-dsh-plugins#dsh-my-notify](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-notify) — 会话（本轮）结束 / agent 询问 / 等待审批时弹浏览器通知 + 滴声，点击通知跳转会话；预留远程触发接口与 SSE 实时通道（npm: `dsh-my-notify`）。
+- [better-er/dsh-notify-ding](https://github.com/better-er/dsh-notify-ding) — 会话出现待回复交互或一轮跑完落到空闲时弹出浏览器系统通知，提示音由系统通知自带；不判断页面是否聚焦，每个会话最多保留一条通知、新通知顶掉旧的，空闲时若还有后台任务会在正文里说明数量。
 - [BiBoyang/dsh-im-bridge](https://github.com/BiBoyang/dsh-im-bridge) — 微信（iLink）双向桥：turn 完成/批准请求推送、聊天内批准与消息注入、持久去重与长回复收敛分段；通道层为多 IM 预留。
 - [bill9109/dsh-web-ui-notify](https://github.com/bill9109/dsh-web-ui-notify) — 桌面通知提醒。
 - [bill9109/dsh-webbridge](https://github.com/bill9109/dsh-webbridge) — DSH 结合 Kimi WebBridge。
