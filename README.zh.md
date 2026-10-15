@@ -2890,6 +2890,7 @@ dsh plugin --profile web add dshmarket
 - [PyModel/dsh-research-plugins#dsh-tavily](https://github.com/PyModel/dsh-research-plugins/tree/main/packages/dsh-tavily) — Tavily 网页搜索：设置页开关，关闭时回落到 DeepSeek 内置搜索；免密钥可用搜索与内容提取，配置 API Key 后解锁爬取与站点地图等 MCP 工具。
 - [QuantumKuba/dsh-webstack](https://github.com/QuantumKuba/dsh-webstack) — 为 DeepSeek Harness (ctx.web) 提供 SearXNG 搜索与 Scrapling 多级抓取 Provider，支持 SSRF 防护与 Markdown 格式转换。
 - [renchengxiang/dsh-web-search-tavily](https://github.com/renchengxiang/dsh-web-search-tavily) — 为原生 web_search 提供 Tavily 搜索后端，并在设置 → 插件中提供 API Key 管理与是否替换 DeepSeek 的开关。
+- [ricardochen1996/dsh-browser-use](https://github.com/ricardochen1996/dsh-browser-use) — DeepSeek Harness 浏览器插件：把网页任务交给它——打开页面、点击、输入、填表、读取页面内容——它会驱动真实浏览器一步步完成，每步只看到“当前页面能做什么”的索引表，而不是原始 HTML 或截图。每步由内置 Jev 引擎决策一次，而非大模型整轮推理（仓库基准中每步决策中位 1.1 秒，大模型整轮 2.8–3.6 秒）；主对话只收到结论，上下文不随页面变长。目标取自它刚读到的页面，页面变化就重新读取而非盲点；每个会话用自己的浏览器，不碰你日常的 Chrome（除非切到 attach 模式）。
 - [robin421/dsh-html-inspector](https://github.com/robin421/dsh-html-inspector) — HTML 选区模式：点选本机 demo 页面中的任意元素，定位信息（选择器、文本、HTML 片段）自动写入对话输入框，供 AI 精准修改。
 - [rogerdigital/dsh-searxng](https://github.com/rogerdigital/dsh-searxng) — 基于 SearXNG 的 web_search provider：通过自建实例的 JSON API 实现免费、免密钥的元搜索，附仅绑定回环地址的 docker-compose 示例。
 - [SciF-Lin/dsh-browsercontrol-mcp](https://github.com/SciF-Lin/dsh-browsercontrol-mcp) — 通过官方 dsh-mcp-client 挂载微软的 Playwright MCP，把浏览器工具以 stdio 接入智能体；一次性的 CDP 授权由提示注入、调用拦截与 /bw-setup 命令引导完成。
@@ -3048,7 +3049,7 @@ dsh plugin --profile web add dshmarket
 - [baisama-cloud/dsh-stt-input](https://github.com/baisama-cloud/dsh-stt-input) — Web UI 语音输入：输入框旁麦克风按钮语音转文字填入输入框；支持浏览器 Web Speech API 本地识别（零配置、无需密钥）与 OpenAI 兼容 Whisper API（OpenAI/Groq），模型与语言可在设置中选择。
 - [beiyege-01/dsh-voice-ai-girlfriend-plugin](https://github.com/beiyege-01/dsh-voice-ai-girlfriend-plugin) — Web UI 语音 AI 女友：FunASR 麦克风语音输入、Qwen3-TTS 语音回复、数字人动画窗、QQ 双向聊天（文本/语音/图片推送，经 NapCat）。
 - [berserk0501/dsh-soundscape](https://github.com/berserk0501/dsh-soundscape) — 双 MediaPlayer 守护进程（$think 思考循环 + $fx 一次性音效）支持音量闪避、情绪感知音效（连续成功/失败/长时间运行自动触发 smooth/struggle/deep_think）、15 种正弦/方波合成内置音、51 个工具分类映射、自定义 WAV/MP3 直替自动转换，以及完整设置页含深色模式修复。
-- [biliye/dsh-voice-call](https://github.com/biliye/dsh-voice-call) — DSH Web GUI 的个人语音通话助手：可拖拽悬浮球通话面板、浏览器端 VAD（停顿自动发送）、FunASR HTTP 或流式语音识别、MiniMax / OpenAI 兼容 TTS 语音回复、可开关的唤醒词模式（沉默自动休眠），以及把任务分发给独立子代理会话并跟踪进度、停止与完成播报。
+- [biliye/dsh-voice-call](https://github.com/biliye/dsh-voice-call) — DSH 桌面端与 Web GUI 通用（同一份插件，只是 profile 名不同）的个人语音通话助手：可拖拽悬浮球通话面板、浏览器端 VAD（停顿自动发送）、语音识别可选本地 SenseVoice（复用官方「语音输入」插件已下载的模型，免装第二份模型）/ FunASR HTTP 或流式 / 云端兼容 API、MiniMax / MiMo-V2.5-TTS（含导演模式与音色克隆）/ OpenAI 兼容 TTS 语音回复、可开关的唤醒词模式（沉默自动休眠），以及把任务分发给独立子会话并跟踪进度、停止与完成播报。
 - [CAOGGL/dsh-ding](https://github.com/CAOGGL/dsh-ding) — 对话完成提醒：Agent 空闲（idle）时播放提示音并弹 Windows 原生通知，可配 ding.mp3、音量与防抖节流。
 - [cccc12138/dsh-read-aloud](https://github.com/cccc12138/dsh-read-aloud) — 在每条已定稿的助手回复里、紧挨点赞按钮右侧加一个小喇叭：点击用浏览器语音引擎朗读这条回复，鼠标悬停可调倍速与音色。
 - [duoduoqian708/dsh-voice-talk](https://github.com/duoduoqian708/dsh-voice-talk) — DSH Web 的语音对话模式：点一下麦克风进入全屏通话，边说边听，AI 回复边生成边朗读。界面中英双语，适配明暗主题，支持语速调节与音色切换。
