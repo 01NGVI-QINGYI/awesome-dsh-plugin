@@ -625,6 +625,7 @@ dsh plugin --profile web add dshmarket
 - [pingg02/dsh-plugins#dsh-desktop-entry](https://github.com/pingg02/dsh-plugins/tree/main/dsh-desktop-entry) — 创建 Windows 桌面快捷方式，必要时启动 DeepSeek Harness，并用 Chrome 或 Edge 应用窗口打开 Web UI。
 - [pingg02/dsh-plugins#dsh-quote-selection](https://github.com/pingg02/dsh-plugins/tree/main/dsh-quote-selection) — 引用选中的对话文本并添加可选备注，在发送下一条消息时自动附带引用内容。
 - [plolpl789/dsh-raw-html](https://github.com/plolpl789/dsh-raw-html) — 让 DeepSeek Harness Web GUI 把 agent 输出的 HTML 渲染成真实界面，支持视觉卡片、KaTeX 公式、Mermaid 图表与内置开源字体，并向 agent 注入设计规范。
+- [pomelo-ccc/dsh-pi-composer](https://github.com/pomelo-ccc/dsh-pi-composer) — 把输入框的模型控件换成 PI-Desktop 风格的选择器：双栏菜单（搜索、按 provider 分组、上下文窗口与能力徽标）、推理强度滑块、↑/↓ 提示词历史回溯，以及带撤销的提示词改写按钮。
 - [psychiiii/dsh-three-window#personal-web](https://github.com/psychiiii/dsh-three-window/tree/publish/packages/personal-web) — dsh web 的三窗工作台：每个工作区并排显示聊天、施工和只读审核三个窗口，各窗口独立配置 hook；审核窗提供匿名多模型评审，先确认再运行，按同一件事归组，报告为 Markdown。
 - [Pudge1996/dsh-composer-stretch](https://github.com/Pudge1996/dsh-composer-stretch) — 输入框全屏扩展按钮——内容达 3 行以上时出现，点击扩展至全屏高度，发送后自动折叠，扩展模式下 Enter 换行。
 - [pure-craft/dsh-actions](https://github.com/pure-craft/dsh-actions) — 人与 Agent 共用的确定性项目任务：一份 actions.json，右侧栏运行面板与 Agent 工具双入口。
@@ -869,7 +870,7 @@ dsh plugin --profile web add dshmarket
 - [Yokira404/dsh-thinking-highlight](https://github.com/Yokira404/dsh-thinking-highlight) — 统计思考行里的关键词并在展开后按词标红；标题行上每个词一个计数徽章，点徽章即单独开关这个词；每个词可设底色、文字颜色、字号（10-22px，与宿主正文尺寸同一区间）、字体、加粗/斜体/下划线与「完整词」匹配；插件有独立的设置分区。
 - [YooRarely/dsh-open-explorer](https://github.com/YooRarely/dsh-open-explorer) — 在 DSH 会话标题和工作区菜单中添加按钮，用系统文件管理器打开当前 Workspace 根目录。
 - [ysyyhhh/dsh-pet](https://github.com/ysyyhhh/dsh-pet) — 跟随 agent 状态的 DSH 原生桌宠，兼容 Codex 桌宠包，并可在插件内直接从 Petdex 导入已审核桌宠，无需 Petdex CLI。
-- [Yu-tao-Li/dsh-read-image-view](https://github.com/Yu-tao-Li/dsh-read-image-view) — 用于展示对话中读取的图片（read_image 的结果）：在 DeepSeek Harness Web GUI 对话流中以专用 Read image 行呈现，默认展开的消息图片卡（透明棋盘格）+ 多图请求合并成"读取了 N 张图片"并排行 + 页面内全精度放大层（缩放按钮/滚轮/1:1 原始尺寸）。
+- [Yu-tao-Li/dsh-read-image-view](https://github.com/Yu-tao-Li/dsh-read-image-view) — 在 DSH Web 和桌面版展示 read_image 结果：完整预览、多图画廊、透明棋盘格、键盘与触控缩放，使用会话授权加载。已验证 DSH Desktop 0.11.1 / Harness 0.2.0-rc.2。
 - [yu-wenchao/dsh-free-models-hub](https://github.com/yu-wenchao/dsh-free-models-hub) — DSH Web UI 右侧的免费模型抽屉面板，分页浏览免费模型，可一键或整页批量把模型写入自定义提供方，并附带本地多 Key 轮换代理。
 - [yuanbaoerer/dsh-decision-split](https://github.com/yuanbaoerer/dsh-decision-split) — 决策分屏视图：主窗口显示决策摘要卡片，右侧详情栏独立滚动展示完整方案，边看全文边写决策，一键回传 agent。
 - [yuanyiHY/deepseek-media-gallery](https://github.com/yuanyiHY/deepseek-media-gallery) — 侧边栏按钮打开半透明弹窗，浏览、预览、下载和删除生成的图片与视频；设置页可改图片目录、记录目录与下载目录。
