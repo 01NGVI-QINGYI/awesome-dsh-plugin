@@ -4064,6 +4064,7 @@ dsh plugin --profile web add dshmarket
 - [guo6x/dsh-housekeeper](https://github.com/guo6x/dsh-housekeeper) — agent 的环境管家：工具链台账（node/pnpm/git/gh/ffmpeg/浏览器）、缓存与临时目录扫描 + 白名单安全一键清理、机器规则（AGENTS.md）编辑，全在 Web GUI 设置面板。
 - [guo6x/dsh-shipcheck](https://github.com/guo6x/dsh-shipcheck) — 证据优先的前端交付验收：用真实浏览器检查内容、无障碍、运行时错误、网络失败与结构基线，并保存截图报告。
 - [gwsbhqt/dsh-insight](https://github.com/gwsbhqt/dsh-insight) — 只读的 profile 洞察面板：同一份数据的五个视图——配置层、插件树、服务、工具名、模型，每一条都给出被哪一层插入或禁用、此刻在不在跑。
+- [Han-1413141/dsh-visual-edit](https://github.com/Han-1413141/dsh-visual-edit) — 在 DSH 预览中点选元素、画箭头或框选区域，将修改意见加入对话，并查看更新前后的截图对比。
 - [haotian-lu-prog/dsh-update-plugin#plugin](https://github.com/haotian-lu-prog/dsh-update-plugin/tree/main/plugin) — 在设置里加入「检查更新」入口和右侧边栏卡片，用于更新 DSH CLI 和所有 profile 插件；支持 npm 频道（auto/stable/next/alpha）、最小释出时间、备份、一键回滚，以及用于验证角标和浏览器通知的测试提醒。
 - [harde1/dsh-xcodebuild](https://github.com/harde1/dsh-xcodebuild) — 在 harness 中通过 xcodebuild 编译、测试、归档并运行 iOS 或 macOS 工程——实时可过滤的构建日志、从工程自身读取的 scheme 与目标设备选择，以及模拟器与 USB 真机的日志流，包含经 libimobiledevice 支持的 iOS 16 及更早设备，其 app 日志在设备锁屏时依然可读。仅限 macOS。
 - [Harzva/dsh-control-plane](https://github.com/Harzva/dsh-control-plane) — 面向本地优先管理多个 DSH Runtime、Profile、Preset、Session、计划和知识引用的控制平面。
