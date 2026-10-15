@@ -2714,13 +2714,18 @@ dsh plugin --profile web add dshmarket
 - [Yu-tao-Li/dsh-reference-checker](https://github.com/Yu-tao-Li/dsh-reference-checker) — 为 DeepSeek Harness 提供参考文献真实性检查：reference_checker 工具将论文（PDF/BibTeX/tex/文本/粘贴列表）的每条文献对照 Crossref / OpenAlex / arXiv 核对，逐条判定 found / partial / not_found / error，并按输入样式生成可直接替换回论文的更正版引用（APA、GB/T 7714、IEEE、Vancouver、MLA、Chicago、Harvard、ACS、BibTeX）。
 - [YuanyuanMa03/dsh-funnel](https://github.com/YuanyuanMa03/dsh-funnel) — 摄入时点的工具输出治理：保留 error/warning 行与头尾，全文落盘留指针供模型按需读回；覆盖所有返回文本的工具，小结果原样通过。
 - [YUEEEEY/dsh-desktop-tools](https://github.com/YUEEEEY/dsh-desktop-tools) — dsh 环境管理插件：自动获取 Rust/Tauri 桌面宿主（按系统从 dsh-desktop-host 下载，无 Release 时源码构建），运行时一键更新、Windows 平台兼容自动适配、DeepSeek 官方计费，并内置工作区代码编辑器。
+- [yuehancn/dsh-tool-archive](https://github.com/yuehancn/dsh-tool-archive) — 把目录打成确定性 tar、不解包就列出内容、解包时逐个成员拒绝任何能写到目标目录之外的名字、并用 SHA-256 核对「解出来的东西 == 打进去的东西」。零外部依赖 —— tar 格式在这个插件里自己写、自己读。读比写更宽容是刻意的：读方的职责是如实报告归档说了什么，写方则绝不能写出自己读不回来的东西。tar 没有中央索引，所以遍历必须跟踪「有没有走到归档结束标记」—— 少了这一步，一个被截断的文件校验和照样正确、照样被读成完整。
+- [yuehancn/dsh-tool-browser](https://github.com/yuehancn/dsh-tool-browser) — 打开页面、按页面真正需要的方式等待、抽出可读正文、截图。Playwright 是可选依赖：没装时退回静态抓取并在结果里明确说明，因为「JavaScript 从未执行」的页面意味着的东西和渲染过的不同。正文靠给候选子树打正文密度分来选，而不是相信标签名，所以容器不会因为「包含的文档更多」而赢过它里面的正文。
 - [yuehancn/dsh-tool-comfyui](https://github.com/yuehancn/dsh-tool-comfyui) — 在对话里直接调用本机或局域网的 ComfyUI 机队出图，支持工作流模板、机队健康检查与队列控制。
 - [yuehancn/dsh-tool-epub](https://github.com/yuehancn/dsh-tool-epub) — 读、造、拆 EPUB 3 电子书，零外部依赖 —— ZIP 读写器与 XML 扫描器均为自建。可体检元数据/阅读顺序/目录并点出结构问题，从章节拼出一本合规的书，或把已有的书拆回逐章 HTML。
 - [yuehancn/dsh-tool-gzh-publisher](https://github.com/yuehancn/dsh-tool-gzh-publisher) — 公众号发布管线：先按发布闸门校验草稿，再推送到草稿箱。
 - [yuehancn/dsh-tool-invoice](https://github.com/yuehancn/dsh-tool-invoice) — 从文本中提取发票号码、日期、购销方、税号与金额/税额/合计，并验算「金额 + 税额 = 价税合计」是否成立，对不上就报出来。
 - [yuehancn/dsh-tool-media](https://github.com/yuehancn/dsh-tool-media) — 把本机 ffmpeg 包成六个结构化工具：探流、转码裁剪、均匀抽帧、扒音轨，以及按目标体积做两遍编码压缩。
+- [yuehancn/dsh-tool-mining](https://github.com/yuehancn/dsh-tool-mining) — 把 GitHub 仓库的原始计数变成一句能站住的判断 —— 贡献者集中度与 bus factor（附单作者文件）、合并时长中位数与均值并列（让离群值可见而不是被隐藏）、以及排掉 PR 与 draft 之后的 issue backlog。只用公开 REST API、不装 SDK，分页被截断时明确说明而非伪装完整。
+- [yuehancn/dsh-tool-notion](https://github.com/yuehancn/dsh-tool-notion) — Notion 区块与 Markdown 双向转换，不带 API 客户端、无外部依赖。Notion 的段落是一组富文本 run，而 Markdown 只有一个字符串 —— 所以两个方向分别是「切分」与「合并」，并不是一对互逆操作：一个方向在每个注解边界切开 run，另一个方向把相邻同注解的 run 重新合并，内容本身含反引号时自动加宽围栏。每一步有损转换都会报出来，而不是默默吞掉。
 - [yuehancn/dsh-tool-ocr](https://github.com/yuehancn/dsh-tool-ocr) — 从图片或 PDF 中抽取文字，电子版直接读文字层，扫描件自动转交已配置的 OCR 引擎。
 - [yuehancn/dsh-tool-podcast](https://github.com/yuehancn/dsh-tool-podcast) — 用本机 ffmpeg 把一期录音做成可发布的播客 —— 从静音里检出章节断点、按断点切段、两遍算法把响度归一化到广播目标，并写出 iTunes 兼容的 RSS（enclosure 字节长度实测自磁盘，避免客户端静默丢弃）。
+- [yuehancn/dsh-tool-protobuf](https://github.com/yuehancn/dsh-tool-protobuf) — 无需安装 protoc 即可阅读、审查和对比 Protocol Buffer 定义：零依赖 .proto 解析器，提供六个工具（status / outline / describe / diff / audit / next_number）。diff 会把每处改动分级为 breaking、risky、additive 并说明其线上格式后果；audit 能发现 protoc 接受但审查者不该放过的隐患——重复或非法字段编号、与 reserved 区间冲突、类型无法解析，以及高水位线以下未声明的空洞。
 - [yuehancn/dsh-tool-qrcode](https://github.com/yuehancn/dsh-tool-qrcode) — 内置从零实现的 ISO/IEC 18004 编码器，无需任何外部程序即可出码；出图前先算清楚版本与纠错余量，也能把已有二维码读回文本。
 - [yuehancn/dsh-tool-subtitle](https://github.com/yuehancn/dsh-tool-subtitle) — 读写互转 SRT/WebVTT/ASS 三种字幕并校正时间轴，出片前体检过长或读不过来的 cue，还能用已配置的识别引擎把音视频转成字幕。
 - [yuioi666/dsh-conversation-nav-dots](https://github.com/yuioi666/dsh-conversation-nav-dots) — DSH 网页端对话导航点 — 快速跳转用户消息。
