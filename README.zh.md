@@ -723,6 +723,7 @@ dsh plugin --profile web add dshmarket
 - [SUZUNAMI/dsh-workspace-hide](https://github.com/SUZUNAMI/dsh-workspace-hide) — 在 DSH 侧边栏隐藏指定工作区，并把它的会话一并归档，避免这些会话溢出到「未分组」列表。纯本地、完全可逆；装了 dsh-archive-manager 时执行真归档且可撤销，未装时退化为纯显示层。随时可在设置页恢复。
 - [swenbo1-web/dsh-web-search-button](https://github.com/swenbo1-web/dsh-web-search-button) — DeepSeek Harness 的直接联网搜索按钮与 /search 斜杠命令插件。
 - [swiftlc/dsh-annotation](https://github.com/swiftlc/dsh-annotation) — 为 dsh Web 输入框增加选中文字标注工具和标注 chip。
+- [swyc520/dsh-plugin-model-whitelist](https://github.com/swyc520/dsh-plugin-model-whitelist) — 在设置里逐个勾选要显示的模型，未勾选的从模型选择器菜单中隐藏；provider 分组可在设置面板中折叠。
 - [syx2bzd/dsh-ricewhale](https://github.com/syx2bzd/dsh-ricewhale) — DSH Web 界面的「鲸鱼女仆」物理挂件：拖拽投掷、吃 token 币计分、每满 500 个 token 冒一碗白饭。
 - [taxueseek/dsh-files](https://github.com/taxueseek/dsh-files) — 文件上传（彩色附件卡片、会话隔离存储、sha256 去重、TTL 清扫）+ 内容嗅探的 read_document 文档读取（PDF/DOCX/XLSX/TXT）。
 - [tcgbp/dock-flash](https://github.com/tcgbp/dock-flash) — DSH Web 的快捷控制面板：可停靠或浮动，开关项可由其它插件通过 quickControl 服务注册；内置主题/皮肤切换与细粒度 NO_PROXY 代理控制，可搭配 dock-base 或独立运行。
