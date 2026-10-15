@@ -603,6 +603,7 @@ dsh plugin --profile web add dshmarket
 - [openAGFS/dsh-agfs](https://github.com/openAGFS/dsh-agfs) — 文件浏览器 Web 应用：React 前端与 REST API 由宿主 webserver 托管，/dsh-agfs 命令自动定位当前工作区，附 browse_files 模型工具。
 - [opencues/opencues#integrations-dsh](https://github.com/opencues/opencues/tree/master/integrations/dsh) — 在输入框内提供同义词替换与以下划线触发的补全：一行以 _ 结尾即自动补全，拼写错误在输入时即时标出。它走 dsh 已配置好的模型，因此无需额外的 API key。
 - [openma-ai/Martty#npm](https://github.com/openma-ai/Martty/tree/main/npm) — 面向 DeepSeek Harness 的 Rust/ratatui Agent TUI，支持流式工具调用、子代理、持久会话和可扩展的 Cordis 客户端界面。
+- [orphiczhou/dsh-region-probe](https://github.com/orphiczhou/dsh-region-probe) — 只读的 Cordis Inspect provider，让 agent 能看见自己正在驱动的界面：outline() 报告运行中的壳实际渲染了哪些 UI 区域，含占用、几何与当前/历史失败状态；snapshot() 按 slot key 或 CSS 选择器返回某区域的渲染节点树（标签、角色、aria-label、自身文本、几何、计算样式）；failures() 保留「哪些区域渲染失败过、是否已恢复」的历史。寻址用壳为每个 slot 已写好的锚点，无需区域清单，也覆盖以后新增或其他插件贡献的区域。无界面、无工具、无依赖、不发网络请求。
 - [orphiczhou/dsh-session-tree](https://github.com/orphiczhou/dsh-session-tree) — 把左侧栏的会话列表替换为完整会话树：展示全部会话及其多层子智能体，点击节点即可进入该会话的多轮对话；并附带 tree_send 工具，可向树中任意可续接的子会话投递消息。
 - [oxlyn/dsh-flyout-sidebar](https://github.com/oxlyn/dsh-flyout-sidebar) — 可弹出侧边栏：文件树、Git 未提交变更列表与多标签文件/diff 预览，一键弹出为独立浏览器标签页。
 - [Paimonshen/dsh-coding-plugin](https://github.com/Paimonshen/dsh-coding-plugin) — 编程学习悬浮面板：编辑并运行 Python/JavaScript/TypeScript/PowerShell（含退出码与耗时），JSON 课程包关卡自动评判并可导出进度，提供 Markdown 笔记与代码片段库；代码分析以用户消息直投当前对话，由对话主模型直接输出。
@@ -3058,6 +3059,7 @@ dsh plugin --profile web add dshmarket
 - [TaurusWood/dsh-plugin-appshot](https://github.com/TaurusWood/dsh-plugin-appshot) — DSH 版 Codex Appshots：全局快捷键精准捕获当前工作窗口，零摩擦挂载至 Composer 作为上下文向 Agent 提问。
 - [taxueseek/taxue-dsh-artisan](https://github.com/taxueseek/taxue-dsh-artisan) — DSH 一体化视觉创作工具链：提示词反推与审计优化，多供应商生图，支持异步后台出图。
 - [TZHR-invest/dsh-plugins#dsh-vision-tool](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-vision) — Agent 可调用的视觉工具：通过你配置的任意 OpenAI 兼容视觉端点描述本地图片，支持多模型交叉核对，不内置任何密钥。
+- [vitas/dsh-ocr-free](https://github.com/vitas/dsh-ocr-free) — 在 macOS 上使用 Apple Vision 的本地 OCR：从截图、照片和扫描件中读取文字，无需安装、无需联网、无需 API 密钥。
 - [wang-bool/visual-review](https://github.com/wang-bool/visual-review) — 在 DSH Web 聊天界面内联渲染粘贴/上传的图片，并让纯文本模型“看见”图片：visual_review 工具优先调用任意 OpenAI 兼容多模态 API，未配置时回退本机 Qwen3-VL。
 - [wanshichenguang/dsh-tool-vision](https://github.com/wanshichenguang/dsh-tool-vision) — 面向模型的 image_describe（识图）工具（DashScope OpenAI 兼容接口，qwen3.7-flash）+ 粘贴桥：纯文本模型会话里粘贴的图片在发送时自动转为文件路径并在聊天记录中回显，不再触发图片准入拦截。自带 DASHSCOPE_API_KEY；端点/模型/预算可配置，重定向防护 HTTP 客户端，所有 Agent 预设均可用。
 - [whiteS18/dsh-image-generation](https://github.com/whiteS18/dsh-image-generation) — 在设置中配置多个生图供应商，对话通过 image_generate 调用当前选中的模型；图片保存到工作区 generate/image，并在对话中内联显示。
