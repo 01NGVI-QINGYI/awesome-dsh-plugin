@@ -1,5 +1,5 @@
 url: https://github.com/Fnckerpoi/dsh-plugin-nexus-sdlc
-name: dsh-plugin-nexus-sdlc
+name: Fnckerpoi/dsh-plugin-nexus-sdlc
 category: workflow
 description:
   en: "Declares a spec-driven development agent preset with a Chinese persona and four static Claude Code/Codex delegation tools for planning, implementation, review and knowledge distillation; roles are prompt-guided, not an automatic state machine."
