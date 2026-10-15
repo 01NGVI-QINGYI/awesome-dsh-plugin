@@ -2716,7 +2716,10 @@ dsh plugin --profile web add dshmarket
 - [YUEEEEY/dsh-desktop-tools](https://github.com/YUEEEEY/dsh-desktop-tools) — dsh 环境管理插件：自动获取 Rust/Tauri 桌面宿主（按系统从 dsh-desktop-host 下载，无 Release 时源码构建），运行时一键更新、Windows 平台兼容自动适配、DeepSeek 官方计费，并内置工作区代码编辑器。
 - [yuehancn/dsh-tool-comfyui](https://github.com/yuehancn/dsh-tool-comfyui) — 在对话里直接调用本机或局域网的 ComfyUI 机队出图，支持工作流模板、机队健康检查与队列控制。
 - [yuehancn/dsh-tool-gzh-publisher](https://github.com/yuehancn/dsh-tool-gzh-publisher) — 公众号发布管线：先按发布闸门校验草稿，再推送到草稿箱。
+- [yuehancn/dsh-tool-invoice](https://github.com/yuehancn/dsh-tool-invoice) — 从文本中提取发票号码、日期、购销方、税号与金额/税额/合计，并验算「金额 + 税额 = 价税合计」是否成立，对不上就报出来。
+- [yuehancn/dsh-tool-media](https://github.com/yuehancn/dsh-tool-media) — 把本机 ffmpeg 包成六个结构化工具：探流、转码裁剪、均匀抽帧、扒音轨，以及按目标体积做两遍编码压缩。
 - [yuehancn/dsh-tool-ocr](https://github.com/yuehancn/dsh-tool-ocr) — 从图片或 PDF 中抽取文字，电子版直接读文字层，扫描件自动转交已配置的 OCR 引擎。
+- [yuehancn/dsh-tool-subtitle](https://github.com/yuehancn/dsh-tool-subtitle) — 读写互转 SRT/WebVTT/ASS 三种字幕并校正时间轴，出片前体检过长或读不过来的 cue，还能用已配置的识别引擎把音视频转成字幕。
 - [yuioi666/dsh-conversation-nav-dots](https://github.com/yuioi666/dsh-conversation-nav-dots) — DSH 网页端对话导航点 — 快速跳转用户消息。
 - [yuloong07-star/dsh-prompt-system](https://github.com/yuloong07-star/dsh-prompt-system) — 输入框内的提示词优化器：结合对话历史、工作区文件与会话选定模型，把草稿改写为十一节分析式提示词，支持一键撤销。
 - [yunxiyang/dsh-web-search-litellm](https://github.com/yunxiyang/dsh-web-search-litellm) — ctx.web 搜索提供方：通过 LiteLLM 代理走 OpenAI Responses API 调用 DeepSeek 原生服务端 web_search，复用 LITELLM_API_KEY，无需新密钥。
