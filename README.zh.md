@@ -4219,6 +4219,7 @@ dsh plugin --profile web add dshmarket
 - [RaulLazaro/dsh-pwa-plugin](https://github.com/RaulLazaro/dsh-pwa-plugin) — DSH 的 PWA 插件：离线支持、Service Worker 缓存，并可作为应用安装。
 - [dsh-myrules](https://github.com/Relistencode/dsh-extension-hub/tree/main/packages/dsh-myrules) — 在设置页的「个性化」页编辑此主机全局指令（~/.dsh/AGENTS.md），此机器上的所有会话都会应用。
 - [rj-jiangyichen/dsh-rules](https://github.com/rj-jiangyichen/dsh-rules) — 类 Claude Code rules.md 的规则提示词：按智能体读取或编辑文件的 glob 匹配自动激活规则文档，支持提示词注入与排序。
+- [ruanimal/dsh-bash-env](https://github.com/ruanimal/dsh-bash-env) — 替换内置 bash 执行器，按每条命令的工作目录解析环境：可配置的 PATH 追加、Python venv 自动激活与 mise shims，并在 Web UI 设置中提供独立分区。
 - [ruby1304/dsh-preset-anchored-standard](https://github.com/ruby1304/dsh-preset-anchored-standard) — Minimal 锚定的 agent preset：request #1 仅保留真实 bash + str_replace_editor 工具对并剥离自动注入上下文，晋升后开放完整 Standard 工具目录，并注入一次性后台 job 提示纠正 sleep 前台轮询惯性。
 - [runcat-tommy/dsh-plugin-runcat-inventory](https://github.com/runcat-tommy/dsh-plugin-runcat-inventory) — DSH 插件总览（逃咪）：以表格视图管理已安装插件，支持状态过滤、HMR 热生效的启停开关、配置查看/复制、卸载与 npm 更新提醒。
 - [ryubyte/dsh-a2a](https://github.com/ryubyte/dsh-a2a) — 为 DSH 实现 Agent2Agent 协议 v1.0：以标准 A2A server 接收其他 Agent 的调用，以 A2A client 连接远程 Agent，并在可视化设置页统一管理连接。
@@ -4256,6 +4257,7 @@ dsh plugin --profile web add dshmarket
 - [weijiafu14/pi2dsh](https://github.com/weijiafu14/pi2dsh) — Pi Host ABI 兼容引擎：装一次之后，npm 上的 Pi 扩展原包经 `dsh plugin add <pi-package>` 直接作为 DSH 原生插件挂载。已在官方 DSH 上端到端验证 pi-mcp-adapter（完整 MCP 管理面：OAuth、resources、prompts、MCP Apps、elicitation、sampling）、@tintinweb/pi-subagents、pi-code、pi-hermes-memory、pi-background-tasks；`pi2dsh inspect` 在安装前报告一个包的兼容情况。
 - [william-jin-cmu/dsh-evolve](https://github.com/william-jin-cmu/dsh-evolve) — 自进化：agent 在会话内给自己热挂载/卸载持久化插件。
 - [wiyi/dsh-web-service-manager](https://github.com/wiyi/dsh-web-service-manager) — 在设置面板中管理 DSH Web 服务:状态、版本、重启、停止与一键更新。
+- [wjvalue/dsh-mac-keep-awake](https://github.com/wjvalue/dsh-mac-keep-awake) — 仅 macOS：任意 DSH 会话运行期间持有 PreventUserIdleSystemSleep 断言（caffeinate -i -w <宿主 pid>），最后一个会话结束后释放，长时间回合不会因空闲休眠被切断；屏幕仍可正常息屏。它会一直持有跨过 maintenance 阶段——该阶段 Agent.status 报 idle 而手动 /compact 正在跑，靠 compaction/start 与 compaction/end 事件兜住。每 60 秒与 ctx.agents.list() 对账，插件热重载时已在运行的会话立即被接管，不必等到下一个回合边界。持有失败按指数退避重试、上限 60 秒且永不放弃；释放时先 SIGTERM，2 秒未退出升级 SIGKILL；带 -w，宿主崩溃时 caffeinate 自行退出。无前端半身，通过 profile patch 配置。共 51 个测试，其中 2 个在真机上直接读 pmset -g assertions。
 - [wjw99830/dsh-plugin-noema](https://github.com/wjw99830/dsh-plugin-noema) — 在 Web UI 中展示每轮任务前后的圈复杂度、认知复杂度和最大嵌套深度变化，支持 TypeScript、Python 和 Go，可展开文件和函数查看详情，帮助确定代码审查重点。
 - [WM-CODER/custom-first-control-prompt](https://github.com/WM-CODER/custom-first-control-prompt) — 通过流拦截将部署级系统提示词段落与参考对话注入每次对话请求，附带 Web 设置面板。
 - [WODE25500/dsh-az](https://github.com/WODE25500/dsh-az) — Azure 资源管理：查询/展示资源、部署 Bicep/ARM 模板、查看活动日志。
