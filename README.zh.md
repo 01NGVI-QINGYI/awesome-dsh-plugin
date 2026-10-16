@@ -1384,6 +1384,7 @@ dsh plugin --profile web add dshmarket
 - [11zld22/dsh-model-info-fill](https://github.com/11zld22/dsh-model-info-fill) — 按模型名从 models.dev 补全自定义模型缺失的上下文、输出上限、思考档位和图片能力，并列出未匹配模型供手改。
 - [1624318455/dsh-plugin-adapter](https://github.com/1624318455/dsh-plugin-adapter) — 将 OpenCode Zen 免费模型接入 DeepSeek Harness，无需 API Key，并跟踪网关兼容性。
 - [2404723600/dsh-router-loomy](https://github.com/2404723600/dsh-router-loomy) — 把讯飞 Loomy 云端通道作为 OpenAI 兼容供应商接入 dsh-router，提供模型列表与流式对话补全。
+- [A42Null/dsh-opencode-zen-plugin](https://github.com/A42Null/dsh-opencode-zen-plugin) — 为 DeepSeek Harness 接入 OpenCode Console (Zen) 模型：在「设置 → 插件」填入 Console API Key 后即可选用 Console 的对话模型，模型目录自动同步，每个模型按官方文档路由到对应端点，免费 *-free 模型默认不列出（它们只能在 OpenCode 客户端内运行）。
 - [a981008/dsh-switch](https://github.com/a981008/dsh-switch) — 把 cc-switch 的供应商与模型在保存的瞬间镜像进 DSH，并在输入框和设置卡片里显示各供应商的套餐窗口、账户余额或自定义用量脚本的结果。
 - [aa2246740/dsh-antigravity-oauth](https://github.com/aa2246740/dsh-antigravity-oauth) — 提供独立账户存储的非官方 Gemini Cloud Code Assist OAuth 接入，存在封号风险。
 - [aa2246740/dsh-model-fusion](https://github.com/aa2246740/dsh-model-fusion) — 提供由 Lead 规划与审查、Sidekick 执行代码修改的组合模型线路。
