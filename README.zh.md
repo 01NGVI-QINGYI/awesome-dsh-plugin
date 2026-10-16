@@ -1339,6 +1339,7 @@ dsh plugin --profile web add dshmarket
 - [lengzhanbao/dsh-raiden-theme](https://github.com/lengzhanbao/dsh-raiden-theme) — 紫金亚克力 DSH Web 主题，含浅色与深色舞台背景、描边对话框、工作区吉祥物与可选 Raiden Agent 预设。
 - [lengzhanbao/dsh-taffy-theme](https://github.com/lengzhanbao/dsh-taffy-theme) — 粉金亚克力 DSH Web 主题，含浅色花房与深色舞台背景、粉金对话框、塔菲立绘装饰与可选 Agent 预设。
 - [Lhy723/dsh-neu-theme](https://github.com/Lhy723/dsh-neu-theme) — DSH Web 轻拟物主题：提供浅色与深色配色、环境光影、材质阴影、纹理、磨砂玻璃表面与微交互。
+- [liceses/dsh-wallpaper-rotator#wallpaper-rotator](https://github.com/liceses/dsh-wallpaper-rotator/tree/main/wallpaper-rotator) — 按设定间隔从指定文件夹轮换 DSH 应用背景壁纸（带交叉淡化）；未配置文件夹时使用随插件分发的 4 张 SVG 渐变壁纸，并提供背景不透明度、壁纸压暗、毛玻璃模糊与文字阴影四个可读性调节，让面板与文字在花哨的图上仍然看得清。
 - [Lichtspur/deepseek-style-theme](https://github.com/Lichtspur/deepseek-style-theme) — 为 dsh web GUI 复刻 DeepSeek 官网风格的主题皮肤：流体粒子背景、玻璃拟态侧边栏与输入框、运行中子代理面板与 DSTT 高峰时段配色。
 - [lilcandi/dsh-any-background-plus](https://github.com/lilcandi/dsh-any-background-plus) — dsh-any-background 的增强分支。v0.4.0 起的改动为本 fork 自作，新增左右双图轮播：同一轮播在窗口两侧各推进一步，以绝对中心为分界，壁纸不再被会话区完全挡住。两条车道还可各读一个文件夹（左右各一），共用同一轮播频率与模式，左右边缘淡化效果完全一致。
 - [lildanger/dsh-skin-win2000](https://github.com/lildanger/dsh-skin-win2000) — 给 DSH Web GUI 换上 Windows 2000 桌面外观：按度量表还原的灰色控件、双色渐变标题栏、1px 立体边框、直角、16px 滚动条，以及由插件自身路由提供的点阵字体。
@@ -1481,6 +1482,7 @@ dsh plugin --profile web add dshmarket
 - [Bazley13/dsh-multi-model-orchestrator](https://github.com/Bazley13/dsh-multi-model-orchestrator) — 多模型主脑编排器：主模型将复杂任务拆解，按各模型优劣分派给 GLM / Kimi / Qwen 子代理执行，并按模型统计 token 用量。
 - [beijingwahw/dsh-proactive](https://github.com/beijingwahw/dsh-proactive) — 主动式多模型协同调度插件：多源信号接入（去重与紧急度排序），execute/defer/dismiss/ask-user 四级决策引擎，DAG 计划生成与多模型并行执行，质量反思自动重试与切换模型，任务模式与经验教训长期记忆，以及遗传算法策略进化（沙盒评估、金丝雀发布）。
 - [bill277048-hash/DSH-model-router](https://github.com/bill277048-hash/DSH-model-router) — DeepSeek Harness 多供应商模型路由插件：规则路由 + 首 token 前无感故障切换 + cooldown 熔断 + 用量记账 + 状态接口。
+- [bitxeno/dsh-magpie-connect](https://github.com/bitxeno/dsh-magpie-connect) — 把 Magpie 网关的模型接入 DSH 选择器，支持模型显隐管理、图片输入与思考档位。
 - [boe1900/owndsh#owndsh-plugin](https://github.com/boe1900/owndsh/tree/main/plugin/packages/bundle) — 早期开发中的团队管理插件，将 DeepSeek Harness 接入独立部署的自托管 OwnDsh 服务端，提供团队身份、模型授权、配额与用量审计。
 - [Boomerangz/dsh-openrouter-live](https://github.com/Boomerangz/dsh-openrouter-live) — 读取 OpenRouter 实时 /models 列表的模型提供商，新模型无需等待 harness 发版即可出现：模型按名称排序并显示输入/输出价格，按模型提供思考档位、图片输入、reasoning_details 回放、Anthropic 提示缓存，并按 OpenRouter usage.cost 统计本会话（含子代理）的实际花费，显示在 Web 输入框下方并可用 /cost 查看。
 - [BruceLanLan/dsh-tier-router](https://github.com/BruceLanLan/dsh-tier-router) — 双档模型路由：强档负责规划/咨询/评审、弱档负责实现；含计划模式自动路由、高危操作守卫、失败自动升级与子代理分层。
@@ -1656,6 +1658,7 @@ dsh plugin --profile web add dshmarket
 - [TikaFlow/dsh-model-fix](https://github.com/TikaFlow/dsh-model-fix) — 给非官方（自定义）提供方的模型自动填充推理级别、最大上下文、输出上限与图片模态等参数（数据来自 models.dev），并提供兼容性提升、记住推理级别等用户体验优化。
 - [tonylee2022/dsh-xai-oauth](https://github.com/tonylee2022/dsh-xai-oauth) — 用设备码 OAuth 登录 xAI Grok 订阅，自动刷新访问令牌，并作为 xai 路由凭据使用，无需 API key。
 - [troytse/dsh-plugin-subagent-roles](https://github.com/troytse/dsh-plugin-subagent-roles) — 用文件定义子代理角色：角色放在项目级与全局级 .dsh/roles 目录，委派方每个角色只看到一行目录，子代理可见的工具由角色自己的工具策略决定。
+- [uio-o/dsh-model-control](https://github.com/uio-o/dsh-model-control) — 接管输入框的模型座位并新增模型管理页：增改删 llm-pi-ai 渠道、挑选端点里的哪些模型进入本软件、按模型声明思考档位与能力。
 - [upJiang/dsh-ccswitch](https://github.com/upJiang/dsh-ccswitch) — 将 CC Switch 中的 provider 和模型接入 DeepSeek Harness，并支持 provider 筛选和模型名称搜索。
 - [V1ki/dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) — 把 ChatGPT（Codex）、Claude、Grok 订阅当作 DeepSeek Harness 的 LLM 提供方：设置页登录、模型目录、用量展示，以及 image_generate、video_generate 与 x_search 工具。
 - [vitas/dsh-model-pricing](https://github.com/vitas/dsh-model-pricing) — DSH 设置页中的模型价格表：约 7,250 个模型 / 213 个提供商（叠加本地路由目录），诚实的最低标价比较、按实际路由计价的会话成本、缓存泄漏归因，以及经验证的促销信息源。
@@ -5086,6 +5089,7 @@ dsh plugin --profile web add dshmarket
 - [lhh010/dsh-minigames](https://github.com/lhh010/dsh-minigames) — 右侧小游戏面板：18 款离线小游戏，等模型回复时的摸鱼神器。
 - [liang-today/dsh-liangxiang](https://github.com/liang-today/dsh-liangxiang) — 用 DSH 烧掉的 Token 凝成香火，花一炷给今日梁案投夯或拉；梁案每日更新，梁位决定今日梁子，日终收入梁祠。
 - [lianzhimanye/dsh-bard-0.03](https://github.com/lianzhimanye/dsh-bard-0.03) — DeepSeek Harness 角色扮演插件：导入 SillyTavern 角色卡（JSON/PNG）与世界书（lorebook），为角色绑定 DSH 技能，并注册为原生 agent preset。
+- [liceses/dsh-cosplay](https://github.com/liceses/dsh-cosplay) — 给 DeepSeek Harness 的角色卡：把人设注入系统提示词，或用规则卡在模型看到之前改写用户消息。自带预设卡库、含立绘的单文件卡包导入导出，以及会话区的「角色」页签。
 - [linconz/agentduel-dsh](https://github.com/linconz/agentduel-dsh) — AgentDuel 是一款代码对战游戏，通过这款插件，在 DSH 内部完成整个游戏过程，实现死斗角色与夺旗团队、提交 Agent 代码、发起战斗、观看回放，并通过 DSH 会话依据战果继续优化 Agent。
 - [Little-Star888/dsh-pelican](https://github.com/Little-Star888/dsh-pelican) — 右下角鹈鹕环海骑行 SVG 动画，随代理状态在思考/完成间切换，回复完成时播放提示音并可选发送系统通知。
 - [liuwenji007/dsh-muyu](https://github.com/liuwenji007/dsh-muyu) — 右下角电子木鱼，默认是鲸鱼娘图包：敲头记功德，模型忙碌时自动敲；功德按会话存本机，可换自定义图源。
