@@ -1494,6 +1494,7 @@ dsh plugin --profile web add dshmarket
 - [CARVIN94/dsh-router-traework](https://github.com/CARVIN94/dsh-router-traework) — dsh-router 的 TRAE SOLO 供应商插件，移植自 traework2api。提供 traework 供应商这一免费 SOLO 聊天通道，并向 dsh-router 核心上报单账号状态。
 - [Cci-65/deepseek-harness-plugin](https://github.com/Cci-65/deepseek-harness-plugin) — 为第三方模型配置推理强度档位，并在输入栏提供模型与强度选择器。
 - [chen704290901chen/dsh-newapi-video](https://github.com/chen704290901chen/dsh-newapi-video) — 在对话中用 @ 引用素材调用 new-api 中转站的视频大模型生成视频，支持 Seedance 2.0 与快乐马的文生视频和图生视频，覆盖四种中转协议。
+- [chengshenyangtai/dsh-workbuddy-trae-qoder-connect](https://github.com/chengshenyangtai/dsh-workbuddy-trae-qoder-connect) — 一个 DSH 插件把 WorkBuddy（个人多账号、企业版与国际版 WorkBuddy AI）、Qoder CN、Trae CN 的模型聚合进同一个模型选择器，共用一套对话历史，支持积分倍率、逐模型思考档位、国际版上游声明的最大上下文窗口，并在渠道有签到活动时自动领取。
 - [converk/dsh-tweaks#model-capabilities](https://github.com/converk/dsh-tweaks/tree/main/plugins/model-capabilities) — 在「设置 → 模型」的模型行里补上思考强度档位（llm-pi-ai，含 OpenAI / Anthropic 协议预置）、多模态开关和 1M/128K 上下文与最大输出快捷填入。
 - [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) — 将 WorkBuddy 桌面 App 包含的模型自动接入 DeepSeek Harness，在 DSH 对话窗口里零配置使用。
 - [CREAIT-nl/dsh-plugins#gen-limit](https://github.com/CREAIT-nl/dsh-plugins/tree/main/gen-limit) — 按提供方/模型限制并发生成，并附带设置卡片：限定同时进行流式生成的会话数，在流式调用与子代理派生两处强制执行；超出上限的扇出会进入 FIFO 队列等待，而不是直接失败。
@@ -5107,6 +5108,7 @@ dsh plugin --profile web add dshmarket
 - [lianzhimanye/dsh-bard-0.03](https://github.com/lianzhimanye/dsh-bard-0.03) — DeepSeek Harness 角色扮演插件：导入 SillyTavern 角色卡（JSON/PNG）与世界书（lorebook），为角色绑定 DSH 技能，并注册为原生 agent preset。
 - [liceses/dsh-cosplay](https://github.com/liceses/dsh-cosplay) — 给 DeepSeek Harness 的角色卡：把人设注入系统提示词，或用规则卡在模型看到之前改写用户消息。自带预设卡库、含立绘的单文件卡包导入导出，以及会话区的「角色」页签。
 - [linconz/agentduel-dsh](https://github.com/linconz/agentduel-dsh) — AgentDuel 是一款代码对战游戏，通过这款插件，在 DSH 内部完成整个游戏过程，实现死斗角色与夺旗团队、提交 Agent 代码、发起战斗、观看回放，并通过 DSH 会话依据战果继续优化 Agent。
+- [Link258QAQ/dsh-plugin-genshin-launch](https://github.com/Link258QAQ/dsh-plugin-genshin-launch) — 每次启动 DSH 都会识别 GUI 端口，并把《原神》启动器安装包下载到桌面；体积安全闸会把与预期约 224MB 相差超过 50MB 的链接整条拒绝，下载失败则退化为打开官方下载页。
 - [Little-Star888/dsh-pelican](https://github.com/Little-Star888/dsh-pelican) — 右下角鹈鹕环海骑行 SVG 动画，随代理状态在思考/完成间切换，回复完成时播放提示音并可选发送系统通知。
 - [liuwenji007/dsh-muyu](https://github.com/liuwenji007/dsh-muyu) — 右下角电子木鱼，默认是鲸鱼娘图包：敲头记功德，模型忙碌时自动敲；功德按会话存本机，可换自定义图源。
 - [Lolancier/v-manager-dsh-pet](https://github.com/Lolancier/v-manager-dsh-pet) — DSH Web UI 桌宠：内置 Vivi（芊芊）Live2D 形象，支持抚摸/喂食、每日小鱼干羁绊经济与情绪驱动表情。
