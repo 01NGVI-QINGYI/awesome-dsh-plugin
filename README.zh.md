@@ -891,6 +891,7 @@ dsh plugin --profile web add dshmarket
 - [yefengliu1/dsh-agent-grid](https://github.com/yefengliu1/dsh-agent-grid) — 把 DSH 侧栏换成固定的 2×4 八席看板，每席显示自己的状态、最近一次工具调用、思考与结果；设置里的开关可随时切回原生侧栏。
 - [YEYEYEYESHIFU/dsh-result-only-view](https://github.com/YEYEYEYESHIFU/dsh-result-only-view) — Web 对话「只看结果」开关：隐藏思考与工具调用过程，运行中仅保留一条实时状态行，reduced-motion 环境下恢复活动光影，中英双语。原生输入框与 dsh-split-screen 分屏面板内均可用；已适配 DSH 0.1.1 与 0.1.5。
 - [YEYEYEYESHIFU/dsh-split-screen](https://github.com/YEYEYEYESHIFU/dsh-split-screen) — DeepSeek Harness 网页端分屏工作区 - 多个会话并排聊天，面板观感与原生对话完全一致：拖拽分屏、实时会话（排队消息、面板内 ask_user/审批卡片）、面板内视图标签（Chat/Trajectory/插件视图）、Alt+T 紧凑 TUI 输入模式与面板焦点快捷键。需要 DSH 0.1.5+。
+- [yfwu2020/dsh-recent-sessions](https://github.com/yfwu2020/dsh-recent-sessions) — 在侧栏「设置」上方加一行入口，展开后最近会话以浮层压在工作区列表上方：按最后活动时间排序、每行带运行状态、高度可拖、滚动停下后自动对齐到整行。浮层不画自己的底色，展开后仍像侧栏的一部分。
 - [yfwu2020/dsh-selection-explain](https://github.com/yfwu2020/dsh-selection-explain) — 在 DSH Web 界面划词，小窗流式给出翻译，并结合这段文字所在的会话上下文解释它在这里的具体含义；面板带可回放的历史记录，也能一键升格为正式会话。
 - [yfwu2020/dsh-think-flow](https://github.com/yfwu2020/dsh-think-flow) — DSH Web 右侧栏的思维链面板：把每个会话的实时思考折成 turn → step 分组，每一步带该步的思考原文与工具调用。默认只展开最新一轮，更早的轮次收成一行；步骤按本地规则合并成阶段块，正在等工具的那一步单独标出，工具失败显示原因，思考原文按步按需取回，全轮目录在本地搜索轮次标题、用户原话与轮号，整轮可用一次模型调用生成中文标题。
 - [yicun0316/dsh-claude-slider](https://github.com/yicun0316/dsh-claude-slider) — 把推理强度下拉菜单换成可拖拽吸附的滑块，并提供 13 款 Canvas 动效，分属推进、流体、幻境、科技、质感五个家族；动效随推理档位分三阶递进解锁。客制动效可自由组合 10 种粒子形态与 8 种流动轨迹；9 款预设主题色与 Hex 拾色器让全部动效跟随变色，档位吸附音效支持两段语音、合成鸭子叫、机械微触感与本地音频文件。
@@ -1231,6 +1232,7 @@ dsh plugin --profile web add dshmarket
 
 - [0nt-one/dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin) — 新粗野主义换肤皮肤：双方案（蓝统治 / 做旧报纸）随时切换，硬阴影 + 直角 + 2px 边框结构层，浅色/深色自适应。
 - [acdsh4869/dsh-aqua-theme](https://github.com/acdsh4869/dsh-aqua-theme) — Aqua 玻璃质感主题（适配 DSH v0.2.x 与桌面端 v0.22.3+）：顶栏、侧边栏、输入框、统计行与轨迹视图悬浮在 WebGL 流体板或图片/视频壁纸上的磨砂玻璃片，云母/兼容双布局，模糊、磨砂、色调、亮度可调，海洋装饰（粒子鲸鱼、小鱼、网状交互、鼠标辉光），一键恢复默认，总开关关闭即完全还原原生界面；承 WYH66666666 原作（0.1.x）与 du-u-uck 的 0.1.1-rc.2 适配。
+- [ahian-lee/dsh-bliss-glass](https://github.com/ahian-lee/dsh-bliss-glass) — 让 XP 时代的风景壁纸与现代磨砂玻璃界面同框的主题：DeepSeek Harness Web 界面 之下的固定壁纸底板、经主题 token 应用的面板玻璃样式、支持导入自定义图片的 壁纸选择器与明暗切换按钮——桌面与移动端均可使用。
 - [AKS1st/dsh-cyber-particle](https://github.com/AKS1st/dsh-cyber-particle) — 为 DSH Web 界面提供粒子网络动态背景：全屏覆盖、点击穿透、零运行时依赖。
 - [AKS1st/ikun-theme-skin](https://github.com/AKS1st/ikun-theme-skin) — ikun 主题皮肤：星蓝昼/夜与背带裤黑金三套配色接入系统主题列表，全屏照片壁纸轮播、音乐盒与发送音效。
 - [alexfengrui/dsh-client-ui-skin-real-madrid](https://github.com/alexfengrui/dsh-client-ui-skin-real-madrid) — 皇家马德里双模式皮肤：暗色为夜场伯纳乌全景，亮色为纯白主场暗纹，队徽与 1902 背号作为背景层（非官方球迷作品）。
@@ -4880,6 +4882,7 @@ dsh plugin --profile web add dshmarket
 - [f-infinite-z/dsh-plugin-ops#dsh-plugin-ops-bundle](https://github.com/f-infinite-z/dsh-plugin-ops/tree/main/packages/bundle) — dsh 插件树的启动前体检与修复：七条静态扫描规则、启动失败后的故障归因、白名单内的可逆修复，以及带插件行管理面板和历次故障 RAG 知识库。
 - [Han-1413141/dsh-autocompose](https://github.com/Han-1413141/dsh-autocompose) — 根据任务查找并组合 DSH 插件，打开可继续对话的独立环境，或将方案中的插件安装到当前配置。
 - [Harzva/dsh-cli-store](https://github.com/Harzva/dsh-cli-store) — 包含 64 个条目的外部 CLI 清单，支持受限公开来源发现，并通过 DSH 工具和独立命令行提供受保护的包管理器或官方手动安装。
+- [HGT158/dsh-plugin-share](https://github.com/HGT158/dsh-plugin-share) — 把一套 DSH 插件变成一段可粘贴的分享码，别人贴进去就能逐条安装，也能生成二维码带到手机上。
 - [hoyyang/dsh-mall](https://github.com/hoyyang/dsh-mall) — DeepSeek Harness 内完整的插件商场：每 2 小时刷新 GitHub #dsh-plugin 全量目录，支持浏览、搜索与评分；AI 装前审查给出装/谨慎/别装结论，五维评分雷达图，九语言界面，编辑精选与个性化推荐，一键安装/更新/回退及全局任务面板，并内置 /dsh-mall skill 在会话中发现插件。
 - [huguangyu666/dsh-store](https://github.com/huguangyu666/dsh-store) — dsh 插件商店：npm 权威目录 + awesome 精选（550+ 插件、11 分类）、dsh 字段质量验证、官方 `dsh plugin add/remove` 一键安装，侧边栏与设置页入口。
 - [icefall7/dsh-plugin-scout](https://github.com/icefall7/dsh-plugin-scout) — 侦察 deepseek-harness 官方仓库与所有 dsh-plugin topic 仓库，发现与目标相关的 harness，并判断每个值得试用、观望还是跳过。
