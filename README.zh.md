@@ -1924,6 +1924,7 @@ dsh plugin --profile web add dshmarket
 - [Wine-Red/dsh-prompt-stash](https://github.com/Wine-Red/dsh-prompt-stash) — 本地、按会话隔离的 LIFO 输入暂存：临时收起未完成的输入，之后安全恢复并继续编辑。
 - [Wisdoverse/dsh-inline-media-viewer-plugin](https://github.com/Wisdoverse/dsh-inline-media-viewer-plugin) — 在 DSH 对话中内联显示图像、视频和音频路径及 URL，并提供工作区受限的本地读取与可选的 ComfyUI 代理。
 - [wjj-8283/dsh-temp-workspace](https://github.com/wjj-8283/dsh-temp-workspace) — DSH web 临时工作区：一键创建一次性工作区，下次重启自动清空其全部对话（可立即/延迟删除，也可先弹确认框）。点击图钉可永久保留——文件移入所选文件夹、以文件夹名为标题、对话一并迁移，并触发真实的宿主级重启重新索引。
+- [wojiao42/dsh-space-optimizer](https://github.com/wojiao42/dsh-space-optimizer) — 侧栏里的每个任务磁盘占用账本，可勾选回收无主垃圾；会话日志绝不被裁剪。
 - [wpc0323/deepseek-web-import](https://github.com/wpc0323/deepseek-web-import) — 从设置页把 chat.deepseek.com 网页端对话导入为 DeepSeek Harness 会话，导入后可在其中继续对话。
 - [WSL043/dsh-chat-manager](https://github.com/WSL043/dsh-chat-manager) — 管理 DSH 归档聊天，支持聊天记录搜索、恢复和二次确认的安全永久删除。
 - [wsxwj123/dsh-plugins#dsh-session-manager](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-session-manager) — 会话删除（5 秒可撤销 + 回收站）与归档视图（查看、取消归档）。npm 包名 `@wsxwj123/dsh-session-manager`。
