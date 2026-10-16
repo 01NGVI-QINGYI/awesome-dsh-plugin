@@ -611,6 +611,7 @@ dsh plugin --profile web add dshmarket
 - [nikoart-liu/dsh-open-in-x](https://github.com/nikoart-liu/dsh-open-in-x) — 从 DSH Web UI 使用已安装的文件管理器、终端和受支持的编辑器打开工作区目录。
 - [ninglovegithub/dsh-workspace-combiner](https://github.com/ninglovegithub/dsh-workspace-combiner) — 多工作区管理器：把文档锚点目录与若干代码项目仓库组合进同一会话，注入绝对路径、递归文件索引、前后端端点落点索引与可选的开发规范，并把可写目录同步进沙盒。
 - [nirvanaslash/dsh-artifact-preview](https://github.com/nirvanaslash/dsh-artifact-preview) — 在对话中新增产出文件卡片行，并提供可拖拽分屏的产物预览面板，支持 Markdown、源码、CSV、JSON、图片、HTML，以及本地端口预览。
+- [Nishikinov/dsh-sidebar-settings-button](https://github.com/Nishikinov/dsh-sidebar-settings-button) — 在侧边栏顶部 Plugins 之前新增「设置」一行，点击即打开原生设置面板。
 - [Nixz0824/dsh-composer-alcove](https://github.com/Nixz0824/dsh-composer-alcove) — 阅读时把输入栏收到底部 Home 指示条，悬停预览、点击钉住或上滑还原。左右圆角弧线把原来的输入框停到两侧留白。
 - [NOirBRight/dsh-codex-sidebar](https://github.com/NOirBRight/dsh-codex-sidebar) — DSH 的 Codex 风格详情侧栏：提供 Files、Review、Browser 与 Terminal 面板、对话文件链接和 diff 统计、批注，以及 Host 管理的浏览器控制。
 - [NOirBRight/dsh-llm-assistant](https://github.com/NOirBRight/dsh-llm-assistant) — 常驻 Web 席位，背后是独立助理会话：对话、图片、提醒、值班心跳，以及按需只读引用当前任务。
@@ -2286,6 +2287,7 @@ dsh plugin --profile web add dshmarket
 - [yihefeikong-rgb/dsh-cc-haha-dream](https://github.com/yihefeikong-rgb/dsh-cc-haha-dream) — DeepSeek Harness 自动做梦插件：后台定期回顾近期会话与记忆，整合去重、更新过时、删除矛盾、修剪索引，支持 hybrid/volume 自动触发、/dream 手动执行与设置面板配置。
 - [yihefeikong-rgb/dsh-cc-haha-memory](https://github.com/yihefeikong-rgb/dsh-cc-haha-memory) — DeepSeek Harness 持久记忆插件：记忆读写/检索工具、回合自动记录、项目作用域召回注入、管理界面，可非破坏导入 Claude Code 记忆。
 - [Yiipu/dsh-agentmemory](https://github.com/Yiipu/dsh-agentmemory) — DSH ↔ agentmemory 会话记忆桥：把会话生命周期镜像到本地 agentmemory 守护进程（REST），提供 memory_recall / memory_remember 工具，并通过 agent/pre-step 按会话注入记忆上下文窗口。
+- [yiyunet/dsh-learn-skills](https://github.com/yiyunet/dsh-learn-skills) — DSH 插件：会话输入区的四入口学习流程——初始预设、收集提炼、关联升级、沉淀复用。
 - [yushenghai1106/dsh-memory-plugin](https://github.com/yushenghai1106/dsh-memory-plugin) — 为 DeepSeek Harness 提供人工记忆、自动对话保留以及图谱和向量排序召回的持久记忆插件。
 - [yuyolin/dsh-decision-log](https://github.com/yuyolin/dsh-decision-log) — DeepSeek Harness 决策日志：通过 decision_log / decision_list / decision_audit 工具把关键决策（选了什么 + 为什么）沉淀为可版本化的 DECISIONS.md，并在后续会话自动注入摘要，让决策可追溯、不重复、不推翻。
 - [zhang66633/dsh-memvault](https://github.com/zhang66633/dsh-memvault) — 把 DSH 接到本机 MemVault 记忆库：核心记忆块注入系统提示词、结束的轮次经由 MemVault 自己的管线抽取，并提供浏览、追溯、复核与重抽的面板。
@@ -2883,6 +2885,7 @@ dsh plugin --profile web add dshmarket
 - [Yijian-quiet/dsh-mol#dsh-ui](https://github.com/Yijian-quiet/dsh-mol/tree/main/dsh-ui) — DSH Web 界面里的化学工作台面板。在 Ketcher 画板上画结构（构建由脚本下载，浏览器本地渲染、不经后端），然后对本机 RDKit 直接计算，不调用模型——分子式、分子量、精确质量、logP、TPSA、氢键供体与受体、环数、Fsp3、立体中心，Lipinski 与 Veber 逐条判定、QED、PAINS/BRENK 结构警报与 Murcko 骨架，另有 SMARTS 子结构匹配、指纹相似度、格式互转、标准化与批量清洗。逆合成页签通过「JSON 进 JSON 出」的单进程协议对接可插拔后端（默认 Retro*），后端没装好时如实说明缺什么，不编造路线。实际计算由本仓库的 Python 包（rdkit）完成，需另外 pip 安装。
 - [Yinxe/deepseek-harness-plugins#mcwiki-search](https://github.com/Yinxe/deepseek-harness-plugins/tree/main/plugins/mcwiki-search) — 查询中文 Minecraft Wiki（MediaWiki API），把搜索结果与页面全文完整转换为 AI 可直接阅读的干净文本——搜索、引言、全文 Markdown、随机条目；模板、引用、图片、跨语言链接等噪声在插件内部全部清洗完毕。
 - [YiRan0/dsh-bangumi](https://github.com/YiRan0/dsh-bangumi) — DSH 追番订阅管理器：Bangumi 查番、nyaa/dmhy 搜种、qBittorrent 自动下载（RSS 判新轮询）、本地媒体库查重，附日历/进度侧边栏 GUI 与 11 个 LLM 工具（bangumi_lookup / bangumi_search / bangumi_subscribe / bangumi_unsubscribe / bangumi_list / bangumi_progress / bangumi_calendar / qb_status / qb_configure / qb_add_torrent / library_scan）。
+- [yiyunet/dsh-dingtalk-connector](https://github.com/yiyunet/dsh-dingtalk-connector) — DSH 插件：包装钉钉官方 dws CLI，读写钉钉 AI 表格，提供 10 个 dingtalk_aitable_* 工具、设置面板与定时 CSV 导出。
 - [yoursc/dsh-siyuan](https://github.com/yoursc/dsh-siyuan) — 把思源笔记（SiYuan）接入 DeepSeek Harness：17 个 siyuan_* 宿主工具，覆盖笔记本与文档列表、全文检索、SQL 查询、读取文档与块、新建与追加内容、移动与重命名文档、日记与块属性，另提供一个 Web 设置页配置思源地址、API token 与逐工具开关。
 - [Yu-tao-Li/dsh-computer-use-win](https://github.com/Yu-tao-Li/dsh-computer-use-win) — 为 DeepSeek Harness 提供 Windows 电脑操控：MCP stdio 服务器 + PowerShell UIA 后端，22 个桌面工具（UIA 树、截图、键鼠输入、OCR、窗口管理、急停保护）。
 - [Yu-tao-Li/dsh-reference-checker](https://github.com/Yu-tao-Li/dsh-reference-checker) — 为 DeepSeek Harness 提供参考文献真实性检查：reference_checker 工具将论文（PDF/BibTeX/tex/文本/粘贴列表）的每条文献对照 Crossref / OpenAlex / arXiv 核对，逐条判定 found / partial / not_found / error，并按输入样式生成可直接替换回论文的更正版引用（APA、GB/T 7714、IEEE、Vancouver、MLA、Chicago、Harvard、ACS、BibTeX）。
