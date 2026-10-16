@@ -3646,7 +3646,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) — 持久化、跨会话的多 Agent 团队房间：成员、消息总线、共享任务板与共享时间线，重启后仍然保留。
 - [PiedPiper911/dsh-workflow-canvas](https://github.com/PiedPiper911/dsh-workflow-canvas) — DSH 可视化工作流编排画布，基于 React Flow 拖拽编排工具调用、子智能体与条件分支。
 - [PPawnsir/dsh-notes-plugin#dsh-notes-plugin](https://github.com/PPawnsir/dsh-notes-plugin/tree/main/packages/dsh-notes-plugin) — DeepSeek Harness 的可治理 Agent 工作记忆层，沉淀为本地 Markdown 笔记：双模式编辑器（源码⇄富文本，支持图片），约定/资料笔记自动注入系统提示（敏感值自动脱敏），另有快照版本历史、回收站、可撤销归档、AI 整理、双链与全文搜索。兼容 DSH 0.1.7～0.2.x。
-- [PPawnsir/task-board-plugin#dsh-agent-board](https://github.com/PPawnsir/task-board-plugin/tree/main/packages/dsh-agent-board) — DeepSeek Harness 会话任务看板：主窗口把任务派发给一次性 Worker/Verifier 子代理执行与验收，支持依赖调度、管线分档、歧义上报裁决与预研上下文注入。
+- [PPawnsir/task-board-plugin#dsh-agent-board](https://github.com/PPawnsir/task-board-plugin/tree/main/packages/dsh-agent-board) — DeepSeek Harness 会话任务看板：主窗口把任务派发给一次性 Worker/Verifier 子代理执行与验收，支持依赖调度、文件级排他锁、裁决挂起冻结、里程碑进展上报与任务级 Token 消耗统计。
 - [Punky971210/dsh-punky-swarm#dsh-punky-swarm](https://github.com/Punky971210/dsh-punky-swarm/tree/main/packages/dsh-punky-swarm) — dsh 单机多子 Agent 集群治理：引擎级质量门禁拒收半成品、崩溃断点续跑不重来——给 AI 团队装上"跑不坏"的工程护栏。
 - [Q00/ouroboros#integrations/dsh-plugin](https://github.com/Q00/ouroboros/tree/main/integrations/dsh-plugin) — 通过 DSH MCP 客户端挂载 Ouroboros 的纯配置包，在 DSH 中提供 36 个涵盖需求访谈、Seed、执行、评估与演化流程的工具。
 - [QlzqQlzq/dsh-dual-agent-presets](https://github.com/QlzqQlzq/dsh-dual-agent-presets) — 安装两个可选 Agent Preset：默认不暴露 Shell 的通用 Agent，以及面向真实代码仓库的 Coding Pro。
