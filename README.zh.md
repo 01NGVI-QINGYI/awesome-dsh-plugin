@@ -1641,6 +1641,7 @@ dsh plugin --profile web add dshmarket
 - [aa2246740/dsh-compact-saviour](https://github.com/aa2246740/dsh-compact-saviour) — 使用专用模型处理上下文压缩恢复，并在原生上下文弹窗提供手动压缩。
 - [aa2246740/dsh-resume](https://github.com/aa2246740/dsh-resume) — 导入本地编程 Agent 的会话历史，在 DSH 中继续工作。
 - [Aeroscis/dsh-temptask](https://github.com/Aeroscis/dsh-temptask) — DeepSeek Harness 的临时任务模式：一键创建一次性的时间戳工作区并开会话，直接成为侧边栏原生工作区节点。
+- [agi321/dsh-temp-chat](https://github.com/agi321/dsh-temp-chat) — 用 /single-turn 与 /multi-turn 在独立子代理中作答，结果只留在当前对话，不进入主模型上下文。
 - [AKS1st/dsh-archived-conversations](https://github.com/AKS1st/dsh-archived-conversations) — 侧边栏底部的已归档对话列表，可只读预览最近消息；针对产品刻意隐藏且无法重新打开的归档会话。
 - [alchemistwu/dsh-tool-call-guard](https://github.com/alchemistwu/dsh-tool-call-guard) — 在 wire 层中性化 arguments 为非法 JSON 的 tool call，避免一次模型畸形输出让 session 在严格 OpenAI 兼容服务端上永久 400。
 - [aLIZELI/belief-merge#belief-merge](https://github.com/aLIZELI/belief-merge/tree/main/belief-merge) — 把其他会话的上下文合并进当前回合：按证据裁决冲突、前提被撤回时同步撤回结论、用信任格抵抗跨会话提示注入，并在 token 预算内打包。附带评测基准。
@@ -4434,6 +4435,7 @@ dsh plugin --profile web add dshmarket
 - [IamNewHands/dsh-approval-gate](https://github.com/IamNewHands/dsh-approval-gate) — dsh-approval-gate 的维护中 fork。判定器不可用时，确认次数已达阈值的中立操作直接自动放行，不再重复弹人工审批；审批说明由真实的沙箱模式、命令与路径生成中文。另含凭据外泄与系统路径销毁的确定性硬拒、判定输入脱敏、判定模型候选链、带操作指纹的放行规则，以及可查看 unified diff 与一键撤销的审批视图。
 - [iiiweiii/dsh-guardwall](https://github.com/iiiweiii/dsh-guardwall) — 在安装前体检本地、npm 与 GitHub 插件源码，运行时拦截命中配置阈值的高风险工具调用，审计输出中的密钥模式，并写入 HMAC 链式本地审计日志。
 - [ilharp/dsh-tool-approval](https://github.com/ilharp/dsh-tool-approval) — 手动审批模式（Manual/Ask Mode）。
+- [irisblackwood/focus-guard#core](https://github.com/irisblackwood/focus-guard/tree/main/packages/core) — 拦截 AI 编码智能体未取证就改文件、未获授权执行高危命令，并区分「被引用的危险字符串」与「真要执行的命令」。
 - [islibaodong/dsh-login](https://github.com/islibaodong/dsh-login) — 为 DSH Web 界面提供多用户登录网关：首次访问创建管理员账户，管理员在 GUI 设置面板中添加和管理用户，普通用户只能看到自己的会话，未登录访问重定向到 /login。
 - [Jiao-XXX/dsh-auto-approve](https://github.com/Jiao-XXX/dsh-auto-approve) — 在 workspace-write 与 danger-full-access 之间增加 `auto` 权限档：分类器一次性放行例行沙箱升级，危险或不确定的操作仍转人工审批。
 - [jilian-dsh/dsh-rule-engine](https://github.com/jilian-dsh/dsh-rule-engine) — dsh 规则执行引擎：解析 AGENTS.md、硬拦违反规则的工具调用、文本纠察与审计、/guard 命令、版本化文件守卫、自由区域支持（引擎跳过自由区内容）。
