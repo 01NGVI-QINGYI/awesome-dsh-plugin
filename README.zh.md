@@ -3301,6 +3301,7 @@ dsh plugin --profile web add dshmarket
 - [jetformat/dsh-plugin](https://github.com/jetformat/dsh-plugin) — 基于本地 jetformat CLI 的工具：将 DOCX、XLSX、PPTX 转为 PDF，提取文本，校验文件，以及查看、合并、抽页或渲染 PDF。需要安装 jetformat CLI。
 - [jinsiyu/dsh-code-server-app](https://github.com/jinsiyu/dsh-code-server-app) — 将code-server（VSCode网页版）打包安装到dsh内的插件，快速实现专业的文件编辑。
 - [JuntaoXiao/PDF-electronic-signature](https://github.com/JuntaoXiao/PDF-electronic-signature) — PDF 电子签名：生成手写风格签名图、在 PDF 页面盖章（图片与文字块）、并用自备的 PKCS#12 证书施加 PKCS#7/CMS 数字签名。盖章前会先把不透明签名图/印章图的底色转为透明（通过反合成保留墨色）并裁掉留白，因此印章盖在签名上不会把签名擦掉。
+- [klarkxy/dsh-plugins#dsh-dev-index](https://github.com/klarkxy/dsh-plugins/tree/main/plugins/dsh-dev-index) — 在 DSH 插件页阅读官方文档；创造模式用原生工具检索文档、查询插件 npm 元数据。
 - [kp-z/dsh-mermaid-comm](https://github.com/kp-z/dsh-mermaid-comm) — 让 AI 在开发交流中默认用 Mermaid 图表达——系统提示引导、mermaid_validate 真解析语法校验工具，以及自动修复或摘除坏图的输出闸。渲染交给 dsh-mermaid。
 - [kw78/dsh-office-tools](https://github.com/kw78/dsh-office-tools) — 面向 agent 的工作区安全 Office 工具集：创建/读取 Word、创建/读取/更新 Excel、创建/读取 PowerPoint，并支持 PNG/JPG/GIF 图片排版。
 - [LeslieWylie/dsh-md-preview](https://github.com/LeslieWylie/dsh-md-preview) — 把 Markdown 渲染为自包含的独立 HTML 页面：提供在 headless 配置下同样可用的 `md_html_render` 工具，以及在网页端浏览、预览、编辑并导出本地 `.md` 文件的抽屉；两个入口共用同一个渲染器，无运行时依赖。
@@ -3635,6 +3636,7 @@ dsh plugin --profile web add dshmarket
 - [Jesse-njx/dsh-routines](https://github.com/Jesse-njx/dsh-routines) — 定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。
 - [jiang12345-code/dsh-multi-role-debate#dsh-multi-role-debate](https://github.com/jiang12345-code/dsh-multi-role-debate/tree/main/dsh-multi-role-debate) — 多角色并行论证：并行调用真实 Codex 与 Claude，由 DSH 主会话模型（Judge）生成第三方汇总并回对话；另含单 Agent 直接对话与各角色模型自由配置。
 - [jiazz197-cmyk/omd-dsh#packages/omd-dsh](https://github.com/jiazz197-cmyk/omd-dsh/tree/main/packages/omd-dsh) — 为 DeepSeek Harness 提供 7 个 Agent 预设模式：每个模式固定工具边界、按模式路由模型，并以 fast/deep 档位委派 omd_task 子代理；含规划到执行闭环（/mode、/start-work、基于 goal 的 /ulw）与逐模式、逐档位重配模型的设置页。
+- [jidekaixin2dian/dsh-team-flow](https://github.com/jidekaixin2dian/dsh-team-flow) — 适用于 DSH 0.2.0-rc.2 起版本的 Agent Teams 预览插件，让同会话用户 Steer 结束主代理当前的 wait_agent 等待，队友继续工作，并保留原生消息领取与 Node PTC 后续执行。
 - [jiezeng2004-design/dsh-requirements-alignment](https://github.com/jiezeng2004-design/dsh-requirements-alignment) — 运行时需求漂移防护，在长任务执行过程中保持 DSH Agent 与用户确认的目标、约束和决策一致。
 - [JimChen-g/dsh-frontier-repro](https://github.com/JimChen-g/dsh-frontier-repro) — 将 arXiv、实验室官网、官方产物、硬件厂商与可选 X 信号聚合为版本化发布证据包，再以命令、产物、指标和验证者约束 claim 级复现结论。
 - [jimmyzhang219/dsh-plan-and-execute](https://github.com/jimmyzhang219/dsh-plan-and-execute) — 基于 ReactLoopAgent 的 Plan-and-Execute 编排插件，将目标拆解为可审阅的步骤并以 Web UI 卡片呈现。
