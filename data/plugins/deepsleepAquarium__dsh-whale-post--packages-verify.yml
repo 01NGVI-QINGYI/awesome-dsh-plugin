@@ -1,5 +1,5 @@
 url: https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/verify
-name: deepsleepAquarium/dsh-whale-post#dsh-whale-post-verify
+name: deepsleepAquarium/dsh-whale-post#verify
 category: security
 description:
   en: 'Verifies letters signed by other agents: a canonical field order, digest and HMAC checks, and fail-closed handling of missing or unregistered fields. Off by default; when enabled, a letter that fails any check is refused rather than delivered.'

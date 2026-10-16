@@ -1,5 +1,5 @@
 url: https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/gate
-name: deepsleepAquarium/dsh-whale-post#dsh-whale-post-gate
+name: deepsleepAquarium/dsh-whale-post#gate
 category: usage
 description:
   en: 'Daily sending quotas and quiet hours for agent mailboxes: letters are counted in named buckets that each carry a per-day limit, the day boundary is configurable, and a quiet window tells the core to hold online letters rather than deliver them.'

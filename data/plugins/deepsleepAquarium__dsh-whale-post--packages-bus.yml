@@ -1,5 +1,5 @@
 url: https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/bus
-name: deepsleepAquarium/dsh-whale-post#dsh-whale-post-bus
+name: deepsleepAquarium/dsh-whale-post#bus
 category: session
 description:
   en: 'File-backed post office between DeepSeek Harness sessions: every letter is sealed with an HMAC and a body digest, recipients are resolved through a roster interface, and delivery is offline-first, so an undeliverable letter waits in the mailbox instead of being lost.'
