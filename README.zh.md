@@ -1590,6 +1590,8 @@ dsh plugin --profile web add dshmarket
 - [lujianjun19/dsh-llm-github-copilot](https://github.com/lujianjun19/dsh-llm-github-copilot) — GitHub Copilot LLM 适配器：OAuth 设备码登录、从 Copilot API 动态发现模型、视觉模型图片输入支持（gpt-4.1、gpt-4o），以及 Chat Completions 与 Responses 双协议，按模型自动路由。
 - [MaRi23333/dsh-grok-kit](https://github.com/MaRi23333/dsh-grok-kit) — 面向符合资格的 SuperGrok 或 X Premium 订阅的非官方 Grok 集成：支持 grok-4.6 对话、主循环网页/X 搜索、共用 Grok CLI OAuth、可配模型显示，以及将 Imagine 图片保存到附件库或指定路径。
 - [Mars-Sea/dsh-commandcode-provider](https://github.com/Mars-Sea/dsh-commandcode-provider) — 非官方 Command Code 模型接入插件：注册 `commandcode` 路由，带实时模型目录与推理强度支持。
+- [marsma-101/dsh-qoder-connect](https://github.com/marsma-101/dsh-qoder-connect) — 将 Qoder CN 桌面版的模型接入 DeepSeek Harness，零用户交互：解密本地 OSCrypt 凭据，以 COSY 签名对接国内网关，14 个模型含免费额度标注。
+- [marsma-101/dsh-trae-connect](https://github.com/marsma-101/dsh-trae-connect) — 将 Trae CN 桌面版的模型接入 DeepSeek Harness，无需单独 OAuth：复用桌面端登录，17 个模型（含 deepseek-v4.1-flash）带倍率标注与思考强度映射。
 - [mia-wong1016/dsh-codex-plus](https://github.com/mia-wong1016/dsh-codex-plus) — 本机已登录的 Codex（ChatGPT Plus/Pro）订阅接入 DSH。用途：①在侧边栏展示 5 小时窗口与一周窗口的剩余额度、重置时间与剩余重置券数量，并支持一键消耗一张重置券重置额度；②读取额度时自动把订阅线路注册进 llm-pi-ai（openai-codex 路由），使 Codex 模型出现在模型选择器中；③access token 到期前自动续期并原子写回，无需手动更换密钥；④提供 codex 工具把任务委派给本机 Codex agent。无需填写任何 API key。
 - [Missher12/Missher-DSH-Reasoning-Effort](https://github.com/Missher12/Missher-DSH-Reasoning-Effort) — 按模型声明的能力提供思考深度滑块、配置指引与可选模型行设置。
 - [mo-n/dsh-provider-qoder](https://github.com/mo-n/dsh-provider-qoder) — 将 Qoder 订阅接入 DeepSeek Harness，支持国际版与中国区、多模态与工具调用。
@@ -5156,6 +5158,7 @@ dsh plugin --profile web add dshmarket
 - [shinjiyu/holdem#dsh-plugin](https://github.com/shinjiyu/holdem/tree/main/dsh-plugin) — 连接 kuroneko.chat 德州扑克桌的 Host 工具：座位令牌、人控/托管切换、合法动作查询与行动循环（同一 GitHub 帐号一席）。
 - [Signalight/codex-to-dsh-pet#dsh-codex-pet](https://github.com/Signalight/codex-to-dsh-pet/tree/main/packages/dsh-codex-pet) — DSH 网页 GUI 实时桌宠：可把任何 Codex 桌宠图集（webp/png/gif，v1/v2 自动识别）转换为 DSH 中可拖拽的悬浮桌宠。支持拖拽/挥手/跳跃，v2 桌宠的眼睛实时追踪活动鼠标，随 agent 状态切换姿势；进度气泡反映工作状态；「设置 → 桌宠」图形界面可导入、切换与调整桌宠；内置一只原创示例桌宠（娜斯佳），用户桌宠存放在 ~/.dsh/pets。
 - [skiuniverse/dsh-running-liang](https://github.com/skiuniverse/dsh-running-liang) — 等待 Agent 回复时的恐龙快跑小游戏：常驻进度条从「梁子」冲向「梁圣」，折叠即暂停、任意键恢复。
+- [sknagato/dsh-plugin-fc-emulator](https://github.com/sknagato/dsh-plugin-fc-emulator) — 在 DSH Web 右下角挂悬浮球打开 FC/NES 游戏厅（fceumm），支持本地上传与自填 GitHub 在线库。
 - [skr311/dsh-codex-pet#dsh-codex-pet](https://github.com/skr311/dsh-codex-pet/tree/main/packages/dsh-codex-pet) — 导入/上传 Codex 风格精灵图序列帧宠物，在 DSH Web GUI 以悬浮浮层渲染，含图库管理、交互与 Agent 状态联动。
 - [skymecode/dsh-bgm](https://github.com/skymecode/dsh-bgm) — 将本地分析的系统音频映射为 DSH Web 的对话律动、音游判定、分数与连击反馈，以及可选的 RGB 频谱柱。
 - [Stellum-Waq/dsh-pet-ronaldo](https://github.com/Stellum-Waq/dsh-pet-ronaldo) — DSH 桌宠：Web 界面右下角的 C 罗精灵，动画随 Agent 状态切换——工具执行中颠球、回合中思考、等待审批、出错假摔——回合完成时跳起 SIU 庆祝并由宿主进程播放提示音；支持拖动、悬停注视光标、连点三次假摔，设置面板可管理多只宠物并导入自定义 spritesheet。同时提供一个无边框、始终置顶的原生 Windows 窗口，关掉浏览器也还在：悬停显示当前工作区与对话名，双击用 Edge 打开 Harness 页面，拖动、滚轮改大小、右键菜单都可用，位置/大小/行为与网页设置面板共用同一份状态。素材单格分辨率不限、等比缩放（atlas.scaling: smooth | pixelated）。v2.2 新增视频路线：喂一段视频（绿幕或普通素材都行），里面的真实动作直接变成宠物动作——自动取幕布色、色度抠像带溢色抑制、按运动量切分动作、并集包围盒对齐落格；也支持直接喂已经抽好的 PNG 帧（不需要装视频解码器），并能把视频原声按动作切成音效。宠物还可按 DPSL-1.0 分享协议发布到宠物社区，并从社区一键安装。 v2.3 适配 DSH 0.2 桌面版——宿主不再提供 shell 服务时，庆祝音效改为直接启动 PowerShell 播放——并让单击播放一段可配置的挑衅动作（`interactions.clickAnim`）。
@@ -5180,6 +5183,7 @@ dsh plugin --profile web add dshmarket
 - [william-jin-cmu/dsh-stickers](https://github.com/william-jin-cmu/dsh-stickers) — 用户与 agent 双向表情贴纸互动。
 - [WJNCT55555/dsh-achievements](https://github.com/WJNCT55555/dsh-achievements) — DSH Web 成就系统：画廊支持按分类/难度双排序、解锁 toast、侧栏奖杯、输入坞进度读条、联动成就，并本地持久化进度。
 - [Wodexinhaoleng-Kasssa/dsh-reader](https://github.com/Wodexinhaoleng-Kasssa/dsh-reader) — DSH Web GUI 在线小说阅读器：书源搜索、聊天式阅读界面、整本下载 TXT 到本地。
+- [wuyad/dsh-client-ui-cat#cat-plugin](https://github.com/wuyad/dsh-client-ui-cat/tree/main/cat-plugin) — 一只在 DeepSeek Harness 界面里游荡的小猫，沿文字边缘行走、打盹、瞬移、摔下台阶，还会拉粑粑等你清理。
 - [X1A0BAN/dsh-survival-mode](https://github.com/X1A0BAN/dsh-survival-mode) — 生存模式：全局共享一条饱食度与生命，模型每步思考消耗饱食度，饿死后全局工具被冻结，通过 MC 采集小游戏获取食物喂食复活。
 - [xczhanjun/lazeword](https://github.com/xczhanjun/lazeword) — 舒服的离线背单词全家桶：1094 个精选单词、间隔重复、6 种题型、拼写游戏和躺着背大字模式；侧边栏面板打开，也可作为单个 HTML 文件独立运行。
 - [xiaoshihou514/dsh-desktop-pet](https://github.com/xiaoshihou514/dsh-desktop-pet) — 鲸鱼娘桌宠，桌面端！
