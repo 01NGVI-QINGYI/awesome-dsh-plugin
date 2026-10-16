@@ -1969,6 +1969,7 @@ dsh plugin --profile web add dshmarket
 - [RyanZeeee/dsh-chattree](https://github.com/RyanZeeee/dsh-chattree) — 把 DSH 会话画成一张对话画布：每轮问答是一个节点，任意节点都能分叉出真实的子会话，压缩过的上下文收成一个绿色节点、可以从它继续对话；左侧栏按 DSH 工作区分组列出画布，重命名与 DSH 自己的会话标题同步。
 - [RyensX/dsh-message-fold](https://github.com/RyensX/dsh-message-fold) — 为 DeepSeek Harness 提供 Codex 风格的会话消息折叠。
 - [Ryuu-64/dsh-session-tools](https://github.com/Ryuu-64/dsh-session-tools) — 给 AI 四个会话工具：新建会话、给别的会话发消息、列出会话及其状态，以及等另一个会话这一轮跑完并把它的回答取回来。
+- [sailoumili/dsh-session-remover](https://github.com/sailoumili/dsh-session-remover) — 在侧栏会话行菜单中增加「删除对话」与「批量删除」；删除的对话及其子代理会话移入 Windows 回收站，可从回收站还原。
 - [SaiSenBox/dsh-prompt-manager](https://github.com/SaiSenBox/dsh-prompt-manager) — 浏览器本地提示词库：在输入框选择器中同时注入多条会话级系统提示词，支持分支继承、中英界面、收藏与 JSON 备份。
 - [seeingrain/dsh-session-todos](https://github.com/seeingrain/dsh-session-todos) — 会话内悬浮待办面板，支持服务器端跨设备持久化及会话列表未完成任务图标。
 - [Seetraum/harness-session-delete](https://github.com/Seetraum/harness-session-delete) — DSH 会话回收站：侧边栏删除图标、多选还原与彻底删除、活跃会话保护。
@@ -2926,6 +2927,7 @@ dsh plugin --profile web add dshmarket
 - [zhengjy01/dsh-zhihu](https://github.com/zhengjy01/dsh-zhihu) — 为 DeepSeek Harness 提供知乎能力：包装本机 pyzhihu-cli 为 18 个 zhihu_* 工具——14 个只读（搜索/热榜/问题/回答/用户/推荐流/话题/通知/收藏夹）与 4 个发布类工具（readOnly 关闭前不注册）——并在侧栏提供 Web 面板做登录、配置与查询。
 - [zhengjy01/weread-export](https://github.com/zhengjy01/weread-export) — 微信读书多目标导出：通过官方 Skills API Key 查看书架、导出划线/想法到 flomo、本地 Markdown 或 Notion，可选按自定义 LLM prompt 整理后再导出。
 - [zhitiaojun/dsh-anysearch](https://github.com/zhitiaojun/dsh-anysearch) — 给 agent 用的 AnySearch 搜索工具：通用与垂直域搜索、并行批量查询、垂直域目录发现、网页转 Markdown，并在设置中提供 API Key 面板。它注册独立工具而非 web_search provider，不能与 @anysearch/anysearch-dsh 同时安装。
+- [zhp282515-wq/dsh-plugin-agnes-image](https://github.com/zhp282515-wq/dsh-plugin-agnes-image) — 提供 agnes_image 工具，调用 Agnes Image Flash 系列模型（2.5 / 2.1 / 2.0）完成文生图、图生图与多图合成，并带一个设置页控制台管理当前模型、默认档位与画幅、输出目录、API Key 与生成历史。
 - [zhtx2024/dsh-skin-switcher](https://github.com/zhtx2024/dsh-skin-switcher) — 设置面板皮肤管理器：自动扫描已安装的 Web UI 皮肤并一键切换，profile 补丁自动维护。
 - [Zhuang-A/dsh-go-sensei](https://github.com/Zhuang-A/dsh-go-sensei) — 围棋复盘教练：解析 SGF 棋谱，用自带 KataGo 引擎补算胜率与目差，在对话里逐手讲解问题手，并把讲解写回 SGF 副本；Web 面板用棋盘展示问题手、AI 首选与变化图。
 - [ZI-LV68/dsh-deepseek-model-router](https://github.com/ZI-LV68/dsh-deepseek-model-router) — 自动切换 DeepSeek 模型：含图片时走视觉模型，复杂任务走 pro，常规任务走 fast；提供 switch_model 工具手动固定。
