@@ -294,6 +294,7 @@ dsh plugin --profile web add dshmarket
 - [drscrewdriver/dsh-brief-sidebar](https://github.com/drscrewdriver/dsh-brief-sidebar) — dsh-better-sidebar 扩展：把会话简报渲染成右侧栏「概要」tab——来自 `todos` 投影的进展看板，加上回合内产物列表——并在挂载期间遮蔽 composer 上方的官方 todo 面板。
 - [drscrewdriver/dsh-canvas-tsx-sidebar](https://github.com/drscrewdriver/dsh-canvas-tsx-sidebar) — dsh-better-sidebar 扩展：把 Qoder Canvas `*.canvas.tsx` 静态解析为结构化页面渲染在右侧栏（不执行源码，无 eval / bundler / 沙箱 iframe），并附带 `.tsx` 文件查看器接管与一个教 LLM 写该格式的 Skill。
 - [drscrewdriver/dsh-input-traffic](https://github.com/drscrewdriver/dsh-input-traffic) — 三档（now/next/later）输入规划 dock：以红/黄/绿色优先级条取代忙碌 Enter 排队栏，普通 Enter 排入 later，支持多行原位编辑、拖拽排序与会话级冻结/恢复；冻结按钮经 stopNextTurn/resume RPC + 输入框锁定，桥接另一独立插件 [dsh-session-guard](https://github.com/drscrewdriver/dsh-session-guard)（可在 dsh-market 安装）实现按会话真实冻结锁定，并配合其高峰全局自动暂停，在 DeepSeek 高价时段停止会话、错峰自动恢复。
+- [drscrewdriver/dsh-paste-dock](https://github.com/drscrewdriver/dsh-paste-dock) — 大段文本粘贴自动存为 pastes/*.txt 附件,输入框上方 dock 卡片管理,草稿内只留可辨识的最小徽标。
 - [dsh-blue/blue#blue](https://github.com/dsh-blue/blue/tree/master/packages/bundle/blue) — 插件树式终端界面：流式 markdown 会话流、工具卡片、模糊命令补全与主题热切换，每个界面组件都是可热替换的 Cordis 插件。
 - [dsh-niao/dsh-niao-quick-open](https://github.com/dsh-niao/dsh-niao-quick-open) — DeepSeek Harness 界面增强插件：工作区一键打开（复制路径、访达显示、自动发现编辑器打开）、用户消息导航条、会话待办标记、单列表增强与硬性重启按钮。
 - [du-u-uck/DSH-Prompt-Optimization](https://github.com/du-u-uck/DSH-Prompt-Optimization) — 在 DSH 输入框旁添加一键提示词优化按钮，支持撤回，并可在设置中单独指定优化模型。
