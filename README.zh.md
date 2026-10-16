@@ -799,6 +799,7 @@ dsh plugin --profile web add dshmarket
 - [uckkk/dsh-valley-meter](https://github.com/uckkk/dsh-valley-meter) — 峰谷电表——DeepSeek 用量小助手：输入框上方一枚极简余额徽章，框内只有「货币符号 + 余额数字」两组，官方余额每 5 秒实时刷新；点击符号即在新页签打开官方充值页；光标移入徽章时，符号身下浮现一枚圆形底色（左弧与徽章左端圆角完全重合），并展开 24 小时峰谷时间轴（橙=峰时、蓝=谷时、白色发光指针标当前本地时刻），谷时省钱时段一目了然；今日消耗独立计费；设置面板提供 10 套沉稳配色预置与谷/峰色自定义、详细/极简样式与各项读数开关；全中文界面。
 - [uigdwunm/dsh-conversation-jump](https://github.com/uigdwunm/dsh-conversation-jump) — 在 DSH Web 对话区提供一组圆形按钮，逐条跳到上一条或下一条用户消息，或直接到顶部与底部，并自动翻页加载更早历史。
 - [uigdwunm/dsh-process-fold](https://github.com/uigdwunm/dsh-process-fold) — 把每轮 DSH Web 会话中的思考、工具调用与上下文折叠进带边框的过程框，在每段模型文本处切开；折叠时每框只显示最新两项，点上边框的堆叠线展开这一个框、再点上边框收回，用户对话、交互式提问与模型文本始终留在框外。
+- [uio-o/dsh-plugin-operation-log](https://github.com/uio-o/dsh-plugin-operation-log) — 右侧边栏的会话面板：按轮次与步骤列出全部 Skill、MCP 工具调用与文件读写，并展开每次失败的报错详情。
 - [UncleK/dsh-think-translate](https://github.com/UncleK/dsh-think-translate) — DSH Web 界面显示层翻译：将思考链、任务卡片与回答正文翻译为 8 种目标语言之一（本地 Ollama 或 Google/Bing，自动选择），原文完整保留。
 - [UndeadSheep/dsh-file-preview#dsh-file-preview](https://github.com/UndeadSheep/dsh-file-preview/tree/main/packages/dsh-file-preview) — Web 客户端悬浮文件预览窗：懒加载文件树、CodeMirror 预览与窗内编辑保存、Markdown 与图片预览、Quick Open 搜索，以及点击会话中的路径直接打开。
 - [UnknowCao/dsh-dock](https://github.com/UnknowCao/dsh-dock) — DeepSeek Harness 的 Windows 桌面启动器：一键鲸鱼图标 + 侧栏「更多」菜单（设置 / 重启/刷新 / 优雅完全退出），冷启动卡片支持可滚动的多 DSH 候选选择。
@@ -1949,6 +1950,7 @@ dsh plugin --profile web add dshmarket
 - [nickkkkkk123123/dsh-resume-on-restart](https://github.com/nickkkkkk123123/dsh-resume-on-restart) — 检测 DSH 服务重启后自动唤醒主 agent：对比上次运行时间、人性化播报中断时长，并把提示消息投递回来让中断的工作自动恢复。仅依赖 cordis ctx 服务，兼容 DSH Desktop 打包环境。
 - [ningmengxr/dsh-task-control](https://github.com/ningmengxr/dsh-task-control) — DeepSeek Harness 任务控制：卡死的下载与工具调用一键急停与强制终止、下载进度、卡死识别、pwsh 运行状态检测，以及追加条件/暂停/恢复（恢复指令隐形注入，不打扰聊天）。
 - [NIU-001-LIU/dsh-win-minimal](https://github.com/NIU-001-LIU/dsh-win-minimal) — Windows 极简模式 preset：单句 persona、三工具、无运行时上下文。
+- [NoiraBaka/dsh-compact-suite](https://github.com/NoiraBaka/dsh-compact-suite) — 接管所有已挂载压缩引擎的触发阈值：把 headroomTokens 强制成 −1e6，使比值成为触发点的唯一决定项；在每条下发路径上保证保留量低于触发点；把压缩调用改派到指定模型；并提供一键立即压缩与本会话压缩记录面板。
 - [Noob-stupid/dsh-connection-card-host](https://github.com/Noob-stupid/dsh-connection-card-host) — 把两个 DSH 会话之间的「连接」做成一等对象：从输入框锚点或会话行拖拽建连，两个方向各自设权限，并可在连接上装载卡片。两端各获得五个宿主工具，用于按指定紧急度传话、读取对端工作状态、共用公约盒；感知为拉取式，空闲连接不占上下文。
 - [NoProblUm/dsh-codexlike-projectless](https://github.com/NoProblUm/dsh-codexlike-projectless) — 提供类似 Codex 的无项目草稿、各项目草稿切换及首次发送时按日期和主题创建目录的功能；需在 Windows 的 DSH Desktop 0.2.0-rc.2 中安装原生桥接补丁。
 - [Nothree-code/review-quote-sh](https://github.com/Nothree-code/review-quote-sh) — 对话消息审查与引用：多模型并行互审（代码/回复审查、严重度分级、综合汇总）、引用问答胶囊、评审历史与偏好记忆。
@@ -2135,6 +2137,7 @@ dsh plugin --profile web add dshmarket
 - [chenzheshushi-commits/dsh-evolve](https://github.com/chenzheshushi-commits/dsh-evolve) — 跨会话记忆，零 token 确定性召回（bigram-Jaccard 与 FTS5 BM25 经 RRF 融合，中文分词精确）；重复观察会强化已有理解而非堆叠重复；过程性知识结晶为 SKILL.md，就地精炼升级，走 active-stale-archived 生命周期治理，归档可逆、可回滚。摄入与处置各有一档用户可选的自治程度，冲突与高重要写入始终交人工复核，任何档位都不会自动删除。需要 Node 22.5+。
 - [ciskonc/dsh-context-imports](https://github.com/ciskonc/dsh-context-imports) — 把 AGENTS.md 里 @路径 引用的文件读出来，在会话启动时注入模型上下文；带字节预算、压缩后重新注入和六语言设置卡片。v0.2.3 适配 DSH 0.1.7+（已加固 0.2.0-rc.2+），DSH 0.1.5 请用 0.1.x。
 - [Co-Engram/Co-Engram#dsh-plugin](https://github.com/Co-Engram/Co-Engram/tree/main/packages/dsh-plugin) — 自进化团队记忆，以纯 Markdown 存于 Git：原生 Cordis 插件注册 38 个裸名记忆工具，并按每次组装动态注入 prompt-signals 段；含 RPE 强化、衰减与睡眠巩固；与 Claude Code（MCP）、OpenClaw 宿主共享同一数据仓；已对 DSH 0.1.0-rc.6 实测。
+- [csyangwen/dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) — 为 DeepSeek Harness 带来「跨会话长期记忆 + 后台自我进化」能力的纯插件实现：五轨记忆 · git 分支感知 · 回合内自我审查 · 技能自我进化与技能管理器 · 四轨待办 · COI 调度 · 会话广播 · 会话搜索 · 提示词管理器 · 临时信息便签——零核心修改、零运行时依赖，随装随用、卸载即净。
 - [DamonKoy/dsh-plugins#dsh-memories](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-memories) — 项目作用域持久化键值记忆：set/get/list/delete/search 模型工具，JSON 文件存储。
 - [Dayi-Z/dsh-learn-wiki](https://github.com/Dayi-Z/dsh-learn-wiki) — DSH 的纠错式补料知识库：agent 反复撞同一堵墙时，后台 worker 在限流下联网抓取、蒸馏结果先落暂存区，只有两段式 commit 才能进入召回——无来源的页面一律拒绝。
 - [dearbld/dsh-living-memory](https://github.com/dearbld/dsh-living-memory) — 单文件本地 SQLite 的自整理活记忆——夜巡引擎自动去重、合并、衰减、建链，七信号 RRF 混合检索（FTS5+jieba 中文优先分词、可选向量 KNN、图谱 PPR），带类型知识图谱，冲突检测标记矛盾而非静默覆写，Web 遥测面板。
@@ -3977,6 +3980,7 @@ dsh plugin --profile web add dshmarket
 - [Fectivnfy112357/github-explore](https://github.com/Fectivnfy112357/github-explore) — 基于 gh CLI 的 GitHub 搜索/发现/审计技能包（SKILL.md 打包）：仓库搜索、多轴探索、趋势、仓库概览、相似项目、代码搜索、issue/PR 搜索与组织审计；以 dsh bundle 形式安装（并已发布 npm）。
 - [fengbinmov/dsh-git-panel](https://github.com/fengbinmov/dsh-git-panel) — 会话页里多出一个 Git 页；左侧是未暂存 / 已暂存的改动，右侧是带行级操作条（暂存 / 丢弃）的 diff 预览。
 - [Funnyvalentine00/dsh-github-push](https://github.com/Funnyvalentine00/dsh-github-push) — 一键上传项目到 GitHub：自动初始化 git、生成或完善 README、设置仓库 topics，并推送本地项目。
+- [GaoHu1997/dsh-git-branch](https://github.com/GaoHu1997/dsh-git-branch) — DeepSeek Harness 的 git 分支与 worktree 管理：工作区工具栏显示当前分支并可原地切换；支持 IDEA 风格分支选择器、远程分支检出、右键操作菜单（新建/重命名/删除/复制）、推送与更新当前分支，以及把分支隔离到独立 worktree 工作区并管理其创建与删除。
 - [GitHub-Xzhi/dsh-simple-worktree-plus](https://github.com/GitHub-Xzhi/dsh-simple-worktree-plus) — 为 DeepSeek Harness 管理 Git Worktree，提供分支删除控制和指定工作区管理。
 - [GooDAnDReaDY/dsh-gitea](https://github.com/GooDAnDReaDY/dsh-gitea) — 为 DeepSeek Harness 集成 Gitea 与 Forgejo，提供 issue、拉取请求和 worktree 工具及 Git 状态芯片。
 - [H2O-MERO/dsh-git-sidebar](https://github.com/H2O-MERO/dsh-git-sidebar) — 停靠在 DSH Web 对话页右侧的 VSCode 风格未提交改动侧边栏：已暂存/更改/未跟踪三组文件、状态徽标与每文件 +/− 行数，点击展开单文件 diff，支持重命名显示、未跟踪文件内容预览及调用系统默认应用打开文件。
