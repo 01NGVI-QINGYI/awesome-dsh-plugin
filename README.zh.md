@@ -474,6 +474,7 @@ dsh plugin --profile web add dshmarket
 - [lakabuji-arch/dsh-model-accordion](https://github.com/lakabuji-arch/dsh-model-accordion) — 为 DSH Web 输入栏提供按 provider 折叠的模型选择器，并使用模型目录中的真实推理档位。
 - [lalalaleo/dsh-draft](https://github.com/lalalaleo/dsh-draft) — 基于 Markdown 的 dsh 草稿板插件，支持实时预览编辑，本地持久化。
 - [langyo/dsh-mobile-upgrade](https://github.com/langyo/dsh-mobile-upgrade) — 需要 DSH 0.1.5-rc.1。dsh web profile 的手机端体验修复：窄屏抽屉与设置标签、全宽模型菜单、卡住请求的网络状态芯片，以及把会话层级、subagent 与后台任务芯片收进一张可点开面板的窄屏头部收纳器。
+- [laoye666-6/dsh-plugin-media-wallpaper](https://github.com/laoye666-6/dsh-plugin-media-wallpaper) — 为 DSH 提供图片/视频壁纸背景：GIF/APNG/动图 WebP/PNG/JPEG/MP4/WebM 魔数自动识别，压暗/亮度/高斯模糊，界面色调与字体颜色自动跟随背景，各组件独立透明度，预置壁纸一键应用。
 - [Laplace-bit/dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) — 为 DeepSeek Harness Web UI 提供流畅流式渲染和丝滑滚动。
 - [latte03/dsh-select-quote](https://github.com/latte03/dsh-select-quote) — 在 dsh 网页版对话里划词，把选中文本作为批注附到下一条消息。原文位置保留虚线高亮和序号角标，输入框上方的批注摘要可查看、编辑并跳回每一条批注。
 - [lavapapa/dsh-composer-layout](https://github.com/lavapapa/dsh-composer-layout) — 面向长提示词的 Web Composer 布局：输入框可保留在底部，也可停靠到可调宽度的右栏，与长回答并排阅读和写作。
@@ -1369,6 +1370,7 @@ dsh plugin --profile web add dshmarket
 - [TFboy1/dsh-minecraft-ui](https://github.com/TFboy1/dsh-minecraft-ui) — 将 DSH Web 直接呈现为可游玩的全屏第一人称 Minecraft 风格体素界面，而非只更换颜色的皮肤：用户可以在可持久化的 Three.js 方块世界中移动，并通过游戏内设施和工作台使用原生工作区、会话、对话、工具、模型选择、权限、上下文信息与输入框。
 - [Theflowyears/dsh-arknights-theme](https://github.com/Theflowyears/dsh-arknights-theme) — 明日方舟主题：12 张整屏壁纸，边缘虚化、羽化与玻璃浓度按每张图分别计算；文字色以 OKLCH 求解并守住 WCAG AA 下限；界面图标换成罗德岛素材；授权卡与选项卡带干员签名。
 - [tiantyu/dsh-skin-toggle](https://github.com/tiantyu/dsh-skin-toggle) — DSH 网页皮肤管理器：可拖动的鲸鱼按钮，左键恢复默认界面，右键列出并切换所有已安装皮肤。
+- [Tim5613/dsh-homepage-glass](https://github.com/Tim5613/dsh-homepage-glass) — DSH Web 界面的固定深蓝渐变侧边栏（不跟随浅色/深色），外加浅色模式下的三档内容区底色（原生白 / 移植自 deepseek.com 首页的 WebGL 流动蓝 / 雾蓝），并覆盖品牌蓝 token。
 - [Tkingxiao/dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) — DeepSeek Harness 外观一体化工具。对 8 个界面区域分别调节透明度与毛玻璃模糊（主背景、侧边栏、卡片面板、输入框与控件、设置面板、对话文本框、轨迹页、产出物/高亮内容；安装 dsh-better-sidebar 后为 9 个）。用任意图片或视频做壁纸，配有拖动平移、滚轮缩放的位置编辑器与 5 种布局模式（适应/填充/拉伸/平铺/居中）；视频静音循环播放、刷新不丢失，并自动截取一帧用于预览、取色与构图。把多张图片加入轮换池（随机/顺序，每次刷新/每天/每周）自动更换。还包含 PS 风格色轮、一键从壁纸提取主题色、6 套预设 + 命名配置、昼夜自动切换与主题一键导出导入。
 - [Tommy00748/dsh-theme-cyberpunk2077](https://github.com/Tommy00748/dsh-theme-cyberpunk2077) — Cyberpunk 2077 / 夜之城主题：NC 黄 × 霓虹青配色、CRT 扫描线、Kiroshi 悬停锁定、战斗状态 HUD、合成打字机与消息音效，以及隐藏彩蛋（relic / johnny）。
 - [tpmoonchefryan/dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme) — 轴伊 Joi 双衣装主题：Flowers 与 Library 是各自成套的明暗令牌体系，新会话页有立绘与趴在标题上的鲸鱼娘，输入框上方两只 Q 版角色随本回合状态换表情，侧栏字标换成二人合影，上下文占用由一颗渐熟的橘子表示；第三张卡可在保持插件安装的前提下切回 DeepSeek 原生外观。
@@ -2351,7 +2353,7 @@ dsh plugin --profile web add dshmarket
 - [DamonKoy/dsh-plugins#dsh-mcp-client-v2](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-mcp-client-v2) — MCP 客户端增强：分页工具发现、非阻塞启动、mcp_tool_search 搜索，自研 stdio/streamable-http 传输。
 - [danieldu168/dsh-stash](https://github.com/danieldu168/dsh-stash) — 把外部数据库与文献语料登记成模型可调用的取数工具；每条库声明取数边界，钥匙台账只记引用名不存值，取数台账只留指纹与内容哈希而不留响应体。
 - [DeepTrial/dsh-bash-rtk](https://github.com/DeepTrial/dsh-bash-rtk) — 将符合条件的 shell 命令路由给 rtk，压缩工具输出并节省 token。
-- [dff652/deepseek-harness-community-plugins#dsh-agent-mail](https://github.com/dff652/deepseek-harness-community-plugins/tree/main/packages/dsh-agent-mail) — DeepSeek Harness 中的 AI 协作邮箱，让 AI 工具互发消息、交接任务并查看收发回执。一个包包含 MCP 集成与邮箱界面，需要独立安装 Agent Mail 1.0.0-alpha.7；不提供自动唤醒模型或持续在线状态。
+- [dff652/deepseek-harness-community-plugins#dsh-agent-mail](https://github.com/dff652/deepseek-harness-community-plugins/tree/main/packages/dsh-agent-mail) — DeepSeek Harness 中的 AI 协作邮箱，让 AI 工具互发消息、交接任务并查看收发回执。一个包包含 MCP 集成与邮箱界面；0.2.2 需要 DSH 0.2.0-rc.2，需要独立安装 Agent Mail 1.0.0-alpha.7；不提供自动唤醒模型或持续在线状态。
 - [dff652/deepseek-harness-community-plugins#dsh-ai-asset-hub](https://github.com/dff652/deepseek-harness-community-plugins/tree/main/packages/dsh-ai-asset-hub) — 将 DeepSeek Harness 连接到部署方管理的 AI Asset Hub MCP 服务，并提供八个经过审查的只读资产工具。
 - [dfycaly98931680/dsh-trajectory-governance](https://github.com/dfycaly98931680/dsh-trajectory-governance) — Agent 轨迹治理与异常诊断：把平铺会话日志重建为多分支轨迹树，识别循环死锁/无效重试/目标漂移，带成本归因的告警与一键中断/断点分支（官方 API），独立 GUI Tab。
 - [dhicoc/dsh-codex-web-search-mcp](https://github.com/dhicoc/dsh-codex-web-search-mcp) — 将 codex-web-search-mcp 注册为 DSH 原生 MCP 工具（codex_web_search / codex_web_research / web_fetch），提供与模型无关的 Codex / Grok 联网搜索与深度研究。
