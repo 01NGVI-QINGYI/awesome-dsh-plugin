@@ -567,6 +567,7 @@ dsh plugin --profile web add dshmarket
 - [mhxy13867806343/my-dsh-desktop-extra](https://github.com/mhxy13867806343/my-dsh-desktop-extra) — DSH Desktop 桌面增强：一键检查更新、DeepSeek 余额与 API Key、导入其他 AI 工具。
 - [miaomiao636/dsh-message-navigator](https://github.com/miaomiao636/dsh-message-navigator) — 为 DeepSeek Harness Web UI 提供 Codex 风格的消息导航器：对话边缘为每条用户消息生成刻度，悬停或点击即可预览并平滑跳转到对应消息，自动加载完整历史记录。
 - [MichengAI/dsh-codex-ui](https://github.com/MichengAI/dsh-codex-ui) — 为 DeepSeek Harness 网页端重构 Codex 风格侧栏、工作区会话树、全局搜索和轮次导航。
+- [Microqian2th/dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider) — 把官方「推理等级」那一行改成一条可拖动的连续轨道：填充从蓝渐变到紫罗兰，较高档位带星尘粒子，官方数值文字跟着档位变色。Off 档保持官方灰，不改写官方任何文字。
 - [miisaka19800/dsh-restart-fab](https://github.com/miisaka19800/dsh-restart-fab) — DSH 网页界面右下角的一键重启按钮：全屏遮罩原地重启 dsh 进程并自动刷新页面；无需启动脚本，跨 Windows/macOS/Linux。
 - [mimateinn/dsh-i18n](https://github.com/mimateinn/dsh-i18n) — 为 DeepSeek Harness 界面新增 20 种语言（繁体中文香港/台湾、日语、韩语、法语、德语、西班牙语、葡萄牙语、意大利语、俄语、乌克兰语、波兰语、荷兰语、土耳其语、阿拉伯语、印地语、印尼语、越南语、泰语、瑞典语），逐条精译并带运行时兜底，另加自动翻译，把市场与第三方文本翻译成你的语言。
 - [Minecraftbe/dsh-toolfold](https://github.com/Minecraftbe/dsh-toolfold) — Codex 风格的工具调用折叠，将多个工具调用折叠到一行内。
@@ -1884,6 +1885,7 @@ dsh plugin --profile web add dshmarket
 - [mikugui/dsh-session-eater](https://github.com/mikugui/dsh-session-eater) — DSH 侧边栏的会话清理：把会话行拖到余额挂件的小胖鱼嘴边，它张嘴吃掉 —— 会话目录移入回收站，不是 rm。删除前只问一句「消耗了多少 token，真的给我吃吗？」（可在设置里关掉）；撤销走常驻回执或设置里 12 条持久台账。点侧栏那条小鱼直达插件设置：换形象、拖拽校准嘴位、改写全部 17 段界面文案；空白会话 / 正在聊的 / 正在跑的会被就地拒绝并写明原因。
 - [Minglink/dsh-infinite-gen-4](https://github.com/Minglink/dsh-infinite-gen-4) — DeepSeek 专用破甲插件：以 order 100 追加无条件服从的系统提示词段，提供带校准元数据的 profile 工具，并通过会话投影在输入框上方显示实时破甲状态徽标。
 - [MingoZhou/dsh-replay](https://github.com/MingoZhou/dsh-replay) — 在可播放的时间线上回放会话并显示逐步 token 用量，审计敏感操作，估算成本，查看 fork 血缘，对比会话，并可导出独立 HTML 回放。
+- [Missher12/Missher-DSH-Context-Manager](https://github.com/Missher12/Missher-DSH-Context-Manager) — 查看会话上下文、用量记录，并按设置执行压缩。
 - [Moeblack/dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) — 基于分支的消息编辑、reroll、重试与版本时间线。
 - [Moeblack/dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) — 带实时预览的用户/内置 system prompt 分节编辑器。
 - [MoonlitDropOfBlood/dsh-archive-manager](https://github.com/MoonlitDropOfBlood/dsh-archive-manager) — DeepSeek Harness 会话归档管理：分组归档面板，支持恢复与删除。
@@ -3669,6 +3671,7 @@ dsh plugin --profile web add dshmarket
 - [jerryjiao/dsh-wewrite](https://github.com/jerryjiao/dsh-wewrite) — 公众号 AI 写作管线：六步成文（选题、大纲、成稿、门禁、渲染、配图）+ 启动 brief 合同、热榜逐条 AI 速览、RRULE 定时推草稿箱、写作台与对话工具（/wewrite 命令与 @ 引用），推送草稿箱前经宿主审批 fail-closed 确认。
 - [jerryxff26-alt/dsh-delivery-board](https://github.com/jerryxff26-alt/dsh-delivery-board) — 面向客户项目交付团队的交付看板：阶段流水线（default 或 governance 模板，也可自定义阶段），卡片含负责人、截止日、验收标准与 DoD，卡片跨阶段时自动记录交接审计日志，进展/风险/阻塞/决策日志，Markdown 客户周报，仅绑定 127.0.0.1 的可拖拽本地看板与只读 HTML 导出；状态保存在工作区的 delivery.json（11 个 delivery_* 工具与 /delivery 命令）。
 - [Jesse-njx/dsh-routines](https://github.com/Jesse-njx/dsh-routines) — 定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。
+- [JessenReinhart/dsh-poke-todo](https://github.com/JessenReinhart/dsh-poke-todo) — Ports jcode's auto-poke so an idle agent keeps working while its session still has incomplete todos.
 - [jiang12345-code/dsh-multi-role-debate#dsh-multi-role-debate](https://github.com/jiang12345-code/dsh-multi-role-debate/tree/main/dsh-multi-role-debate) — 多角色并行论证：并行调用真实 Codex 与 Claude，由 DSH 主会话模型（Judge）生成第三方汇总并回对话；另含单 Agent 直接对话与各角色模型自由配置。
 - [jiazz197-cmyk/omd-dsh#packages/omd-dsh](https://github.com/jiazz197-cmyk/omd-dsh/tree/main/packages/omd-dsh) — 为 DeepSeek Harness 提供 7 个 Agent 预设模式：每个模式固定工具边界、按模式路由模型，并以 fast/deep 档位委派 omd_task 子代理；含规划到执行闭环（/mode、/start-work、基于 goal 的 /ulw）与逐模式、逐档位重配模型的设置页。
 - [jidekaixin2dian/dsh-team-flow](https://github.com/jidekaixin2dian/dsh-team-flow) — 适用于 DSH 0.2.0-rc.2 起版本的 Agent Teams 预览插件，让同会话用户 Steer 结束主代理当前的 wait_agent 等待，队友继续工作，并保留原生消息领取与 Node PTC 后续执行。
