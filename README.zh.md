@@ -987,6 +987,7 @@ dsh plugin --profile web add dshmarket
 - [DamonKoy/dsh-plugins#dsh-usage-cost](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-usage-cost) — Token 用量与成本统计：日/会话预算告警 + usage_report 工具。
 - [DamonKoy/dsh-web-ui#dsh-live-stats](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-live-stats) — dsh web GUI 实时 token 估算与生成吞吐。
 - [deepseek-dsh/dsh-workspace](https://github.com/deepseek-dsh/dsh-workspace) — 侧边栏用量面板：DeepSeek 余额与今日费用、项目文件浏览、Git 变更与历史、内置终端，以及 Harness 一键更新。
+- [deepsleepAquarium/dsh-whale-post#dsh-whale-post-gate](https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/gate) — 智能体信箱的每日配额与免打扰时段：信件按命名桶计数、每桶有每日上限，日界可配置，并给出一个免打扰窗口，让核心把在线件留着而不投递。
 - [devacc8/dsh-billing-badge](https://github.com/devacc8/dsh-billing-badge) — 在输入框统计行里、缓存命中读数之后显示高峰/非高峰计费时段：状态圆点与切换倒计时，点击展开面板显示按接口返回货币表示的余额，并拆分为总额、赠送与充值。
 - [dingyi222666/dsh-wakatime](https://github.com/dingyi222666/dsh-wakatime) — 在 WakaTime 中记录 DSH 读取文件、查看图片和编辑代码的活动，并准确统计 AI 新增和删除的代码行数。DSH 回复期间持续记录活动，多个文件的记录批量上报，并在并行运行的 DSH 进程间统一控制各项目的上报频率。自动安装和更新 wakatime-cli。
 - [divineeagleblackhand/dsh-cost-receipt](https://github.com/divineeagleblackhand/dsh-cost-receipt) — 在每条助手回复下面显示本次问答的花费、账户余额与礼金余额，按该轮 token 用量乘官方峰谷单价计算；算不出价时写明原因，不猜测。
@@ -1685,6 +1686,7 @@ dsh plugin --profile web add dshmarket
 - [cyh3436332528/dsh-plugin-session-purge#plugin](https://github.com/cyh3436332528/dsh-plugin-session-purge/tree/main/plugin) — 永久删除 DSH 会话（而非仅归档），级联清理它的日志目录、投影缓存、工作区记账与子会话（子代理）。提供设置页面板：按工作区分组，显示体积、时间与「打开中 / 已归档 / 子会话 N / 无工作区」标记，支持筛选与批量删除，每条删除都在行下方内联二次确认。
 - [czm15053/dsh-peer-link](https://github.com/czm15053/dsh-peer-link) — 让 dsh 和 Claude Code 会话直接互发消息，附带可点击的会话列表卡片（搜索/刷新/弹窗发送）。
 - [DDDMUC/dsh-delete-turn](https://github.com/DDDMUC/dsh-delete-turn) — DSH 消息删除插件：按条删除用户消息、按步骤删除思考与工具调用、按整条回复删除助手回答，经官方 surface-replace 契约从模型上下文移除并从可见转录隐藏，原始 append-only 日志不改写。
+- [deepsleepAquarium/dsh-whale-post#dsh-whale-post-bus](https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/bus) — DeepSeek Harness 会话之间的文件信箱：每封信都用 HMAC 与正文摘要封好，收件人通过名单接口解析，默认离线投递——投不出去的信留在信箱里等人来收，不会丢。
 - [delock/dsh-whats-up](https://github.com/delock/dsh-whats-up) — What's up · 在忙啥——零维护的会话动态看板:host 端扫描全部会话,为每个会话提取「目标 + 一句话现状」(多 provider LLM、按指纹缓存),自动发现做到一半、问了没回、近期在推进的事,点卡片一键跳回会话。
 - [Domaki-co/dsh-message-forward](https://github.com/Domaki-co/dsh-message-forward) — DSH 会话间消息转发：把单条模型回复、用户消息或多选合并的消息与图片从上游会话提取出来投递到另一个会话，支持静默发送、填入草稿、发送并跳转三种投递方式，并可套用提示词模板。
 - [domitor-syh/dsh-rollback](https://github.com/domitor-syh/dsh-rollback) — TRAE 式「回退到本轮对话发起前」插件：按轮次建立检查点（10 轮滑动窗口），同时回滚工作区文件与原位截断模型上下文，保持同一 session id。回退只能由人发起：/rollback 命令或每轮的 Web 回退按钮（被中断的轮次也可用），弹窗逐条列出受影响文件及其动作（恢复/找回/删除/跳过）。
@@ -2175,6 +2177,7 @@ dsh plugin --profile web add dshmarket
 - [1jiegejiayouxuewangan1/dsh-desktop-uia](https://github.com/1jiegejiayouxuewangan1/dsh-desktop-uia) — 通过 UI Automation 控制 Windows 桌面：九个工具读取窗口控件树、按 id 走控件自身的 UIA 模式操作，每次写入都受审批策略、动作日志与设置面板约束。
 - [1na-ko/dsh-hdc-bridge](https://github.com/1na-ko/dsh-hdc-bridge) — 鸿蒙设备桥：hdc 截图/装包/日志/崩溃/UI 自动化闭环（配 read_image 看图），官方优先版本化 API 知识层（SDK .d.ts + 离线随包文档），以及 DevEco CLI 构建/签名/lint 通道。
 - [2286893544/feishu-dsh-plugin](https://github.com/2286893544/feishu-dsh-plugin) — 飞书（Lark）集成：25 个工具，覆盖群消息与聊天记录、云文档（含知识库页面、自动生成的图表与图片）、多维表格记录、电子表格区间读写与文档授权，基于企业自建应用。
+- [3ChatAI-NCT/3chatai-deepseek-harness-plugin](https://github.com/3ChatAI-NCT/3chatai-deepseek-harness-plugin) — 通过 OAuth 将 DeepSeek Harness 接入 3Chat，查询客户与会话、读取沟通上下文、确认后发送消息并跟踪批次进度。
 - [58catmiao/dsh-sciwork](https://github.com/58catmiao/dsh-sciwork) — 给 DSH 的科研库面板与技能组：课题目录、带溯源的图表登记、草稿、文献、数据表、期刊档案、投稿台账，以及面向科研智能体的写作、引用与 Origin 出图纪律（出图需另装 dsh-origin-plugin）。
 - [863683348/dsh-plugin-academic-writing](https://github.com/863683348/dsh-plugin-academic-writing) — 为 DSH agent 提供学术写作工具包：论文大纲、标题与摘要骨架、GB/T 7714 / APA / MLA 引文格式化、措辞质检与投稿前清单。
 - [863683348/dsh-plugin-education](https://github.com/863683348/dsh-plugin-education) — 为 DSH agent 提供教育工具包：按学段的教案骨架、测验题与答案校验、分析式评分量规、Anki/markdown 闪卡与可读性分级。
@@ -4409,6 +4412,7 @@ dsh plugin --profile web add dshmarket
 - [DamonKoy/dsh-plugins#dsh-approve-for-me](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-approve-for-me) — 自动化审批审核：只读工具自动放行、危险命令自动拒绝，策略引擎 fail-closed。
 - [DamonKoy/dsh-plugins#dsh-secret-redactor](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-secret-redactor) — 工具结果敏感信息自动脱敏：模型看到前掩码 API key / token / JWT / 私钥与配置密钥。
 - [Darren-Tang/dsh-provenance](https://github.com/Darren-Tang/dsh-provenance) — 为 DeepSeek Harness 插件做安装前供应链校验：在代码运行前核对即将安装的包是否与你读到的源码一致。
+- [deepsleepAquarium/dsh-whale-post#dsh-whale-post-verify](https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/verify) — 校验其他 agent 写来的信：规范字段顺序、摘要与 HMAC 校验。默认关闭；开启后，缺字段或未登记字段不放行，任何一项不过就拒收。
 - [DingZhiQi5596/dsh-plugin-guard](https://github.com/DingZhiQi5596/dsh-plugin-guard) — DSH Desktop 插件安全防护：崩溃后自我修复 + 8 项核心安全检查（另有 2 项可选：深度组合校验、业务冒烟），写完插件自动提示。非商业源可用。
 - [DNAlec/dsh-auto-approve](https://github.com/DNAlec/dsh-auto-approve) — 自动审批 / 自动审核需要审批的工具调用：先用关键词分桶做零上下文红线匹配，再交由审核模型判类别与风险等级， 按命中行与等级那一格决定自动允许、自动拒绝或转人工；判定没跑成固定转人工，自动拒绝会把原因回传给模型。
 - [drscrewdriver/dsh-perm-gate](https://github.com/drscrewdriver/dsh-perm-gate) — P0–P4 确定性优先权限门控，含 Permissive 档位、学习沉淀与审批历史 UI；凭据/受保护路径硬拒绝，内部只读工具自动放行。
