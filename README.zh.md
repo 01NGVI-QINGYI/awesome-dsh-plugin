@@ -1989,6 +1989,7 @@ dsh plugin --profile web add dshmarket
 - [shuiqian520/dsh-session-delete](https://github.com/shuiqian520/dsh-session-delete) — 在侧栏会话行的「…」菜单里永久删除单个会话;也可点侧栏标题旁的「批量删除」入口进入多选模式,勾选多个会话后「确认删除」一次清掉(会话日志、工作区归属、宿主内存实例、客户端列表行一并清理);另可清理日志已不存在的残留行,用户消息与 AI 回复的复制按钮右侧各有「重试」。
 - [SilenZerOrz/obsidian-dsh-acp](https://github.com/SilenZerOrz/obsidian-dsh-acp) — 在 Obsidian Agent Client（及其他 ACP 客户端）里驱动 DeepSeek Harness 的 ACP 适配器：会话 list / resume / fork / delete、按会话切换模型、一句话摘要预览、导入外部 ACP 会话，并可把 Obsidian 侧会话拉进 dsh 原生会话库。需 DSH >= 0.1.5-rc.3。
 - [SiriLee/dsh-rewind](https://github.com/SiriLee/dsh-rewind) — 同一会话窗口内的 in-place 对话回退（不 fork，Claude Code /rewind 语义）：每条消息的 ↶ 按钮把模型上下文回退到任意用户消息，可选用磁盘持久化的 before-backups 还原工作区文件。
+- [Sky-lll27/DSH-chat-keeper](https://github.com/Sky-lll27/DSH-chat-keeper) — DSH 对话管家：跨工作区总表与批量归档、正文搜索，以及可恢复的回收站式删除。
 - [SLin-code/dsh-task-notice-board](https://github.com/SLin-code/dsh-task-notice-board) — 面向 DSH Web 的任务级 Workspace 到 Task 到 Session 协作控制台，提供 Session 看板、归档对话查看，以及在关联 Session 之间共享的有界长期记忆。
 - [sluminositys/dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) — 从任意层级的已完成回答持续创建隔离分支，主会话始终不受影响。
 - [snow-The/dsh-session-handoff](https://github.com/snow-The/dsh-session-handoff) — 会话交接与上下文管理：导出/恢复结构化交接文档，让新会话无缝续接；并集成了主动上下文裁剪（acp_* 工具，基于官方 compaction API 与模型自写摘要）。
@@ -2635,6 +2636,7 @@ dsh plugin --profile web add dshmarket
 - [Luke-Yong/dsh-plugin-knowledge-graph](https://github.com/Luke-Yong/dsh-plugin-knowledge-graph) — 基于代码库知识图谱的 read_graph 工具（CONTAINS / EXPORTS / IMPORTS / IMPORTS_SYMBOL 关系）。
 - [Luke-Yong/dsh-plugin-project-management](https://github.com/Luke-Yong/dsh-plugin-project-management) — 一个 DeepSeek Harness 插件，通过与用户进行项目需求访谈，生成项目时间线 / 甘特图，并导出为 Word 或 Excel 格式。
 - [LuminariSoftwares/tool-guardian](https://github.com/LuminariSoftwares/tool-guardian) — 用三个路由工具（list_capabilities、describe_tool、call_tool）代理 stdio MCP 服务器，schema 按需加载，不再随每次请求发送；所有工具结果经过确定性输出阶梯压缩，有损处理前先归档原文（retrieve_spill 可读回）；按 token 为工具分组标价，并可按 agent 隐藏内置分组。桥接到纯标准库的 Python 路由器，需要 Python 3.9+。
+- [luobosibing2/dsh-jev-plugin](https://github.com/luobosibing2/dsh-jev-plugin) — 在 DeepSeek Harness 中集成 TypeSafe Jev，用于技能与文件选择、任务监督、共享结论纠错、工具输出过滤、审批辅助和历史步骤阶段导航；所有功能默认禁用。
 - [lussey820/dsh-http-tools](https://github.com/lussey820/dsh-http-tools) — HTTP/API 调试工具集：全参数 HTTP 请求（method/headers/body/auth）、curl 命令解析与一步执行、会话内请求历史与响应并排对比、分页 Link 头透出；配合可选 dsh-http-tools-ui 提供 DeepSeek 风格工具卡片。
 - [lxfu1/dsh-plugin-chart](https://github.com/lxfu1/dsh-plugin-chart) — 增强 DeepSeek Harness 数据可视化能力，根据用户输入自动选择图表类型并生成图片，支持趋势、比较、占比、关系和流程等可视化场景。
 - [lyjsyyds/dsh-novel-studio](https://github.com/lyjsyyds/dsh-novel-studio) — 小说创作工作区：一本书一个文件夹、YAML/Markdown 分区、关系图自动连边、一致性校验、四个 AI 任务与四种导出格式。
@@ -3914,6 +3916,7 @@ dsh plugin --profile web add dshmarket
 - [zclDragon/dsh-tool-generate-image](https://github.com/zclDragon/dsh-tool-generate-image) — 给纯文本模型的 `generate_image` 工具：模型用自然语言要一张图，经 Antigravity CLI 让 Gemini 画出，保存到可配置输出目录并返回文件路径，供模型在任务中使用。
 - [ZEM17/dsh-subagent-agy](https://github.com/ZEM17/dsh-subagent-agy) — 把 Google Antigravity CLI（agy）接入 DSH 作为产品子代理：用 Antigravity 登录态（无需 API key）委托 Gemini 编程智能体干活，支持对话续聊、后台流式进度、按路径识图与自动弹出登录窗口。
 - [zenghaili0901/dsh-bot-mode](https://github.com/zenghaili0901/dsh-bot-mode) — DeepSeek Harness 的 Bot 模式：把子 Agent 变成一群有头像、有人格的 Bot，每个 Bot 拥有独立对话，由一个持久的 continuable 子 Agent 会话支撑，跨轮次保留记忆。
+- [zhairy/dsh-agent-swarm](https://github.com/zhairy/dsh-agent-swarm) — 中文多智能体工作流，支持按角色配置模型回退、版本化 Mermaid 任务规划、独立 Agent 与 Jev 审核、专家持久化协作和纯函数计算工具。
 - [ZhenHuangLab/dsh-sync](https://github.com/ZhenHuangLab/dsh-sync) — 面向 DSH 设置与 Profile 配置的策略化 Git 同步，支持敏感信息隔离、冲突审阅与按行选择应用。
 - [ziduup/dsh-programming-mode](https://github.com/ziduup/dsh-programming-mode) — 编程模式 agent preset 组合包：标准编码 Agent 强制执行 Superpowers 工程纪律（技能优先、先头脑风暴、先计划后编码、TDD、系统化调试、完成前验证），并常驻 Ponytail 代码量纪律（7 级最小化阶梯，默认 full）；内置全部 20 个技能（14 superpowers + 6 ponytail），并在每个新会话的第一条请求前自动注入 using-superpowers 技能全文。
 - [Zilong6666/dsh-task-workspace](https://github.com/Zilong6666/dsh-task-workspace) — 任务工作区约定：一个会话只用一个文件夹，一个任务一个 PROGRESS.md（每次修改整体覆盖更新），任务过长就在任务目录里建 git 仓库。
@@ -4006,6 +4009,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — 官方级 GitHub CI 集成：composite action.yml、轮询 PR 评审机器人（幂等行内评论 + status-check 门禁）以及 PR/issue 工具，所有写入走人工审批门。
 - [pinzza/dsh-git-statusline](https://github.com/pinzza/dsh-git-statusline) — DSH Web 的紧凑 Git 状态行：显示当前分支、已暂存与未暂存的行数改动、相对 upstream 的领先/落后提交数以及工作区干净标记；可放在侧边栏底部、会话标题栏或输入框上方/下方，位置在设置页切换。
 - [qingyou002/dsh-git-commit](https://github.com/qingyou002/dsh-git-commit) — DSH 斜杠命令 /commit：暂存全部更改，用会话当前模型总结暂存区 diff 后提交；不依赖浏览器界面，模型调用失败时回退到本地规则生成提交信息。
+- [RaditPasya/dsh-web-git-sidebar](https://github.com/RaditPasya/dsh-web-git-sidebar) — DSH Web 左侧栏的源代码管理面板：搜索、切换与创建分支并显示领先/落后提交数，拓扑序提交图，点击任意提交可展开查看其文件（A/M/D）、增删行数、提交信息、作者与时间。设置上方常驻一个底部停靠区，包含分支下拉与最近提交并跟随当前会话；fetch 与快进 pull 合并为一个按钮；另有 git_worktree 工具供智能体创建、列出与移除 worktree。
 - [sakthiveltofficial/dsh-git-plugins#bundle](https://github.com/sakthiveltofficial/dsh-git-plugins/tree/main/packages/git/bundle) — DeepSeek Harness 的 Git 与源码管理插件套件：本地 git 操作，外加 GitHub、GitLab、Bitbucket、Azure DevOps 与 Gitea 适配器，并带自演进记忆。
 - [shenkonghui/dsh-worktree-manager](https://github.com/shenkonghui/dsh-worktree-manager) — dsh 的 Git worktree 管理——按仓库聚合工作区，创建与切换 worktree，并查看变更、提交历史与文件差异。
 - [Shyboy0499/dsh-git-tools](https://github.com/Shyboy0499/dsh-git-tools) — 为 DeepSeek Harness 提供四个零依赖本地 git 工具（status、diff、log、commit），作用于会话工作区。
