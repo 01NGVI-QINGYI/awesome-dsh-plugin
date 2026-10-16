@@ -261,6 +261,7 @@ dsh plugin --profile web add dshmarket
 - [cyjyyd/dsh-ssh-tui](https://github.com/cyjyyd/dsh-ssh-tui) — 跳板机与高延迟 SSH 上的 DeepSeek Harness 终端：纯 ANSI、增量重绘；SSH 掉线后会话不丢，可用 --resume 接回。
 - [cyrus123456/dsh-johari-cognition-quadrant-dialog-composer](https://github.com/cyrus123456/dsh-johari-cognition-quadrant-dialog-composer) — 乔哈里认知四象限对话梳理工具——在输入框上方添加按钮，弹出 2×2 象限面板（我知道/不知道 × AI知道/不知道），将对话上下文梳理为结构化 Prompt 并写回输入框。
 - [d0ublecl1ck/dsh-hide-empty-workspace](https://github.com/d0ublecl1ck/dsh-hide-empty-workspace) — 某个工作区的未归档会话从 1+ 掉到 0 的那一刻自动隐藏它的侧栏行，并在工作区行自带的「…」菜单里追加「隐藏工作区」，另配侧栏底部恢复入口。只切 display，不归档、不删除、不改写任何工作区。
+- [d0ublecl1ck/dsh-search-enhance](https://github.com/d0ublecl1ck/dsh-search-enhance) — 在「新建会话」的工作区下拉里直接搜索：中文支持拼音首字母与全拼，英文支持任意位置子串与忽略分隔符匹配。
 - [daetz-coder/dsh-multi-chat](https://github.com/daetz-coder/dsh-multi-chat) — 在 DSH Web 界面里并排运行、监控多个对话实例：多窗口墙 + 自动发现 + 单窗控制，内置带口令认证的局域网网关，手机/平板也能看。
 - [damlys99/dsh-morning-paper](https://github.com/damlys99/dsh-morning-paper) — 把跑着的会话排成一张报纸式头版，作为 Chat 与 Trajectory 旁的 Conversation View 标签页：逐轮时间线（耗时、步数、工具、token、结果）、按文件统计的改动热度、墙钟时间去向以及其中多少是模型而非工具、哪一轮吃掉了花费、无人重试的失败（附失败命令），以及对照该路由模型自报容量的上下文压力仪表。简报由持久会话日志折算而成、从不调用模型：零 token、不会编造、同一份日志与时钟下字节一致；不向会话追加任何内容、也不触达模型，只报告待批准项而绝不代为应答。仅在某一页有内容时才提供该页；标签页在轮次结束时自刷新，并用只读日志尾部的探针做两档轮询。
 - [damlys99/dsh-queue-reorder](https://github.com/damlys99/dsh-queue-reorder) — 在官方队列 dock 内直接重排忙碌时排队的消息：每一行带拖拽手柄与上下移动按钮，移动在宿主端以一次带并发校验的 inbox splice 完成。只装饰官方 dock 而不替换它，因此预览、行内编辑、插话、删除与附件保持原样。队列已变化、该行不是用户消息（例如目标轮次提示）、或队列属于子代理会话时，移动会被拒绝。
@@ -1591,6 +1592,7 @@ dsh plugin --profile web add dshmarket
 - [yoshino-xiao7/dsh-grok-provider](https://github.com/yoshino-xiao7/dsh-grok-provider) — Grok Build 模型接入插件：使用官方 CLI 浏览器登录，动态发现账号可见模型，支持流式推理、工具调用、额度与模型能力设置页。
 - [young-tim/dsh-llm-governor](https://github.com/young-tim/dsh-llm-governor) — 为 DSH 提供多模型访问控制、月度 Credits、手动/质量优先/额度优先/自动路由、失败重路由与 Usage 审计。
 - [yu-wenchao/dsh-opencode-free-models#dsh-opencode-free-models](https://github.com/yu-wenchao/dsh-opencode-free-models/tree/master/plugin/dsh-opencode-free-models) — DSH free model provider plugin with 20+ models including Gemini, MiMo, GLM, etc.
+- [Yuer6327/ModelTester](https://github.com/Yuer6327/ModelTester) — 在 dsh 网页端挂载模型归属面板，用纯本地、零联网的结构指纹匹配（模板特殊 token 泄漏、glitch 金丝雀、tokenizer usage 向量比对）判断当前会话的回答最像 29 家 AI 厂商中的哪一家，每个结论附带可展开的证据账本，另附 12 探针主动取证电池。
 - [YUEYUEXYS/dsh-think-ultra](https://github.com/YUEYUEXYS/dsh-think-ultra) — 将每个请求固定到原生 max effort 档位，并提供按模型与模式隔离的推理深度面板：0-20 能力滑块、独立的迅流（Velocity）/极境（Apex）配置档与离线推理工具箱。以混淆构建交付，允许商用，禁止逆向。
 - [yuioi666/dsh-plugin-model-capability](https://github.com/yuioi666/dsh-plugin-model-capability) — DSH 网页端模型能力管理插件：控制推理档位、上下文与输出上限、输入模态及网关兼容预设，双语界面。
 - [Yunado/dsh-qwen38-local-qol](https://github.com/Yunado/dsh-qwen38-local-qol) — 本地 Qwen3.8 线（llama.cpp 或 NInfer）的逐请求 thinking 预算、压缩后端与设置 tab。
