@@ -1968,6 +1968,7 @@ dsh plugin --profile web add dshmarket
 - [zaizaizhao/dsh-branchmark#dsh-branchmark](https://github.com/zaizaizhao/dsh-branchmark/tree/main/packages/bundle) — Vibe Coding 时，如果突然想到另一个问题，或者看到一段以后还会用到的回答，可以先保存下来、在 Side Chat 里快速问清楚，或另开一个相关会话继续研究，不打断当前任务的开发思路和注意力。
 - [zangxx66/dsh-prompt-setting#dsh-prompt-setting](https://github.com/zangxx66/dsh-prompt-setting/tree/main/packages/dsh-prompt-setting) — DeepSeek Harness 默认 System Prompt 管理插件：在 Web GUI「设置」里浏览、检索并覆盖最终装配进每轮会话的系统提示词。
 - [zchuxi/dsh-restart-task](https://github.com/zchuxi/dsh-restart-task) — 修复被打断的 DSH 回合：放大产品自带的重试预算并把等待渲染成同一步内的实时倒计时，输出被截断时在同一轮内续写，回合已结束时可选地新开一轮继续；输入框为空时把「继续」交给发送键。
+- [zf-666888/dsh-session-id-for-desktop](https://github.com/zf-666888/dsh-session-id-for-desktop) — 在会话行的「⋯」菜单里补上复制会话 ID，以及永久删除会话（日志、投影缓存与工作区引用），删除前有二次确认。
 - [zhaolianghz/dsh-turnscope](https://github.com/zhaolianghz/dsh-turnscope) — 逐轮次文件变更与逐文件差异、确定性安全结论，外加 preview-first 安全回退：预览不写盘，确认后才应用，工作区在预览后发生漂移则直接拒绝。
 - [zhengjy01/dsh-period-report](https://github.com/zhengjy01/dsh-period-report) — 自由周期会话报告：任意日期区间的 AI 叙事日报/周报/月报，支持每隔 N 天定时提醒并弹系统通知（macOS / Linux）。
 - [zhou1736948757-cpu/dsh-auto-continue](https://github.com/zhou1736948757-cpu/dsh-auto-continue) — 回答因达到单次输出 token 上限被截断时自动发送"继续"续写，无需手动操作；面向自部署 Ollama 等小输出上限场景。
@@ -3937,6 +3938,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-niao/dsh-niao-message](https://github.com/dsh-niao/dsh-niao-message) — DeepSeek Harness 的 macOS 系统通知插件：任务中止、超限、阻塞、中断、出错、等待提问或批准、完成或子代理结束等事件通过 terminal-notifier 弹系统横幅；点击横幅打开指定应用，回到页面自动清空。
 - [dsh-pulse/dsh-hermes-bridge](https://github.com/dsh-pulse/dsh-hermes-bridge) — DSH 的任务队列执行端点：需要自行部署独立的 Hermes Agent 网关并编写自己的微信入站脚本；仅在单一环境验证过，需要按你的环境适配。
 - [falling-ts/dsh-web-ding](https://github.com/falling-ts/dsh-web-ding) — agent 回合结束时在浏览器标签页里播放一声合成的叮,纯前端 Web Audio 发音,不经过后端、不弹系统通知。
+- [FANLS05/dsh-desktop-notifications](https://github.com/FANLS05/dsh-desktop-notifications) — DeepSeek Harness 的 Windows 桌面通知：申请权限、提问、任务完成、出错与登录提醒，每条通知第一行都是会话名称。
 - [faukwaa/dsh-gap-feed](https://github.com/faukwaa/dsh-gap-feed) — agent 思考超时时，直接在对话流中推出一条今日头条热点或提醒消息。
 - [Flandern1211/dsh-task-time](https://github.com/Flandern1211/dsh-task-time) — DeepSeek Harness 提醒 + 任务计时插件：提醒——按累计运行间隔定时提醒、超过计划用时发超时提醒，模型需要你确定或选择时发红色常驻提醒（人在 DSH 里走界面提醒卡 + 提示音，不在 DSH 里发系统通知；卡片滞留时长可配置、可设为常驻不自动消散，点击卡片可跳转所属会话）；任务计时——为每个会话设置计划用时，仅模型运行时连续计时，任务结束自动统计实际用时与计划的差距，任务面板支持点击跳转会话，本地记录持久化。
 - [gcry13067381632-jpg/dsh-qqbot](https://github.com/gcry13067381632-jpg/dsh-qqbot) — 接入 QQ 官方机器人的 DeepSeek Harness 通道(tencent-connect/dsh-qqbot 功能增强 fork): 群/私聊与完整 agent 对话、表情包图库(自动打标+AI 斗图)、群管理(入群审批/禁言)、botplay 互动事件卡与翻页目录、用户扩展注册表(自定义斜杠命令与 QQ 工具)、定时唤醒、QQ 远程审批、悬浮球 dock Web UI。
