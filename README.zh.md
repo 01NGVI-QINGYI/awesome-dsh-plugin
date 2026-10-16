@@ -869,6 +869,7 @@ dsh plugin --profile web add dshmarket
 - [xiaoyangcheng84-svg/dsh-skin-manager](https://github.com/xiaoyangcheng84-svg/dsh-skin-manager) — DSH Web GUI 皮肤管理器：自动发现已安装皮肤，在独立设置页一键互斥切换，热载入无需重启。
 - [xiaoyi-xx/dsh-peak-status](https://github.com/xiaoyi-xx/dsh-peak-status) — DSH Web GUI 会话头部高峰指示灯，实时显示当前北京时间是否处于 DeepSeek API 高峰时段，附实时时钟与下一转折倒计时。
 - [xiaoyuer3921/dsh-showreel](https://github.com/xiaoyuer3921/dsh-showreel) — 把最近一次已完成的 DSH 任务生成为可分享的竖屏战报视频：五幕可编辑故事板、Host 侧脱敏、可选 AI 润色与配音，导出 MP4/WebM 和 PNG 封面。
+- [xiex16070-jpg/dsh-prompt-enhance](https://github.com/xiex16070-jpg/dsh-prompt-enhance) — 在输入框动作行的模型选择器左侧加一颗增强芯片：用当前会话已选的模型就地改写草稿，五种风格，可一键撤销，另有 /enhance 斜杠命令。
 - [XiLuovo/dsh-session-timeline](https://github.com/XiLuovo/dsh-session-timeline) — 会话左侧的短横线时间轴：整个会话的用户消息一览、当前消息定位、悬停预览消息与回复、点击跳转，可收起展开。
 - [xing-shuyin/dsh-ui-tools](https://github.com/xing-shuyin/dsh-ui-tools) — dsh Web UI 开发者工具面板：文件浏览/预览/编辑与路径式文件提及、多终端（快捷命令）、Git 面板（提交/推送/拉取/分支）与后台任务管理。UI 移植自 pi-web-ui。
 - [Xingkong42/dsh-open-workspace](https://github.com/Xingkong42/dsh-open-workspace) — 在工作区侧边栏会话行菜单和会话顶部标题栏提供「打开工作区」入口，用系统文件管理器打开当前会话所属工作区文件夹。
@@ -1296,6 +1297,7 @@ dsh plugin --profile web add dshmarket
 - [Galaxy-2001/Rhine-Lab-Codex-Theme#dsh](https://github.com/Galaxy-2001/Rhine-Lab-Codex-Theme/tree/main/dsh) — 为 DeepSeek Harness 提供莱茵生命风格的浅深配色和动态背景。
 - [GGBond2424648901/deep-whale-day-night-theme](https://github.com/GGBond2424648901/deep-whale-day-night-theme) — 面向官方 Harness rc.7 的非商业鲸鱼娘昼夜皮肤：当前无整屏边框布局、白昼水晶工坊与夜晚月潮观测室双场景、Q 版侧栏伙伴、透明花边与轻量氛围。
 - [GptsApp/dsh-stylevault](https://github.com/GptsApp/dsh-stylevault) — 为 DeepSeek Harness 提供 30 套经典开源主题配色（Catppuccin、Nord、Tokyo Night、Gruvbox、Solarized 等），映射官方 ThemeService token；带 Style Settings 面板，可实时调整颜色/字体/圆角，并支持 JSON 导出/导入分享配置。
+- [H2CO3w/dsh-theme-frost](https://github.com/H2CO3w/dsh-theme-frost) — 把文件夹里的图片设为 DSH 网页端全局磨砂壁纸，配色沿用官方原版。
 - [hanyi7867069-create/dsh-moonrise](https://github.com/hanyi7867069-create/dsh-moonrise) — 月升暗色主题——深蓝夜色打底、琥珀月光点缀。
 - [HaoyueQin/deepseek-harness-background](https://github.com/HaoyueQin/deepseek-harness-background) — DSH Web 自定义背景插件：上传本地图片或粘贴图片链接作为全界面背景，可调不透明度、明暗自适应遮罩、面板透明度、毛玻璃与壁纸模糊，实时预览、设置持久化；另附可选的 DeepSeek 官网风格会话时间线导航轨，支持重点书签与快速跳转。
 - [HarmlessFunny/dsh-background-by-model](https://github.com/HarmlessFunny/dsh-background-by-model) — 按模型切换 DSH Web 界面外观：有序规则列表按当前会话的模型名匹配，每条规则自带壁纸、主题色、布局模式、取景与背景透明度、模糊；另有主背景、左侧栏、右侧栏、卡片面板、输入框与控件、设置面板、对话文本框、轨迹页的分区透明度与毛玻璃模糊。
@@ -3979,6 +3981,7 @@ dsh plugin --profile web add dshmarket
 - [Shyboy0499/dsh-git-tools](https://github.com/Shyboy0499/dsh-git-tools) — 为 DeepSeek Harness 提供四个零依赖本地 git 工具（status、diff、log、commit），作用于会话工作区。
 - [Starfie1d1272/dsh-github-skills](https://github.com/Starfie1d1272/dsh-github-skills) — 四个面向 GitHub 工程工作流的 DSH Skill：PR 分诊、review 反馈、GitHub Actions 诊断和安全的 draft PR 发布；优先复用现有 DSH 能力，必要时回退到 gh/git。
 - [sunshaobei/dsh-session-review](https://github.com/sunshaobei/dsh-session-review) — 输入框上方的条带列出当前会话修改过的文件（默认折叠），Review 按钮打开会话变更面板，基于会话自身的 edit/write 工具结果展示前后差异块，无需 git。
+- [Sycada/dsh-git-connector](https://github.com/Sycada/dsh-git-connector) — DeepSeek Harness 的 Git 仓库连接：按档案名操作仓库（clone/fetch/pull/push/commit）、Gitea/Forgejo/GitHub API、密钥存 DSH 凭据中心，并按仓库单独授权忽略证书/允许覆盖/force push 等危险开关。
 - [temotee2103/dsh-ci-co-pilot](https://github.com/temotee2103/dsh-ci-co-pilot) — 让 DeepSeek Harness Agent 化身 GitHub 副驾：PR 审查、CI 失败修复、Issue 分类与自动发版说明。
 - [TiChuXiXi/dsh-git-vcs](https://github.com/TiChuXiXi/dsh-git-vcs) — 右侧栏的 IDEA 风格 Git 面板：本地变更与按文件勾选提交、提交树与提交详情、分支 / 远程 / 贮藏管理、带凭据兜底的推送，以及 git 命令流水，全部通过原生 git CLI 执行。
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — 把 agent 的每次写入、编辑和 shell `rm` 删除记录进一个 shadow git 仓库，然后在 VS Code 里逐 hunk 接受或撤回。需要配合 dsh-review-vscode 扩展；面板只出现在 VS Code 的 webview 里，独立浏览器中的对话界面不变。
