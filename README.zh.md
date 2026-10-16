@@ -4202,6 +4202,7 @@ dsh plugin --profile web add dshmarket
 - [hyzyn/dsh-plugin-kit#profile](https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/profile) — DSH Web GUI 的 Profile 管理卡片：可视化查看、创建（base / web / headless 三种模板）、复制、重命名与删除 ~/.dsh/profiles 下的 profile，支持逐 profile 端口配置并复制带 --port 的启动命令。
 - [ianho7/dsh-port-inspector](https://github.com/ianho7/dsh-port-inspector) — Windows 本地开发端口来源追踪与安全处理工具。
 - [ICCuse/dsh-pain-point-check](https://github.com/ICCuse/dsh-pain-point-check) — 强制痛点检查：同一问题连续 2 个实验未收敛后注入三问、拦截非调查类工具调用直到答出、阻止同方向重试。
+- [IHS470/dsh-plugin-restart](https://github.com/IHS470/dsh-plugin-restart) — 窗口标题栏的重启按钮：点一下关闭整个桌面应用再重新拉起（沿用最初的 v0.1.0 重启逻辑）。仓库另附一个工具，可为已安装的桌面壳打补丁，使其托盘菜单里出现「重启」一项。
 - [iiwish/dsh-testkit](https://github.com/iiwish/dsh-testkit) — 在 Docker 隔离的真实宿主中测试 DSH 插件的安装、启动、工具注册、更新、卸载、重装与恢复生命周期，并输出结构化证据。
 - [izz-BLUE/dsh-devtools](https://github.com/izz-BLUE/dsh-devtools) — 面向 DSH Agent 的运行时分析器：查看 Turn/Step 轨迹、模型与工具耗时、Provider 用量、重试与错误，实时与历史会话都能看。
 - [jacket-sikaha/dsh-market-gist-autosync](https://github.com/jacket-sikaha/dsh-market-gist-autosync) — 定时把 DSH 配置备份到私有 GitHub Gist，支持合并恢复。
