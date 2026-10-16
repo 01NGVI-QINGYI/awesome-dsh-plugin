@@ -1643,7 +1643,7 @@ dsh plugin --profile web add dshmarket
 - [tafcear/kimi-tide#dsh-kimi-tide](https://github.com/tafcear/kimi-tide/tree/main/packages/dsh-kimi-tide) — 逐步模型路由器：以命名预设与带图/关键词组有序规则为每一步在全部已挂载模型间选路，附图像转述协作流、图像护栏、多 plan 配额面板与逐步决策可观测。
 - [taikaikaikai-pixel/dsh-tap](https://github.com/taikaikaikai-pixel/dsh-tap) — DeepSeek Harness 的非官方上游插件包：CodeBuddy 网关（模型目录动态同步、逐模型思考强度、联网搜索/抓取、生图、流式凭据桥），TraeWork CN 与 Qoder CN 两条订阅额度通道（本地 OpenAI 翻译网关），以及 key 型 OpenAI 兼容上游注册表，全部收在四区块手风琴设置卡里。
 - [tearslee/dsh-workbuddy2api](https://github.com/tearslee/dsh-workbuddy2api) — 托管本地 workbuddy2api 网关进程，把它的模型注册为 dsh 的模型提供方，上下文窗口与思考档位均从网关自身的模型接口读取。
-- [thibautrey/multivibe#dsh-multivibe](https://github.com/thibautrey/multivibe/tree/main/plugins/dsh-multivibe) — Connect DSH to a MultiVibe gateway and inspect available models and connection status.
+- [thibautrey/multivibe#dsh-multivibe](https://github.com/thibautrey/multivibe/tree/main/plugins/dsh-multivibe) — 把 DSH 接到 MultiVibe 网关，并可查看可用模型与连接状态。
 - [TikaFlow/dsh-model-fix](https://github.com/TikaFlow/dsh-model-fix) — 给非官方（自定义）提供方的模型自动填充推理级别、最大上下文、输出上限与图片模态等参数（数据来自 models.dev），并提供兼容性提升、记住推理级别等用户体验优化。
 - [tonylee2022/dsh-xai-oauth](https://github.com/tonylee2022/dsh-xai-oauth) — 用设备码 OAuth 登录 xAI Grok 订阅，自动刷新访问令牌，并作为 xai 路由凭据使用，无需 API key。
 - [troytse/dsh-plugin-subagent-roles](https://github.com/troytse/dsh-plugin-subagent-roles) — 用文件定义子代理角色：角色放在项目级与全局级 .dsh/roles 目录，委派方每个角色只看到一行目录，子代理可见的工具由角色自己的工具策略决定。
@@ -2338,7 +2338,7 @@ dsh plugin --profile web add dshmarket
 - [acebang0303/dsh-quick-launch](https://github.com/acebang0303/dsh-quick-launch) — 一键创建、更新或删除 DeepSeek Harness 桌面快捷方式，图标可自定义上传切换，蓝白金鲸鱼悬浮按钮可拖动，点击旋转 90° 弹出面板。
 - [activeing123/dsh-mcptoon](https://github.com/activeing123/dsh-mcptoon) — 把 mcptoon 作为一条 stdio MCP 服务接入，让 agent 通过 mcptoon 的压缩视图发现已配置 MCP server 的工具，而非每轮支付完整 JSON schema。附带 doctor CLI：校验 mcptoon 可执行文件能否解析，不能时打印精确的 command/args 覆盖配置。
 - [adithyanraj03/dsh-graft-plugin](https://github.com/adithyanraj03/dsh-graft-plugin) — 显示当前 dsh 会话所用的 graft 索引、以及它是否仍与代码一致，并把 graft_ask、graft_grep、graft_callers、graft_skeleton、graft_map 作为原生工具交给模型。
-- [adwhispr/dsh-plugin-adwhispr](https://github.com/adwhispr/dsh-plugin-adwhispr) — Connects DeepSeek Harness to the AdWhispr remote MCP server through mcp-remote with browser OAuth sign-in, adding tools for competitor ad research, ad creative cloning, and launching and managing Meta, Google and TikTok campaigns. Requires an AdWhispr account.
+- [adwhispr/dsh-plugin-adwhispr](https://github.com/adwhispr/dsh-plugin-adwhispr) — 通过 mcp-remote 加浏览器 OAuth 登录，把 DeepSeek Harness 接到 AdWhispr 的远程 MCP 服务：竞品广告调研、广告创意克隆，以及 Meta／Google／TikTok 广告的投放与管理。需要 AdWhispr 账号。
 - [agentmail-to/dsh-agentmail](https://github.com/agentmail-to/dsh-agentmail) — 用 AgentMail 给 agent 配一个自己的收件箱：发信、读信、搜索与打标签共十一个工具；收到的邮件按邮件线程分派，每个线程对应一个独立会话；所有外发邮件都要过审批与收件人白名单。
 - [ai-tools-mtl/Aurify#bundle-patent](https://github.com/ai-tools-mtl/Aurify/tree/main/packages/bundle-patent) — dsh 专利撰写把关人：动笔前先检索中国专利给出三档结论，再走五方对齐访谈、八章交底书、附图与仿真实验、七维审查与 docx/PDF 导出全流程。技能开箱即用；检索、导出与实验工具来自内置的 Python MCP 服务，默认关闭——在 ~/.dsh/patent-services.yaml 里开一行即启用，uvx 会从 PyPI 自动拉取。
 - [Aik358/dsh-ark9canvas](https://github.com/Aik358/dsh-ark9canvas) — DSH 生图工作台与 Agent 生图工具：一个工具（ark9_generate_image）走任意 OpenAI 兼容图片 API 文生图/图生图。渠道完全由用户自行添加——默认零预置，自带 baseURL、Key 与模型名即可（支持手动输入任意模型名）。Agent 发起的生图默认需用户审批：请求进入浮窗审批页，批准才开始生成并计费；审批非阻塞——Agent 立即回复"等你审批"，结果、拒绝或超时以通知注入后续轮次并自动汇报。玻璃拟态浮窗五页签（生成/审批/提示词/记录/说明）、比例网格（质量预算+16px 对齐）、透明背景、批量最多 10 张（子任务聚合，部分成功也返回）、提示词库（自定义 JSON 来源经宿主代理拉取）、生成记录持久化与一键重试、多渠道聚合与逐渠道拉模型、中英双语界面、线性 SVG 图标、配置导入导出。安装 dsh-better-sidebar 自动注册侧栏页签；与 dsh-cua 共存时自动堆叠其悬浮按钮上方。
@@ -2761,7 +2761,7 @@ dsh plugin --profile web add dshmarket
 - [SIMON-WORLD/dsh-toolkit#dsh-at-file](https://github.com/SIMON-WORLD/dsh-toolkit/tree/main/packages/dsh-at-file) — DSH 的 @ 文件引用工具：注册 at_file_read 工具，把工作区内文件内容注入会话，含目录穿越防护与 50KB 截断（MIT）。
 - [SiriLee/dsh-edit-approval](https://github.com/SiriLee/dsh-edit-approval) — 每次 edit 与 bash 调用前都会询问：编辑前展示红绿行级 diff，命令前展示描述与命令面板——同意一次或拒绝，两个 gate 各带独立总开关（Settings → General）。
 - [siruignaw-sys/dsh-tool-bandit-search](https://github.com/siruignaw-sys/dsh-tool-bandit-search) — 使用上下文赌博机算法（Thompson 采样）学习何时使用快速搜索、何时使用深度搜索的 `search` 工具。 
-- [sjh9714/dsh-retry-guard](https://github.com/sjh9714/dsh-retry-guard) — Observes consecutive identical tool failures and optionally pauses before the next model step, preserving original results and successful repeats, with an in-chat report in DSH Web.
+- [sjh9714/dsh-retry-guard](https://github.com/sjh9714/dsh-retry-guard) — 监视连续相同的工具失败，可在下一个模型步之前选择暂停；保留原始结果与成功的重复调用，并在 DSH Web 里出一份会话内报告。
 - [Smalldy/godot-bridge](https://github.com/Smalldy/godot-bridge) — DSH↔Godot 引擎运行时控制桥：通过游戏内置 TCP 交互服务器启动并操控运行中的 Godot 4.x——16 个工具（约 130 条运行时命令、场景/UI 检查、GDScript eval、输入模拟、截图、headless 静态操作、项目编辑、导出、脚本编译检查、引擎路径设置），替代 godot-mcp。
 - [Snowball-labbot/Portfolio-OS#dsh-portfolio-os](https://github.com/Snowball-labbot/Portfolio-OS/tree/main/plugins/dsh-portfolio-os) — DSH 内的自包含个人资产与投研工作台：支持本地注册、资产导入与配置视图、市场和新闻跟踪、研究库及用户自行配置的 AI 简报；内置 Windows Runtime，数据保存在本机。
 - [sojo-negai/dsh-prompt-refine](https://github.com/sojo-negai/dsh-prompt-refine) — 发送按钮左侧的 ✨ 按钮：读取草稿与最近若干轮对话，向已配置的模型要三条建议（每条都是「问题 + 改法」），可逐条勾选并实时预览合并后的提示词，结果写回输入框但不发送。
@@ -3726,7 +3726,7 @@ dsh plugin --profile web add dshmarket
 - [jerryjiao/dsh-wewrite](https://github.com/jerryjiao/dsh-wewrite) — 公众号 AI 写作管线：六步成文（选题、大纲、成稿、门禁、渲染、配图）+ 启动 brief 合同、热榜逐条 AI 速览、RRULE 定时推草稿箱、写作台与对话工具（/wewrite 命令与 @ 引用），推送草稿箱前经宿主审批 fail-closed 确认。
 - [jerryxff26-alt/dsh-delivery-board](https://github.com/jerryxff26-alt/dsh-delivery-board) — 面向客户项目交付团队的交付看板：阶段流水线（default 或 governance 模板，也可自定义阶段），卡片含负责人、截止日、验收标准与 DoD，卡片跨阶段时自动记录交接审计日志，进展/风险/阻塞/决策日志，Markdown 客户周报，仅绑定 127.0.0.1 的可拖拽本地看板与只读 HTML 导出；状态保存在工作区的 delivery.json（11 个 delivery_* 工具与 /delivery 命令）。
 - [Jesse-njx/dsh-routines](https://github.com/Jesse-njx/dsh-routines) — 定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。
-- [JessenReinhart/dsh-poke-todo](https://github.com/JessenReinhart/dsh-poke-todo) — Ports jcode's auto-poke so an idle agent keeps working while its session still has incomplete todos.
+- [JessenReinhart/dsh-poke-todo](https://github.com/JessenReinhart/dsh-poke-todo) — 把 jcode 的自动催办搬了过来：会话里还有未完成待办时，空闲的 agent 会被推着继续做。
 - [jiang12345-code/dsh-multi-role-debate#dsh-multi-role-debate](https://github.com/jiang12345-code/dsh-multi-role-debate/tree/main/dsh-multi-role-debate) — 多角色并行论证：并行调用真实 Codex 与 Claude，由 DSH 主会话模型（Judge）生成第三方汇总并回对话；另含单 Agent 直接对话与各角色模型自由配置。
 - [jiazz197-cmyk/omd-dsh#packages/omd-dsh](https://github.com/jiazz197-cmyk/omd-dsh/tree/main/packages/omd-dsh) — 为 DeepSeek Harness 提供 7 个 Agent 预设模式：每个模式固定工具边界、按模式路由模型，并以 fast/deep 档位委派 omd_task 子代理；含规划到执行闭环（/mode、/start-work、基于 goal 的 /ulw）与逐模式、逐档位重配模型的设置页。
 - [jidekaixin2dian/dsh-team-flow](https://github.com/jidekaixin2dian/dsh-team-flow) — 适用于 DSH 0.2.0-rc.2 起版本的 Agent Teams 预览插件，让同会话用户 Steer 结束主代理当前的 wait_agent 等待，队友继续工作，并保留原生消息领取与 Node PTC 后续执行。
