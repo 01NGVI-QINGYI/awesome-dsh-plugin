@@ -634,6 +634,7 @@ dsh plugin --profile web add dshmarket
 - [pingg02/dsh-plugins#dsh-quote-selection](https://github.com/pingg02/dsh-plugins/tree/main/dsh-quote-selection) — 引用选中的对话文本并添加可选备注，在发送下一条消息时自动附带引用内容。
 - [plolpl789/dsh-raw-html](https://github.com/plolpl789/dsh-raw-html) — 让 DeepSeek Harness Web GUI 把 agent 输出的 HTML 渲染成真实界面，支持视觉卡片、KaTeX 公式、Mermaid 图表与内置开源字体，并向 agent 注入设计规范。
 - [pomelo-ccc/dsh-pi-composer](https://github.com/pomelo-ccc/dsh-pi-composer) — 把输入框的模型控件换成 PI-Desktop 风格的选择器：双栏菜单（搜索、按 provider 分组、上下文窗口与能力徽标）、推理强度滑块、↑/↓ 提示词历史回溯，以及带撤销的提示词改写按钮。
+- [PPsz-qqq/dsh-restart-button](https://github.com/PPsz-qqq/dsh-restart-button) — 会话标题栏右端的重启按钮，可重启整个客户端：Windows 桌面版（Electron 外壳与 Host，走 Host 自身的优雅关闭流程）或 dsh web 服务。可等正在运行的回合与后台作业结束后再重启；重启后回到原会话，被中断的会话可一键继续；提示需重启才生效的插件更新；悬停显示 Host 运行时长与内存。
 - [prgrmrwy/dsh-sidebar-session-provider-icon](https://github.com/prgrmrwy/dsh-sidebar-session-provider-icon) — DeepSeek Harness 插件：在侧边栏为每个会话显示 provider 与 model 图标，跟随输入框选择器即时更新，历史会话回退到最近一次请求；聚合路由（如 opencode-go、traex）显示 provider 主图并叠加 10px model 小图标。
 - [psychiiii/dsh-three-window#personal-web](https://github.com/psychiiii/dsh-three-window/tree/publish/packages/personal-web) — dsh web 的三窗工作台：每个工作区并排显示聊天、施工和只读审核三个窗口，各窗口独立配置 hook；审核窗提供匿名多模型评审，先确认再运行，按同一件事归组，报告为 Markdown。
 - [Pudge1996/dsh-composer-stretch](https://github.com/Pudge1996/dsh-composer-stretch) — 输入框全屏扩展按钮——内容达 3 行以上时出现，点击扩展至全屏高度，发送后自动折叠，扩展模式下 Enter 换行。
@@ -3754,6 +3755,7 @@ dsh plugin --profile web add dshmarket
 - [zenghaili0901/dsh-bot-mode](https://github.com/zenghaili0901/dsh-bot-mode) — DeepSeek Harness 的 Bot 模式：把子 Agent 变成一群有头像、有人格的 Bot，每个 Bot 拥有独立对话，由一个持久的 continuable 子 Agent 会话支撑，跨轮次保留记忆。
 - [ZhenHuangLab/dsh-sync](https://github.com/ZhenHuangLab/dsh-sync) — 面向 DSH 设置与 Profile 配置的策略化 Git 同步，支持敏感信息隔离、冲突审阅与按行选择应用。
 - [ziduup/dsh-programming-mode](https://github.com/ziduup/dsh-programming-mode) — 编程模式 agent preset 组合包：标准编码 Agent 强制执行 Superpowers 工程纪律（技能优先、先头脑风暴、先计划后编码、TDD、系统化调试、完成前验证），并常驻 Ponytail 代码量纪律（7 级最小化阶梯，默认 full）；内置全部 20 个技能（14 superpowers + 6 ponytail），并在每个新会话的第一条请求前自动注入 using-superpowers 技能全文。
+- [Zilong6666/dsh-task-workspace](https://github.com/Zilong6666/dsh-task-workspace) — 任务工作区约定：一个会话只用一个文件夹，一个任务一个 PROGRESS.md（每次修改整体覆盖更新），任务过长就在任务目录里建 git 仓库。
 - [ZSeven-W/dsh-crew](https://github.com/ZSeven-W/dsh-crew) — 从 Claude Code / Codex 派发任务给 DSH Agent：原生子代理进度、按能力分层预设的宿主内工作会话，以及为纯文本 Harness 提供视觉与图像生成的多模态桥。
 - [zsspub/dsh-personal-todo](https://github.com/zsspub/dsh-personal-todo) — 跨 DeepSeek Harness 会话与项目共享的持久个人待办：使用 SQLite 存储，提供 Agent 工具、原生侧栏与对话尾部卡片，既可由用户自行管理，也可按需将单条待办交给 Agent 会话执行。
 - [ztl34245881-commits/dsh-task-planner](https://github.com/ztl34245881-commits/dsh-task-planner) — 带经验肌肉记忆的任务规划：条件反射检索历史方案 + LLM 能力匹配 + 经验自动沉淀。
