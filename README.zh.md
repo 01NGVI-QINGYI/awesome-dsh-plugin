@@ -566,6 +566,7 @@ dsh plugin --profile web add dshmarket
 - [Missher12/dsh-missher-enhance](https://github.com/Missher12/dsh-missher-enhance) — 为 DeepSeek Harness 增加使用统计、高亮底栏、钢琴键导航、无项目会话以及模型和文档辅助功能。
 - [miuzel/dsh-subagent-ui](https://github.com/miuzel/dsh-subagent-ui) — 搜索、监控、打断与批量归档工作区子代理，支持实时活动/思考流式展示与活跃浮窗。
 - [Mobai-read/dsh-chat-index-rail](https://github.com/Mobai-read/dsh-chat-index-rail) — 纯客户端对话输入目录条：每条用户消息一根横条，两级悬停预览（15 字，移入气泡展开 40 字）、点击跳转、滚动跟随高亮；静态 npm 包，无宿主半。
+- [moeform-re/dsh-review-md-preview](https://github.com/moeform-re/dsh-review-md-preview) — 评审页的 Markdown 预览与渲染态双栏对比。
 - [Mombrane/dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) — Web UI 子代理实时监视面板：侧边栏底部入口 + 右上角常驻卡片面板，实时展示当前会话每个子代理的运行状态（运行中/耗时/终态）、树形缩进，一键跳转子代理会话并支持返回主会话，刷新自恢复、移动端默认隐藏。
 - [MoonlitDropOfBlood/DSH-Desktop#whaleharbor-promo](https://github.com/MoonlitDropOfBlood/DSH-Desktop/tree/master/plugins/whaleharbor-promo) — 把浏览器里的 DSH 会话变成鲸港简版客户端：独立 --app 窗口、客户端顶栏与任务通知；后台多源下载完整桌面安装包（SHA-256 校验），完成后提示安装。
 - [Moonshile/moonshile-dsh-plugins#dsh-workspace-sort](https://github.com/Moonshile/moonshile-dsh-plugins/tree/main/plugins/dsh-workspace-sort) — 侧边栏工作区每日按最近活动排序一次，当天顺序稳定。
@@ -3018,6 +3019,7 @@ dsh plugin --profile web add dshmarket
 - [xiaobai2017666/dsh-chrome-cdp](https://github.com/xiaobai2017666/dsh-chrome-cdp) — Chrome DevTools Protocol 插件 for DeepSeek Harness。通过 chromremote-interface 以 CDP 连接并操控 Chrome。连接带有图形界面。
 - [yangyunsong023/dsh-sxs-anti-bot-http](https://github.com/yangyunsong023/dsh-sxs-anti-bot-http) — 反爬 HTTP 工具：UA 池轮换、指数退避重试、反爬墙检测（验证码/安全验证）与自适应限流，提炼自 SXS 生产采集体系（每日数百万请求）——工具：`sxs_fetch` / `sxs_fetch_json` / `sxs_rate_status`。
 - [yinnho/aginxbrowser#dsh-aginxbrowser](https://github.com/yinnho/aginxbrowser/tree/main/dsh-aginxbrowser) — 给 DSH agent 的网页访问层：把 JS 渲染或受保护的页面抓成干净 markdown，聚合搜索 14 个引擎，并提供有状态交互会话（点击、输入、滚动、eval、截图），引擎可托管可自部署（Rust 单二进制）。每个会话带直播页 URL，人能实时围观 agent 浏览并用鼠标接管。
+- [Yokhong/dsh_academic_web_proxy](https://github.com/Yokhong/dsh_academic_web_proxy) — 按机构代理规则打开学术网站，可依据匹配的论文元数据重命名符合条件的新 PDF，并提供简体中文、繁体中文及美式英语设置界面。
 - [youbaiyun/dsh-browser-crossplatform#bridge](https://github.com/youbaiyun/dsh-browser-crossplatform/tree/main/packages/bridge) — dsh 浏览器扩展的桌面端一半：在 dsh 自带的 webserver 上挂一个带令牌校验的 WebSocket 桥，向模型暴露 browser_* 工具，让它读取并操作用户当前标签页，图片识别默认关闭、需用户自行开启。
 - [yugasun/dsh-plugins#dsh-web-search](https://github.com/yugasun/dsh-plugins/tree/main/packages/dsh-web-search) — 向 ctx.web 注册百度、豆包、Tavily、Exa 后端供官方 web_search 使用，并在 Tavily 或 Exa 生效时将 web_fetch 转到对应提取接口。
 - [ywleeo/browser-mcp](https://github.com/ywleeo/browser-mcp) — 通过本地 MCP server 驱动你真实的 Chrome：可搜索 Google/Bing/搜狗、读取任意页面（含 JS 渲染与登录后内容）、在后台窗口自动化点击/滚动/输入/按键/选择，并为知乎、小红书、抖音、Bilibili、X、Reddit 提供平台级搜索/详情/评论/下载；评论断点续抓、下载 SHA-256 校验、不返回 cookie、仅本地回环。
