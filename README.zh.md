@@ -92,6 +92,7 @@ dsh plugin --profile web add dshmarket
 - [MichengAI/dsh-pua](https://github.com/MichengAI/dsh-pua) — 提供 /pua，在 Agent 失败后促使其换方法，并在宣称完成前核验收据；含 15 种公司风格、角色模式、全局与会话设置，以及可选验收循环（直到验收命令通过、达到迭代上限或用户取消）。
 - [mrzturn/dsh-switchman](https://github.com/mrzturn/dsh-switchman) — 把主模型变成调度员：六个派发池（轻量/机械/主力/高难/多模态/复审）按活配模型，支持排序与按路线钉选思考强度。上下文水位（50k/90k/130k）先提醒委派，到顶自动 fork 备份会话、写交接文档、压缩后续跑，跑着的子智能体不丢；/ctx-pause、/ctx-resume、/ctx-handover 可随时手动暂停、恢复或发起同一套交接。可选 Agent Teams 模式带来常驻队友与共享任务板；/vision 让纯文本模型也能看图；分级验证给大改动配 tester 和独立复审。设置界面、README 与回复/代码注释/文档语言偏好覆盖同一套 11 种语言（英、简中、繁中、日、韩、德、西、法、意、葡、俄），界面默认跟随 DSH 应用语言。内置三个技能：MySQL/Redis 只读核验、commit 文案生成、需求与设计文档规范。
 - [NEINC1/muche-dsh-plugin](https://github.com/NEINC1/muche-dsh-plugin) — 连接小沐的 dsh 插件：和有持续状态的小沐聊天，小沐可调用本机 dsh 执行任务。
+- [panando/dsh-pua](https://github.com/panando/dsh-pua) — 基于 @michengai/dsh-pua 的修订版：解除上游「全局总闸」，让入口恒常显示、功能默认关闭并可按会话开关；入口改为下拉菜单（打开 / 关闭 / 选项），选项面板更紧凑。
 - [pk14742952-AD/dsh-host-rsi](https://github.com/pk14742952-AD/dsh-host-rsi) — 面向本地与 API 大模型的 DSH 宿主插件：每次使用持续自进化，带反问式自检、批评升级、倒排索引记忆检索、编码循环收敛提示与五态交付护栏。
 - [Qulierm/orbital-agents](https://github.com/Qulierm/orbital-agents) — 为 DeepSeek Harness 提供常驻的 Endeavour 与 Challenger 对等会话：负责规划、按序执行任务，并核验汇报的结果。
 - [syyr1987/dsh-linghun](https://github.com/syyr1987/dsh-linghun) — DeepSeek Harness 的判断内核：认知循环让判断有来处、反馈有归因、规划收口；海马体把运行经历沉淀为可复用知识（序时账留痕、情景归档、低置信降权遗忘）；判分身份职责入架构（口径一致、判据绑定来源）；联动 dsh-linghun-assembler 的 A2A 记忆管理团队。需要 DSH ^0.1.0-rc.7（支持 rc.2）。
@@ -1255,6 +1256,7 @@ dsh plugin --profile web add dshmarket
 - [jiangwangyang/dsh-theme-blackhole](https://github.com/jiangwangyang/dsh-theme-blackhole) — DeepSeek Harness（dsh）Web UI 的黑洞主题插件。
 - [Jimmyzwang-cloud/dsh-inkscreen-theme](https://github.com/Jimmyzwang-cloud/dsh-inkscreen-theme) — 墨水纸质感的苹果风 DSH 网页主题，侧栏使用手写 jimmy 字标与小狗头像。
 - [jinxlux/xiao-theme-dsh-ui-plugin](https://github.com/jinxlux/xiao-theme-dsh-ui-plugin) — 为 DSH UI 提供完全自定义的主题框架，默认主题为原神魈。
+- [jizenghui81/dsh-huashu-pixel](https://github.com/jizenghui81/dsh-huashu-pixel) — DSH Web 界面的暖调像素主题：亮色暖米白纸面、暗色街机磷光；方角硬描边与偏移投影的像素控件、随包发布的像素字体，流式输出与状态变化带方块光标、扫描线与硬切闪帧；强度（轻/标准/浓）、动效、扫描线、像素字体四组档位在「设置 → 通用」里切换，输出时输入框上沿有一条像素加载条。
 - [JohnnyTing/dsh-official-homepage-theme](https://github.com/JohnnyTing/dsh-official-homepage-theme) — 复刻 DeepSeek Harness 首页视觉的 Web 主题，提供流体背景、鼠标弹性网格、动态小鱼与可调节效果。
 - [johnsonspirit/ocean-wave-theme](https://github.com/johnsonspirit/ocean-wave-theme) — 整个应用背景铺设动态海浪特效，一条鲸鱼在页面后面游泳，界面各层变为半透明。
 - [Jonah-Wu23/dsh-bg-carousel](https://github.com/Jonah-Wu23/dsh-bg-carousel) — 把媒体目录中的图片与视频自动轮换为 DSH 界面背景，面板可调轮播间隔与界面透明度。
