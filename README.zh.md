@@ -1255,6 +1255,7 @@ dsh plugin --profile web add dshmarket
 - [HaoyueQin/deepseek-harness-background](https://github.com/HaoyueQin/deepseek-harness-background) — DSH Web 自定义背景插件：上传本地图片或粘贴图片链接作为全界面背景，可调不透明度、明暗自适应遮罩、面板透明度、毛玻璃与壁纸模糊，实时预览、设置持久化；另附可选的 DeepSeek 官网风格会话时间线导航轨，支持重点书签与快速跳转。
 - [HarmlessFunny/dsh-background-by-model](https://github.com/HarmlessFunny/dsh-background-by-model) — 按模型切换 DSH Web 界面外观：有序规则列表按当前会话的模型名匹配，每条规则自带壁纸、主题色、布局模式、取景与背景透明度、模糊；另有主背景、左侧栏、右侧栏、卡片面板、输入框与控件、设置面板、对话文本框、轨迹页的分区透明度与毛玻璃模糊。
 - [HCGuo2000/hcguo-public#amber-forge](https://github.com/HCGuo2000/hcguo-public/tree/main/plugins/amber-forge) — DeepSeek Harness 的琥珀 CRT 风格皮肤：覆写 14 枚主题令牌与 23 枚静态调色板色值，在 KaTeX 公式之外将全站字体统一为等宽，叠加扫描线与屏幕暗角，以内嵌 SVG 齿轮骷髅圣徽（圆外透明）替代默认品牌标记，改写新会话口号，并把模式选择器长度上调 10%。
+- [HerTa-st/dsh-theme-herta](https://github.com/HerTa-st/dsh-theme-herta) — 给 DeepSeek Harness 的黑塔主题：移植自上游 Herta 项目的开机 ASCII 开场、一整套紫罗兰设计令牌、可替换的壁纸（自带四张，也支持图片网址 / 本机导入 / 纯色 / 关掉），以及 DSH 设置里的「黑塔外观」页。它同时就是 dsh-herta 自带的那套主题。
 - [HeShen-1/deepseek-whale-wallpaper](https://github.com/HeShen-1/deepseek-whale-wallpaper) — DSH Web 动态点阵鲸鱼壁纸：约 1,750 个呼吸的 WebGL2 粒子，指针液态涡流交互，明暗双主题，带 Canvas2D 回退。
 - [huzhengbang2007/dsh-orca-glass](https://github.com/huzhengbang2007/dsh-orca-glass) — DSH 网页端插件：注入 SVG（feTurbulence + feDisplacementMap）折射滤镜，并用 backdrop-filter 作用到面板、气泡与输入卡上；同时附带 orca-scene 皮肤（主题 token 与明暗两套背景）。
 - [Isilsolme/dsh-anthropic-fonts](https://github.com/Isilsolme/dsh-anthropic-fonts) — Anthropic Sans/Serif/Mono 字体：界面 Sans、对话 Serif、代码 Mono，中文回退思源字体。
