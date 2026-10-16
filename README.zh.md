@@ -1102,7 +1102,7 @@ dsh plugin --profile web add dshmarket
 - [MoonlitDropOfBlood/dsh-token-stats](https://github.com/MoonlitDropOfBlood/dsh-token-stats) — DeepSeek Harness 的 Token 用量统计：近 7 天/30 天按模型的柱状图、饼图，外加近一年每日活跃热力图。
 - [mov-eax-eax/dsh-token-anxiety](https://github.com/mov-eax-eax/dsh-token-anxiety) — 实时按任务追踪 token 成本的小部件：高峰/低谷定价时段、涨价后预测成本、可排序的每任务成本表、多币种（默认 COP/USD/CNY，另有 40 余种）与汇率，以及一键流式解释高成本任务。
 - [mozhuanzuojing/dsh-liangwengu](https://github.com/mozhuanzuojing/dsh-liangwengu) — 按北京时间提醒 DeepSeek API 定价高峰/空闲时段的游戏化插件：可拖动血条胶囊、日夜主题、隐藏彩蛋与修仙突破动画。
-- [mpinaev/dsh-context-governor](https://github.com/mpinaev/dsh-context-governor) — Context fullness bands, the per-session compaction threshold derived from the model window, per-step cost computed from cache read and cache write rates, cache-hit, DeepSeek balance with the peak/off-peak tariff, and a one-click handoff. It never calls a model and spends no tokens.
+- [mpinaev/dsh-context-governor](https://github.com/mpinaev/dsh-context-governor) — 上下文占用分档显示、按模型窗口推出的每会话压缩阈值、按缓存读/写单价算出的单步成本、缓存命中率、DeepSeek 余额（含峰谷电价），以及一键交接。它不调用模型，不消耗 token。
 - [mtty-ai/mmx-quota-tool](https://github.com/mtty-ai/mmx-quota-tool) — DSH 网页 MiniMax 配额悬浮卡：会话输入区显示水滴形 5h 已用百分比，点击展开详情面板，列出每个模型的 5h/周用量与重置倒计时，当前默认模型非 MiniMax 时自动隐藏。
 - [Mu-scorpio/token-usage-counter](https://github.com/Mu-scorpio/token-usage-counter) — 持久化 provider 上报的 Token 用量统计，支持按会话、按模型和按日活跃度查看。
 - [MuAllen/dsh-gateway-wallet](https://github.com/MuAllen/dsh-gateway-wallet) — 读取当前 API key 在 Sub2API、New API 或 DeepSeek 官方账本上的剩余额度；站点公布实扣时才显示实扣，不是本地 token 估算。
@@ -1243,7 +1243,7 @@ dsh plugin --profile web add dshmarket
 - [dreamtao2199/dsh-colors](https://github.com/dreamtao2199/dsh-colors) — 22 套仅浅色配色（Pantone / 中国传统 / 莫兰迪）与 14 种可叠加的表面效果，含十二时辰轮换、手动选色优先到时段边界、工作区绑定、会话颜色标记，以及设置页内的昵称与内联头像编辑。
 - [dsh-plugins/dsh-thought-buddy](https://github.com/dsh-plugins/dsh-thought-buddy) — 在「Deep diving...」状态提示前，放一只动态小伙伴——GrokBot 风格动画头像，状态文字还会同步打字机变换。
 - [du-u-uck/DSH-Transparent-UI-Plugin](https://github.com/du-u-uck/DSH-Transparent-UI-Plugin) — Aqua 玻璃质感主题：云母/兼容双模式、可调模糊与磨砂、流体/壁纸背景、背景亮度、粒子鲸鱼点缀，一键关闭即还原原生界面。
-- [DucLong06/dsh-vietnam](https://github.com/DucLong06/dsh-vietnam) — Vietnamese UI language for the DSH web client (all 2,615 core strings), three Vietnamese palettes in light and dark, and a rotating Vietnam-landscape backdrop from Wikimedia Commons with per-photo attribution.
+- [DucLong06/dsh-vietnam](https://github.com/DucLong06/dsh-vietnam) — DSH 网页客户端的越南语界面（全部 2,615 条核心文案）、浅色与深色各三套越南风配色，以及来自 Wikimedia Commons 的越南风景轮播背景（逐张标注作者与许可）。
 - [EIGHTfs/dsh-theme-mediascape](https://github.com/EIGHTfs/dsh-theme-mediascape) — DSH Web UI 媒体景观主题：立绘/视频壁纸（mp4/webm，本地+在线）+ 开屏动画 + 基底配色（单真源 JSON + 预设包 + 取色器 + 胶囊宿主元素样式）+ 氛围粒子 + 背景音乐播放器（封面/歌单/随机）+ 打字音效 + 可拖动 dock 工具条；dock「传」统一上传壁纸与音乐（按文件后缀识别）——上传中途不落盘、暂停落 .part 快照可续传、文件名+大小去重预检「已跳过」、移除真实删除并前后刷新列表。
 - [elong16/dsh-skin-xuyuanwu](https://github.com/elong16/dsh-skin-xuyuanwu) — 许愿屋古风主题皮肤：暖灯琥珀色调、今日真实月相与轨迹、字落生辉打字萤火、纯原生风铃音效与每日许愿签。
 - [elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) — 前置要求：DeepSeek Harness 0.1.5-rc.1+（DSH Desktop ≥ 2.0.7）且 dsh-better-sidebar ≥ 0.19.0，安装或更新本插件前请先更新两者。把本机 Wallpaper Engine 的 Video/Web 壁纸实时播放到聊天界面后方，Scene 壁纸由内置渲染器输出完整场景帧，支持内容分级/类型过滤、自定义壁纸上传与 iOS 液态玻璃设置窗口。
@@ -1796,7 +1796,7 @@ dsh plugin --profile web add dshmarket
 - [jermaine123123/agent-context-editor#deepseek-harness](https://github.com/jermaine123123/agent-context-editor/tree/main/adapters/deepseek-harness) — Agent Context Editor 是一个可以手动排除、编辑和选择性压缩 AI 对话上下文的跨 Agent 插件，同时支持搜索、筛选、选择、隐藏、恢复和撤销对话内容，并保留原始 Session。
 - [Jesse-njx/dsh-crosstalk](https://github.com/Jesse-njx/dsh-crosstalk) — 跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。
 - [JessenReinhart/dsh-snapcompact](https://github.com/JessenReinhart/dsh-snapcompact) — DSH 的位图帧上下文压缩插件：把被丢弃的对话历史渲染成像素字体 PNG 帧，交给支持视觉的模型直接读回；整个过程本地、确定，不调用任何辅助模型。
-- [JoblessJoe/smart-compaction](https://github.com/JoblessJoe/smart-compaction) — Lets the model trigger compaction itself at a safe point via a compact_now tool (works mid-turn), plus a context_status tool reporting real token usage against the session's actual context window.
+- [JoblessJoe/smart-compaction](https://github.com/JoblessJoe/smart-compaction) — 让模型自己挑安全时机触发压缩：提供 compact_now 工具（回合进行中也能用），另有 context_status 工具，按会话真实的上下文窗口报告 token 占用。
 - [john-walks-slow/dsh-message-datetime](https://github.com/john-walks-slow/dsh-message-datetime) — 每轮对话开始向模型上下文注入单行时间戳读数（星期 / 日期 / 时间 / UTC 偏移 / IANA 时区），收尾再注入 Turn ended 关闭读数——模型始终知道现在几点、今天星期几、上一轮何时结束，日期运算与跨轮间隔不再靠猜；轻量时钟感知，每条约 30 token。
 - [JohnXu22786/session-titler](https://github.com/JohnXu22786/session-titler) — 两阶段会话题词：会话进行中即时关键词题名，空闲后再调用最经济的预算模型精修，并附带一句话摘要。
 - [JRJRJPRO/dsh-chat-tree](https://github.com/JRJRJPRO/dsh-chat-tree) — 把一个对话的所有分支画成聊天区旁边的一棵可点击的树，支持收藏、自定义图标与颜色、分支合并与拆分、撤回感知的布局，以及带记忆的 Claude Code 分支。
@@ -2836,7 +2836,7 @@ dsh plugin --profile web add dshmarket
 - [zimai233/dsh-wash-calendar](https://github.com/zimai233/dsh-wash-calendar) — 基于纯日期数学的周期习惯排程：下次发生日、区间排程与逾期提醒。
 - [zjl1989-li/dsh-harness-zh-cn](https://github.com/zjl1989-li/dsh-harness-zh-cn) — DeepSeek Harness 中文汉化插件：通过 system-prompt/assemble 瀑布钩子在运行时把全部系统提示词、工具描述与运行时上下文翻译成中文（1788 条译文，零源码修改，卸载即还原英文）。
 - [ZK-Andy/dsh-frecency](https://github.com/ZK-Andy/dsh-frecency) — 为 DeepSeek Harness 提供常驻索引 grep，以同名遮蔽内置 grep/glob 工具：重复内容检索命中按访问/修改 frecency 排序的内存索引，glob 在可用时对齐内置 ripgrep 语义、不可用时回退索引。
-- [zlZayn/dsh-ds-balance](https://github.com/zlZayn/dsh-ds-balance) — Manage DeepSeek account balance and usage from the DSH web interface.
+- [zlZayn/dsh-ds-balance](https://github.com/zlZayn/dsh-ds-balance) — 在 DSH 网页界面里查看和管理 DeepSeek 账户余额与用量。
 - [zlZayn/dsh-zhihu-search](https://github.com/zlZayn/dsh-zhihu-search) — 为 DSH 增加三个知乎工具——站内问答与文章检索、知乎全网索引检索（可按域名与时间过滤）、直答——自带原生设置卡片，结果附来源可引用。
 - [zmh2000829/dsh-web-search-multi](https://github.com/zmh2000829/dsh-web-search-multi) — 为原生 web_search 工具提供可选的 SearXNG、Brave、Tavily、Gemini 搜索溯源或 Wikipedia 后端，支持 Web 设置且不进行隐式回退。
 - [zoahdev/dsh-artifacts](https://github.com/zoahdev/dsh-artifacts) — 把 Markdown + JSON 渲染成自包含 HTML 文档/卡片/仪表盘/画廊（CLI + 内置 artifact_render 工具）。
