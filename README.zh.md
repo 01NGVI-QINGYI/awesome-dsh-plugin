@@ -2926,6 +2926,7 @@ dsh plugin --profile web add dshmarket
 - [Sur-Cai/macos-computer-use-kit#dsh](https://github.com/Sur-Cai/macos-computer-use-kit/tree/main/packages/dsh) — DeepSeek Harness 的 macOS computer use：基于无障碍树的稳定 ref 定位、后台输入、Unicode 输入、菜单与应用、set-of-mark 截图、本地 OCR 与动作校验——11 个工具桥接 macos-cu CLI。
 - [svgop/dsh-rich-questions](https://github.com/svgop/dsh-rich-questions) — 网页端分支问卷：ask_survey 工具，按选项路由后续问题，悬停洞察、Mermaid 流程图、一键快速模板，答案可暂存续答。
 - [svgop/dsh-rich-tracking](https://github.com/svgop/dsh-rich-tracking) — todo 胶囊下方的进度记分板：百分比行必须带工件证据，检查点由宿主抓取 git 状态，pursue/align/dismiss 直接送达 agent 下一步。
+- [T-Auto/dsh-ops](https://github.com/T-Auto/dsh-ops) — 为 Windows 的 DSH 提供 bash、PowerShell 7 及 Rust 高性能工具，减少 token 消耗。
 - [Taler97/dsh-rollback](https://github.com/Taler97/dsh-rollback) — 文件变更回滚：捕获 write/edit 工具调用的改前映像（git blob 或快照），通过面向模型的 rollback_files 工具或 /rollback 命令还原。
 - [TaurenMountain/dsh-llm-as-a-verifier](https://github.com/TaurenMountain/dsh-llm-as-a-verifier) — 面向 DSH 智能体的细粒度 LLM 验证：基于评分 token logprob 期望的成对打分、概率枢纽锦标赛 N 选一与逐步进度追踪。
 - [taxueseek/argo#dsh-plugin](https://github.com/taxueseek/argo/tree/main/packages/dsh-plugin) — 面向 agent 的统一搜索与证据核验：120+ 引擎多语言路由，垂直域与结构化模态卡，10 个 MCP 工具与 wide_research 编排，fetch 核验回填证据分的证据闭环。
@@ -4372,6 +4373,7 @@ dsh plugin --profile web add dshmarket
 - [Qing45/dsh-feishu-chat](https://github.com/Qing45/dsh-feishu-chat) — 基于飞书官方 WebSocket 长连接的 DSH 双向聊天桥：消息路由到所选工作区的最新会话并自动回复，可在设置页切换机器人凭证与工作区。
 - [QinpanWan/dsh-hiboard-push](https://github.com/QinpanWan/dsh-hiboard-push) — 华为鸿蒙负一屏（智慧助手·今天）任务完成推送：hiboard_push / hiboard_verify 工具把 Markdown 任务结果推送到手机卡片流，与 OpenClaw today-task 技能线级兼容，授权码可在 dsh 设置面板配置。
 - [ray062/dsh-obvious-grid](https://github.com/ray062/dsh-obvious-grid) — DeepSeek Harness 全屏状态看板：会话状态网格与 token/速率图表一览无余，回合结束、出错或等待审批时通过 ntfy 推送与铃声提醒。
+- [renjianbuchai/dsh-session-attention](https://github.com/renjianbuchai/dsh-session-attention) — 会话在后台跑完、或在等你审批、计划审阅或回答时，弹出系统通知、标题加红点并点亮 PWA 任务栏徽标；回到窗口自动清除。
 - [SciF-Lin/dsh-notify-sound-plus](https://github.com/SciF-Lin/dsh-notify-sound-plus) — DSH 逐事件提醒插件：任务完成 / 需要回答 / 需要授权 / 运行出错四类事件，各配一个开关、一个可即时试听的声音选择和一个系统通知总开关。内置 9 项音色（四个事件各自默认音，外加叮咚、铃音、轻柔、警示与静音各一），全部用 Web Audio 实时合成，不随包分发任何音频文件。通用设置那一行提供模式下拉（开启提醒 / 关闭提醒 / 智能判断，智能模式让开鲸鱼挂件已提醒的事件，避免重复），旁边有试听按钮与打开完整设置弹窗的齿轮；弹窗内含音量、前台运行时不提醒，以及上传自定义音频（单个不超过 2MB）。对话输入框左下角的喇叭可临时静音声音而不影响系统通知。网页端与桌面端（Electron）均可用。
 - [SCP-QQ/dsh-notice-center](https://github.com/SCP-QQ/dsh-notice-center) — 把标签页图标变成绿/琥珀状态灯，并在会话跑完或有交互待处理时发送浏览器通知，含 47 个可选音效。
 - [seolhw/dsh-guild](https://github.com/seolhw/dsh-guild) — 在 DSH 面板内建社区：文字、公告与话题频道，角色与频道级权限，消息搜索，并可分享和克隆 DSH 会话。
@@ -4653,6 +4655,7 @@ dsh plugin --profile web add dshmarket
 - [MiraculousGarfield/dsh-ops-health](https://github.com/MiraculousGarfield/dsh-ops-health) — 一键健康检查：侧边栏按钮经纯 HTTP 路由（独立于工具注册表）调用 check-health.ps1 并渲染结构化报告卡片；配色跟随当前主题，Windows/PowerShell。
 - [mkiea/dsh-forge](https://github.com/mkiea/dsh-forge) — DeepSeek Harness 插件组合分析工具：依赖树、冲突检测、风险评估（含预测）、可视化与组合模拟。
 - [moonquake2004/dsh-doctor#plugin](https://github.com/moonquake2004/dsh-doctor/tree/main/plugin) — 离线诊断工具：环境/Profile/会话共 19 项检查，带设置「诊断」面板与只读 JSON API。
+- [Mr54233/dsh-restart-now](https://github.com/Mr54233/dsh-restart-now) — DSH 桌面版一键完整重启：侧边栏底部按钮 + 设置页配置表单（总开关、二次确认、延时、目标程序路径）。重启由脱离进程树的独立助手执行——先杀进程树再自动拉起 DeepSeek Harness.exe；动作请求仅限本机同源。
 - [MrGnUm/dsh-image-webp-to-png](https://github.com/MrGnUm/dsh-image-webp-to-png) — 把 WebP 附件图片转码成 PNG，让带 alpha 通道的图能在无法解码 WebP 的 LLM 后端上加载（例如 llama.cpp）。
 - [MrYangyt/dsh-k8s](https://github.com/MrYangyt/dsh-k8s) — 基于本地 kubectl 的 Kubernetes 多集群管理面板：资源筛选、YAML 编辑、Pod 实时日志、交互式容器终端、工作负载重启与扩缩容，并同步 DSH 主题；支持侧栏入口和会话视图。需要 DSH 0.2.0-rc.2。
 - [multica-ai/dsh-multica-runtime](https://github.com/multica-ai/dsh-multica-runtime) — 让 dsh 运行时跑在 Multica 上。
