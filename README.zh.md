@@ -570,6 +570,7 @@ dsh plugin --profile web add dshmarket
 - [LonelyHerbivore/dsh-image-question#plugin](https://github.com/LonelyHerbivore/dsh-image-question/tree/main/plugin) — 带本地图片向用户提问；DSH Web 卡片支持缩放平移、框选、画笔与套索标注、NG/OK/不确定判定和说明，Agent 收回原图像素坐标下的标注。
 - [long6177/dsh-markdown-input](https://github.com/long6177/dsh-markdown-input) — DSH Web UI 输入区 Markdown 实时渲染：输入中的粗体/列表/代码块即时成型（CodeMirror 接管卡）；已发送的用户消息按 Markdown 呈现；粘贴富文本转为干净 Markdown。
 - [Lostforest7/dsh-revise](https://github.com/Lostforest7/dsh-revise) — 可视化前端改稿台：点选真实页面元素、描述改动并送入当前 DSH 会话，再把固定视口的改动前后截图（1280x800 与 390x844）与抓取的源码 diff 并排复核，逐条验收。改稿记录按会话存放在项目的 .dsh-revise/ 目录，可导出为单文件 HTML 报告。
+- [lov0vo/dsh-composer-autopair](https://github.com/lov0vo/dsh-composer-autopair) — DSH 聊天输入框的括号/引号自动配对：输入左半边自动补右半边并把光标停在中间；也支持用符号包裹选中文字，以及中文输入法提交的括号。
 - [LoveIrishCoffee/dsh-effort-ultra](https://github.com/LoveIrishCoffee/dsh-effort-ultra) — 原生推理档位控件：蓝紫渐变档位条，带星点与流光。它自己占用模型座位并只对接官方 modelDirectories 服务，档位由每个模型自身的 reasoning 声明决定，不依赖任何其它插件。
 - [lovvvve/dsh-quick-actions#composer-quick-actions](https://github.com/lovvvve/dsh-quick-actions/tree/main/packages/composer-quick-actions) — 在 DSH 每个由会话支持的消息编辑器旁提供全局快捷动作。一键发送预置或你自己保存的文本，每个动作可单独设置发送确认。
 - [loyalchiiina/dsh-chat-image-lightbox](https://github.com/loyalchiiina/dsh-chat-image-lightbox) — 聊天图片全屏查看器：点击对话中的图片打开灯箱，支持缩放、拖拽平移、滚轮缩放、文件名显示、下载保存，以及键盘方向键与移动端滑动切换；display_image 工具返回的图片可直接内联显示。
@@ -4364,6 +4365,7 @@ dsh plugin --profile web add dshmarket
 - [aa2246740/dsh-notch#dsh-notch-focus](https://github.com/aa2246740/dsh-notch/tree/main/companions/dsh-notch-focus) — DSH Notch 的配套助手，同步 Desktop、Web 与 Notch 之间的会话跳转和已读状态。
 - [AbcdefgXW/dsh-msg-hub](https://github.com/AbcdefgXW/dsh-msg-hub) — IM 渠道桥：微信（ilinkai）/ QQ / 飞书接入，支持主动推送——定时任务可唤醒渠道 bot 并把 AI 回复推送到手机。
 - [ahian-lee/dsh-attention-notifier](https://github.com/ahian-lee/dsh-attention-notifier) — 任务完成或等待批准、回答时播放提示音并发送通知；提示音可在设置页更换（合成音色或自选音频文件），内置猫咪 hachimi 音效，just for fun。可选的 Windows 补丁额外提供任务栏数字角标、闪烁与原生通知。
+- [AhYi8/dsh-gotify-notify](https://github.com/AhYi8/dsh-gotify-notify) — 每轮会话结束时向 Gotify 服务器推送通知，支持模板、优先级与按结束原因区分标题。
 - [AK-blank/dsh-plugin-mac-notify](https://github.com/AK-blank/dsh-plugin-mac-notify) — 会话结束、或 Agent 卡在等你回答／批准／排错时，发一条 macOS 系统通知；横幅带上最后一条回复并播放你的系统提示音，点击即可回到 DSH 页面。
 - [alvinunreal/openpets#dsh](https://github.com/alvinunreal/openpets/tree/main/packages/dsh) — 将 DeepSeek Harness 的生命周期状态、错误与审批请求，桥接到本地运行的 OpenPets 桌面伙伴。
 - [amlyczz/dsh-lark-link](https://github.com/amlyczz/dsh-lark-link) — DeepSeek Harness 的高可靠飞书/Lark 桥接：扫码一键认证、卡片化命令与意图确认、at-least-once 零丢失出站队列、多媒体出入站、/doctor 会话日志 ZIP，并复用 DSH Web GUI 把会话归入正确工作区。
