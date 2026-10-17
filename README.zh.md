@@ -98,6 +98,7 @@ dsh plugin --profile web add dshmarket
 - [pk14742952-AD/dsh-host-rsi](https://github.com/pk14742952-AD/dsh-host-rsi) — 面向本地与 API 大模型的 DSH 宿主插件：每次使用持续自进化，带反问式自检、批评升级、倒排索引记忆检索、编码循环收敛提示与五态交付护栏。
 - [Qulierm/orbital-agents](https://github.com/Qulierm/orbital-agents) — 为 DeepSeek Harness 提供常驻的 Endeavour 与 Challenger 对等会话：负责规划、按序执行任务，并核验汇报的结果。
 - [samirliu/dsh-goalloop-agentteams](https://github.com/samirliu/dsh-goalloop-agentteams) — 面向 DeepSeek Harness 的确定性目标门控插件：契约先行的 AC 文法（每条检查都是可失败的具名命令），门控自己重跑每条检查、零模型参与；verdict 绑定文件树摘要，文件改动即作废已过审结论；通过 tools/pre-execute 硬拦 update_goal 的完成声明，配合假完成计数，两次被抓住即 BLOCKED；任务级完成声明按作用域分级（strict/goal-only），多任务 Agent Teams 循环不会死锁。
+- [STARDUSTLC666/dsh-dream](https://github.com/STARDUSTLC666/dsh-dream) — DSH 智能体经验记忆与反思插件：任务后自动整理候选经验，经用户审阅采纳后在相关任务中自动召回。支持来源追溯、按项目检索、冲突处理、使用反馈和到期复核；整理与召回可分别开关，写入 AGENTS.md 需预览并手动应用。
 - [syyr1987/dsh-linghun](https://github.com/syyr1987/dsh-linghun) — DeepSeek Harness 的判断内核：认知循环让判断有来处、反馈有归因、规划收口；海马体把运行经历沉淀为可复用知识（序时账留痕、情景归档、低置信降权遗忘）；判分身份职责入架构（口径一致、判据绑定来源）；联动 dsh-linghun-assembler 的 A2A 记忆管理团队。需要 DSH ^0.1.0-rc.7（支持 rc.2）。
 - [syyr1987/dsh-linghun-assembler](https://github.com/syyr1987/dsh-linghun-assembler) — 灵魂的记忆提取侧·认知循环团队版：判断→捞取→组装→被判定→校准五步闭环，判官/捞手/史官/辩手/编辑/书记角色化子智能体承载，BM25 检索 + 时序素材 + LLM 组装「有用素材包」注入 linghun。与 dsh-linghun 组合使用。
 - [WDahah/portable-dsh-multi-agent-plugin](https://github.com/WDahah/portable-dsh-multi-agent-plugin) — 把任务派给一个模型、把评审交给另一个模型，并带有资格证据、故障转移与持久日志。
@@ -2093,7 +2094,6 @@ dsh plugin --profile web add dshmarket
 - [southsnowL/dsh-bulletin#dsh-bulletin-dispatch](https://github.com/southsnowL/dsh-bulletin/tree/main/plugins/dsh-bulletin-dispatch) — 同一台电脑上会话之间的「单子」：会话用标题里的编号前缀表明自己属于哪张桌；单子投给某张桌，由那张桌最先开始干活的那个会话取走 —— 桌是地址，路过的会话不会收到它。
 - [SpookySandwich/dsh-plugin-message-edit](https://github.com/SpookySandwich/dsh-plugin-message-edit) — 编辑已发送的消息即可从该轮次回溯并分叉对话，用气泡下方的计数器切换版本，并在轮次级版本树中浏览所有分支。
 - [SpookySandwich/dsh-plugin-no-workspace](https://github.com/SpookySandwich/dsh-plugin-no-workspace) — 无需强制绑定工作区即可新建和分离独立会话，同时保留 DSH 原生的工作区界面。
-- [STARDUSTLC666/dsh-dream](https://github.com/STARDUSTLC666/dsh-dream) — DSH 做梦插件：agent 在会话间隙回放近期对话（dream_digest）、反思并写入梦境日记（dream_save/journal/recall），高频教训幂等桥接进 AGENTS.md（dream_bridge）。多帧 zstd 会话读取，默认隐私脱敏，六工具含健康自检，零运行时依赖。
 - [starslittle/dsh-queue-plus](https://github.com/starslittle/dsh-queue-plus) — DSH 排队消息增强面板，支持编辑、删除、插话、排序和批量删除。
 - [Stmol/dsh-prompt-lib](https://github.com/Stmol/dsh-prompt-lib) — 提示词库存放在插件配置中，含 Settings 页面与输入框选择器：勾中的提示词注入该会话的每一步模型调用，subagent 继承其最近祖先会话的选择。
 - [Sttrevens/dsh-linked-folders](https://github.com/Sttrevens/dsh-linked-folders) — 多文件夹工作区：全局链接文件夹列表 + 会话内临时挂载（link_folder/unlink_folder），侧边栏管理并支持系统选目录。
@@ -5213,6 +5213,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🎮 娱乐
 
+- [12we21/cute-fat-fish-pet#src](https://github.com/12we21/cute-fat-fish-pet/tree/main/src) — DSH Web UI 的 Q 版蓝发小女仆桌宠：106 个手绘透明动画、桌面漫步、本地 Ollama 或 DSH 在线模型陪聊，可选看屏幕吐槽。
 - [609476965/dsh-LorebookMD](https://github.com/609476965/dsh-LorebookMD) — 导入酒馆（SillyTavern/TavernAI）角色卡与世界书，落地为本地 Markdown 设定文档，激活创作模式后根据用户输入、参考世界书创作小说。
 - [9livewolf/dsh-think-bounce-pet](https://github.com/9livewolf/dsh-think-bounce-pet) — 这个插件的功能就是让两只大肥鱼在界面弹来弹去，无实意
 - [a86582751/dsh-nexttavern](https://github.com/a86582751/dsh-nexttavern) — NextTavern 是面向 DeepSeek Harness 0.1.7-rc.2 Web 的长篇角色扮演插件，支持角色卡导入与创作、世界线、世界书、分层长期记忆、关键词／语义／混合检索、角色 Agent，以及角色卡或小说导出；支持 SillyTavern 角色卡导入，v0.2.9 修复分发与安装问题。
