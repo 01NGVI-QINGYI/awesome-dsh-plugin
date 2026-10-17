@@ -2777,9 +2777,15 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) — DeepSeek Harness 的 Claude Code /rewind 等价能力：每次变更型工具执行前捕获 git 优先的工作区文件快照，轮次边界 fork 会话，一条 /rewind 命令恢复文件并把会话回退到检查点。
 - [PerryLink/dsh-click](https://github.com/PerryLink/dsh-click) — Windows 桌面电脑操作工具（点击、输入、按键、截屏）：每次动作都带新鲜度校验、审批门、进程身份核验与脱敏审计。
 - [PerryLink/dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) — DeepSeek Harness 的数据质量检查：数据画像、清洗与验证流水线，产出结构化报告。
+- [PerryLink/dsh-fmea-table-check](https://github.com/PerryLink/dsh-fmea-table-check) — 参照公开的 FMEA 方法标准，核对 FMEA 分析表的要素齐备性，以及严重度、发生度、探测度与风险顺序数之间的算术一致性。只报告不一致之处，不评价各项评分数值是否恰当。
 - [PerryLink/dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) — 中国公募基金确定性研究报告：采集天天基金/东方财富公开数据，纯函数计算业绩拆解、持仓穿透、风格归因与经理画像，输出带逐数字可溯源快照附录的版本化报告。
+- [PerryLink/dsh-gongwen-word-check](https://github.com/PerryLink/dsh-gongwen-word-check) — 依据公开的党政机关公文格式标准，核对公文的文种与发文字号——包括年份所用的括号形式与编号格式。只报告与格式不符之处，不评价公文内容。
 - [PerryLink/dsh-laya](https://github.com/PerryLink/dsh-laya) — 把 Laya 的有类型决策（`noul` 是/否、`choice`、`score`）接成一等 Cordis 服务（`ctx.laya`）与两个模型可见工具 `laya_ask`、`laya_plan`。插件自身不安装也不下载任何东西：它是你自己启动的 `laya-mcp serve` 边车的客户端，边车未运行时会明确报出，而不是在首次工具调用时隐晦失败。
 - [PerryLink/dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) — DSH 的 LSP 动作面：诊断、格式化、补全、代码动作、符号、签名提示、inlay 提示与重命名，全部由真实语言服务器驱动。
+- [PerryLink/dsh-nurse-record-check](https://github.com/PerryLink/dsh-nurse-record-check) — 依据《病历书写基本规范》等公开文件，核对护理记录的书写时限、签名，以及评估表的完整性。列出缺失或次序不符之处供人复核。
+- [PerryLink/dsh-power-ticket-check](https://github.com/PerryLink/dsh-power-ticket-check) — 依据现行电力安全工作规程，核对电力工作票应载明的要素，以及签发与许可的先后顺序。只报告发现的差异，不判定作业是否安全、许可是否有效。
+- [PerryLink/dsh-site-log-check](https://github.com/PerryLink/dsh-site-log-check) — 依据 GB/T 50319-2013 等公开文件，核对监理日志的跨日连续性，以及旁站监理的覆盖情况。列出缺漏与覆盖差异供人复核。
+- [PerryLink/dsh-tender-matrix](https://github.com/PerryLink/dsh-tender-matrix) — 核对评标因素评分矩阵的内部算术自洽性：各因素分值上限、所记分值与合计之间是否互相一致。只报告发现的差异，不评价评标本身是否正确或公正。
 - [PerryLink/dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) — TickTick（滴答清单）任务桥：会话页头部任务面板与精选代理工具，走官方 TickTick MCP 端点。
 - [PerryLink/dsh-translate](https://github.com/PerryLink/dsh-translate) — DeepSeek Harness 的工具输出修复层：JSON Schema 校验、参数映射与 JSON 修复。
 - [pg527322814/dsh-bayes-predict](https://github.com/pg527322814/dsh-bayes-predict) — 贝叶斯个股预测插件：多指标信号融合的上涨概率估计、趋势状态识别与持仓风险度量（A 股 + 美股）。
