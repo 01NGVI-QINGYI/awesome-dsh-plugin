@@ -1603,7 +1603,7 @@ dsh plugin --profile web add dshmarket
 - [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) — OpenCode Go 模型提供方，支持网关实时模型发现、models.dev 在线能力配置、会话路由，以及含订阅用量显示的 Web 设置页。
 - [dylan121322/llm-adaptive](https://github.com/dylan121322/llm-adaptive) — 自适应模型路由：请求级复杂度分类，按配置链自动选择后端 provider。
 - [DZQJOKER/dsh-plugin-local-model](https://github.com/DZQJOKER/dsh-plugin-local-model) — DeepSeek Harness 本地模型插件：在设置里管理 GGUF 模型，首条对话自动拉起 llama.cpp，空闲 5 分钟自动卸载释放显存。
-- [ebluffy/dsh-model-router](https://github.com/ebluffy/dsh-model-router) — English-only fork of dsh-model-router. Routes each agent step across a configurable model pool and adjusts reasoning effort based on task complexity, tool failures, and cost.
+- [ebluffy/dsh-model-router](https://github.com/ebluffy/dsh-model-router) — dsh-model-router 的纯英文分支。把每个 agent 步骤路由到可配置的模型池，并按任务复杂度、工具失败与成本调整推理强度。
 - [edge-sky/dsh-oauth-adapter](https://github.com/edge-sky/dsh-oauth-adapter) — 为 DSH Web 提供 OAuth 账号页面，目前支持 OpenAI Codex、GitHub Copilot、Anthropic、Kimi For Coding、OpenRouter 与 xAI。
 - [eghrhegpe/dsh-connect-qoder](https://github.com/eghrhegpe/dsh-connect-qoder) — 把本机已登录的 Qoder 应用中的模型接入 DeepSeek Harness，无需配置任何令牌，并在设置卡片上显示每个模型的费率与错峰窗口。
 - [elegant01/dsh-codearts](https://github.com/elegant01/dsh-codearts) — 把华为云 CodeArts 接入 DeepSeek Harness：内置华为云 OAuth2 登录（PKCE + DPoP），也支持粘贴 token；登录后即可在 DSH 对话窗口使用 CodeArts 提供的模型，并展示本机按账号统计的请求数与 token 用量。
@@ -4419,7 +4419,7 @@ dsh plugin --profile web add dshmarket
 - [renjianbuchai/dsh-session-attention](https://github.com/renjianbuchai/dsh-session-attention) — 会话在后台跑完、或在等你审批、计划审阅或回答时，弹出系统通知、标题加红点并点亮 PWA 任务栏徽标；回到窗口自动清除。
 - [SciF-Lin/dsh-notify-sound-plus](https://github.com/SciF-Lin/dsh-notify-sound-plus) — DSH 逐事件提醒插件：任务完成 / 需要回答 / 需要授权 / 运行出错四类事件，各配一个开关、一个可即时试听的声音选择和一个系统通知总开关。内置 9 项音色（四个事件各自默认音，外加叮咚、铃音、轻柔、警示与静音各一），全部用 Web Audio 实时合成，不随包分发任何音频文件。通用设置那一行提供模式下拉（开启提醒 / 关闭提醒 / 智能判断，智能模式让开鲸鱼挂件已提醒的事件，避免重复），旁边有试听按钮与打开完整设置弹窗的齿轮；弹窗内含音量、前台运行时不提醒，以及上传自定义音频（单个不超过 2MB）。对话输入框左下角的喇叭可临时静音声音而不影响系统通知。网页端与桌面端（Electron）均可用。
 - [SCP-QQ/dsh-notice-center](https://github.com/SCP-QQ/dsh-notice-center) — 把标签页图标变成绿/琥珀状态灯，并在会话跑完或有交互待处理时发送浏览器通知，含 47 个可选音效。
-- [seewhydee/dsh-emacs-bridge#dsh-plugin](https://github.com/seewhydee/dsh-emacs-bridge/tree/main/dsh-plugin) — Two-way bridge between GNU Emacs and a running DeepSeek Harness session over loopback HTTP + SSE: submit prompts, stream replies, manage sessions and workspaces, and answer ask-user/approval prompts from Emacs, with a Plugins-page card that installs the Emacs package.
+- [seewhydee/dsh-emacs-bridge#dsh-plugin](https://github.com/seewhydee/dsh-emacs-bridge/tree/main/dsh-plugin) — GNU Emacs 与正在运行的 DSH 会话之间的双向桥：走本机回环 HTTP + SSE，可在 Emacs 里提交提示、流式收回复、管理会话与工作区、回答 ask-user / 审批提示；插件页还有一张卡片用来安装 Emacs 那边的包。
 - [seolhw/dsh-guild](https://github.com/seolhw/dsh-guild) — 在 DSH 面板内建社区：文字、公告与话题频道，角色与频道级权限，消息搜索，并可分享和克隆 DSH 会话。
 - [shangjian2023/dsh-rss-daily](https://github.com/shangjian2023/dsh-rss-daily) — 每日要闻日报：46 个精选 RSS 源，用 dsh 里已配好的模型做主编式编辑，经 webhook 送到微信/Telegram，并以模型回答的样式插播在对话里，零上下文消耗。
 - [shaobeichen/dsh-pocket](https://github.com/shaobeichen/dsh-pocket) — 手机远程访问 DSH Web 界面：扫码即用局域网或公网（cloudflared 隧道）访问，实时同屏、移动端适配布局，带设置页管理。
