@@ -472,6 +472,7 @@ dsh plugin --profile web add dshmarket
 - [huihuangdi/dsh-model-provider-badge](https://github.com/huihuangdi/dsh-model-provider-badge) — 在 DSH Web 输入框工具行、模型选择器左侧显示当前会话所用模型的供应商。
 - [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) — DeepSeek Harness 的终端 UI（TUI）。
 - [HUITianYi/dsh-whale-desktop-launcher](https://github.com/HUITianYi/dsh-whale-desktop-launcher) — DSH 的 Windows 桌面启动器，提供鲸鱼娘图标、后台服务启动和无浏览器工具栏的 Chromium 应用窗口。
+- [HumXC/dsh-nestquay](https://github.com/HumXC/dsh-nestquay) — 为 DSH 侧栏提供工作区分组、组间导航和会话状态提示。
 - [hunter118/dsh-s7r](https://github.com/hunter118/dsh-s7r) — 为 DeepSeek Harness 提供复古 macOS System 7 风格工作站界面，包含桌面窗口、工作区与 Agent 管理、Finder、终端、监视器、上下文工具和桌面附件。
 - [Huuuuung/dsh-artifact-index](https://github.com/Huuuuung/dsh-artifact-index) — 为 dsh-artifacts 侧边栏补上缺失的后端，提供 /report 产物索引与预览所需的文件内容。
 - [hyperion2144/dsh-desktop-tauriapp](https://github.com/hyperion2144/dsh-desktop-tauriapp) — 把 DeepSeek Harness 封装成 Tauri 2 桌面应用（macOS + Windows，安装包见仓库 Releases，内置 dsh 运行时）：托盘常驻启动器（按 profile 分端口与窗口）、最多自愈 3 次的进程守护、本地或远程 dsh、带 Dock 角标的任务完成通知、实时启动控制台。本插件是该应用的页面内半区——桌面 chrome 与通知桥只在 DSH 运行于桌面应用内时生效；在普通 DSH 里用 `dsh plugin add` 安装时，提供的是随附的「把 DSH Web GUI 打包成 Tauri 应用」技能。
@@ -4009,6 +4010,7 @@ dsh plugin --profile web add dshmarket
 - [vonweller/dsh-skillhub](https://github.com/vonweller/dsh-skillhub) — 在设置页浏览 skillhub.cn 公开技能目录，并将选中的 SKILL.md 技能包安装到 ~/.dsh/skills。
 - [wangcangxing/ai-eight-honors-eight-shames](https://github.com/wangcangxing/ai-eight-honors-eight-shames) — 注册 ai-eight-honors-eight-shames skill 的 DSH 插件：面向编码代理的八条可核对工作准则（先查证再调用、有歧义先确认、业务规则给出处、先复用再新造、先测试再声称完成、按既有约定写、区分事实与推断、改动可回滚），外加第 9 条——用户每次提出需求或问题，都在工作区根的报告文件里成对记录诉求与改动。
 - [warm-flame-core/new-project-init](https://github.com/warm-flame-core/new-project-init) — 项目文档体系初始化 skill：提问驱动落实文档规范、固化 AI 协作工作流，跨 DSH / Reasonix / Claude Code / Codex 可用。
+- [wasteoneslife/dsh-skill-creator](https://github.com/wasteoneslife/dsh-skill-creator) — Web 界面上的技能创建面板：拉取官方 creator 技能，把需求交给华为云 / 通用 / REST API 三个 creator 之一执行创建，随后按 10 分制评测产物，未达 8.5 分就把逐项扣分交回 creator 修改直到通过。
 - [WaveSpeedAI/wavespeed-dsh-skill](https://github.com/WaveSpeedAI/wavespeed-dsh-skill) — 通过开源 wavespeed CLI 用 WaveSpeed 模型生成与编辑 AI 媒体（图像、视频、音频、3D）：实时目录搜索、逐模型输入 schema 自省、@path 标记本地文件上传、运行前价格查询。
 - [weibaohui/skills-management](https://github.com/weibaohui/skills-management) — 技能市场：一个页面管理本机所有 coding agent 的技能，一键收编进 DSH 用户库；内置 6600+ 技能市场，支持注入开销（≈token）统计与模型可见性治理。
 - [Wenaixi/dsh-ponytail](https://github.com/Wenaixi/dsh-ponytail) — DeepSeek Harness 插件：DietrichGebert/ponytail 懒人 senior 模式与七阶梯子完美移植，6 个技能描述双语自由切换，各个技能自由开关，零 tool 注册，全场景零缓存破坏。
@@ -5598,6 +5600,7 @@ dsh plugin --profile web add dshmarket
 - [bubbleptr/dsh-holdem](https://github.com/bubbleptr/dsh-holdem) — 六人无限注德州扑克：1 名玩家对 5 位只能看到自己底牌的 LLM 智能体。在 Web GUI 中提供独立 Tab 与会话区可拖拽悬浮小窗，支持按浏览器隔离的牌局与 CSRF 防护、按底池倍数给出的加注尺度、每人 3 次买入后出局，以及摊牌亮牌与公共牌翻牌动效。
 - [Cerbur/clutch-dsh#clutch-dsh-fireworks](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-fireworks) — 通过 `happy_fireworks` Agent 工具为 DSH Web UI 增加庆祝礼花覆盖层。
 - [chen731215-dev/dsh-tavern-v2](https://github.com/chen731215-dev/dsh-tavern-v2) — 酒馆管理面板：多角色卡、多世界书、多预设与会话级隔离，记忆总结、角色关系网、剧情选项一键发送，另有 NSFW 模式。完整效果需同时安装伴生插件 dsh-muv-engine 与 dsh-muv-table，用于渲染状态栏、剧情选项与变量表格。
+- [chenyuan1251/dsh-pet-niumali](https://github.com/chenyuan1251/dsh-pet-niumali) — 浮动在 DSH 界面上的桌宠，点开是打卡、专注计时与生活手帐。
 - [chinosk6/dsh-roleplay](https://github.com/chinosk6/dsh-roleplay) — 角色扮演插件：支持角色卡对话、在对话中创作与编辑角色卡，可接入生图后端生成插图。
 - [CHristianREEVEE/dsh-xiuxian-world](https://github.com/CHristianREEVEE/dsh-xiuxian-world) — 修仙世界插件。agent 通过 16 个 xiuxian_* 工具创角修行：修炼、游历 22 处地点、探索 8 座秘境、与 4 位内置修士传音；收工时导出自包含 HTML 回放与 Markdown 修炼日记，全程离线零服务器。
 - [cipher2026/dsh-idle-deepcompute](https://github.com/cipher2026/dsh-idle-deepcompute) — 终端风 AI 实验室挂机游戏：攒算力、训练升级模型、发论文，一路转生到 AGI/ASI。
@@ -5706,6 +5709,7 @@ dsh plugin --profile web add dshmarket
 - [TianJie52009/Tdsh-emoji](https://github.com/TianJie52009/Tdsh-emoji) — 给 dsh 回复在内容最匹配的位置添加标准 emoji，并避免与颜文字出现在同一句。
 - [Tisitan/dsh-live2d-companion](https://github.com/Tisitan/dsh-live2d-companion) — DSH 的 Live2D 桌宠：8 态 AI 状态灯 + 网页挂件 + 置顶透明 Electron 桌宠窗，表情/动作/气泡齐全，换模型自动适配。
 - [TongY1n/ui-muyu](https://github.com/TongY1n/ui-muyu) — 一个赛博木鱼：可拖拽、点击敲击、累积功德的 Web 悬浮小摆件。
+- [tonyous/DSH-AMP-Radio](https://github.com/tonyous/DSH-AMP-Radio) — Movable radio pill with live visualizer, station search, favourites and self-update check for DSH Web.
 - [TryDing-T/dsh-Plugin--ChineseChess](https://github.com/TryDing-T/dsh-Plugin--ChineseChess) — DSH 侧边栏中国象棋棋盘：用户执红，当前 DSH 模型执黑，Host 负责棋规与局面版本校验。
 - [txlznbzsdj-collab/dsh-deepseek-pet](https://github.com/txlznbzsdj-collab/dsh-deepseek-pet) — 浮动在 DSH Web 页面上的 DeepSeek 蓝色小鲸鱼桌宠：可拖拽，说话气泡与心情姿势随互动切换，模型可调用 pet_say 工具让它开口，对话开始/结束时自动进入思考与庆祝状态。
 - [vegetable-kun/DSH_Plugin_Taffy](https://github.com/vegetable-kun/DSH_Plugin_Taffy) — Taffy 表情包状态机：右下角表情实时联动 agent 状态——待审批 / 已批准 / 被拒 / 求饶、思考、工具执行、插话、等你回答、压缩记忆、长任务疲惫、审批没人理、空闲 / 休眠；SSE 推流同步、拖拽定位、中键控制台、工具卡片镜像控制台、表情锁定、外观设置持久化与今日时长统计。
