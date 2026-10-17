@@ -1032,6 +1032,7 @@ dsh plugin --profile web add dshmarket
 - [xmwengxing/dsh-client-ui-sidebar-perfmon](https://github.com/xmwengxing/dsh-client-ui-sidebar-perfmon) — 右侧栏主机性能监控：CPU、内存、交换内存仪表盘，显卡频率与显存条，CPU / 显卡 / 主板 / 硬盘温度，以及可按 CPU、内存、进程名排序的进程列表。
 - [xmwengxing/dsh-sidebar-enhancement](https://github.com/xmwengxing/dsh-sidebar-enhancement) — 侧边栏文件树增强：重命名、新建、上传、下载（目录当场打包为 zip）、复制完整路径与删除；128 种文本扩展名的可编辑文档渲染器，支持 Ctrl/Cmd+S 保存与版本冲突检测；另有一个独立的下侧终端面板，带标签页与持久化在 DSH home 里的快捷命令库。
 - [xswt442-cmd/dsh-xswt-tauriapp#dsh-desktop-app](https://github.com/xswt442-cmd/dsh-xswt-tauriapp/tree/main/plugins/dsh-desktop-app) — 桌面外壳 dsh-xswt-tauriapp（一个 Tauri 写的 DeepSeek Harness 桌面壳）的安装引导：安装后首次启动 dsh 时，从发布页下载本平台安装包，先比对 SHA256SUMS、校验通过才落盘，再交给系统安装器打开；插件自己不安装任何东西，也不给 dsh 加界面。
+- [xt765/dsh-selection-quote](https://github.com/xt765/dsh-selection-quote) — Cursor 与 GitHub PR Review 风格划词引用与批注插件：支持划词一键引用到对话（⌘L）、行内展开写批注（⇧⌘L）及输入框上方批注汇总栏一键插入。
 - [xuexiaolei1997/dsh-plugin-stock-x](https://github.com/xuexiaolei1997/dsh-plugin-stock-x) — 全景金融量化工作台与股票盯盘：悬浮球与抽屉面板、A/港/美/全球指数实时行情、多周期K线与5日分时、五档盘口、资金流向、板块热点榜与AI投研诊断。
 - [xufu5438-netizen/dsh-boot-video](https://github.com/xufu5438-netizen/dsh-boot-video) — 视频开机片头：启动时全屏播放 mp4，点击或 Esc 跳过，可导入自己的视频，浏览器解不了的编码自动转成 H.264。
 - [xwh5/dsh-diff-review](https://github.com/xwh5/dsh-diff-review) — DSH 会话修改审查：追踪 write/edit 工具调用，集成 diff2html 实现 VS Code 风格 side-by-side diff，自动跟随主题，支持子代理聚合与一键撤回。
@@ -2672,6 +2673,7 @@ dsh plugin --profile web add dshmarket
 - [1jiegejiayouxuewangan1/dsh-desktop-uia](https://github.com/1jiegejiayouxuewangan1/dsh-desktop-uia) — 通过 UI Automation 控制 Windows 桌面：九个工具读取窗口控件树、按 id 走控件自身的 UIA 模式操作，每次写入都受审批策略、动作日志与设置面板约束。
 - [1na-ko/dsh-hdc-bridge](https://github.com/1na-ko/dsh-hdc-bridge) — 鸿蒙设备桥：hdc 截图/装包/日志/崩溃/UI 自动化闭环（配 read_image 看图），官方优先版本化 API 知识层（SDK .d.ts + 离线随包文档），以及 DevEco CLI 构建/签名/lint 通道。
 - [2026heshao/dsh-armory](https://github.com/2026heshao/dsh-armory) — Skill + MCP + 专家统一看板：MCP 服务器连接状态、工具 Schema、启停与重连（全局与项目双作用域）、SKILL.md 技能启停、WorkBuddy 专家人设可在任意会话随时挂上 / 更换 / 取消（429 位，不受「会话已开始就不能换」的限制）、工具裁缝（扫描本机会话日志统计每个工具的调用次数、错误率与上下文 token 税，死工具一键禁用），以及三大安装市场（SkillHub 19 万+ 技能、WorkBuddy 连接器、47 个一手核实的内置服务）。
+- [2026heshao/dsh-obsidian-board](https://github.com/2026heshao/dsh-obsidian-board) — 把本地 Obsidian 仓库变成专属 RAG 对话面板：侧栏一个完整页面，左侧笔记浏览、中间检索增强对话、右侧引用原文；检索用完全本地的 BM25 加中文 bigram，回答走 DSH 模型通道，\[n] 引用可点击，索引按 mtime 增量更新。
 - [2286893544/feishu-dsh-plugin](https://github.com/2286893544/feishu-dsh-plugin) — 飞书（Lark）集成：25 个工具，覆盖群消息与聊天记录、云文档（含知识库页面、自动生成的图表与图片）、多维表格记录、电子表格区间读写与文档授权，基于企业自建应用。
 - [3ChatAI-NCT/3chatai-deepseek-harness-plugin](https://github.com/3ChatAI-NCT/3chatai-deepseek-harness-plugin) — 通过 OAuth 将 DeepSeek Harness 接入 3Chat，查询客户与会话、读取沟通上下文、确认后发送消息并跟踪批次进度。
 - [58catmiao/dsh-sciwork](https://github.com/58catmiao/dsh-sciwork) — 给 DSH 的科研库面板与技能组：课题目录、带溯源的图表登记、草稿、文献、数据表、期刊档案、投稿台账，以及面向科研智能体的写作、引用与 Origin 出图纪律（出图需另装 dsh-origin-plugin）。
@@ -4512,6 +4514,7 @@ dsh plugin --profile web add dshmarket
 - [KannaKuron/dsh-ide-git](https://github.com/KannaKuron/dsh-ide-git) — 侧边栏里的 JetBrains 风格 Git 工具窗口：带 ahead/behind 角标的分支树、可按文本/作者/日期/路径筛选的提交图谱、逐文件行级 diff、变更列表与提交框，以及分支、标签、贮藏操作和合并、变基、优选、重置、抓取/拉取/推送。
 - [kaziii/dsh-github-connector#github](https://github.com/kaziii/dsh-github-connector/tree/main/packages/github/github) — GitHub Device Flow 授权与对话内 PR 工作流：输入框上方的状态条支持创建 / AI 审查 / 合并 PR，另有 github_* 工具用于搜索、Issue 与 PR 读写。
 - [Kevin-McIsaac/dsh-workspace-git-badge#dsh-git-badge](https://github.com/Kevin-McIsaac/dsh-workspace-git-badge/tree/main/dsh-git-badge) — DSH 的 Git 状态徽章：侧边栏工作区行徽章与输入行徽章，显示当前会话工作区的 git 状态，通过 SSE 事件驱动保持实时。
+- [konnga/dsh-hud](https://github.com/konnga/dsh-hud) — 当前工作区的只读 Git 面板：分支、改动清单与差异，另有「这个会话改过哪些文件、审到哪了、跑了哪些工具与技能」。
 - [kp-z/dsh-dev-git-graph#dsh-dev-git-graph](https://github.com/kp-z/dsh-dev-git-graph/tree/main/packages/dsh-dev-git-graph) — DSH Web 的 vscode-git-graph 1.30.0 忠实移植：入驻 dsh-better-sidebar 右侧栏的原生 Git Graph 提交图 tab（前置依赖），自动绑定会话工作区，host 直跑全套 git 操作（checkout/merge/rebase/push/tag/stash），文件 diff 复用内置 DiffTab 打开。
 - [LaoYueHanNi/dsh-git-worktree](https://github.com/LaoYueHanNi/dsh-git-worktree) — 在 Web 输入框切换分支、以真实工作区方式创建隔离的 git worktree。
 - [lehhair/dsh-diff-viewer](https://github.com/lehhair/dsh-diff-viewer) — PiUI 风格 diff 查看器，替换 write/edit 工具调用的默认 DiffBlock。
