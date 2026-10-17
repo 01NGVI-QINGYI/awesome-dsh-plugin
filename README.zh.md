@@ -583,6 +583,7 @@ dsh plugin --profile web add dshmarket
 - [LyaxZ/dsh-fonttune](https://github.com/LyaxZ/dsh-fonttune) — DeepSeek Harness 字体插件：对话拥有字体、字号、行高与字重，界面用字体与字重并默认跟随对话（也可独立设置，两边互不影响），代码独立成轴并支持连字，整套配置可存为预设方案。
 - [LyaxZ/dsh-quick-toc](https://github.com/LyaxZ/dsh-quick-toc) — DeepSeek Harness 对话大纲：按回合整理整段会话的 Markdown 标题，侧边面板与全屏幕布两种视图；悬停预览可钉住对照；标题、提问、全文与跨会话四档检索，并保留最近搜索过的词；多种跳转、阅读位置跟随、可调大纲密度与中英双语界面；设置卡片从顶栏按钮直达。
 - [lyhue1991/dsh-soup](https://github.com/lyhue1991/dsh-soup) — DSH 右侧 details 列项目资源管理器（多选、拖拽移动、上传、下载、重命名、废纸篓、系统打开），会话内只读预览 Markdown/HTML/JSON/CSV/Notebook/PDF 与代码高亮，附带模型实时吞吐徽标与多行 GoalBar。
+- [lyonleeeee/dsh-steer](https://github.com/lyonleeeee/dsh-steer) — 在会话头显示实时状态徽标，并在不打断当前回合的前提下投递运行中新增的指导。
 - [Lzh3070/dsh-file-review-tab](https://github.com/Lzh3070/dsh-file-review-tab) — 把 agent 的文件改动审查放进 dsh-better-sidebar 侧边栏 Tab 或对话尾部行，支持行级 diff 与撤销。
 - [Lzz2133/dsh-manutd-fixtures](https://github.com/Lzz2133/dsh-manutd-fixtures) — 在侧边栏查看曼联 2026/27 赛季赛程，开球时间按你的本地时区显示，已结束比赛带 W/L/D 比分结果。
 - [mackwan84/dsh-ui-mockup#ui-mockup](https://github.com/mackwan84/dsh-ui-mockup/tree/main/bundle/ui-mockup) — 在 DeepSeek Harness 中使用可切换的阿里云百炼与火山方舟图像服务生成 UI 线框图和高保真设计稿。
@@ -3953,6 +3954,7 @@ dsh plugin --profile web add dshmarket
 - [helllo-shijie/motor-hospital-plugins#motor-repair-flow](https://github.com/helllo-shijie/motor-hospital-plugins/tree/main/plugins/motor-repair-flow) — 按诊断结论与电机功率编排标准化维修工序，每步含工时、人员与质检点。
 - [Hercules-debug/dsh-flock](https://github.com/Hercules-debug/dsh-flock) — 无编排者的自组织多智能体集群。真实 DSH 子智能体通过共享的只追加日志协调，由各智能体自行决定读写时机，无拓扑、每个智能体只派发一次；另附快照模式，由调度层把邻居视图冻结进提示词并驱动环形/网状/群集收敛。
 - [heyadhithya/fullstack-expert](https://github.com/heyadhithya/fullstack-expert) — 以证据驱动的全栈工程工作流：先勘察后规划、要求显式验证证据、敏感操作走审批门控。
+- [hhuangpanda/dsh-automation](https://github.com/hhuangpanda/dsh-automation) — 在全新的 DSH 会话中运行单次或周期 Agent 任务，支持自然语言计划、可视化计划编辑和会话关联历史。支持自定义模型、技能、失败时暂停以及权限设置。
 - [hongyue0721/dsh-kimicode-swarm](https://github.com/hongyue0721/dsh-kimicode-swarm) — Kimi Code 风格 swarm：批量并行子 Agent 调度（自适应并发）、/swarm 命令与聊天内实时进度条。
 - [hoyyang/dsh-plan-board](https://github.com/hoyyang/dsh-plan-board) — 思维导图式项目规划与防跑偏：计划→模块→任务 DAG 与拓扑执行序号、Agent 站位、改图人审门、git 交叉核对与证据门禁。
 - [hoyyang/dsh-project-manager](https://github.com/hoyyang/dsh-project-manager) — 项目看板：卡片组泳道自定义阶段，卡片关联落盘项目记忆、挂载仓库与已有会话（可恢复归档）；从卡片开的会话自动读取项目记忆。
