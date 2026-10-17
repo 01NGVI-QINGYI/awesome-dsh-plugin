@@ -2372,6 +2372,8 @@ dsh plugin --profile web add dshmarket
 - [zsjs110110-cpu/dsh-cross-session-approval](https://github.com/zsjs110110-cpu/dsh-cross-session-approval) — DeepSeek Harness 的跨会话派活与协同：新建顶层任务会话并投递任务，用 base62 会话别名读取或干预，并通过审批桥批准子会话的沙箱提权——命中破坏性删除一律强制拒绝。
 - [zyd232/dsh-compaction-policy](https://github.com/zyd232/dsh-compaction-policy) — 让 DeepSeek Harness 不再过早压缩对话（把早期内容总结掉）。默认行为下，上下文窗口不大的模型（十几万 token 那种）常常在半满出头就开始压缩；装上它之后，压缩会等你设定的比例（默认 80%）到了才发生，并且可以按 provider/model 分别设置。它只改“什么时候压缩”，一次压缩保留哪些内容仍由 DSH 决定。
 - [ZZJQ678/dsh-global-context](https://github.com/ZZJQ678/dsh-global-context) — 全局提示词配置：在对话视图新增一个标签页，写进去的内容会加在每个会话系统提示词的最前面，保存后下一条消息即生效。
+- [ZZZZZZZ-ZZZZZ/dsh-attachment-library](https://github.com/ZZZZZZZ-ZZZZZ/dsh-attachment-library) — 只读附件库：列出本机保存的所有图片和文件附件及其占用空间，以及哪些对话（包括会话回收站中的）仍在使用它们，并可在访达中显示或用预览打开。
+- [ZZZZZZZ-ZZZZZ/dsh-session-trash](https://github.com/ZZZZZZZ-ZZZZZ/dsh-session-trash) — 会话回收站：把对话移到回收站而不是直接删除，可以恢复，或再次确认后永久删除；本次启动中打开过的会话先隐藏，下次启动时再移入。
 
 ### 🧠 记忆
 
@@ -4957,6 +4959,7 @@ dsh plugin --profile web add dshmarket
 - [Lostforest7/dsh-apirevise](https://github.com/Lostforest7/dsh-apirevise) — 接口回归验收台：登记端点后先快照响应基线，模型改完后端一键重跑，把结构化字段级差异（状态码、字段增删、数值新旧值与差值）与源码 diff 并排展示，逐项验收后再导出 Markdown / 单文件 HTML 报告。
 - [louisyeaaah/dsh-reload](https://github.com/louisyeaaah/dsh-reload) — 不用重启 DSH 就能重载刚装好的插件或技能。reload_plugin 清掉该插件自己的模块缓存、卸载旧实例再重新 import，新代码报错时自动换回旧模块；reload_skill 强制重新发现技能目录。工具与 /reload-plugin、/reload-skill 两个命令都有。
 - [lsz-asd/dsh-chameleon#bundle](https://github.com/lsz-asd/dsh-chameleon/tree/main/bundle) — 可自修改的 DeepSeek Harness 桌面工作台：完整 dsh web 副本 + 编辑模式，agent 在对话中实时修改工作台（补丁层、插件、UI）并热更新生效。
+- [lucky01222/dsh-workbench-agent-studio](https://github.com/lucky01222/dsh-workbench-agent-studio) — DSH Web Agent 工作室：配置模型、提示词、按插件绑定的工具与 Skills；支持编辑工具结果的试运行和运行历史，保留会话能力快照，导出独立 Preset，并通过引导式创建预设生成 Agent 草稿。
 - [lucky8197/dsh-doc-guard](https://github.com/lucky8197/dsh-doc-guard) — 文档与代码一致性守护：版本号/更新记录表/结构树/模块清单/测试计数/交叉引用漂移审计与修复建议，全程只读。
 - [lucky8197/dsh-weekly-digest](https://github.com/lucky8197/dsh-weekly-digest) — 周报生成器：聚合最近 N 天的 git 提交、会话活动与每日记忆，自动生成 Markdown 周报，全程只读。
 - [luoshuizhiwei/dsh-desktop-restart](https://github.com/luoshuizhiwei/dsh-desktop-restart) — 从五个入口（侧栏面板、侧栏底部、会话标题栏、/restart-desktop 斜杠命令、设置页）经分离的 helper 结束并重新拉起 Electron 主进程，重启整个 DeepSeek Harness 桌面应用，而不是只重启 dsh web 进程；插件正在安装/更新且 pnpm 还活着时硬拦重启，清理 DSH 漏在系统临时目录里的改动快照，并藏掉账号菜单里容易误点的「意见反馈」。仅适用于桌面版；在 dsh web 上状态路由如实报告 desktop: false 并禁用按钮。
