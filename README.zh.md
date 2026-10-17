@@ -1991,6 +1991,7 @@ dsh plugin --profile web add dshmarket
 - [439436269-ctrl/dsh-session-path](https://github.com/439436269-ctrl/dsh-session-path) — 复制会话日志路径（或可直接粘贴的接续块），并把多帧 zstd 会话日志转成可读文件，供另一个会话读取接续。
 - [571242/dsh-armor-switch](https://github.com/571242/dsh-armor-switch) — 可逆的交付契约与破甲插件：开启时生效最高指令权威与交付规则，关闭时注册面与官方逐字节一致，支持宿主与 Profile 清洗。
 - [598829314/oil-dsh-title](https://github.com/598829314/oil-dsh-title) — 在用户消息后为 DeepSeek Harness 维护稳定的 emoji 会话标题，不向原会话追加命名消息。
+- [5aaee9/pi-agent-extensions#dsh-autocompact](https://github.com/5aaee9/pi-agent-extensions/tree/main/dsh-autocompact) — 为 DeepSeek Harness 按模型设置更早的自动压缩阈值：/autocompact 以精确 provider/model 为键写入仅本会话生效的覆盖值（off 回退后端默认、default 清除覆盖），设置页「自动压缩」管理所有会话继承的持久化逐模型阈值，输入框状态条目显示当前读数。
 - [643048695/dsh-compaction-route](https://github.com/643048695/dsh-compaction-route) — 在 Web 设置页里为会话压缩指定摘要模型，并在主模型出错时改用配置的兜底模型重试。
 - [7vw58n3ftvq7cn89v/dsh-plugin-session-colors](https://github.com/7vw58n3ftvq7cn89v/dsh-plugin-session-colors) — 给 DeepSeek Harness 的每个会话标颜色：悬停侧栏会话行即可选色（12 色），被标色行显示同色竖条，宿主侧持久化。
 - [985451842/dsh-snapshot-manager](https://github.com/985451842/dsh-snapshot-manager) — 记录会话快照并支持回滚到之前的状态。
@@ -2544,6 +2545,7 @@ dsh plugin --profile web add dshmarket
 - [rebron1900/dsh-mnemosyne](https://github.com/rebron1900/dsh-mnemosyne) — Mnemosyne 记忆插件 for DeepSeek Harness：提供 remember / recall / forget / stats / sleep 工具、内嵌技能、Settings 面板和可选的自动记忆功能。
 - [Relistencode/dsh-recall](https://github.com/Relistencode/dsh-recall) — 对话历史回忆：字面/模糊/语义三层检索全部历史会话的原始文本，完全本地离线——AI 再也不会忘记你说的话。一条命令安装（自带 `dsh.bundle.patch`），语义推理跑在 worker 线程。
 - [reshuibuduo/tmcra-plugin-deepseek-harness](https://github.com/reshuibuduo/tmcra-plugin-deepseek-harness) — 面向 DeepSeek Harness 的跨应用项目记忆，支持角色分离写回、可视化知识工作台、确认后纠错、会话控制、本地 Writer 与整理模型设置，以及免账号 Windows 本地安装预览。
+- [RestRegular/dsh-memory#dsh-memory](https://github.com/RestRegular/dsh-memory/tree/main/packages/dsh-memory) — 一体化本地记忆：按作用域（会话、项目、全局或自定义名）各一个 JSONL 文件、作用域内按内容去重，四个模型工具（memory_save / memory_search / memory_list / memory_forget），自动召回注入 agent 的 pre-step，并带一个设置面板。检索是词法 IDF 与本地向量后端的组合，向量后端可由面板一键安装并托管。
 - [Rxiain/dsh-openviking](https://github.com/Rxiain/dsh-openviking) — 面向 DeepSeek Harness 的 OpenViking 语义检索、资源管理、自动召回（user + agent 双空间）与会话记忆插件：基于 viking:// URI 的 memsearch/memfind/memread/membrowse/memgrep/memglob 检索工具、memadd/memremove 资源管理、memqueue 队列状态、memcommit 会话捕获，以及 memlearn 技能手册沉淀。
 - [scd13150/dsh-cognition](https://github.com/scd13150/dsh-cognition) — 给 DSH agent 的项目记忆:历史相似编辑作为先例出现、越界修改被 scope 锁拦下、认知跨会话持续积累(47 次上游验收修复、去 gold 化 20/20)。
 - [Scorp1o117/dsh-soul-md](https://github.com/Scorp1o117/dsh-soul-md) — 管理 soul.md 人设卡与长期记忆，支持按工作区和会话选择人设，并提供读取和更新工具。
@@ -3650,6 +3652,7 @@ dsh plugin --profile web add dshmarket
 - [paicat1/dsh-screenshot](https://github.com/paicat1/dsh-screenshot) — DSH 轻量截图插件：轻——零依赖零二进制；摆——一键全屏、窗口排版、悬停吸附截取被遮挡窗口；自助——Agent 可自助截屏，传路径不传图，路径通用，接上 modlens（选装）一步读出结构化内容。
 - [PerryLink/dsh-draw](https://github.com/PerryLink/dsh-draw) — 多引擎文生图（OpenAI Images 与智谱 CogView 预设）：按会话配额、引擎故障切换、凭证安全配置，结果卡片支持重新生成。
 - [poiuyjie/dsh-vision-opencode](https://github.com/poiuyjie/dsh-vision-opencode) — 给纯文本主模型加可配置识图模型：vision_read_image 工具、输入框识图模型选择器，以及纯文本路由的图片自动转文字。
+- [q253595422/dsh-imagegen-video](https://github.com/q253595422/dsh-imagegen-video) — 面向 DSH Web GUI 的 AI 生图与生视频插件：文生图/图生图按渠道配置模型目录，并按模型族适配请求协议（gpt-image、Grok Imagine、Nano Banana、Seedream、GLM-Image、Qwen-Image、MiniMax image-01、DALL-E 3），提供侧边栏生图工作台、带节点工作流的无限画布、文件预览与画布技能，以及提示词模板库；生视频侧含文生视频、图生视频、首尾帧与多参考图模式，走异步提交/轮询/下载链路，另有宿主侧视频工具、画布视频节点，并可用本机 ffmpeg 把两个以上视频节点拼接成一个 MP4。
 - [QXingYShu/dsh-comfyui-image](https://github.com/QXingYShu/dsh-comfyui-image) — 通过本地 ComfyUI 的 HTTP 接口把工作流排到用户自己的 GPU 上，由 Agent 直接生图：Z-Image-Turbo 适合快速草稿，Qwen-Image-2.1 适合成图与图中文字排版。 注册 comfyui_generate、comfyui_status 两个工具和一个涵盖模型选择与提示词 写法的 skill，无运行时依赖；没有 ComfyUI 在跑时会自动 headless 启动一个。
 - [Renji004/dsh-omni-vision](https://github.com/Renji004/dsh-omni-vision) — 为纯文本模型装上本地眼睛：eyes_render 在 Web 界面画布上绘制文字/图形/Mermaid，eyes_paste 接收用户粘贴的图片，eyes_ocr 用 Windows 自带 OCR 离线读文字，eyes_analyze 把像素解析成结构化数据，全程无需视觉模型。
 - [ruby1304/dsh-vision-subagent](https://github.com/ruby1304/dsh-vision-subagent) — 为任意 DSH 路由装上眼睛：Web 输入框贴图按意图自动聚焦分析，视觉子代理代读工作区图片，原图可随时物化编辑。
