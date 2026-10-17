@@ -231,6 +231,7 @@ dsh plugin --profile web add dshmarket
 - [CAI-MH/dsh-agent-group-panel](https://github.com/CAI-MH/dsh-agent-group-panel) — 飞书多助手机器人控制台：开启/关闭/重连守护进程、状态与最近动态、直达任务工作区。
 - [caisiyang123/dsh-tick-rail](https://github.com/caisiyang123/dsh-tick-rail) — 会话刻度线导航条：你发的每条消息一格刻度，点亮峰值随鼠标移动、两侧均匀衰减，悬停预览消息摘要，点击或键盘跳转到对应位置。
 - [Canary-Builds/dsh-mobile-ui](https://github.com/Canary-Builds/dsh-mobile-ui) — 为 DeepSeek Harness 现有 Web 界面加上触屏友好的导航、布局微调与独立 PWA 样式。
+- [CarrotFish/dsh-file-and-terminal](https://github.com/CarrotFish/dsh-file-and-terminal) — 为 DSH WebUI 添加好用的独立文件管理与终端页面，及附属实用功能。
 - [CaT-Hode/DSH-app](https://github.com/CaT-Hode/DSH-app) — 共用 DSH Web 配置、对话与插件的 Windows Electron 客户端，提供启动日志、更新恢复与诊断。
 - [causebefore/dsh-pomodoro](https://github.com/causebefore/dsh-pomodoro) — DSH Web 番茄钟：提供可配置专注/休息循环、可拖动迷你面板，以及站内提醒、提示音和浏览器通知。
 - [cayan0x/dsh-fold-context](https://github.com/cayan0x/dsh-fold-context) — 自动折叠 DSH 对话中的系统/上下文消息——将思考块、工具调用和工具结果合并为可展开的分组折叠条。
@@ -4568,7 +4569,7 @@ dsh plugin --profile web add dshmarket
 - [leechen298/Code2Skill](https://github.com/leechen298/Code2Skill) — 从用户授权的源码生成 Function、MCP 工具、工作流 Skill 与离线测试包。
 - [LeemanCheung/dsh-agent-arena](https://github.com/LeemanCheung/dsh-agent-arena) — 在隔离的 Git 工作树中比较编码智能体，并提供确定性验证、评分和显式胜者应用。
 - [lemoncat7/dsh-ssh](https://github.com/lemoncat7/dsh-ssh) — 为 DeepSeek Harness 提供 SSH 配置、浏览器终端、SFTP 浏览、端口转发、代理与会话级 AI 访问。
-- [lemonxiny55/dsh-composition-doctor](https://github.com/lemonxiny55/dsh-composition-doctor) — 只读的 DSH/Cordis 组合诊断与升级预检工具：扫描 profile manifest 与 patch，发现重复 row、hook 顺序和 UI 所有权冲突，比较脱敏快照，分析插件/row/hook 变化，并在明确证据边界的前提下预检目标 DSH release——不会修改真实 profile。
+- [lemonxiny55/dsh-composition-doctor](https://github.com/lemonxiny55/dsh-composition-doctor) — 通过组合来源路径和人工下一步解释受支持的 DSH 插件故障：重复引入、bundle patch 缺失和 peer 不匹配；提供独立 CLI 与报告查看器，默认只读离线诊断，未观察的 runtime 保留 unknown。
 - [lemonxiny55/dsh-lint-loop](https://github.com/lemonxiny55/dsh-lint-loop) — 面向 DSH 的变更感知质量闭环：编辑后快速 lint 反馈与仅针对新增问题的安全修复，完成前有界验证 lint 增量、TypeScript 和受影响的 Vitest/Jest 测试，并生成区分新增回归与历史债务的 Quality Receipt。
 - [Leo-Ayh-Oday/dsh-orcana#dsh-bundle](https://github.com/Leo-Ayh-Oday/dsh-orcana/tree/main/packages/dsh-bundle) — DeepSeek Harness 运行时治理器：零进展回合引导、按代际绑定的验证证据、基于证据的完成守卫，以及按任务配置限制工具集。
 - [liaoyonghong/dsh-workspace-api](https://github.com/liaoyonghong/dsh-workspace-api) — 把 DSH 工作区暴露为 HTTP API：浏览/搜索/读取文件，并支持自然语言任务（agent 查阅文档后带出处回答）。
