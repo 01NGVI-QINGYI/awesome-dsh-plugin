@@ -5384,10 +5384,13 @@ dsh plugin --profile web add dshmarket
 - [yzxxy010/dsh-workspace-write-plus](https://github.com/yzxxy010/dsh-workspace-write-plus) — 增加工作区修改++权限档，文件工具仍锁在工作区，可用通配符放行 Git Bash 等程序以跳过 Windows 进程沙箱。
 - [zhang8019/dsh-permission-matrix](https://github.com/zhang8019/dsh-permission-matrix) — 把 DSH 权限拆成 9 个可选预设（3 种沙箱 × 4 种审批），规则 + LLM 双通道四档风险分级，高风险操作需输入批准密码才放行，附 JSONL 审计日志。
 - [zhangmiao03/cloakpack#dsh-cloak](https://github.com/zhangmiao03/cloakpack/tree/main/packages/dsh-cloak) — DeepSeek Harness 的上下文防火墙：成功的纯文本工具结果中的凭据在进入模型之前先变成不透明的 ⟦cloak:category:n⟧ 占位符，原值只保存在进程内存的 agent 级保险库中。36 类内置签名（与 cloakpack git pre-push 守卫共享同一引擎）、针对未知格式的键名规则、自定义正则、dry-run 模式、审计日志与 /cloak 命令。
+- [zhengqiuyang/dsh-attest-chain](https://github.com/zhengqiuyang/dsh-attest-chain) — 会话签名监护链：被监视的工具结果逐条追加哈希链 ed25519 签名记录，commit 绑定进链——篡改任意行或截断尾部都会在确定性重放校验中失败。
 - [zhengqiuyang/dsh-egress-gate](https://github.com/zhengqiuyang/dsh-egress-gate) — 确定性网络出口门：网页抓取与搜索在 tools/pre-execute 按目的地白名单校验，越权即拒；shell 抓取动词默认观察，可选拦截。
 - [zhengqiuyang/dsh-freeze](https://github.com/zhengqiuyang/dsh-freeze) — 密闭组合锁：对 profile 的依赖、组合顺序、锁文件与补丁层取指纹；组合漂移时启动告警，strict 模式直接失败（CI 的 --frozen 姿态）。
 - [zhengqiuyang/dsh-mcp-test](https://github.com/zhengqiuyang/dsh-mcp-test) — 工具面快照与漂移门：全量可见工具注册表（含 MCP 工具）基线化为可提交的 JSON，升级新增、移除或改动工具时响亮告警。
+- [zhengqiuyang/dsh-pr-gate](https://github.com/zhengqiuyang/dsh-pr-gate) — 确定性写入门禁：范围策略在落盘前拒绝越权写入，残留规则扫描所写文本，每个决定落入带内容哈希的 JSONL 台账；可复用仓库的 agent-pr-gate.yaml 让 CI 与会话共用同一策略。
 - [zhengqiuyang/dsh-prompt-drift](https://github.com/zhengqiuyang/dsh-prompt-drift) — 系统提示词面漂移门：任何插件或预设注入组装提示词的段落均哈希基线化，对模型被告知内容的静默改写将响亮报错。
+- [zhengqiuyang/dsh-read-guard](https://github.com/zhengqiuyang/dsh-read-guard) — 确定性注入拦截：文件读取、仓库搜索与网络抓取的工具结果在进入模型上下文前被扫描；高危发现隔离包裹或阻断，凭证类文件按路径即隔离。
 - [zjuhbh/dsh-full-with-approval](https://github.com/zjuhbh/dsh-full-with-approval) — dsh 第四个权限预设：进程全权限（GPU 可用），同时工作区外与受保护文件（.git/**、.env*）的写入逐次向用户审批；纯插件实现，零核心改动。
 - [zoahdev/dsh-poison-guard](https://github.com/zoahdev/dsh-poison-guard) — DSH 插件安装前投毒扫描：AST（JS-X-Ray）+ 去混淆解码 + 正则启发式，发现即非零退出，可作 CI 门禁。
 - [zzstar101/dsh-sandbox-noop-escalation](https://github.com/zzstar101/dsh-sandbox-noop-escalation) — 去掉那些不会让当前沙箱模式变宽的 sandbox_permissions / justification 参数，避免调用报错「sandbox escalation to "workspace-write" is not strictly wider than this call's current "danger-full-access" mode」。GPT 系列模型往往每次调用都会填这两个可选参数，并选 workspace-write，而它比 danger-full-access 更窄。插件在 tools/pre-execute 阶段把请求的模式和会话沙箱策略给出的当前模式做比较：相同或更窄时去掉这两个字段（只有 justification 时也会去掉）。同时兼容 GPT 从 Codex shell 工具带过来的取值：null、空值和 use_default 视为没有请求；会话已经是 danger-full-access 时，任何取值（包括 require_escalated）都会去掉，因为不存在更宽的模式。真正的升权请求、无法识别的模式值，以及没有声明 DSH 升权参数的工具，都原样交给 DSH 处理。不会放宽任何权限。监控的工具列表可配置（默认 bash、pwsh、write、edit、run_code）。零依赖。
