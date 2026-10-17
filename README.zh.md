@@ -1182,6 +1182,7 @@ dsh plugin --profile web add dshmarket
 - [mzzsfy/dsh-plugin#dsh-usage-dash](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-usage-dash) — 会话用量统计面板：天/小时/分钟三粒度 token 与请求统计、活跃热力图、会话底栏信息接管与回合费用芯片、多条件分时段定价费用估算；复刻自 HaoyueQin/dsh-usage-statistics-panel 并扩展。
 - [mzzsfy/dsh-plugin#dsh-usage-panel](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-usage-panel) — 多平台 LLM 账号余额与额度面板：配置 DeepSeek、OpenRouter、Kimi、智谱、MiniMax、NewApi 或自定义端点，定时自动查询并绘制趋势图，余额/额度阈值与窗口重置经多通道推送通知。
 - [niliemi/dsh-billing](https://github.com/niliemi/dsh-billing) — 按官方模型价目表把 token 折算成费用，在聊天框底部上下文环旁常驻显示本会话与全局的本次已用金额，在左侧边栏显示账户余额，并在本次费用超过你自设的全局上限（超过余额会被夹到余额）或某个会话自己的上限（每个会话各自设、互不共用）时阻断该轮（可一次性或按会话放行）；每个角标右侧可重置计费起点（本次归零、历史只进累计、token 一条不丢），全局与单会话两个起点各自独立、互不牵连。
+- [NIRVANA-APOC/dsh-api-cost](https://github.com/NIRVANA-APOC/dsh-api-cost) — 注册 apiCost 会话投影，按官方公布的峰谷价目表把上报的 token 用量折算成 ¥/$ 花费，覆盖本会话、委派树与经校验的团队三种范围：输入框下方的胶囊与其详情面板、/cost 命令、session_cost 工具，以及读取视图与当前价目表的 GET 路由。面板上的开关可在高峰时段把模型请求停在 llm/stream 上，待谷时窗口开启后原样派发，于是按谷时价计费，且会话中不会出现任何失败。
 - [Nixz0824/dsh-usage-stats-plus](https://github.com/Nixz0824/dsh-usage-stats-plus) — DSH 用量与余额面板：官方余额实时拉取、逐事件官方峰谷计价、基于余额快照的全渠道消耗估算、Codex 风格 12 个月 Token 活动时间轴。Fork 自 Ychris12138/dsh-usage-stats。
 - [NOirBRight/dsh-usage-monitor](https://github.com/NOirBRight/dsh-usage-monitor) — 设置页用量仪表盘：从会话日志汇总 token、请求、输出 token 与缓存命中率，含堆叠图，并按供应商、模型或工作区分组列表。
 - [nonewind/dsh-spend](https://github.com/nonewind/dsh-spend) — DSH Web 用量与费用统计插件：右下角悬浮窗，按模型/按天/按会话多维聚合与预计花费。
@@ -2472,6 +2473,7 @@ dsh plugin --profile web add dshmarket
 - [codingayice/dsh-interview](https://github.com/codingayice/dsh-interview) — 面向 DeepSeek Harness Web 的 AI 面试陪练：支持背八股、模拟面试、场景题与力扣热题 100 四种模式，自动评分、点评并讲解知识点。
 - [coolbreezecoin/dsh-wechat-mp](https://github.com/coolbreezecoin/dsh-wechat-mp) — 把 markdown 变成排好版的微信公众号草稿：样式逐条内联到元素上（编辑器会丢弃 `<style>` 块和 class 名），每张本地图片走微信自己的上传接口以免被过滤，然后创建草稿；不做群发。
 - [CoolTea001/dsh-cool-terminal](https://github.com/CoolTea001/dsh-cool-terminal) — DeepSeek Harness 终端插件，与工作区实时同步、终端隔离并单独记录历史命令。
+- [copylee711/dsh-academic](https://github.com/copylee711/dsh-academic) — 学术工具，TypeScript 实现，不需要 Python 或 MCP 服务：通过本地 API 或 zotero.org 访问 Zotero 文库（检索、批注、全文、导出引文；开启写入后可按 DOI / arXiv 编号入库、写笔记、改标签），Zotero 没开时自动启动；同时检索 arXiv、OpenAlex、Crossref、Semantic Scholar、PubMed、Europe PMC，并通过浏览器窗口检索知网和 Google Scholar；阅读开放获取全文、从 DOI 注册机构取引文、核验参考文献；内置 11 个学术技能。
 - [copylee711/dsh-computer-use](https://github.com/copylee711/dsh-computer-use) — Windows 电脑控制：截图、鼠标、键盘、剪贴板和窗口工具，按应用授权并经 DSH 审批；操控期间屏幕显示橙色光晕和提示条，按 Esc 暂停或继续。
 - [copylee711/dsh-proxy](https://github.com/copylee711/dsh-proxy) — DeepSeek Harness 网络代理设置页：配置全局 HTTP(S) 代理及免代理主机，或为单个 LLM 提供商单独指定代理或直连；保存即生效，无需重启。
 - [CREAIT-nl/dsh-plugins#tool-disclosure](https://github.com/CREAIT-nl/dsh-plugins/tree/main/tool-disclosure) — 渐进式工具披露：被延后的工具组在每次请求中只占目录里的一行，模型用 tool_search 加载后才拿到完整 schema；设置页为每个组提供一个开关，各组开销按当前工具注册表实测。
@@ -3762,6 +3764,7 @@ dsh plugin --profile web add dshmarket
 - [CodermanYHZ/dsh-node-flow](https://github.com/CodermanYHZ/dsh-node-flow) — DSH 可视化节点工作流画布，支持子 Agent 调用、代码执行、条件分支、循环、定时任务及工作流导入导出。
 - [Cola1018/dsh-aicc-zhunao](https://github.com/Cola1018/dsh-aicc-zhunao) — 主脑编排 preset：委派优先的 persona、根会话执行门禁，以及可移植的 AI-LAW 规则技能。
 - [Contexera/dsh-agent-team](https://github.com/Contexera/dsh-agent-team) — 给 DSH 一个可长期协作的持久 Agent 团队：Agent 是持久身份，Workspace 按项目组织，Channel 承载职责分派，Task Thread 串联多个 session agent 协作推进。
+- [cq-guojia/dsh-task-dispatch-table](https://github.com/cq-guojia/dsh-task-dispatch-table) — 定时任务调度器：一张任务表驱动周期性运行的 agent 任务，每次调度为一个独立的 dsh 会话；调度本身纯逻辑实现，不消耗任何模型调用。
 - [CREAIT-nl/dsh-plugins#hookkit](https://github.com/CREAIT-nl/dsh-plugins/tree/main/hookkit) — 以配置驱动的生命周期钩子，并支持上下文注入：在 YAML 中声明事件、处理器与结果——处理器可以是进程内工具（含 MCP）、shell 命令或 HTTP 端点，结果可以是模型可见的上下文、拒绝该次工具调用，或触发即忘。
 - [CREAIT-nl/dsh-plugins#research-mode](https://github.com/CREAIT-nl/dsh-plugins/tree/main/research-mode) — 把深度研究做成一种代理模式：一条经过审阅的固定循环——先规划，再按研究员自行声明的缺口进行自适应并行轮次，综合出带引用的报告，最后对其做对抗性审阅——而不是让模型每次现写脚本。轮次预算未能覆盖的问题会在报告中被逐一点名，而不是被悄悄丢弃。
 - [CTWCTW9999/dsh-agent-preset-router](https://github.com/CTWCTW9999/dsh-agent-preset-router) — DSH 自动模式：用 Flash 模型为每个新会话自动判断最合适的 Agent 预设（标准/PTC/极简/创造）并直接执行，无需确认。
