@@ -607,6 +607,7 @@ dsh plugin --profile web add dshmarket
 - [MichengAI/dsh-codex-ui](https://github.com/MichengAI/dsh-codex-ui) — 为 DeepSeek Harness 网页端重构 Codex 风格侧栏、工作区会话树、全局搜索和轮次导航。
 - [Microqian2th/dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider) — 把官方「推理等级」那一行改成一条可拖动的连续轨道：填充从蓝渐变到紫罗兰，较高档位带星尘粒子，官方数值文字跟着档位变色。Off 档保持官方灰，不改写官方任何文字。
 - [miisaka19800/dsh-restart-fab](https://github.com/miisaka19800/dsh-restart-fab) — DSH 网页界面右下角的一键重启按钮：全屏遮罩原地重启 dsh 进程并自动刷新页面；无需启动脚本，跨 Windows/macOS/Linux。
+- [miiy/dsh-terminal-keybar](https://github.com/miiy/dsh-terminal-keybar) — 在触屏设备上补齐手机软键盘缺少的按键（Esc、Tab、回车、Ctrl-C、方向键），以半透明按键列浮在活动终端旁。
 - [mimateinn/dsh-i18n](https://github.com/mimateinn/dsh-i18n) — 为 DeepSeek Harness 界面新增 20 种语言（繁体中文香港/台湾、日语、韩语、法语、德语、西班牙语、葡萄牙语、意大利语、俄语、乌克兰语、波兰语、荷兰语、土耳其语、阿拉伯语、印地语、印尼语、越南语、泰语、瑞典语），逐条精译并带运行时兜底，另加自动翻译，把市场与第三方文本翻译成你的语言。
 - [Minecraftbe/dsh-toolfold](https://github.com/Minecraftbe/dsh-toolfold) — Codex 风格的工具调用折叠，将多个工具调用折叠到一行内。
 - [minivv/dsh-activity-bell](https://github.com/minivv/dsh-activity-bell) — 侧边栏活动铃铛：会话跑完后铃铛显示红色角标，点一下把工作区列表换成按天分组的最近活动列表，尚未打开过的完成项带绿点。
@@ -940,6 +941,7 @@ dsh plugin --profile web add dshmarket
 - [xmwengxing/dsh-client-ui-sidebar-perfmon](https://github.com/xmwengxing/dsh-client-ui-sidebar-perfmon) — 右侧栏主机性能监控：CPU、内存、交换内存仪表盘，显卡频率与显存条，CPU / 显卡 / 主板 / 硬盘温度，以及可按 CPU、内存、进程名排序的进程列表。
 - [xswt442-cmd/dsh-xswt-tauriapp#dsh-desktop-app](https://github.com/xswt442-cmd/dsh-xswt-tauriapp/tree/main/plugins/dsh-desktop-app) — 桌面外壳 dsh-xswt-tauriapp（一个 Tauri 写的 DeepSeek Harness 桌面壳）的安装引导：安装后首次启动 dsh 时，从发布页下载本平台安装包，先比对 SHA256SUMS、校验通过才落盘，再交给系统安装器打开；插件自己不安装任何东西，也不给 dsh 加界面。
 - [xuexiaolei1997/dsh-plugin-stock-x](https://github.com/xuexiaolei1997/dsh-plugin-stock-x) — 全景金融量化工作台与股票盯盘：悬浮球与抽屉面板、A/港/美/全球指数实时行情、多周期K线与5日分时、五档盘口、资金流向、板块热点榜与AI投研诊断。
+- [xufu5438-netizen/dsh-boot-video](https://github.com/xufu5438-netizen/dsh-boot-video) — 视频开机片头：启动时全屏播放 mp4，点击或 Esc 跳过，可导入自己的视频，浏览器解不了的编码自动转成 H.264。
 - [xwh5/dsh-diff-review](https://github.com/xwh5/dsh-diff-review) — DSH 会话修改审查：追踪 write/edit 工具调用，集成 diff2html 实现 VS Code 风格 side-by-side diff，自动跟随主题，支持子代理聚合与一键撤回。
 - [XWIDE/dsh-draft-keeper](https://github.com/XWIDE/dsh-draft-keeper) — 按会话保住输入框里的图片草稿：在浏览器本地留一份镜像，切回该对话或输入框重新挂载时经官方草稿通道放回去；消息一旦发出或你手动移除，就不再见它回来。
 - [XWIDE/dsh-picflow](https://github.com/XWIDE/dsh-picflow) — 粘贴即编号引用：Ctrl+V 的截图入库后拿到固定编号「图片N」，在输入框旁面板里以缩略图列出，可经 @图片 菜单插入引用；开着「自动插入」时粘贴后直接落到光标处。
@@ -2090,6 +2092,7 @@ dsh plugin --profile web add dshmarket
 - [shuiqian520/dsh-session-delete](https://github.com/shuiqian520/dsh-session-delete) — 在侧栏会话行的「…」菜单里永久删除单个会话;也可点侧栏标题旁的「批量删除」入口进入多选模式,勾选多个会话后「确认删除」一次清掉(会话日志、工作区归属、宿主内存实例、客户端列表行一并清理);另可清理日志已不存在的残留行,用户消息与 AI 回复的复制按钮右侧各有「重试」。
 - [SilenZerOrz/obsidian-dsh-acp](https://github.com/SilenZerOrz/obsidian-dsh-acp) — 在 Obsidian Agent Client（及其他 ACP 客户端）里驱动 DeepSeek Harness 的 ACP 适配器：会话 list / resume / fork / delete、按会话切换模型、一句话摘要预览、导入外部 ACP 会话，并可把 Obsidian 侧会话拉进 dsh 原生会话库。需 DSH >= 0.1.5-rc.3。
 - [SiriLee/dsh-rewind](https://github.com/SiriLee/dsh-rewind) — 同一会话窗口内的 in-place 对话回退（不 fork，Claude Code /rewind 语义）：每条消息的 ↶ 按钮把模型上下文回退到任意用户消息，可选用磁盘持久化的 before-backups 还原工作区文件。
+- [SkanderBog/dsh-context-manager](https://github.com/SkanderBog/dsh-context-manager) — 预览会话上下文，按对话分组选择保留、摘要或省略，确认后通过 Harness 会话服务持久化压缩结果。
 - [Sky-lll27/DSH-chat-keeper](https://github.com/Sky-lll27/DSH-chat-keeper) — DSH 对话管家：跨工作区总表与批量归档、正文搜索，以及可恢复的回收站式删除。
 - [SLin-code/dsh-task-notice-board](https://github.com/SLin-code/dsh-task-notice-board) — 面向 DSH Web 的任务级 Workspace 到 Task 到 Session 协作控制台，提供 Session 看板、归档对话查看，以及在关联 Session 之间共享的有界长期记忆。
 - [sluminositys/dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) — 从任意层级的已完成回答持续创建隔离分支，主会话始终不受影响。
@@ -3569,6 +3572,7 @@ dsh plugin --profile web add dshmarket
 - [QinpanWan/dsh-doc-quick](https://github.com/QinpanWan/dsh-doc-quick) — 拖拽文档进 dsh Web 对话框，Agent 直读本地文件处理，右侧侧栏展示产出与文件路径。
 - [s1lencewill/dsh-markdown-reader](https://github.com/s1lencewill/dsh-markdown-reader) — 在独立全屏阅读器中渲染工作区 Markdown 文件，支持 GFM、KaTeX、Mermaid、目录导航、文件更新同步以及浏览器打印和 PDF 导出。
 - [simikangtao/dsh-storyboard](https://github.com/simikangtao/dsh-storyboard) — 对话收尾可视化故事板：storyboard 工具把 JSON 规范渲染为自包含 HTML 卡片（内嵌 SVG 流程图、编号步骤、事实网格、时间线），写入 ~/.dsh/storyboard/<session>/ 并在侧边栏打开；系统提示词段落与 /storyboard 命令触发生成。纯服务端、零运行时依赖。
+- [SkanderBog/dsh-pdf-reader](https://github.com/SkanderBog/dsh-pdf-reader) — 读取和搜索本地 PDF 并提供页码引用，将页面渲染为图片，可用 Tesseract 对扫描页或混合页面进行 OCR；需要 Poppler。
 - [STARDUSTLC666/dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) — 演示文稿技能与工具：一句话或一篇文档生成 HTML 放映与可编辑 PPTX，7 种页型（含金句与原生 PPTX 表格），演讲者备注（HTML 按 S 呼出 + PPTX 原生备注页），内置 5 套主题，可配置默认主题/语言，中英双语。
 - [sudoprivacy/dsh-shareone-plugin](https://github.com/sudoprivacy/dsh-shareone-plugin) — 将 TXT、Markdown、HTML、PDF、Word 和 PowerPoint 文件发布为 ShareOne 分享链接，支持访问密码、水印、文本页面更新和 TXT/Markdown/HTML 评论。
 - [SuperstructureJH/dsh-workbuddy-ppt](https://github.com/SuperstructureJH/dsh-workbuddy-ppt) — 在 DSH 中使用包内编排 Skill、确定性 PPTD 场景检查和原生 PowerPoint 对象生成可编辑 PPTX，并在本地交付 PPTD 源项目。
