@@ -442,6 +442,7 @@ dsh plugin --profile web add dshmarket
 - [imkingjh999/dsh-shorts-wall](https://github.com/imkingjh999/dsh-shorts-wall) — 在 DSH Web UI 中加入默认贴边的竖屏短视频墙：YouTube Shorts 与 B站双源、关键词轮换、四角缩放及 Alt+S/Alt+M 快捷键。
 - [Imnotndesh/dsh-peak-pricing-warning](https://github.com/Imnotndesh/dsh-peak-pricing-warning) — 在模型选择器旁以行内文字显示 DeepSeek 峰谷定价状态、距下一次调价的倒计时，以及本次会话的预估费用。
 - [Imzl-zl/dsh-toolbox-ui](https://github.com/Imzl-zl/dsh-toolbox-ui) — DSH 网页的组合面板，一个悬浮面板同时管 MCP 与技能。MCP：查看每个服务器的状态与传输方式，在全局与项目两种作用域下新增/编辑/启停/移除，每个工具的参数 JSON Schema 可读化展开，重连可重建共享连接且不影响其他会话；47 个服务、10 个分类的市场，支持搜索、排序、「只要免密钥」筛选与一键安装；可扫描另外 10 种客户端的配置文件，预览后写入。项目 MCP 按「项目目录 + serverName」共用一份连接：第一个会话建立、最后一个会话释放，面板会标出当前项目有几个会话在运行。技能：作用域与遮蔽、启停、模型自动调用，以及 skillhub.cn 市场。项目 MCP 配置可导出为 JSON 用于备份与分享；面板跟随宿主的界面语言。
+- [ingeb0rga/dsh-sidebar-hover](https://github.com/ingeb0rga/dsh-sidebar-hover) — 仿 Claude Code 的侧栏（macOS 桌面版）：悬停在折叠的侧栏按钮上即可将侧栏浮层展开，选择会话后自动收起，点击按钮固定；另有会话历史前进/后退箭头（⌘\[ / ⌘]）。
 - [iqingyoung/search2chart-mcp#dsh](https://github.com/iqingyoung/search2chart-mcp/tree/main/dsh) — 原生 DSH 插件：把结构化数据渲染成对话流内联图表，零运行时依赖。
 - [Isilsolme/dsh-splash-launcher](https://github.com/Isilsolme/dsh-splash-launcher) — Windows 一键启动器：无边框 WPF 启动动画（HARNESS 逐笔描边），后台拉起 dsh web 并在 GUI 就绪后淡入，附 desktop_launch 工具。
 - [itchenshi/dsh-keys-setting](https://github.com/itchenshi/dsh-keys-setting) — 在设置窗口的通用页配置 Enter、Shift+Enter、Ctrl/Cmd+Enter 是发送消息还是换行；未改动前完全保持引擎默认行为。
@@ -1565,6 +1566,7 @@ dsh plugin --profile web add dshmarket
 - [EmotionG/dsh-llm-config](https://github.com/EmotionG/dsh-llm-config) — 需要 DSH >= 0.2.0-rc.2 < 0.3.0。在设置页配置任意数量的模型供应商：各自独立设置接口地址、密钥与逐模型参数（思考强度、图片输入、重试策略），支持 OpenAI Chat、OpenAI Responses、Anthropic Messages 与 Google Gemini 四种协议。
 - [ethanweave/dsh-connect-workbuddy](https://github.com/ethanweave/dsh-connect-workbuddy) — 在本机运行 OpenAI 兼容网关，让 DSH 使用已登录的腾讯 CodeBuddy（WorkBuddy）账号额度：一键安装脚本（含 SHA256 校验）、登录自启计划任务（带防重复启动）、manage.ps1 统一管理（status/start/stop/restart/logs/update/uninstall），并内置指导安装与排障的 Agent 技能。
 - [Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL](https://github.com/Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL) — 在 DSH 中使用你的 ChatGPT/Codex 订阅，并支持图像生成和 Web 搜索。
+- [Faide-cyber/dsh-workbuddy](https://github.com/Faide-cyber/dsh-workbuddy) — 把 WorkBuddy 国内版和国际版的免费/付费模型接进 DSH —— 无需下载 WorkBuddy 桌面端。
 - [ffyuuu/dsh-llm-longcat](https://github.com/ffyuuu/dsh-llm-longcat) — LongCat-2.0 模型适配器：100 万上下文、二元思考模式、工具调用，基于 OpenAI 兼容接口的流式输出。
 - [fieldnote-ops/keyringseam](https://github.com/fieldnote-ops/keyringseam) — macOS Keychain 凭据提供器：替换本地文件提供器，并使用已签名、公证的通用二进制辅助程序。
 - [FishBottle7/opencode2dsh](https://github.com/FishBottle7/opencode2dsh/tree/master/packages/plugin) — 将 OpenCode Zen 免费模型接入 DeepSeek Harness，无需 API Key。
@@ -3950,6 +3952,7 @@ dsh plugin --profile web add dshmarket
 - [shenhuanageshei/dsh-thincoder-suite](https://github.com/shenhuanageshei/dsh-thincoder-suite) — 导师评审逐轮收敛、工程模式写入需持设计令牌、把任务转交给更强的模型、并行多模型会诊；设置页可改各模型路由、超时与预算。
 - [shiyan688/dsh-novel-craft](https://github.com/shiyan688/dsh-novel-craft) — DeepSeek Harness 的小说写作工作台：你在候选段落上点赞或点踩，模型把这批点选蒸馏成一份简短的「作者偏好档案」带进后续写稿，正文本身不进写稿上下文。另有章节看板、每章写作包、只改被批注段落并逐字核对其余段落的批注式微调、项目台账，以及不把正文送进模型的本地情节体检。
 - [sjh9714/routinekit](https://github.com/sjh9714/routinekit) — 把选定的 DSH、本地 MCP 或原生 WebMCP 调用捕获为经过评审的参数化例程，暴露为带类型的工具，重放时重新请求批准。
+- [slow-stack/dsh-study-desk](https://github.com/slow-stack/dsh-study-desk) — 备考与科研学习工作台：三列待办墙（标签与过滤）、间隔重复复习队列（简化 SM-2，已完成的卡照样会到期）、按实际专注分钟点亮的热力图、周报、每日复盘、跨面板存活的番茄钟，支持 Markdown 导出与读回（Obsidian 友好）。可 `dsh plugin add` 安装（npm 包 dsh-study-desk）。
 - [smellgamed3/dsh-plugin-list-sync](https://github.com/smellgamed3/dsh-plugin-list-sync) — 通过兼容 S3 的对象存储同步 DeepSeek Harness 第三方插件列表，提供差异预览、本地快照、回滚与可选的 LLM provider 配置同步。
 - [spechenxin/jimu](https://github.com/spechenxin/jimu) — 积木：DSH 分域编排插件，domain_plan 分域确认 + 按域编排子代理（手递手）+ LLM 自动审计。
 - [squirrel20/dsh-cron](https://github.com/squirrel20/dsh-cron) — 宿主侧无人值守定时任务：按 cron 表达式、固定间隔或一次性时点运行一次性 agent 任务或 shell 命令，调度状态持久化（至多一次语义），支持重叠/错过策略与有界运行历史。
