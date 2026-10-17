@@ -1676,6 +1676,7 @@ dsh plugin --profile web add dshmarket
 - [1624318455/dsh-plugin-adapter](https://github.com/1624318455/dsh-plugin-adapter) — 将 OpenCode Zen 免费模型接入 DeepSeek Harness，无需 API Key，并跟踪网关兼容性。
 - [2404723600/dsh-router-loomy](https://github.com/2404723600/dsh-router-loomy) — 把讯飞 Loomy 云端通道作为 OpenAI 兼容供应商接入 dsh-router，提供模型列表与流式对话补全。
 - [2861292267/DSH-Official-WorkBuddy-Credit-Proxy](https://github.com/2861292267/DSH-Official-WorkBuddy-Credit-Proxy) — 把本机已登录的 WorkBuddy 账号汇成一个自动故障转移的模型池，同一池子对外提供 OpenAI Chat、OpenAI Responses 与 Anthropic Messages 三种协议，并支持模型别名、用量统计与积分自动化。
+- [643048695/dsh-subagent-role-router](https://github.com/643048695/dsh-subagent-role-router) — 为 DSH 子代理派发按角色（探索 / 规划 / 修补）分流到指定模型，支持轮换或随机分配、跨供应商故障转移，并对 fork 种子做活跃窗口切片。
 - [a2580vb/dsh-llm-opencode-go](https://github.com/a2580vb/dsh-llm-opencode-go) — 把OpenCode Go接入DSH的模型列表，提供订阅额度显示、模型发现、会话亲和等功能。
 - [A42Null/dsh-opencode-zen-plugin](https://github.com/A42Null/dsh-opencode-zen-plugin) — 为 DeepSeek Harness 接入 OpenCode Console (Zen) 模型：在「设置 → 插件」填入 Console API Key 后即可选用 Console 的对话模型，模型目录自动同步，每个模型按官方文档路由到对应端点，免费 *-free 模型默认不列出（它们只能在 OpenCode 客户端内运行）。
 - [a981008/dsh-switch](https://github.com/a981008/dsh-switch) — 把 cc-switch 的供应商与模型在保存的瞬间镜像进 DSH，并在输入框和设置卡片里显示各供应商的套餐窗口、账户余额或自定义用量脚本的结果。
@@ -4598,6 +4599,7 @@ dsh plugin --profile web add dshmarket
 - [wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — Git Worktree Session Target：任务在隔离 Session 中运行，支持 Ready for Review、可撤回的 Local Preview、人工确认交付、环境保留与恢复，以及同一 Session 连续迭代。
 - [Wongzexu/dsh-git-status](https://github.com/Wongzexu/dsh-git-status) — 专精于 Git 分支与状态处理：Web 右缘 Git 状态浮窗，commit DAG 泳道图、未提交改动与 stash、行内 diff，右键分支/tag 切换、合并、重命名、删除、新建，一键拉取全部远程。
 - [wuxiangru915/dsh-review-loop](https://github.com/wuxiangru915/dsh-review-loop) — 增量代码审查插件：批准一批改动后只审查检查点之后的新改动，提供 Web 审查面板与 `/review` 命令，并把审查意见注入回 agent。
+- [wzw4429-crypto/dsh-github-sync](https://github.com/wzw4429-crypto/dsh-github-sync) — DSH 的 GitHub 仓库同步插件：带冲突回滚与推送前检查的双向 git 同步、可下钻到每一步的 Actions/CI 监控、仓库添加/移除/改名、含本地与远端文件浏览的 Web 面板、定时自动化流水线，以及六个 Agent 工具。
 - [xbzbing/dsh-git-panel](https://github.com/xbzbing/dsh-git-panel) — DSH Web GUI 里的 IDE 风格 Git 面板：常驻标签页含三栏总览（分支/标签列表、可搜索的提交历史图、含变更文件树与提交信息的提交详情）与变更记录页（统计条、带逐文件暂存/取消/丢弃的未提交列表、含 amend 的提交框）；并排差异带懒加载 highlight.js 语法高亮、块间上下文按需展开与词级行内高亮，图片文件以变更前/后双图对照；另在输入框提供 zsh 风格分支标记。所有 git 命令以 argv 数组经宿主 subprocess 执行、cwd 锁定仓库根。
 - [xiaoksio/dsh-solution-explorer](https://github.com/xiaoksio/dsh-solution-explorer) — DSH Web GUI 右侧边栏：VS Code 风格文件浏览器加源代码管理（git 状态、暂存/取消暂存/放弃变更、提交、差异、提交图形、抓取/拉取/推送同步、分支与远程管理、Git 初始化、多仓库切换、文件状态着色、文件类型图标），并提供打开会话/文件树/源代码管理里任一文件的编辑器视图（Markdown/HTML/PDF/图片预览、15 种语言语法高亮、逐块差异编辑、Ctrl+S 保存）、文件操作（新建/移动/复制/删除、在文件管理器中显示）、可折叠图标窄条、多标签底部终端（ConPTY），以及由宿主已配置模型基于暂存差异生成提交信息。
 - [xiongjiamu/dsh-atomgit](https://github.com/xiongjiamu/dsh-atomgit) — AtomGit 插件包：内置六个 AtomGit 技能（Issue 规划、Issue 实现、PR 审查、PR 合并、CLI 版本发布、GitHub 镜像），并集成 ag CLI 与平台托管的 MCP 工具（仓库/分支/Issue/PR/搜索）。
