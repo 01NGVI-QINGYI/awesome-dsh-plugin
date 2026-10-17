@@ -1589,6 +1589,7 @@ dsh plugin --profile web add dshmarket
 - [AdonisSheldon/dsh-openai-oauth](https://github.com/AdonisSheldon/dsh-openai-oauth) — 通过浏览器 PKCE 或设备码 OAuth 将 ChatGPT 账户接入 DeepSeek Harness 的 Codex 模型，并支持自动刷新令牌以及 Web 或无头登录。
 - [aerince/dsh-models-dev-reasoning](https://github.com/aerince/dsh-models-dev-reasoning) — 为未配置的第三方 DeepSeek Harness 模型添加 models.dev 推理级别支持。
 - [ai-yukin/dsh-0-tools](https://github.com/ai-yukin/dsh-0-tools) — DSH Web 小白零门槛零费用套件：一键安装支持 Windows（install.bat）和 macOS/Linux（install.sh，v1.7.0 起）；一键接入四款永久免费渠道——智谱 GLM（文本+图片）、硅基流动（Qwen3-8B 及 15+ 款 9B 以下小模型）、讯飞星火 Lite，以及 OpenRouter 免费池（一个 Key，经 openrouter/auto 自动挑选，池内模型随时变化）；接入任一免费模型后左下角配置提示自动隐藏；含 DeepSeek 计价时段提醒、内置新手帮助中心。
+- [AIcivilization/dsh-model](https://github.com/AIcivilization/dsh-model) — 为 dsh 和其他软件提供一个带鉴权的 OpenAI 兼容地址（基于 CLIProxyAPI）：汇集 WorkBuddy、OpenCode Zen、本机 Ollama / LM Studio，以及 Codex、Kimi 等 CLI 订阅；在 dsh 页面上登录，不用装各家 CLI；挑选的模型按来源分组同步进 dsh。设置页提供每个来源的开关和免费 / 付费标签、套餐用量、带 24 小时统计的 API key、按来源挑选模型，以及更新和卸载。支持 macOS、Linux（含与 dsh-vps 同机部署）和 Windows。
 - [amlyczz/dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) — 将 Google Antigravity (agy CLI) 接入 DSH：无 API Key 使用 Gemini/Claude/GPT-OSS 订阅模型，支持流式对话、原生工具卡片、思考轮次注记及 Web 界面 Google OAuth 扫码登录。
 - [Ansonfishing/dsh-model-manager](https://github.com/Ansonfishing/dsh-model-manager) — DSH Web 视图中的本地 LLM 推理服务控制面板:服务注册表与健康检查/停止控制、llama.cpp / SGLang / vLLM 命名参数 profile(保存前做 KV/显存校验)、GPU 探测与 tok/s 测速。
 - [antonio-mastropaolo/dsh-anthropic-membership](https://github.com/antonio-mastropaolo/dsh-anthropic-membership) — 用 Claude Pro/Max 会员登录 DeepSeek Harness（无需 API key），将 Anthropic 请求图片长边压到 2000px，精简 /compact 摘要请求，并显示 5 小时/每周套餐用量百分比与 DSH 消息数。
@@ -2981,6 +2982,7 @@ dsh plugin --profile web add dshmarket
 - [Roarpeng/GraphFlow](https://github.com/Roarpeng/GraphFlow) — 面向编程 Agent 的本地代码知识图谱：提供 10 个 MCP 工具，覆盖分层上下文压缩、DAG 规划、增量 AST 建图、跨会话技能飞轮、诊断与图谱产物导入导出。
 - [robiteame/dsh-session-tree-extension](https://github.com/robiteame/dsh-session-tree-extension) — Pi 风格的追加式多分支会话树:在任意历史节点开分支或跳转而不删除旧历史,可将分支克隆为新会话,并在 WebUI 树面板中浏览(明暗主题)。在原版 Harness 上优雅降级运行。
 - [RoseSamaras/reaudit-ai-plugin#dsh-reaudit](https://github.com/RoseSamaras/reaudit-ai-plugin/tree/main/packages/dsh-reaudit) — 通过内置的 @deepseek-ai/dsh-mcp-client 桥接挂载托管的 Reaudit MCP 服务（https://mcp.reaudit.io/mcp），用 REAUDIT_API_KEY 做 bearer 鉴权：238 个 mcp__reaudit__* 工具，覆盖品牌在 AI 回答里的可见度（ChatGPT、Perplexity、Gemini、Google AI Overviews）、竞品与引用分析、站点审计、内容生成与社媒排期。
+- [rotifer-protocol/rotifer-playground#rotifer](https://github.com/rotifer-protocol/rotifer-playground/tree/main/plugins/rotifer) — Rotifer 协议的技能包加 Rotifer MCP 服务，以 DSH 自带的技能提供器与 MCP 客户端实例的形式挂载：搜索 Gene、按 Arena 排名比较、在本地项目里安装或回滚 Gene，并创建和运行本地 Agent。MCP 服务锁定版本，只开放 evolve 工具集，不含发布与登录。
 - [Roykf/dsh-tool-weather](https://github.com/Roykf/dsh-tool-weather) — 面向模型的天气工具，基于公开 Open-Meteo API 查询当前天气与 7 天预报，无需 API Key。
 - [roymina/dsh-cad](https://github.com/roymina/dsh-cad) — 只读 CAD 工具：查看、提取 DWG/DXF 图纸，导出 SVG/PNG 预览或转换 DXF。
 - [ruaibeite/dsh-undo](https://github.com/ruaibeite/dsh-undo) — 按轮次回退工具写入/编辑造成的文件改动：落盘前先快照，模型（undo 工具）、人（/undo 命令）或助手消息动作行里的按钮都能一次退回一整轮改动过的所有文件。快照在进程内写入、不 fork shell，因此在 workspace-write 这类受限会话里无需额外权限放宽。
@@ -3552,6 +3554,7 @@ dsh plugin --profile web add dshmarket
 
 - [0nt-one/dsh-voice-input](https://github.com/0nt-one/dsh-voice-input) — 输入框麦克风语音输入：浏览器 Web Speech API 实时转写（Chrome/Edge），多语言切换与可选自动发送，零依赖零密钥。
 - [117BS/dsh-perlica-ding](https://github.com/117BS/dsh-perlica-ding) — 明日方舟终末地佩丽卡主题分级提示音：计划出方案 / 任务完成 / 需要你回应 / 出错四档独立音效，普通问答保持安静；系统级播放（窗口在后台也响），跨平台（Windows/macOS/Linux），支持自定义 TTS 语音。
+- [1497105876/dsh-mimotts](https://github.com/1497105876/dsh-mimotts) — MiMo TTS 语音合成——已定稿助手回复的朗读按钮与内联播放器（可拖动进度条）、插件页配置卡片（支持试听）和语音历史设置页。
 - [1624318455/dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) — 用免费 Edge TTS 或你自己的 RVC 音色朗读 AI 回复：消息朗读与自动朗读、长文自适应分块渐进播放（无缝衔接）、音色包仓库一键安装、便携 RVC 运行时。
 - [2021Heei/dsh-tts-flash](https://github.com/2021Heei/dsh-tts-flash) — AI 回复流式 TTS 朗读插件，思考等待期有文字与语音同步的趣味短语反馈。内置 Edge TTS，支持任意 OpenAI 兼容云端引擎。
 - [3274375092/dsh-voice](https://github.com/3274375092/dsh-voice) — 语音输入插件：对着麦克风说话，识别后的文字作为普通聊天消息发送（本地模型或浏览器语音识别）。
@@ -3956,6 +3959,7 @@ dsh plugin --profile web add dshmarket
 - [bwndlct/dsh-codex-bridge#dsh-plugin](https://github.com/bwndlct/dsh-codex-bridge/tree/main/packages/dsh-plugin) — 通过本机鉴权桥接与配套 MCP 服务，将 Codex 任务委托给 Desktop 会话，支持工作区分组、模型与推理等级选择、事件跟踪、等待和取消。
 - [CAI-MH/dsh-sysbrief](https://github.com/CAI-MH/dsh-sysbrief) — 解析 PRD/PDF、分批追问澄清目标系统并沉淀 BRIEF.md，最终打包可上传交付物。
 - [callmesoul/deepseek-kanban-plugin](https://github.com/callmesoul/deepseek-kanban-plugin) — DSH 任务看板：任务状态机 + git 分支隔离，agent 自动执行、审核后自动合并回基础分支。
+- [cckyros/goal-acceptance](https://github.com/cckyros/goal-acceptance) — 验收标准驱动的目标完成：锁定可验证的验收标准、跟踪任务依赖，以 reviewer 正式验收作为完成门禁（18 个 MCP 工具）。
 - [Ceelog/dsh-plugins#dsh-plugin-scheduled-tasks](https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-scheduled-tasks) — 按项目调度提示词，在全新的无头 Agent 会话中执行，支持单次、固定间隔和 cron 计划，并持久化运行历史。
 - [changlianxiya-139/dsh-ambiguity-handling](https://github.com/changlianxiya-139/dsh-ambiguity-handling) — 向 dsh system prompt 追加歧义处理规则，让 agent 在猜测前先列出 A/B/C/D 选项请求澄清。
 - [ChongCyrus/Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — 为 DSH 安装四个多代理数学研究预设：v2（概率驱动流水线 + 多验证器辩论）、v3（论文式 Markdown 知识库 + 规划代理 + 可复用方法库）、v4（常驻自组织成员，靠留言与开会决定一切）、v5（研究所：院士拆解并分派任务、有表决权的研究员、临时工、群聊与 CAS 任务板）；四套均支持断点续跑、人工干预，以及可调档的 Lean 形式化验证（off/encourage/require，一旦跑通，表决转为对 Lean 陈述的忠实性核对）。
