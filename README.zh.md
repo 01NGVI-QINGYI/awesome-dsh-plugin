@@ -291,7 +291,6 @@ dsh plugin --profile web add dshmarket
 - [Como44/dsh-zh-more](https://github.com/Como44/dsh-zh-more) — 斜杠命令名与插件清单卡片中文化：三种显示模式（只显示中文 / 中英都显示 / 不翻译），中文为主、英文不丢，切换即时生效。
 - [converk/dsh-tweaks#git-bash-terminal-tool](https://github.com/converk/dsh-tweaks/tree/main/plugins/git-bash-terminal-tool) — 可将 Windows 环境下的终端工具替换为 Git Bash
 - [converk/dsh-tweaks#prompt-history](https://github.com/converk/dsh-tweaks/tree/main/plugins/prompt-history) — 在空输入框里用 ↑/↓ 翻出本会话之前发过的提示词，翻动时显示位置角标。
-- [converk/dsh-tweaks#turn-file-revert](https://github.com/converk/dsh-tweaks/tree/main/plugins/turn-file-revert) — 在每轮对话末尾补一行改动统计，并可撤回 / 重新应用本会话最后一轮的改动。
 - [cookiesheep/whale-on-desk](https://github.com/cookiesheep/whale-on-desk) — 像素鲸鱼桌宠,29 个逐帧验收状态:等批准时贴屏敲玻璃并让标签页标题闪烁,任务完成开口汇报,并为 web 端提供斜杠命令面板。
 - [Coprexist/Copree#dsh-copree](https://github.com/Coprexist/Copree/tree/main/dsh-copree) — 把 Copree（前身 AIsChat）以原生侧边栏形式嵌入 DSH Web 界面。Copree 是一个开源的「AI 群聊 + 可编程世界」框架——AI 不是工具，而是群里的「居民」：每个都有自己的记忆、状态与性格，它们会自己聊起来，你可以旁观也可以插话；「群视界」再进一步，让每个群聊绑定一个「活的世界」（专属网页 + 世界 AI + 代码 + 时间），世界 AI 能通过 DSH 工作区工具直接改这个世界。本插件提供：原生侧边栏板块（联系人 / 置顶私信与群聊）、经同源 HTTP/WS 代理的实时聊天、Markdown/LaTeX 渲染、群邀请卡片与图片消息、沉浸式整屏页面，以及把世界一键镜像成 DSH 工作区（目录 + DSH 会话 + world_* 工具集）。插件只是前端，它代理到你自己运行的 Copree 后端（默认 127.0.0.1:5228，后端在同一仓库内）。
 - [copylee711/dsh-better-display](https://github.com/copylee711/dsh-better-display) — 为助手回答渲染带编号的引用角标和来源面板（针对联网搜索结果）、带来源说明的正文配图，并在流式 Markdown 中渲染 KaTeX 公式、Mermaid 图和代码高亮。
@@ -2701,6 +2700,7 @@ dsh plugin --profile web add dshmarket
 - [2286893544/feishu-dsh-plugin](https://github.com/2286893544/feishu-dsh-plugin) — 飞书（Lark）集成：25 个工具，覆盖群消息与聊天记录、云文档（含知识库页面、自动生成的图表与图片）、多维表格记录、电子表格区间读写与文档授权，基于企业自建应用。
 - [3ChatAI-NCT/3chatai-deepseek-harness-plugin](https://github.com/3ChatAI-NCT/3chatai-deepseek-harness-plugin) — 通过 OAuth 将 DeepSeek Harness 接入 3Chat，查询客户与会话、读取沟通上下文、确认后发送消息并跟踪批次进度。
 - [58catmiao/dsh-sciwork](https://github.com/58catmiao/dsh-sciwork) — 给 DSH 的科研库面板与技能组：课题目录、带溯源的图表登记、草稿、文献、数据表、期刊档案、投稿台账，以及面向科研智能体的写作、引用与 Origin 出图纪律（出图需另装 dsh-origin-plugin）。
+- [dsh-restart-planner](https://github.com/7gzgn/dsh-restart-planner) — 让 agent 自己安排宿主重启：工具立刻返回，等这一轮回复送达、会话日志落盘安静后再停+拉，并留下报告；自带 dry-run、体检与「什么时候可以眨一下眼」的确认。
 - [863683348/dsh-plugin-academic-writing](https://github.com/863683348/dsh-plugin-academic-writing) — 为 DSH agent 提供学术写作工具包：论文大纲、标题与摘要骨架、GB/T 7714 / APA / MLA 引文格式化、措辞质检与投稿前清单。
 - [863683348/dsh-plugin-education](https://github.com/863683348/dsh-plugin-education) — 为 DSH agent 提供教育工具包：按学段的教案骨架、测验题与答案校验、分析式评分量规、Anki/markdown 闪卡与可读性分级。
 - [863683348/dsh-plugin-finance-data](https://github.com/863683348/dsh-plugin-finance-data) — 为 DSH agent 提供金融数据工具包：数字与货币格式化（含中文万/亿单位）、收益与年化计算、估值与盈利比率、现值/终值、风险指标与数据质量清单。
@@ -3523,7 +3523,7 @@ dsh plugin --profile web add dshmarket
 - [240xu/dsh-websearch](https://github.com/240xu/dsh-websearch) — 聚合网络搜索插件：一次查询并发分发到 11 个引擎（Exa、Parallel、DuckDuckGo、SearXNG、Brave、Tavily、Serper、Mojeek、DeepSeek、Anthropic、OpenAI），URL 去重后合并结果。设置面板卡片可开关后端、将 API Key 存入凭证库，并调整并发与超时。
 - [263311487-ux/dsh-verify](https://github.com/263311487-ux/dsh-verify) — Agent 交付物的独立浏览器验收测试：JSON 规格进，真实 Chromium 结论出。
 - [2672243194/dsh-read-url](https://github.com/2672243194/dsh-read-url) — 读取网页返回干净正文：中文编码自动识别（GBK/GB2312/UTF-8/Big5）、噪音过滤、紧凑文本/Markdown、offset 续读、可选 SPA 渲染、批量读取与整站爬取。
-- [27painter/dsh-moli](https://github.com/27painter/dsh-moli) — 从 DeepSeek Harness 驱动本机安装的 Moli 无头浏览器，提供两个工具：渲染抓取、JavaScript 求值、Markdown、语义树、截图与 PDF。Moli 缺失时会自动安装；已在 Windows 与 Linux 验证。
+- [27painter/dsh-moli](https://github.com/27painter/dsh-moli) — 从 DeepSeek Harness 驱动本机安装的 Moli 无头浏览器：渲染抓取、JavaScript 求值、Markdown、语义树、截图与 PDF。用 CSS 选择器只取某个容器而不是整页（列表页实测省 40–80 倍 token），并支持滚动触发懒加载。Moli 缺失时自动安装；已在 Windows 与 Linux 验证。
 - [dsh-inpage-translator](https://github.com/7gzgn/dsh-inpage-translator) — 给内置浏览器的每一张页面常驻一个「🈯 译」按钮：点一下，页面上每个可见文本节点原地换成译文；再点一下回到原文。长按可拖动，拖到左右边缘自动吸成贴边小把手；页面导航后自动重装。翻译走宿主模型服务 —— 插件不持有任何 API key。
 - [A3Boy/dsh-web-tools](https://github.com/A3Boy/dsh-web-tools) — 统一的多供应商网络搜索与抓取：多 Key 轮询容灾、用量与健康监控、原生设置面板及搜索模式。
 - [aa2246740/dsh-firecrawl](https://github.com/aa2246740/dsh-firecrawl) — 提供 Firecrawl 搜索服务及多账户 API Key 设置。
@@ -5260,6 +5260,7 @@ dsh plugin --profile web add dshmarket
 - [0QwQ0/dsh-ui-auth](https://github.com/0QwQ0/dsh-ui-auth) — DeepSeek Harness Web UI 认证网关：登录门禁覆盖页面、/api、/plugins 与 WebSocket 升级；PBKDF2 口令哈希（每用户独立盐）、HttpOnly SameSite 会话 Cookie（名字按 DSH_HOME 唯一）、按源 IP 登录锁定；邀请码注册；两步验证可用 TOTP 动态码或通行密钥（WebAuthn：一个账号可绑定多个密钥，手机可扫码添加，支持免用户名登录，改动登录因子前必须二次验证）；设置面板内置用户管理（普通用户可修改本人资料与密码并管理自己的 TOTP 与通行密钥，管理员可新增/删除用户、重置密码、管理邀请码、清除丢失设备的通行密钥）；模型与 API Key 按用户隔离管理，私有配置用登录口令派生的密钥加密、任何管理员都无法读取，管理员可把自己的模型分享给指定用户（可用、可看余额、看不到 Key、撤销立即生效），未配置的用户被阻断而不是回退到部署级配置；REST/列表接口按用户隔离，WebSocket 主通道逐帧按归属过滤；会话重启后免登录恢复；JSONL 审计日志；存储故障时保持 fail-closed。仅支持 DSH 0.2.0 线（0.1.1-rc.2 传输线已在 0.7.0 移除）；因浏览器要求安全上下文，通行密钥需通过 localhost 或 HTTPS 访问。
 - [173787247/dsh-repeat-stop](https://github.com/173787247/dsh-repeat-stop) — 在可配置次数后硬拦截连续相同的工具调用，避免 Agent 原地空转。
 - [173787247/dsh-tool-budget](https://github.com/173787247/dsh-tool-budget) — 在达到可配置的会话级工具调用次数上限后，硬拦截后续工具调用。
+- [7gzgn/dsh-leak-guard](https://github.com/7gzgn/dsh-leak-guard) — 发布前凭据审计：在你提交、发布或打包外发之前，遍历目录找出里面的 API key、令牌、私钥、数据库连接串和硬编码密码。零依赖、纯本地、不联网，发现结果脱敏到前 6 个字符。
 - [7starsseeker/dsh-jev-guard](https://github.com/7starsseeker/dsh-jev-guard) — DSH 执行前安全阀门，用 TypeSafe Jev 模型做判定：挂载 tools/pre-execute，对每条 bash/pwsh 调用先过离线静态规则，再向 Jev 模型（TypeSafe 的 System One 模型，返回结构化判定而非散文）提一个是非问句——「这条命令会不可逆地删除或覆盖真实数据吗？」——把答案切成允许／修正／拦截／上报人工四态；修正给模型更安全的写法，上报提供一次性人工令牌；额度耗尽或没有可用密钥时大声降级而非静默失效，缺密钥时会直接在对话里要求录入（录入用 `guard key set`，只从标准输入读）；每条判定写入共享审计日志，面向人的文案中英双语。
 - [863683348/dsh-gov](https://github.com/863683348/dsh-gov) — Agent 治理套件：基于策略的工具门禁（allow/deny/ask，支持通配符与优先级）、结构化 JSONL 审计日志、基于宿主 token 计量的按 agent 配额，状态存于 $DSH_HOME/gov。
 - [863683348/dsh-plugin-gate](https://github.com/863683348/dsh-plugin-gate) — DSH 插件的安装安全闸门：在 "dsh plugin add" 前对本地目录或 npm 包做"杀毒"式扫描（安装脚本、权限、密钥、网络回连），给出 BLOCK/WARN/PASS 判定。
