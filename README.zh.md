@@ -1168,6 +1168,7 @@ dsh plugin --profile web add dshmarket
 - [GooDAnDReaDY/dsh-usage-guard](https://github.com/GooDAnDReaDY/dsh-usage-guard) — 规范化异常的 Token 用量样本，使损坏的会话历史仍可加载。
 - [GooodWei/context-vista](https://github.com/GooodWei/context-vista) — 为 DeepSeek Harness 提供右侧悬浮栏以及 /context 命令，用环形图实时展示当前上下文 token 用量与分配及消费估算。
 - [GPIOX/dsh-api-balance](https://github.com/GPIOX/dsh-api-balance) — DeepSeek Harness 悬浮 API 余额徽章：实时显示 DeepSeek / Moonshot / OpenAI / 自定义接口余额；可拖动缩放、亚克力质感、文字颜色随下方内容明暗自适应。
+- [guojinpeng/dsh-cost-meter](https://github.com/guojinpeng/dsh-cost-meter) — 估算会话和每轮费用，按模型设置 USD 或 CNY 单价，并从 models.dev、OpenRouter 或 DeepInfra 同步价格。
 - [guooo1380/dsh-team-panel](https://github.com/guooo1380/dsh-team-panel) — 每台机器只统计选定的那一个项目的 Token 用量并汇总到自建团队服务器，在侧栏面板中逐人显示所选项目、花费与最后消耗时间。
 - [Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) — 会话与当日 API 费用统计、预算图框（已用%）、官方余额、历史看板，支持峰谷计价与官方价格一键同步。
 - [Hann428/dsh-hann-usage-dashboard](https://github.com/Hann428/dsh-hann-usage-dashboard) — DeepSeek Harness 用量页签：展示 DeepSeek 账户余额、官方峰谷时段价格、动态倒计时、平台用量页入口和本地余额告警灯。
@@ -2027,6 +2028,7 @@ dsh plugin --profile web add dshmarket
 - [Icstick/dsh-context-maid](https://github.com/Icstick/dsh-context-maid) — 自动上下文策展：tool 输出内容感知瘦身、无效日志清理、用户要求与进行中工作钉扎保护、先归档后压缩，全程审计留痕。
 - [idoall/dsh-session-colors](https://github.com/idoall/dsh-session-colors) — 给任意会话加上颜色标记：在侧栏显示色条、从会话头部选择颜色；标记保存在宿主上，一台设备选的颜色在其他设备上同样可见。
 - [ijry/DeepSeek-Harness-Desktop-Ultra#dsh-plugin-canvas](https://github.com/ijry/DeepSeek-Harness-Desktop-Ultra/tree/main/plugins/dsh-plugin-canvas) — 无限会话画布，区域绑定工作区与智能体预设，可钉住会话卡片、放置便签，带对齐参考线。
+- [IKEASven69/dsh-takeover](https://github.com/IKEASven69/dsh-takeover) — 跨 agent 会话接力：会话输入框工具行里的「接力」按钮点开即浮出工作台，浏览八家外部 agent（Claude Code / Codex / OpenCode / ZCode / Pi / WorkBuddy / Cursor / Grok）的最近会话，点「接管」一键新建 DSH 会话、投递指令并自动切换过去；handoff: 1 协议收件箱消费即弃，四态证据账本，补丁随卡，同步盘跨机接力，投递失败自动退回复制指令。设置卡只留命令速览与读取器开关。
 - [imrascal/dsh-archive](https://github.com/imrascal/dsh-archive) — DeepSeek Harness 存档会话管理插件：在设置面板管理归档会话（恢复/删除）与回收站。
 - [ishuowang/dsh-rolehub-bridge](https://github.com/ishuowang/dsh-rolehub-bridge) — 发现并校验可移植的 RoleHub 角色，固定其精确 bundle，再将提示词和随角色打包的 Skills 加载到独立、可续聊的 DSH Session，以 Host 批准的工具绑定限制能力，并可选接入 Agent Team Room。
 - [ishuowang/dsh-sideband](https://github.com/ishuowang/dsh-sideband) — 无需等待或打断正在工作的 Agent：即时冻结有界 Session 快照，由隔离且无工具的 LLM 异步总结，再将带来源信息的上下文胶囊投递到另一 Session 或已授权 Room；对 Session 默认 quiet，也可显式 wakeup。
