@@ -191,6 +191,8 @@ dsh plugin --profile web add dshmarket
 - [anzhaohao/DragView](https://github.com/anzhaohao/DragView) — 拖拽文件以 Codex 风格附件卡片呈现，支持 PDF/文本/音视频应用内预览，其余格式调用系统默认应用打开。
 - [AppliedYuu/dsh-WallpaperAndCost](https://github.com/AppliedYuu/dsh-WallpaperAndCost) — 合并插件：壁纸定制（原图不压缩、裁剪编辑器、左/中/右分区不透明度、MP4/WebM 动态壁纸）＋ Steam 创意工坊壁纸提取（内置 scripts/extract_scene_pkg.py 解析 scene.pkg/.tex，支持预览/下载）＋ DeepSeek 余额与用量小组件 ＋ OpenCode Go 套餐用量（会话顶部药丸按钮显示滚动/周/月用量百分比，点开展开进度条与重置倒计时）。各 API key 均由 host 从 DSH 凭据库读取，不入源码/浏览器。
 - [appthin/dsh-mcp-manager-plus](https://github.com/appthin/dsh-mcp-manager-plus) — DSH 设置中的 MCP 管理页：列出、启停、重启、删除 MCP 服务器，表单与 JSON 双模式编辑，展开可查看各服务器注册的工具，并支持一次粘贴导入 Claude Code、Cursor、Codex、VS Code 等 14 种工具的 MCP 配置。
+- [AprilCrystal/dsh-client-ui-font-scale](https://github.com/AprilCrystal/dsh-client-ui-font-scale) — Web 界面的对话字号控制：输入区步进器、键盘快捷键与 Ctrl+滚轮缩放，统一走主题服务的 setFontSize。
+- [AprilCrystal/dsh-client-ui-gpt-helper](https://github.com/AprilCrystal/dsh-client-ui-gpt-helper) — ChatGPT 桌面风格的模型选择控件：思考档位滑杆带粒子拖尾，另有纯视觉的快速模式开关与长按锁定。
 - [ArcaneOrion/dsh-model-selector-search](https://github.com/ArcaneOrion/dsh-model-selector-search) — 搜索增强的会话模型选择器：两段式宽松匹配（先归一化子串，未命中再退子序列，glm53 命中 GLM-5.3、ds 命中 DeepSeek）、近七天成功调用过的供应商置顶，推理档位面板记住每个模型上次显式选择的档位。
 - [ArcaneOrion/dsh-teaching-board](https://github.com/ArcaneOrion/dsh-teaching-board) — 教学平面视图：agent 生成的自包含 HTML 投影进沙箱 iframe 当板书，可用画笔手写勾画（四色、橡皮、撤销）、在同一块板上增量续写，并把画面截图作为真实用户消息发回对话。
 - [ardesp0630/dsh-work-progress](https://github.com/ardesp0630/dsh-work-progress) — 输入框下方常驻的工作进度行：任务完成度、进度条，以及此刻正在做什么（生成回复或执行工具）；展开可见完整任务清单与轮次、步骤、耗时、上下文占用。
@@ -1676,6 +1678,7 @@ dsh plugin --profile web add dshmarket
 - [kam74515-boop/dsh-everything-oauth](https://github.com/kam74515-boop/dsh-everything-oauth) — 把本机 Codex / Grok / Claude / OpenCode / CC Switch 登录态导入 DSH，在设置里自选来源并启用模型。
 - [KannaKuron/dsh-agent-lang](https://github.com/KannaKuron/dsh-agent-lang) — 模型产出文本的三个语言通道——工具调用描述（所有工具调用卡片标题，含 PTC 类预设的 run_code）、思考与回复——各自可跟随网页界面语言、强制指定语言或关闭（默认仅描述通道跟随界面语言）。host 侧注入一条全局 runtime-context 提示指示，client 半上报界面语言，设置里的插件卡片负责切换。
 - [katsos/dsh-claude-cli](https://github.com/katsos/dsh-claude-cli) — LLM 供应商：把本机已安装的 Claude Code CLI 作为模型后端，请求走已订阅的 Claude 账号，无需按量计费的 API key；原生工具调用经 MCP 桥接。
+- [ken95573/dsh-model-show](https://github.com/ken95573/dsh-model-show) — DSH Web 对话框模型选择器的触发器显示「供应商/模型」；下拉列表与其搜索均不变。
 - [kinoward/dsh-plugin-subhub](https://github.com/kinoward/dsh-plugin-subhub) — 用第三方订阅账户在 DeepSeek Harness 中使用订阅覆盖的模型：文字对话、图片理解、图片生成与图片编辑，可用模型与推理等级随账户自动同步；当前支持 OpenAI / ChatGPT 订阅，更多订阅服务规划中。
 - [kkj-luna/dsh-image-bridge](https://github.com/kkj-luna/dsh-image-bridge) — 让没有生图/修图能力的模型接入任意 OpenAI 兼容生图接口：支持文生图与图生图，可添加多个服务商，并为生图与修图各选主用与备用模型，主模型连不上时自动切换到备用。
 - [knyazev741/knyazevai-dsh](https://github.com/knyazev741/knyazevai-dsh) — 为 DeepSeek Harness 添加 KnyazevAI API 提供方及 DeepSeek、GLM 和 MiniMax 模型目录。
@@ -2654,6 +2657,7 @@ dsh plugin --profile web add dshmarket
 - [gugu123a/dsh-tool-see-image](https://github.com/gugu123a/dsh-tool-see-image) — 为 DSH 提供 see_image 工具：将图片文件发送到可配置的 OpenAI 兼容视觉模型，并把其描述回传给纯文本模型。
 - [guhanfei-ai/dsh-grafana](https://github.com/guhanfei-ai/dsh-grafana) — 对话式 Grafana 运维：跨多个命名源站查看实时大盘数据，再通过审批与版本校验安全、可审阅地修改大盘。
 - [guomi6450/dsh-folder-timemachine](https://github.com/guomi6450/dsh-folder-timemachine) — 给任意文件夹留下历史时间点并一键回到过去：像 Git 一样有版本历史，但不需要懂 Git，任何文件夹都能用（游戏存档、软件配置目录、散落文档都行）。快照按内容寻址去重，只存真正变化的文件，未变文件不重算哈希；自动存档分两档——实时（fs.watch，最后一次改动静默约 8 秒后存一版，编辑器一次保存或一次构建算一版）与定时（每 N 分钟检查，有变化才存，内容没变不产生空版本）。空文件夹也会被记录，恢复时一并重建（mod 加载器、存档扫描器常要求某个空夹存在）。每次恢复前自动存一个安全还原点，因此恢复本身可撤销；exact 模式只删多余文件与空目录，非空目录一律不动。附带模型工具 folder_timemachine（status/history/diff 免审批，写操作走审批）与左下角浮窗面板（时间线、一键恢复、实时/定时切换）。纯 JS、零运行时依赖、自带 110 项测试。
+- [hairyf/dsh-tool-activator](https://github.com/hairyf/dsh-tool-activator) — 默认只加载基础工具，其余工具按需激活，并在插件设置页以逐工具开关管理。
 - [Han-1413141/dsh-codex-computer-use](https://github.com/Han-1413141/dsh-codex-computer-use) — 让 DSH 当前模型通过已安装的 Codex Computer Use 运行时读取和操作 Windows 应用，并保留每个会话的应用授权。
 - [hanyi7867069-create/dsh-content-lab](https://github.com/hanyi7867069-create/dsh-content-lab) — 内容工坊——选题、标题、文案与排期生成工具，直接调用内置 LLM。
 - [Harzva/dsh-agent-project-sync](https://github.com/Harzva/dsh-agent-project-sync) — 发现 Codex 和 Claude 使用过的项目目录，并将其注册为共享的 DeepSeek Harness 工作区。
@@ -5086,6 +5090,7 @@ dsh plugin --profile web add dshmarket
 - [AIcivilization/dsh-vps-manager](https://github.com/AIcivilization/dsh-vps-manager) — 通过 SSH 密钥登录管理 VPS：21 条不走模型的 /vps- 命令（查看状态、按菜谱安装并先出计划再用 /vps-yes 确认、重启并等机器回来），对话里的终端（xterm.js + ssh -tt，可运行菜单脚本等交互程序），5 个按风险分级确认的 agent 工具，改文件自动备份与还原、改防火墙和 SSH 前设自动恢复，29 条内置菜谱，以及添加机器的设置页。
 - [alextangson/dsh-dispatch#plugin](https://github.com/alextangson/dsh-dispatch/tree/main/packages/plugin) — 面向手机的指挥台而非 Web UI 镜像：从 PWA 把任务派发进隔离的 git worktree，工具审批推送通知支持手机/桌面「谁先答谁算」（绝不自动批准），多机会话看板，以及可自建的端到端加密零知识中继。
 - [andyfan1094/dsh-winrm](https://github.com/andyfan1094/dsh-winrm) — 通过 WinRM 管理 Windows 主机，提供 PowerShell 执行、服务与进程管理、SMB/分块文件传输（SHA-256 校验）、集群并发，以及 GUI 面板和七个 agent 工具。
+- [AprilCrystal/dsh-remote](https://github.com/AprilCrystal/dsh-remote) — 为 DSH 会话提供 OpenAI 兼容的 HTTP 接口与手机面板：读会话、浏览文件、发送或排队消息，并在手机上处理审批与提问。
 - [ArimaKana-Akane/dsh-sakurafrp](https://github.com/ArimaKana-Akane/dsh-sakurafrp) — 在 DSH 界面里管理 SakuraFrp 手机与电脑互通的插件：链路状态、移动网关开关、一次性配对二维码、设备撤销与网关自愈。
 - [Artenx/dsh-honeybee#dshb](https://github.com/Artenx/dsh-honeybee/tree/main/packages/dshb) — 为 DSH 提供多节点执行路由，将文件系统、Shell、子进程和 PTY 操作分发到本地、SSH 与 Docker 执行节点，并包含节点注册表、认证门禁、移动端管理 UI，以及可注入新对话的工作区自定义项目指令。
 - [Aztech-Lab/dsh-3301](https://github.com/Aztech-Lab/dsh-3301) — 将DSH Web GUI代理到3301端口供局域网访问。口令可选，无明文保存，初始3080端口保存回环不暴露。
