@@ -424,6 +424,7 @@ dsh plugin --profile web add dshmarket
 - [guoliyuan97-png/dsh-game-hud](https://github.com/guoliyuan97-png/dsh-game-hud) — 游戏风格悬浮 HUD：余额血条、上下文蓝条、官方峰谷定价与切换倒计时、上下文不足5%自动压缩、携带记忆开启新对话。
 - [H1Kariiiiiii/dsh-icon-console](https://github.com/H1Kariiiiiii/dsh-icon-console) — DSH 桌面端图标控制台：导入一个图标即可应用到桌面与开始菜单快捷方式（立即生效）、应用窗口图标与系统托盘图标（重启后生效），带官方图标自动备份、一键恢复、图标库管理，以及重启/退出控制。
 - [hadesybil-hub/dsh-restart-button](https://github.com/hadesybil-hub/dsh-restart-button) — 在 DSH 网页界面右下角"关机"按钮旁新增一个"重启"按钮，点击并确认后重启 dsh web，服务器自动拉起并重新打开浏览器。
+- [HAN-050917/dsh-plugin-dsweb-harness](https://github.com/HAN-050917/dsh-plugin-dsweb-harness) — 在 DSH 中使用 DeepSeek 网页版对话：最左侧边栏显示真实聊天记录，Agent 模式旁提供 Chat/Work 切换，支持流式回答、深度思考、网页搜索和文件上传。
 - [Han-1413141/dsh-sticky-disclosure](https://github.com/Han-1413141/dsh-sticky-disclosure) — 一键收起会话中所有展开的区块（Think、工具卡等），常驻计数按钮 + 自定义快捷键。
 - [Han-1413141/dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) — UI 管家：官方/插件 UI 分区折叠、逐条开关，拖拽移动/改大小，碰撞避让与一键自动排布。
 - [hanbernate/dsh-save-button](https://github.com/hanbernate/dsh-save-button) — 在 DSH Web GUI 交付卡片上增加下载按钮，present 交付的文件可直接从浏览器下载。
@@ -4658,6 +4659,7 @@ dsh plugin --profile web add dshmarket
 - [lijiawei255/dsh-status-chime](https://github.com/lijiawei255/dsh-status-chime) — DSH 状态变化时读出一句简短提示——本轮完成、本轮出错、后台任务结束、后台任务失败、目标完成、目标受阻、等待批准、等待你回答——中文（默认）与英文各八条预录语音。音频由宿主进程播放（ffplay，或系统自带的 Windows PowerShell 播放器），不依赖浏览器 Web Audio。仅支持 Windows。
 - [liujianqiao701/dsh-ask-notify](https://github.com/liujianqiao701/dsh-ask-notify) — 当 agent 停下来等你作答时，在 DSH Web 界面右下角弹出提醒卡；若你切到了别的标签或窗口，再补一条系统通知并让标签标题闪烁。
 - [liushQAQ/dsh-weixin-plus](https://github.com/liushQAQ/dsh-weixin-plus) — 微信双向通道与原生设置管理面板，支持扫码登录、实时连通性与过期探测、单实例选举锁及凭证管理。
+- [LJY4-bilibili/dsh-message-reminder](https://github.com/LJY4-bilibili/dsh-message-reminder) — DSH 向你提问时在屏幕右下角弹出毛玻璃通知卡片，点击卡片即恢复并置顶窗口、回到发起询问的会话。
 - [lolipop-1x1/dsh-you-should-know](https://github.com/lolipop-1x1/dsh-you-should-know) — 根据当前任务上下文提醒重要事实和方案取舍，支持展开解释并带入主会话讨论。
 - [LoserFox/telegram](https://github.com/LoserFox/telegram) — Telegram Bot API 桥接：长轮询、per-chat 会话、HTML 格式化。
 - [lsq-dsh-plugins/dsh-windows-notifications](https://github.com/lsq-dsh-plugins/dsh-windows-notifications) — 为任务事件提供 Windows 桌面通知、可选提示音和 DSH 风格的页面通知。
@@ -5796,6 +5798,7 @@ dsh plugin --profile web add dshmarket
 - [zmm863-commits/dsh-dice-game](https://github.com/zmm863-commits/dsh-dice-game) — 🎲 骰子大作战 — 六种经典骰子玩法（吹牛、猜红点、猜红蓝、猜大小、猜单双、猜顺子），单人 vs AI + PeerJS 联机，全量中英双语，侧边栏入口打开游戏面板。
 - [zoahdev/dsh-pet-evolve](https://github.com/zoahdev/dsh-pet-evolve) — 会随 agent 成长的宠物：真实信号（已验证规则/会话/工具调用/压缩）驱动 5 阶段进化、镜像 agent 状态、一键导出成长分享卡。零依赖、全本地。
 - [ZutoMayoo/totoTheCat](https://github.com/ZutoMayoo/totoTheCat) — DSH Web 界面的桌宠插件：可拖拽的像素猫，带番茄闹钟、经验等级与 30 条可解锁的托托事实。
+- [zzbkl/dsh-cold-boot](https://github.com/zzbkl/dsh-cold-boot) — 启动时在 DSH 窗口上播一段 44 秒的科幻冷启动序列：终端日志、鲸鱼标识、四句英文人声，外加一个跳过按钮。纯 DOM 与 CSS，单个自包含的客户端包，无运行时依赖。
 <!-- END PLUGINS -->
 
 ## 贡献
