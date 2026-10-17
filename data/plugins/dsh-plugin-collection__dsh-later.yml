@@ -1,5 +1,5 @@
-url: https://github.com/WuJiaoJue/dsh-later
-name: WuJiaoJue/dsh-later
+url: https://github.com/dsh-plugin-collection/dsh-later
+name: dsh-plugin-collection/dsh-later
 category: workflow
 description:
   en: 'Scheduled reminders and delayed send for DSH: /later delivers what you type as yourself at the time you pick, while the timer panel (or /schedule) posts a reminder row — even with the page closed. (scheduled send / reminders / delayed send)'

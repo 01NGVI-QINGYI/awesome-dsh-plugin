@@ -1,5 +1,5 @@
-url: https://github.com/WuJiaoJue/dsh-suggest-ghost
-name: WuJiaoJue/dsh-suggest-ghost
+url: https://github.com/dsh-plugin-collection/dsh-suggest-ghost
+name: dsh-plugin-collection/dsh-suggest-ghost
 category: ui
 description:
   en: 'Input prediction for the DSH composer: your next prompt suggested as ghost text after each turn, accepted with Tab. (autocomplete / input prediction / prompt suggestion)'
