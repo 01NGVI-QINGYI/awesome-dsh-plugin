@@ -383,6 +383,7 @@ dsh plugin --profile web add dshmarket
 - [Frog755/dsh-wallpaper](https://github.com/Frog755/dsh-wallpaper) — DSH Web 持久化背景图/视频插件：在 设置 -> 通用 中提供壁纸卡片，可选本地图片或 MP4（最大 300 MB），调节表层透明度与模糊；检测到 ffmpeg/ffprobe 时在本机把视频压缩为 H.264；媒体保存到 ~/.dsh/wallpapers；并将 Web 服务固定到 9191 端口以便重启后恢复壁纸。
 - [FSMargoo/dsh-at-file](https://github.com/FSMargoo/dsh-at-file) — Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。
 - [functy23/dsh-fullscreen-settings](https://github.com/functy23/dsh-fullscreen-settings) — 让 DSH 的设置弹窗以整页全屏打开，并把退出入口移到左上角的返回行。
+- [funswe/dsh-resizable-settings](https://github.com/funswe/dsh-resizable-settings) — 让 DSH 设置弹窗可拖动边和角改变大小、按住顶部横带移动位置，并记住尺寸。
 - [FuqiangCraft/dsh-desktop#packages/dsh-desktop-plugin](https://github.com/FuqiangCraft/dsh-desktop/tree/main/packages/dsh-desktop-plugin) — 桌面级增强套件：原生提问/审批交互通知、屏幕截图工具、多智能体平铺网格视图与轻量级 Tauri 桌面外壳。
 - [FuriousKinght/dsh-restart-button](https://github.com/FuriousKinght/dsh-restart-button) — 在侧边栏底部加一个按钮（仅 Windows），一键重启 DSH 桌面应用，应用回来后页面自动恢复。
 - [FurryBear2025/dsh-session-drag-move](https://github.com/FurryBear2025/dsh-session-drag-move) — 在 DSH 左侧栏把会话拖到别的工作区，归属真的会变：改写会话日志 header 的 cwd 并把日志目录迁到目标项目下，迁移过程中显示进度条。
@@ -926,6 +927,7 @@ dsh plugin --profile web add dshmarket
 - [Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl](https://github.com/Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl) — DSH Web 界面右下角的 DeepSeek 余额鲸鱼挂件：三套形象切换（默认 / 顶碗 / 拿碗）、余额与今日已用、每轮对话消耗提示、峰谷价换算、按压音效与随机台词。基于 MeteorNOX/DeepSeek-Balance-Whale-Widget 修改。
 - [Witherwithwinter/DSH-Codinput](https://github.com/Witherwithwinter/DSH-Codinput) — 把聊天输入框换成 CodeMirror 6 的编辑器式输入面板：行号、编辑 + Markdown 预览分屏、悬浮窗与全高侧栏标签，同一时刻只有一个输入入口。草稿走官方输入机；宿主有语音输入按钮时原样渲染官方语音组件，数据行与上下文小圈与官方 dock 同源。
 - [wjingshan/dsh-dock-launcher#dsh-dock-bridge](https://github.com/wjingshan/dsh-dock-launcher/tree/main/plugins/dsh-dock-bridge) — 为「DeepSeek Harness 开关」程序坞应用写出运行中 dsh Web 服务的 PID、端口与带 token 的地址（运行时文件权限 0600），并在退出时删除。
+- [wjingshan/dsh-sidebar-focus](https://github.com/wjingshan/dsh-sidebar-focus) — 按实际运行状态排序与折叠 DSH 左侧栏：有会话开跑的工作区浮到最前，会话跑完仍留在原位，空闲的工作区要等一小段宽限才会折叠；六条规则各有开关，位于插件自己的详情页。
 - [WJNCT55555/dsh-web-preview-float](https://github.com/WJNCT55555/dsh-web-preview-float) — Web UI 悬浮预览与代码窗口：Google AI Studio 风格的 iframe 预览（宽幅比/分辨率预设、一键放大），VS Code 风格代码窗支持直接编辑，保存需确认并写入会话日志。
 - [WJZ-P/dsh-attachments](https://github.com/WJZ-P/dsh-attachments) — 为 Web UI 添加文件与文件夹拖放附件，提供输入栏卡片、持久化历史记录与工作区路径。
 - [wlj521/dsh-ui-tweaks](https://github.com/wlj521/dsh-ui-tweaks) — 从设置面板实时调教 DSH 网页对话界面：消息字体大小、Claude Desktop 风格 Markdown 表格、对话框宽度、可选时间线侧栏，以及带分支管理、逐文件 Diff 和提交推送功能的 GitBar。
@@ -4755,6 +4757,7 @@ dsh plugin --profile web add dshmarket
 - [goatliamia/dsh-plugin-maker](https://github.com/goatliamia/dsh-plugin-maker) — 面向 DeepSeek Harness 的插件开发工具集，提供骨架生成、契约检查、插件体检、影响面分析与上游兼容性追踪。
 - [GodCC6/dsh-updater](https://github.com/GodCC6/dsh-updater) — DeepSeek Harness 自动更新插件：检查并更新 git checkout 或 npm 全局形态的 dsh 本体与 integrations 仓，仅快进合并、失败自动回滚、可随时取消，可选空闲感知自动应用。
 - [GooDAnDReaDY/dsh-issue-reporter](https://github.com/GooDAnDReaDY/dsh-issue-reporter) — 收集并脱敏 DSH 运行诊断信息，然后向 GitHub 或 Gitea 提交结构化问题报告。
+- [guhanfei-ai/dsh-zterm](https://github.com/guhanfei-ai/dsh-zterm) — SSH 与 JumpServer 终端插件：真实机器读工具、人工发起的读写操作，以及 DSH 内的会话管理。
 - [guo6x/dsh-housekeeper](https://github.com/guo6x/dsh-housekeeper) — agent 的环境管家：工具链台账（node/pnpm/git/gh/ffmpeg/浏览器）、缓存与临时目录扫描 + 白名单安全一键清理、机器规则（AGENTS.md）编辑，全在 Web GUI 设置面板。
 - [guo6x/dsh-shipcheck](https://github.com/guo6x/dsh-shipcheck) — 证据优先的前端交付验收：用真实浏览器检查内容、无障碍、运行时错误、网络失败与结构基线，并保存截图报告。
 - [gwsbhqt/dsh-insight](https://github.com/gwsbhqt/dsh-insight) — 只读的 profile 洞察面板：同一份数据的五个视图——配置层、插件树、服务、工具名、模型，每一条都给出被哪一层插入或禁用、此刻在不在跑。
