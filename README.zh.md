@@ -3155,6 +3155,7 @@ dsh plugin --profile web add dshmarket
 - [Viger1/dsh-design](https://github.com/Viger1/dsh-design) — 在渲染后的页面上测量设计规则，而非解析 CSS——字号种类、与真实合成背景比对的 WCAG AA 对比度、间距栅格偏移、配色规模、点击区尺寸，以及「机器味指纹」（如按色相角度判定的紫色渐变）；内置 design-system 技能。
 - [vikasranax/dsh-plugin-cats](https://github.com/vikasranax/dsh-plugin-cats) — 为 AI 代理从公开 API 获取随机猫咪冷知识与猫图。
 - [Vncntvx/dsh-zotero](https://github.com/Vncntvx/dsh-zotero) — 面向 Agent 研究工作流的 Zotero 插件：搜索文献、查看元数据与笔记、提取与问题相关的证据段落、打开原文 PDF、生成引用与参考文献表。
+- [Void-LifeStream/dsh-phone-butler](https://github.com/Void-LifeStream/dsh-phone-butler) — 用 adb 查看并打理一台真实的 Android 手机：存储体检、未 root 也能读到的逐应用数据大小（来自 dumpsys diskstats）、只清缓存不动数据的清理、目录统计与截图——共五个工具；读取永不改动任何东西，写入必须显式确认。
 - [volcengine/ark-cli#ark-managed-agents](https://github.com/volcengine/ark-cli/tree/main/dsh-plugins/ark-managed-agents) — 新增 Managed Agents 设置页，并通过 MCP 工具向方舟云端 Managed Agents 派发长任务、取回轨迹与产物。
 - [w4xxx/dsh-xia-plugins#packages/global-proxy](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/global-proxy) — 把 Host 进程的 undici 请求统一路由到本地 HTTP(S) 代理，同时保持 localhost 与国内可达 API 直连。
 - [wackyju2-beep/dsh-better](https://github.com/wackyju2-beep/dsh-better) — 归档会话管理、任务完成桌面通知、更新检查、模型路由（关键词规则 + 白名单门控 model_route）、多任务定时触发（心跳与定点任务），以及 DeepSeek 风格的消息滚动导航。
@@ -3172,6 +3173,7 @@ dsh plugin --profile web add dshmarket
 - [wangzhanchao883/dsh-screenshot-capture](https://github.com/wangzhanchao883/dsh-screenshot-capture) — 指哪拍哪截图入库：系统级悬浮窗把新截图（或复制图片）一键存入 Obsidian 笔记，支持注释与「重点」标记、用宿主 DSH 多模态模型即时识别文字（零配置、无需另配 key，可回落通义千问）、同屏去重、按天合并，并可在晚间用 AI 整理归类、打双链并生成当日总结。
 - [wangzhanchao883/dsh-word-vault](https://github.com/wangzhanchao883/dsh-word-vault) — 一个或多个孩子的英语生词库，面向 DSH 0.2 及以上（0.2.0-rc.1 / 0.2.0-rc.2 实测通过，含桌面版 GUI；0.1.7 ~ 0.2.x 均可使用）。1.10 新增语音发音：记忆卡与在线答题页里，每个单词、每句例句旁都有一个 🔊，点了用 Windows 自带语音朗读——离线、不联网、不调模型；出卡/出卷时还会在后台把整批音频预先合成好，点击即秒开。1.11 新增：词库页一键批量选词（每次 +10 个、从上往下、最多同时 50 个，带实时计数）；考试做错的词可一键出成「能发音的在线复习卡」（在线点读页 + 可打印 PDF）；卡面英文例句下方带中文对照。课本/作业照片上被荧光笔或红笔标出的词按标记找出来，翻译后进本机 SQLite，并累计出现次数；剪贴板点选、拍照、对话三种录入进的是同一本库。高频词按次数浮现，连对三次自动标记「已学会」；勾选任意若干词可出记忆卡（拆解块 + 每块真实 IPA 音标 + 7 年级英文例句 + 荒诞梗，A4 每页 8 张），输出 HTML/PDF/Word，并可出一份四选项按词义互斥的打印试卷作答。在 0.1.5 上设置面板不会出现，可改装 dsh-word-vault@1.0.2。
 - [DeepSeekLauncher](https://github.com/wangzhuoyuan229-source/DeepSeekLauncher) — macOS 桌面启动器与安装 skill：启动或复用本地 DeepSeek Harness Web 服务，固定使用 Google Chrome 打开，并提供透明人物与对话框图标。
+- [Wanyi424/dsh-quick-translate](https://github.com/Wanyi424/dsh-quick-translate) — 快捷翻译：DSH 模型调用、流式输出、Token 用量与翻译详情、本地历史记录。
 - [warmwine/dsh-memoryleak](https://github.com/warmwine/dsh-memoryleak) — 把随手记和待办写进工作区的 Markdown 文件里：/ml 加一句话就记进当天日志；待办分三种——截止日、睡到某天自动唤醒、随时；/ml view 打几个字母就能模糊打开任意文件。全程零 token，不经过大模型；笔记就是普通的本地文件，git 和任何编辑器都能直接用。
 - [wbb316/dsh-novel](https://github.com/wbb316/dsh-novel) — 小说创作台：5 个 novel_* 工具（列目录、读文件、取上下文、存章节、管角色），外加侧栏开书向导、人物关系图与流式续写。
 - [wbin0001/dsh-comfyui-canvas](https://github.com/wbin0001/dsh-comfyui-canvas) — 从对话到画布再到作品——DSH 里驾驭 ComfyUI 的可视化工作流 IDE。把 ComfyUI（本地或云端）以画布分屏嵌入 DeepSeek Harness Web，agent 在对话里激发创意、书写提示词与脚本，实时落到你眼前的画布上，产出图像、音乐、视频、3D。从灵感到成品，全程不离开对话，不用切换任何前端工具：画布操作——搭建编排、读写工作流、修改节点、连线、运行、调整参数、工作流查错，所见即所得，实时落在你眼前的画布上；生产任务——批量扫参（batch_run）、自动取回出图（get_outputs）带回对话，实现图像、音乐、视频、3D 等多任务智能创作与批量生产；环境维护——一键启动 ComfyUI、一键升级核心与全部自定义节点（upgrade），省心维护不间断。本仓库集成了 DSH 侧插件（画布副驾）+ ComfyUI 侧桥接节点，无人值守/规模化执行时可配合官方 ComfyUI MCP 服务器使用。
@@ -3776,6 +3778,7 @@ dsh plugin --profile web add dshmarket
 - [UnitySirx/dsh-kp-notes#dsh-kp-notes](https://github.com/UnitySirx/dsh-kp-notes/tree/main/plugin/dsh-kp-notes) — DeepSeek Harness 知识点笔记插件：把 Markdown 笔记目录变成卡片式学习画布，目录 = 章节、文件 = 小节、正文 = 知识点；题目可遮挡答案自测，支持 KaTeX 公式、Mermaid 流程图、思维导图与面板内编辑。
 - [void2anything/dsh-qingagent](https://github.com/void2anything/dsh-qingagent) — 青简写作桥：agent 通过 qing_ 前缀工具起草改稿，右侧宣纸面板排版呈现（mermaid、drawio、表格、公式）；每处修改先摆在纸上供审阅，提交才落稿。需本机运行开源的青简桌面客户端。
 - [w4xxx/dsh-xia-plugins#packages/gameassist-knowledge](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-knowledge) — 树状 Markdown 知识库：为 DSH Agent 提供 kb_list/kb_read/kb_write 工具、目录/正文 HTTP 接口，并配套浏览器面板。
+- [Wanyi424/dsh-markdown-notes](https://github.com/Wanyi424/dsh-markdown-notes) — DSH Markdown 笔记：多文档管理、阅读排版主题、大纲刻度条与本地自动保存。
 - [weibaohui/dsh-kb](https://github.com/weibaohui/dsh-kb) — 团队知识库：离线知识共享（FDE 盒子场景），浏览/全文检索/加工入口；raw 入料自动入队、bot 会话串行蒸馏成文（Karpathy LLM Wiki 模式：raw 不可变 / 两步加工 / log 流水 / 月度 lint）。
 - [Whatsmore-nf/dsh-pdf-edit](https://github.com/Whatsmore-nf/dsh-pdf-edit) — 面向 PDF 文档的编辑插件,精确编辑PDF文字
 - [WuShichao/dsh-ipynb-preview](https://github.com/WuShichao/dsh-ipynb-preview) — 在文档预览中渲染 Jupyter 笔记本，支持代码语法高亮、离线 KaTeX 行内与块级公式，以及可缩放的图像查看器。
