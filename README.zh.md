@@ -1572,7 +1572,7 @@ dsh plugin --profile web add dshmarket
 - [zhxqc/dsh-oh-my-theme](https://github.com/zhxqc/dsh-oh-my-theme) — DSH Web 主题与文件工作台：全局字体设置、@ 文件引用、项目文件树、Markdown 预览和可拖拽侧边面板。
 - [ZJUZhiyuCai/dsh-ivory](https://github.com/ZJUZhiyuCai/dsh-ivory) — DSH Web 暖中性色明暗主题，支持响应式布局、双语设置、安全 Markdown 预览、内容块复制与无遥测运行。
 - [zkforge/dsh-claude-desktop-theme](https://github.com/zkforge/dsh-claude-desktop-theme) — 面向 macOS 与 Windows 的 DeepSeek Harness（DSH）Desktop 0.2.0-rc.2 的 Claude Code Desktop 风格主题，提供紧凑侧栏与会话布局、浅色与深色主题、模型与推理强度控件，以及支持随机喷水、轻弹和摆尾互动的新会话页像素小鲸鱼。
-- [zmm863-commits/dsh-client-ui-paopaocat](https://github.com/zmm863-commits/dsh-client-ui-paopaocat) — 为 DSH Web 界面打造的奇幻玻璃拟态皮肤：月光冥界森林，青绿流云缓缓翻涌、绯红彼岸花自左下蔓延、角落里趴着一只睡猫，底层是 WebGL2 流体；另有自定义壁纸与视频背景。内置两套可一键切换的风格（淡雅 / 蓝色）、3 首背景音乐与可上传音乐（存本机 IndexedDB），并有猫爪、小鱼、泡泡、星光装饰。一个开关即可完全还原原生界面。
+- [zmm863-commits/dsh-client-ui-paopaocat](https://github.com/zmm863-commits/dsh-client-ui-paopaocat) — 为 DSH Web 界面打造的奇幻玻璃拟态皮肤：月光冥界森林，青绿流云缓缓翻涌、绯红彼岸花自左下蔓延、角落里趴着一只睡猫，底层是 WebGL2 流体；另有自定义壁纸与视频背景。内置两套可一键切换的风格（淡雅 / 蓝色），并有猫爪、小鱼、泡泡、星光装饰。一个开关即可完全还原原生界面。
 
 ### 🔌 模型与账号接入
 
@@ -2011,7 +2011,7 @@ dsh plugin --profile web add dshmarket
 - [heiheiha798/dsh-plugin-subagent-delete](https://github.com/heiheiha798/dsh-plugin-subagent-delete) — 带归属校验的工具与 HTTP 路由，用于列出、释放和永久删除子代理会话，删除后自动刷新 web UI。
 - [hellodigua/dsh-share](https://github.com/hellodigua/dsh-share) — 一键分享你的对话。
 - [Hjdd14/dsh-toolong-warning](https://github.com/Hjdd14/dsh-toolong-warning) — 统计每段对话成功完成的压缩次数并常驻悬浮窗，只有反复压缩过、且此后又烧掉大量 token 或上下文占用过高时才提醒；三个阈值都可在设置页调整。
-- [hkkz9522/dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) — DSH Web 会话管理：删除、归档、跨工作区移动、迁移预设；收藏、待看、搜索、排序、设置优先级，添加标签和备注；批量处理。欢迎至 GitHub 提意见。
+- [hkkz9522/dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) — DSH 会话与工作区管理——工作区：归档与显示。会话：跨工作区移动、预设迁移、删除；收藏、待回看、优先级、标签、备注。批量操作。
 - [hoshF/dsh-md-export](https://github.com/hoshF/dsh-md-export) — 在会话标题栏加入「导出 MD」按钮，经系统原生保存窗口把当前会话导出为干净的 Markdown，并提供共用同一渲染核心的命令行与 HTTP 路由；直接读取会话日志（支持 v0、v3、v4 格式），且不声明任何 @deepseek-ai peer 依赖。
 - [hoyyang/dsh-concise](https://github.com/hoyyang/dsh-concise) — DeepSeek Harness 一键 Concise 输出风格开关：结果先行、少废话，工作深浅不变。每轮最终回答开头自动附「摘要」精华卡（划选即复制），按会话独立生效，headless/CLI 同样生效，支持 /concise 命令、style.md 自定义风格与本地 API。摘要卡内的链接与文件路径渲染为可点击 chip：网页跳转、本地文件用系统默认应用打开（v0.9+）。每步生成前自动重申摘要契约（v0.11.2+），实测根治审查报告/表格型回复的漏卡。
 - [hoyyang/dsh-manage-sessions](https://github.com/hoyyang/dsh-manage-sessions) — 侧栏原生增强的会话管理：批量归档/恢复/永久删除，卡死会话两段式强停（自动复活/离线），工作区行一键复制绝对路径。
@@ -4996,7 +4996,7 @@ dsh plugin --profile web add dshmarket
 - [BeyondandSharp/dsh-plugin-notoken](https://github.com/BeyondandSharp/dsh-plugin-notoken) — ！警告！这会移除认证步骤！警告！注册一个登录入口路由（默认 GET /__dsh_login），把进程里的登录 token 换成浏览器会话 cookie，让首次访问不用带 ?token=…。
 - [bigclawd/dsh-security-guard](https://github.com/bigclawd/dsh-security-guard) — dsh 安全守卫插件：基于规则的静态扫描覆盖恶意代码、提示词注入与令牌浪费，运行时拦截危险工具调用，提供 /scan 命令、plugin_scan 工具、Web 面板与白名单。
 - [BotonJ/dsh-plugin-sentinel](https://github.com/BotonJ/dsh-plugin-sentinel) — 插件安装前静态安全审计：生命周期脚本、动态执行、凭据外传组合特征与 patch 层风险；零依赖，tar 包全程内存解析不落盘。
-- [BuvkB/dsh-vaultwarden](https://github.com/BuvkB/dsh-vaultwarden) — 让任意会话直接读写自建的 Bitwarden/Vaultwarden 保险库：九个 bitwarden_* 工具、WebSocket 实时同步（不可用时降级轮询），以及带 readonly/ask/auto 三档写权限的设置面板。
+- [BuvkB/dsh-vaultwarden](https://github.com/BuvkB/dsh-vaultwarden) — 让任意会话直接读写自建的 Bitwarden/Vaultwarden 保险库：九个 bitwarden_* 工具、WebSocket 实时同步（不可用时降级轮询），带 readonly/ask/auto 三档写权限的设置面板——可编辑五类条目，面板展示的密码与动态码会打码，对话里的工具卡片同样把密码等敏感值隐藏。
 - [cdxiaodong/dsh-guardian](https://github.com/cdxiaodong/dsh-guardian) — Agent 安全护栏：拦截并审计所有工具调用，命中敏感操作就要求人工确认。
 - [ChaoJie0/dsh-tm-guard](https://github.com/ChaoJie0/dsh-tm-guard) — macOS 上 DSH 智能体的零干预权限门 —— 安装即生效。可经本地 Git 或时间机器回滚的写操作自动放行并自动打快照，拦截网络、装包、进程 / 系统管理与敏感路径读取，并记录完整审计日志（可配置启用自动清理最旧审计记录）。
 - [ChenLaoshiYF/dsh-mcpguard](https://github.com/ChenLaoshiYF/dsh-mcpguard) — 扫描 skill 与 MCP 配置中的提示注入、同形字、Unicode 隐形字符、危险 shell 与凭据泄露。
