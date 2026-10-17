@@ -2008,6 +2008,7 @@ dsh plugin --profile web add dshmarket
 
 - [123dbl/dsh-side-session](https://github.com/123dbl/dsh-side-session) — 主会话进行中也能一键新开独立的可续聊旁会话：从输入框 ＋ 命令菜单选 side-chat 即开即用，主会话不受影响。
 - [1420079678-ctrl/agent-body#dsh-zero-residence](https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-zero-residence) — 零驻留上下文引擎：把体积大的工具输出从活跃上下文驱逐到可查询存储，只留下确定性指针，于是每轮的提示词 token 不再随对话长度增长。被遮蔽的内容可随时从会话日志逐字重建，按工具调用 id 或会话 seq 定位。
+- [2026heshao/dsh-forget-session](https://github.com/2026heshao/dsh-forget-session) — 在会话行菜单加入「遗忘会话」（菜单内二次点击确认），把会话从侧栏与磁盘彻底移除：先停掉正在运行的工作，经官方通道解除工作区、归档与置顶记录，删除日志目录与投影缓存条目，并由复活守卫在一个窗口内补删迟到写入或句柄残留重建的文件；灵枢记忆、附件与其他会话不受影响。
 - [dsh-undo-plugin](https://github.com/23swccp/dsh-undo/tree/master/packages/bundle-rollback) — 对话与工作区撤销：通过 /undo 节点轴、会话头部按钮或消息下方图标回滚到任意已发送 prompt 之前；插件私有 Shadow Git 快照恢复文件，被回滚回合不会进入模型上下文，误操作还能“撤回回滚”。附带归档会话管理与工具卡片分类配色。
 - [2JumpSinA/dsh-context-guard](https://github.com/2JumpSinA/dsh-context-guard) — DSH 上下文守卫：显示会话占用，在 45% 与 60% 提醒你写交接、换新会话，并在 45% 起自动把交接草稿写进你的工作目录。不注册工具、不注入提示词，因此不消耗上下文。
 - [3403473060/dsh-inline-images](https://github.com/3403473060/dsh-inline-images) — 对话内联图片：LLM 回复中输出的本地图片路径在消息正文直接渲染为图片（9 种格式、点击放大灯箱、可调尺寸）。
@@ -2749,6 +2750,7 @@ dsh plugin --profile web add dshmarket
 - [chenbin-dev/dsh-scan-mcp](https://github.com/chenbin-dev/dsh-scan-mcp) — 扫描 Claude Code / Codex / CodeBuddy 配置中的 MCP，通过 stdio 与 streamable-http initialize 握手检测真实连通性，支持启停开关与 /mcp 控制面板。
 - [Cheng-cheng9669/dsh-cache-precision](https://github.com/Cheng-cheng9669/dsh-cache-precision) — 把内置缓存命中率原位显示为 3 位小数，并加宽底部统计行避免内容被截断。
 - [chenjiyan2001/dsh-proxy-routing](https://github.com/chenjiyan2001/dsh-proxy-routing) — 按每次执行为 Agent fetch、LLM provider 与 shell 命令路由 HTTP/SOCKS5 代理；支持 settings 热更新、审批门禁和凭据安全状态。
+- [ChenXu233/dsh-gemini-tool-schema](https://github.com/ChenXu233/dsh-gemini-tool-schema) — 把发给模型的工具 schema 统一归一化成 Gemini function declaration 能接受的 OpenAPI 3.0 子集：每个节点补 type、数组补 items、剔除空 enum 项、内联 $ref，让"任何一个 MCP 或内置工具不合规"不再把整包请求打成 HTTP 400。
 - [CheshireJCat/blender](https://github.com/CheshireJCat/blender) — Blender 3D 生产插件：提供 30 个建模/重建 Skill、13 个运行时工具和 26 个确定性 Helper，覆盖参考图拟合、渲染、验证、动画与可移植格式导出；npm 包名 `dsh-blender`。
 - [Chhlafiu4312/dsh-mcp-bridge](https://github.com/Chhlafiu4312/dsh-mcp-bridge) — 零依赖 MCP 客户端桥接，连接 stdio 与 HTTP MCP server，把其工具注册为 mcp_<server>_<tool> 供 agent 调用。
 - [chiang21fcb/cn-linebreak](https://github.com/chiang21fcb/cn-linebreak) — 中文网页文案断行静态审查与修复工具：检查显式 <br> 孤字行、keep-all 覆盖、标点禁则、保护词被拆等问题，并在自然停顿处自动插入 <wbr>；提供 cn_linebreak_audit 工具供代理调用。
@@ -3104,6 +3106,7 @@ dsh plugin --profile web add dshmarket
 - [Pappet/dsh-tool-imagegen](https://github.com/Pappet/dsh-tool-imagegen) — 通过 OpenRouter 统一 Image API 的文生图与图生图：以别名配置模型，参数按实时模型能力列表校验，支持参考图输入、设置卡片与对话内联展示结果。
 - [patrykorwat/open-dream-rsi#deepseek_harness](https://github.com/patrykorwat/open-dream-rsi/tree/main/plugins/deepseek_harness) — 不是又一个记忆插件：ODR 是“演化世界”式（Dream-RSI）自我改进回路——每次尝试都记入发现树（Discovery Tree），任务间歇将数千个策略变体在这棵记录下来的世界上回放；策略、配方或经验只有通过反事实回放的考验才会晋升，绝不因模型自己说好就获得信任，Sentinel 还会在预算耗尽前拦截工具调用；LLM 保持冻结，可从 npm 安装 dsh-open-dream-rsi。
 - [pearjelly/deep-blend#bundle](https://github.com/pearjelly/deep-blend/tree/main/packages/deepblend/bundle) — 在 DSH 中创建可编辑的 Blender 模型，联动音箱、杯与灯具尺寸。修改已移动、倾斜并带动画的音箱装配，保留手工细节、摄影和时序；支持有预算的控制网格、细分、重复副本及静态闭合表面确定性布置。核对原生物体轴尺寸、局部采样与指定主体多视图；不可变历史和审批闸门保留修改，18 个工具支持建模、评审与交付。
+- [peijiping/dsh-plugin-zotero](https://github.com/peijiping/dsh-plugin-zotero) — 把 Zotero 文献库放进只读右侧栏面板：浏览分类树、搜索条目、查看元数据与 PDF 全文，并把单条目引用、划词摘录或整目录引用写进会话草稿。插件自持连接本机 Zotero 集成 MCP，把工具以 mcp__zotero__* 注册给模型，可按工具逐个启用 / 禁用。
 - [pengpengyi92/dsh-quant](https://github.com/pengpengyi92/dsh-quant) — 面向 DeepSeek Harness 的量化研发工具箱，59 个工具覆盖行情、指标、因子评价、滚动样本外机器学习验证、风险（VaR/CVaR/回撤/Beta 与 Kupiec POF）、期权、债券、FICC 和基金模拟，并提供端到端 PDAT→PET 研究管线。
 - [pengzhou267-ai/dsh-shop-assistant](https://github.com/pengzhou267-ai/dsh-shop-assistant) — 电商店主工作台：CSV 批量预览（多平台列适配）、可复算利润与六维评分、公开商品页快照、中文 skills、可替换售后政策知识库。
 - [PerryLink/dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) — DeepSeek Harness 的 Claude Code /rewind 等价能力：每次变更型工具执行前捕获 git 优先的工作区文件快照，轮次边界 fork 会话，一条 /rewind 命令恢复文件并把会话回退到检查点。
@@ -4232,6 +4235,7 @@ dsh plugin --profile web add dshmarket
 - [iguowz/dsh-cortex](https://github.com/iguowz/dsh-cortex) — DeepSeek-Harness 多模型编排插件，支持递归任务拆解、动态路由、质量门控、失败恢复与 KPI 报表。
 - [ijry/DeepSeek-Harness-Desktop-Ultra#dsh-plugin-taskboard](https://github.com/ijry/DeepSeek-Harness-Desktop-Ultra/tree/main/plugins/dsh-plugin-taskboard) — 任务看板，agent 通过 taskboard_* 工具领活与交接；这些工具无法把任务移到 done 或 canceled，验收由人来做。
 - [imMamdouhaboammar/get-fable](https://github.com/imMamdouhaboammar/get-fable) — DeepSeek Harness 的模块化前沿执行纪律：覆盖 26 项技能的循证路由、Manus 风格持久化文件规划、验证门禁、失败恢复与交互式 Web 看板。
+- [InoriMutsumi/dsh-grill-first](https://github.com/InoriMutsumi/dsh-grill-first) — 开工前先做需求访谈：判定任务是否说清楚，没说清就分轮追问；strict 档位下用户未在对话中确认四段需求清单前，拦截编辑类工具；确认过的偏好写入两层记忆。
 - [ishuowang/dsh-agent-team-room](https://github.com/ishuowang/dsh-agent-team-room) — 在不合并对话历史的前提下，将多个独立 DSH Session 与 provider-backed 成员组成持久原生 Room，支持绑定精确成员身份的行首 `@` 提及、定向投递、广播和 Leader 权限控制。
 - [Jackywxsz/DSH-Creator](https://github.com/Jackywxsz/DSH-Creator) — 面向 DSH 的本地内容生产与运营工作台：管理灵感、脚本、媒体资产、档期、目标、发布状态和发布后复盘。
 - [jax629321/dsh-agent-hub](https://github.com/jax629321/dsh-agent-hub) — DSH 群聊式多智能体协作控制台：自主决策、任务分发、验收复核与长任务自主优化；内置后端随包分发，一条命令即可安装。
