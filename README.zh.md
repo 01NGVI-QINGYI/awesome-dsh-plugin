@@ -4824,6 +4824,7 @@ dsh plugin --profile web add dshmarket
 - [777-Zen/dsh-capability-index](https://github.com/777-Zen/dsh-capability-index) — DSH agent 的插件库起飞检查：向运行时上下文注入按步骤触发的提示，让合适的已装插件从「碰巧想起」变成「可预期使用」。
 - [863683348/dsh-plugin-verify](https://github.com/863683348/dsh-plugin-verify) — DSH 核验工具箱：在工作区文件中核查声明并返回带行号引用的证据，校验配置文件（JSON/YAML），以及只读的 URL / npm / GitHub 提交就绪度探测。
 - [863683348/dsh-trend-radar](https://github.com/863683348/dsh-trend-radar) — 生态行情面板：把 dsh-plugin topic 与 awesome 收录列表快照成本地历史，产出周报（新增插件、star 增速、类别热度、收录覆盖率），并支持关键词雷达监控新品与 star 突增。
+- [962599627/agent-development-constraints](https://github.com/962599627/agent-development-constraints) — 把一套会自我进化的开发约束规则库装进项目，通过 constraints 工具和「每会话一次」的提醒交给智能体，并可审计 AI 的 token 成本与上下文占用。
 - [988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-cpp](https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-cpp) — 基于 clangd 为 DeepSeek Harness 提供 C/C++ 代码导航和语言服务配置。
 - [988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-csharp](https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-csharp) — 基于 OmniSharp 为 DeepSeek Harness 提供 C# 代码导航和语言服务配置。
 - [988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-go](https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-go) — 基于 gopls 为 DeepSeek Harness 提供 Go 代码导航和语言服务配置。
