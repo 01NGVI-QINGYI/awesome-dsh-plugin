@@ -3148,6 +3148,8 @@ dsh plugin --profile web add dshmarket
 - [ShiXiangYu2/dsh-translate-pro](https://github.com/ShiXiangYu2/dsh-translate-pro) — 专业翻译：18 种目标语言、4 种风格（正式/口语/技术/直译）、术语表控制译名、整文件翻译（README/文档/字幕）并保留 Markdown 与代码块格式；经 SiliconFlow 调用 DeepSeek。
 - [Shiyuedong-Jade/DM-inspect](https://github.com/Shiyuedong-Jade/DM-inspect) — 只读巡检达梦 DM8 数据库：85 项检查项，生成 HTML 报告。
 - [shlouai/dsh-debate](https://github.com/shlouai/dsh-debate) — 通过一场正式辩论来回答难题：两个对抗性子代理各自调研并论证对立立场，最后由主代理依据辩论记录作出裁决，提供 debate_open、debate_round、debate_verdict 三个工具。
+- [shuxidemosheng/dsh-skill-compat-plus](https://github.com/shuxidemosheng/dsh-skill-compat-plus) — 技能兼容层：把 Claude Code / Codex / ZCode 的技能目录挂载为 dsh 的只读技能提供方——支持 frontmatter 字段映射、名称 slug 规范化与热重载。
+- [shuxidemosheng/dsh-tool-todo-plus](https://github.com/shuxidemosheng/dsh-tool-todo-plus) — 官方 todo_write 的增强 fork：任务项支持优先级标签、会话内完整清单渲染，并提供可拖动的会话内浮动任务面板（位置记忆 / 双击复位 / 当前动作显示）。
 - [SIMON-WORLD/dsh-eco-indicator](https://github.com/SIMON-WORLD/dsh-eco-indicator) — 世界银行开放数据经济指标查询：GDP、通胀、贸易、人口等，无需 API 密钥。
 - [SIMON-WORLD/dsh-journal-monitor](https://github.com/SIMON-WORLD/dsh-journal-monitor) — 经济学优先的期刊/工作论文监控插件：NBER RSS + arXiv 经济学（4 类目）+ 中文经管期刊（世界经济-玛格泰克平台，中国农村观察/财贸经济/中国人口科学/经济管理-ajcass 平台）抓取、关键词过滤、dry-run/Webhook 推送、去重持久化、定时简报（schedule_create 兼容）。
 - [SIMON-WORLD/dsh-toolkit#dsh-at-file](https://github.com/SIMON-WORLD/dsh-toolkit/tree/main/packages/dsh-at-file) — DSH 的 @ 文件引用工具：注册 at_file_read 工具，把工作区内文件内容注入会话，含目录穿越防护与 50KB 截断（MIT）。
