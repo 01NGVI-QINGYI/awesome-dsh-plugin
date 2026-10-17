@@ -715,6 +715,7 @@ dsh plugin --profile web add dshmarket
 - [Qulierm/dsh-macos-settings-shortcut](https://github.com/Qulierm/dsh-macos-settings-shortcut) — 为 macOS 上的 DeepSeek Harness 恢复 Cmd+, 设置快捷键。
 - [qwert702/dsh-auto-translate](https://github.com/qwert702/dsh-auto-translate) — dsh 网页端全链路中文翻译：思考过程实时翻译、英文回复就地中文、工具输出中文摘要与工具调用注释；翻译为独立提供方请求，不进入会话上下文。
 - [qwerty-k-de/dsh-attach-picker](https://github.com/qwerty-k-de/dsh-attach-picker) — DSH Web 输入框工具栏图片按钮：点击调用系统文件选择器直接多选取图，进入与拖拽/粘贴相同的草稿图片栏，并内联校验宿主的图片格式、单条张数与单张大小限制。
+- [qwq1999/dsh-panellist](https://github.com/qwq1999/dsh-panellist) — 面板列表管理器：在设置页里调整左侧轨道上的页签顺序、改名、换图标、隐藏，并把若干页签收进带飞出菜单的分组。
 - [qys0012/dsh-hotspots](https://github.com/qys0012/dsh-hotspots) — DSH Web 时事热点面板：AI 大事与工科热点实时聚合，每条含要点提炼与来源链接；侧边栏入口、三视图、关键词与来源筛选、已读标记与快捷键。
 - [qyw233/dsh-deeplink](https://github.com/qyw233/dsh-deeplink) — `?session=` / `?workspace=` 深链直达指定项目对话。
 - [Rabbit-bot-No-002/dsh-chat-avatar](https://github.com/Rabbit-bot-No-002/dsh-chat-avatar) — 在每轮 AI 回复左侧与你的每条输入右侧各显示一个头像，可上传自己的图片并设置尺寸与圆形/方形头像框。
@@ -4040,6 +4041,7 @@ dsh plugin --profile web add dshmarket
 - [Sev7een/dsh-plugin-automations](https://github.com/Sev7een/dsh-plugin-automations) — 设置页定时任务：支持准点或 DeepSeek 谷时段执行、单次/每日重复，并持久化任务状态。
 - [seventeenlyc/agent-relay#dsh-package](https://github.com/seventeenlyc/agent-relay/tree/main/integrations/dsh-package) — 跨会话接力编排插件：提供 6 个 relay_* 控制工具、基于 session/create 与 session/prompt RPC 的侧边栏静默会话物化器、监听 compaction/start 与交接标记的自动触发钩子，以及内嵌的 agent-relay 技能。
 - [severin-ye/uagent-sync#packages/dsh](https://github.com/severin-ye/uagent-sync/tree/master/packages/dsh) — 工作区跨设备备份、恢复与扩展更新，经 uagent-sync CLI 桥接执行。
+- [shanhai-city-states/kaipu-dsh-plugin-release#plugin-platform](https://github.com/shanhai-city-states/kaipu-dsh-plugin-release/tree/main/packages/plugin-platform) — 为 DeepSeek Harness 提供多人会商审校的「场地」——每个审核席位由一个 Agent 承担，判定逐面路由，全程留痕可回看。当前为骨架版：界面与流程可完整体验，数据接入在后续版本。
 - [shanliuling/dsh-image-gen](https://github.com/shanliuling/dsh-image-gen) — 为 DeepSeek Harness 提供原生对话生图能力：直接让 Agent 画图，插件自动完成生成并把结果保留在当前会话中。
 - [shengsheng90/DSH-taskboard](https://github.com/shengsheng90/DSH-taskboard) — 本地 SQLite 任务板，以原生覆盖页呈现：项目、任务、评论、关联、附件与工作流自动化，状态流转 backlog → todo → in_progress → in_review → done；提供 `taskboard_*` Agent 工具（Agent 只能提交到 in_review，验收需人工）、无头 JSON CLI 与打包 skill。
 - [shengyvself/dsh-autoresume](https://github.com/shengyvself/dsh-autoresume) — dsh 会话因 web 重启或上游瞬时故障（限流、5xx、余额/配额错误）中断时，自动注入「继续」让本轮接着跑，不需要手动点、不会丢上下文；带死循环守卫，重试没反应就把会话交回给你。
