@@ -1380,6 +1380,7 @@ dsh plugin --profile web add dshmarket
 - [0nt-one/dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin) — 新粗野主义换肤皮肤：双方案（蓝统治 / 做旧报纸）随时切换，硬阴影 + 直角 + 2px 边框结构层，浅色/深色自适应。
 - [acdsh4869/dsh-aqua-theme](https://github.com/acdsh4869/dsh-aqua-theme) — Aqua 玻璃质感主题（适配 DSH v0.2.x 与桌面端 v0.22.3+）：顶栏、侧边栏、输入框、统计行与轨迹视图悬浮在 WebGL 流体板或图片/视频壁纸上的磨砂玻璃片，云母/兼容双布局，模糊、磨砂、色调、亮度可调，海洋装饰（粒子鲸鱼、小鱼、网状交互、鼠标辉光），一键恢复默认，总开关关闭即完全还原原生界面；承 WYH66666666 原作（0.1.x）与 du-u-uck 的 0.1.1-rc.2 适配。
 - [ahian-lee/dsh-bliss-glass](https://github.com/ahian-lee/dsh-bliss-glass) — 让 XP 时代的风景壁纸与现代磨砂玻璃界面同框的主题：DeepSeek Harness Web 界面 之下的固定壁纸底板、经主题 token 应用的面板玻璃样式、支持导入自定义图片的 壁纸选择器与明暗切换按钮——桌面与移动端均可使用。
+- [AIR-pixel/air-pixel-liquid-glass](https://github.com/AIR-pixel/air-pixel-liquid-glass) — 为 DeepSeek Harness 提供可配置的液态玻璃主题，包含半透明界面、壁纸、桌面透出、窗口模糊、自定义光标、点击涟漪和消息辨识选项。
 - [AKS1st/dsh-cyber-particle](https://github.com/AKS1st/dsh-cyber-particle) — 为 DSH Web 界面提供粒子网络动态背景：全屏覆盖、点击穿透、零运行时依赖。
 - [AKS1st/ikun-theme-skin](https://github.com/AKS1st/ikun-theme-skin) — ikun 主题皮肤：星蓝昼/夜与背带裤黑金三套配色接入系统主题列表，全屏照片壁纸轮播、音乐盒与发送音效。
 - [alexfengrui/dsh-client-ui-skin-real-madrid](https://github.com/alexfengrui/dsh-client-ui-skin-real-madrid) — 皇家马德里双模式皮肤：暗色为夜场伯纳乌全景，亮色为纯白主场暗纹，队徽与 1902 背号作为背景层（非官方球迷作品）。
@@ -1831,6 +1832,7 @@ dsh plugin --profile web add dshmarket
 - [wenheguo2/dsh-delegation-suite](https://github.com/wenheguo2/dsh-delegation-suite) — 智能委派套件：按角色路由最强模型、失败自动互备、每个子代理可设思考强度、名字带模型标签、支持 fork 委派与可视化路由编辑。
 - [wenzetan/dsh-llm-newapi](https://github.com/wenzetan/dsh-llm-newapi) — NewAPI（OpenAI 兼容网关）模型接入：注册 `newapi` 路由，仅发现聊天类模型，自动从 models.dev 获取模型参数（上下文窗口、思考强度等）并填充，并在 Web 设置页配置 base URL 与 API Key。
 - [whoiszzj/dsh-opencodego](https://github.com/whoiszzj/dsh-opencodego) — 把 OpenCode Go 接入 DSH 的提供方插件：不把"推荐"当结论——models.dev 给的协议建议会先真的探一次确认再用，思考档位按实测契约确定，请求走有序的协议回退链。上下文、最大输出与图片输入的数字由运行期刷新的 models.dev 声明层提供而非探测，操作者覆盖排在两者之上。可保存多把 OpenCode Go 密钥，在设置页里切换当前使用的那把。
+- [WiseXin/dsh-antigravity](https://github.com/WiseXin/dsh-antigravity) — Google Antigravity 与 Cloud Code Assist 模型提供方插件，支持 Gemini 3.8 Flash、沙箱端点容灾与多账号配额管理。
 - [wjf1/dsh-commandcode](https://github.com/wjf1/dsh-commandcode) — Command Code 模型接入插件，适配 DSH-Desktop 0.7.1，注册 commandcode 路由，带实时模型目录与推理强度支持，实时查看套餐用量。
 - [WJZ-P/dsh-model-capabilities](https://github.com/WJZ-P/dsh-model-capabilities) — 为 DeepSeek Harness Web UI 的自定义模型设置添加输入模态选择器。
 - [WLV-ZEDD/dsh-chatgpt-web](https://github.com/WLV-ZEDD/dsh-chatgpt-web) — 基于免费 ChatGPT 网页端（GPT 5.6 Luna）的 DeepSeek Harness 零成本对话模型提供者，支持流式 Markdown。
@@ -2233,6 +2235,7 @@ dsh plugin --profile web add dshmarket
 - [WindFromKadath/dsh-plugin-workspace-archive](https://github.com/WindFromKadath/dsh-plugin-workspace-archive) — 工作区文件夹被删除或移走、或工作区登记被移除时，自动归档其会话；目录或登记回归时恢复：只取消归档本插件归档过的会话，把台账记过的全部成员挂回分组（含你手动归档的会话，且不改其归档状态），并把「无项目」里工作目录正是该工作区路径的会话归位。
 - [Wine-Red/dsh-prompt-stash](https://github.com/Wine-Red/dsh-prompt-stash) — 本地、按会话隔离的 LIFO 输入暂存：临时收起未完成的输入，之后安全恢复并继续编辑。
 - [Wisdoverse/dsh-inline-media-viewer-plugin](https://github.com/Wisdoverse/dsh-inline-media-viewer-plugin) — 在 DSH 对话中内联显示图像、视频和音频路径及 URL，并提供工作区受限的本地读取与可选的 ComfyUI 代理。
+- [WiseXin/dsh-session-intent-title](https://github.com/WiseXin/dsh-session-intent-title) — 零 UI 侵入的 DeepSeek Harness 会话意图自动分类命名插件，新会话自动生成前缀图标与主题（优化、修复、功能、探索等 8 类意图）。
 - [wjj-8283/dsh-temp-workspace](https://github.com/wjj-8283/dsh-temp-workspace) — DSH web 临时工作区：一键创建一次性工作区，下次重启自动清空其全部对话（可立即/延迟删除，也可先弹确认框）。点击图钉可永久保留——文件移入所选文件夹、以文件夹名为标题、对话一并迁移，并触发真实的宿主级重启重新索引。
 - [wojiao42/dsh-space-optimizer](https://github.com/wojiao42/dsh-space-optimizer) — 侧栏里的每个任务磁盘占用账本，可勾选回收无主垃圾；会话日志绝不被裁剪。
 - [wpc0323/deepseek-web-import](https://github.com/wpc0323/deepseek-web-import) — 从设置页把 chat.deepseek.com 网页端对话导入为 DeepSeek Harness 会话，导入后可在其中继续对话。
