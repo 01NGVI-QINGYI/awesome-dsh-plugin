@@ -291,6 +291,7 @@ dsh plugin --profile web add dshmarket
 - [dcrzsy/dsh-enhance-tool](https://github.com/dcrzsy/dsh-enhance-tool) — DeepSeek Harness Web 一站式界面增强：提示词库（快选+管理）、两步 AI 润色、预测回复栏（点击直接发送）、MCP 工具管理、定时自动化、智能会话标题、对话宽度可调、AI 回复占满无灰底、超长用户消息自动折叠（带平滑展开/收起动效），以及各面板的场景化入场动效。
 - [DDSG-X/dsh-workspace-dir](https://github.com/DDSG-X/dsh-workspace-dir) — 在可拖动、透明度可调的目录面板中显示当前对话的工作目录与文件列表。
 - [deanzhang2026-max/dsh-lived-pet#dsh-pet-bridge](https://github.com/deanzhang2026-max/dsh-lived-pet/tree/main/packages/dsh-pet-bridge) — 把 harness agent 的实时状态（思考、干活、等待、完成、出错）写入状态文件，配套的 Electron Live2D 桌宠轮询该文件，气泡与表情随 agent 的实际动作变化。
+- [DedsecLemon/dsh-obsidian](https://github.com/DedsecLemon/dsh-obsidian) — 把你真实的 Obsidian 知识库放进 DSH 右侧栏：目录树、全库搜索、按阅读视图排版渲染笔记、双向链接跳转、就地编辑，以及可点击跳转的笔记大纲。
 - [deepseekbluefish/dsh-screenshot-plugin](https://github.com/deepseekbluefish/dsh-screenshot-plugin) — 微信式界面内截屏按钮：拖动框选、8 个手柄微调，Enter 确认截取、Esc 取消；PNG 自动编号保存，\[Shot N HH:mm] 标记自动写入输入框。仅 Windows，已在 DeepSeek Harness Desktop 实测。
 - [delaydai/dsh-jumpbar](https://github.com/delaydai/dsh-jumpbar) — DSH Web 用户消息跳转条：对话区右缘 minimap 式横杠条带，悬停预览消息内容、点击跳转置顶、拖拽快速浏览，并带当前视口标记。
 - [demacia1314/dsh-airdrop](https://github.com/demacia1314/dsh-airdrop) — ⭐ 支持拖拽上传：任意文件、整个文件夹，拖到窗口任意位置即可；支持远程上传——字节直传服务器的会话工作区，部署在服务器上的 DSH 也能像本地一样拖了就发。
@@ -339,6 +340,7 @@ dsh plugin --profile web add dshmarket
 - [FeatherHunter/dsh-im-companion](https://github.com/FeatherHunter/dsh-im-companion) — dsh-im辅助插件：创造助理/家的概念，把飞书/微信/QQ等机器人收进DSH工作区，并提供更多强大的扩展功能。增强DSH原生会话状态:哪些在执行任务、哪些在等你回复、哪些有异常。感谢使用🌹。
 - [FeatherHunter/dsh-prompt](https://github.com/FeatherHunter/dsh-prompt) — 将一切重复、烦躁的模板化提示词保存下来，只需要鼠标点击就注入对话框，节省您的精力损耗🌹
 - [FeatherHunter/ilife#dsh-life-pack](https://github.com/FeatherHunter/ilife/tree/master/packages/plugin-manager) — 爱生活-覆盖你居家生活的方方面面。
+- [Feizhaiqianqian/dsh-email-board](https://github.com/Feizhaiqianqian/dsh-email-board) — 只读的 DSH 未读邮件看板——把 dsh-email 里配置的各账号未读邮件按账号列成右侧栏卡片（发件人、主题、时间），按需手动刷新。
 - [FeiZhuNiU-INFJA/dsh-stock-ticker](https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker) — 一个悬浮的半透明行情小窗，实时显示上证指数、创业板指、科创50 与恒生科技的当前点位与涨跌幅。
 - [fengb3/dsh-session-icons](https://github.com/fengb3/dsh-session-icons) — 侧边栏会话标题图标：标题生成时用同一路由的辅助模型调用画一枚 24×24 单色 SVG 隐喻图标，显示在每行标题左侧，带磁盘缓存。
 - [fengMax1997/dsh-line-select](https://github.com/fengMax1997/dsh-line-select) — 行选区：浏览工作区文件、带行号预览代码、可视化选中行范围，一键把 `@path:start-end` 引用写入输入框，agent 发送时自动收到所选行原文，精准修改指定行。
@@ -714,6 +716,7 @@ dsh plugin --profile web add dshmarket
 - [Rice00/dsh-loupe](https://github.com/Rice00/dsh-loupe) — 在浮窗里解释 DSH 对话中选中的词或句子：走独立通道、不污染当前会话，解答可以固定成独立会话。
 - [Ricketts-Guo/dsh-shortcuts](https://github.com/Ricketts-Guo/dsh-shortcuts) — Web UI 可自定义键盘快捷键：34 个预置功能（会话、视图、剪贴板、模型、静默权限切换、设置），一键录制自定义组合键，内置快捷键速查表与诊断面板。
 - [riesbri/dshline#dshline](https://github.com/riesbri/dshline/tree/main/packages/dshline) — DeepSeek Harness 的终端原生 TUI 前端，通过 Harness 能力提供会话、模型、插件、任务、子代理、待办事项和 Provider 配置，并保留真实的终端滚动历史。
+- [ruaibeite/dsh-files-to-chat](https://github.com/ruaibeite/dsh-files-to-chat) — 在右侧栏文件树里右键把文件或文件夹作为 @ 引用加进输入框，支持 ⌘/Ctrl 与 Shift 多选后整批插入。
 - [ruanimal/dsh-sidebar-panel-buttons](https://github.com/ruanimal/dsh-sidebar-panel-buttons) — 把 dsh Web 侧边栏的全局面板菜单（插件、扩展管理、定时任务、IM）从竖排文字列表收起为一行 36×36 图标按钮，悬停显示名称；可在「设置 → 通用」里切回列表，选择按浏览器记忆。
 - [Rudyy898/dsh-drag-path](https://github.com/Rudyy898/dsh-drag-path) — 像 Codex/Claude 一样：拖入任意格式文件或文件夹，真实绝对路径立即插入输入框，不用一个个打字。工作区优先智能定位、大小校验、同名弹候选选择器，支持批量拖入与粘贴，兼容 Windows/macOS。
 - [Ruiming-cn/dsh-ask-in-sidebar](https://github.com/Ruiming-cn/dsh-ask-in-sidebar) — 选中助手回答中的文本，在临时右侧面板向侧边栏助手提问：基于主对话 LLM 历史快照回答，支持流式 Markdown、可折叠思考与多轮追问，不打扰主对话。
@@ -1545,7 +1548,7 @@ dsh plugin --profile web add dshmarket
 - [edge-sky/dsh-oauth-adapter](https://github.com/edge-sky/dsh-oauth-adapter) — 为 DSH Web 提供 OAuth 账号页面，目前支持 OpenAI Codex、GitHub Copilot、Anthropic、Kimi For Coding、OpenRouter 与 xAI。
 - [eghrhegpe/dsh-connect-qoder](https://github.com/eghrhegpe/dsh-connect-qoder) — 把本机已登录的 Qoder 应用中的模型接入 DeepSeek Harness，无需配置任何令牌，并在设置卡片上显示每个模型的费率与错峰窗口。
 - [elizax/dsh-http-proxy](https://github.com/elizax/dsh-http-proxy) — 把 globalThis.fetch 包一层，按目标域名让 DeepSeek Harness 的模型 API 请求走 HTTP/SOCKS 代理、其它请求保持直连，全程不改 Harness 源码。
-- [EmotionG/dsh-llm-config](https://github.com/EmotionG/dsh-llm-config) — 在设置页配置任意数量的模型供应商：各自独立设置接口地址、密钥与逐模型参数（思考强度、图片输入、重试策略），支持 OpenAI Chat、OpenAI Responses、Anthropic Messages 与 Google Gemini 四种协议。
+- [EmotionG/dsh-llm-config](https://github.com/EmotionG/dsh-llm-config) — 需要 DSH >= 0.2.0-rc.2 < 0.3.0。在设置页配置任意数量的模型供应商：各自独立设置接口地址、密钥与逐模型参数（思考强度、图片输入、重试策略），支持 OpenAI Chat、OpenAI Responses、Anthropic Messages 与 Google Gemini 四种协议。
 - [Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL](https://github.com/Eve-146T/DSH-CODEX-SUBSCRIPTION-POOL) — 在 DSH 中使用你的 ChatGPT/Codex 订阅，并支持图像生成和 Web 搜索。
 - [ffyuuu/dsh-llm-longcat](https://github.com/ffyuuu/dsh-llm-longcat) — LongCat-2.0 模型适配器：100 万上下文、二元思考模式、工具调用，基于 OpenAI 兼容接口的流式输出。
 - [fieldnote-ops/keyringseam](https://github.com/fieldnote-ops/keyringseam) — macOS Keychain 凭据提供器：替换本地文件提供器，并使用已签名、公证的通用二进制辅助程序。
@@ -5204,6 +5207,7 @@ dsh plugin --profile web add dshmarket
 - [单机游戏内 AI 同伴「小汤圆」](https://github.com/qimidandapigu/dsh-xiaotangyuan-game/tree/main/apps/harness-plugin) — 单机游戏内 AI 同伴「小汤圆」：理解游戏画面，支持文字或按住说话交流并语音回复；现已支持《星露谷物语》，《饥荒联机版》和《缺氧》正在迁移接入。
 - [qiqibabyy/dsh-pet-desktop](https://github.com/qiqibabyy/dsh-pet-desktop) — 独立置顶窗口的桌面宠物：直接导入 ~/.codex/pets 的 Codex 宠物，含亲密度段位、会话活动气泡、贴边吸附拖拽、右键可达的智能鼠标穿透；已装 dsh-usage 时自动对齐其当日 token 台账。
 - [Rain-Shuoyu/dsh-client-deep-sneak](https://github.com/Rain-Shuoyu/dsh-client-deep-sneak) — 摸鱼伴侣：右下角小窗播放 B站视频（原生播放器/弹幕/评论/搜索），agent 需要你时自动暂停提醒，处理完从原位置精确续播。
+- [raymondkm2025/dsh-go-game](https://github.com/raymondkm2025/dsh-go-game) — 圍棋插件：完整規則引擎、三檔內建 AI、死子估算、可選 LLM 覆盤、SGF 匯入匯出，以及可選的 KataGo GTP 引擎橋接。
 - [reisen-ww/dsh-bonk-pet](https://github.com/reisen-ww/dsh-bonk-pet) — DSH Web GUI 角落里的悬浮鲸鱼娘。agent 干活时它跟着内置歌曲唱歌；工具报错时天上掉钢管砸它脑袋。点它敲头上的铁盆，每敲一次扣 12 米饭——敲多了就饿，饿了会去讨饭，米饭随机出现在页面某处，它咻地冲过去吃掉。可拖动且始终留在视口内，吃米途中被抓住会挣扎，音量与玩法在设置里可调。全部素材、音效与歌曲都打包在插件内。
 - [says693/dsh-log-memory](https://github.com/says693/dsh-log-memory) — 会话日志守护弹窗：打开 Web 即提醒（间隔 10 分钟至 3 小时可调），一键增量备份 ~/.dsh/sessions 全部 session.jsonl(.zstd)，可选原始压缩或可读聊天记录两种格式，弹窗内可选备份文件夹。
 - [ShenpingDD/wooden-fish-dsh](https://github.com/ShenpingDD/wooden-fish-dsh) — 为 DeepSeek Harness Web 界面打造的电子木鱼桌宠。点击敲击、按天计数，设置页以日历热力图展示每日敲击与连续天数。
