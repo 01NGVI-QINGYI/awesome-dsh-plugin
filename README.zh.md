@@ -732,6 +732,7 @@ dsh plugin --profile web add dshmarket
 - [openAGFS/dsh-agfs](https://github.com/openAGFS/dsh-agfs) — 文件浏览器 Web 应用：React 前端与 REST API 由宿主 webserver 托管，/dsh-agfs 命令自动定位当前工作区，附 browse_files 模型工具。
 - [opencues/opencues#integrations-dsh](https://github.com/opencues/opencues/tree/master/integrations/dsh) — 在输入框内提供同义词替换与以下划线触发的补全：一行以 _ 结尾即自动补全，拼写错误在输入时即时标出。它走 dsh 已配置好的模型，因此无需额外的 API key。
 - [openma-ai/Martty#npm](https://github.com/openma-ai/Martty/tree/main/npm) — 面向 DeepSeek Harness 的 Rust/ratatui Agent TUI，支持流式工具调用、子代理、持久会话和可扩展的 Cordis 客户端界面。
+- [OrderG-X/dsh-video-preview](https://github.com/OrderG-X/dsh-video-preview) — 在对话流里直接播放本地视频和音频。play_video 工具把原生播放器渲染在每轮输出的收尾区（模型回复正下方，不用点任何东西），走 HTTP Range 流式传输，长视频能拖进度条、不会整个读进内存。同时注册了侧边栏媒体预览渲染器——内置预览器把 mp4 当作不可预览。
 - [orphiczhou/dsh-region-probe](https://github.com/orphiczhou/dsh-region-probe) — 只读的 Cordis Inspect provider，让 agent 能看见自己正在驱动的界面：outline() 报告运行中的壳实际渲染了哪些 UI 区域，含占用、几何与当前/历史失败状态；snapshot() 按 slot key 或 CSS 选择器返回某区域的渲染节点树（标签、角色、aria-label、自身文本、几何、计算样式）；failures() 保留「哪些区域渲染失败过、是否已恢复」的历史。寻址用壳为每个 slot 已写好的锚点，无需区域清单，也覆盖以后新增或其他插件贡献的区域。无界面、无工具、无依赖、不发网络请求。
 - [orphiczhou/dsh-session-tree](https://github.com/orphiczhou/dsh-session-tree) — 把左侧栏的会话列表替换为完整会话树：展示全部会话及其多层子智能体，点击节点即可进入该会话的多轮对话；并附带 tree_send 工具，可向树中任意可续接的子会话投递消息。
 - [oumaekumiko0821/dsh-splash-gojo](https://github.com/oumaekumiko0821/dsh-splash-gojo) — 用图片做全屏开机动画：启动 HTML 首帧即铺满画面并缓慢推近，横向光带扫过，左下进度与阶段提示，应用挂载完成后淡出。点击任意处或按 Esc / 空格 / 回车可跳过。
@@ -1926,6 +1927,7 @@ dsh plugin --profile web add dshmarket
 - [xingzhen199186/dsh-subagent-custom](https://github.com/xingzhen199186/dsh-subagent-custom) — 子代理模型管控：由 Jev 判定本轮任务类别，再把子代理自身的请求改写为该类别对应的 provider、model 与推理强度（在 agent/request 钩子上执行）；会话内可用继承/自动/手动三种方式指定模型，每个角色可带一条先于任务注入的前置提示词，并可离线回放历史判定。
 - [xuan666-lab/dsh-openrouter-provider-advisor](https://github.com/xuan666-lab/dsh-openrouter-provider-advisor) — 按量化、速度、缓存重度价格、上下文和可用率为当前 DSH 模型推荐 OpenRouter 供应商，并支持一键切换以帮助降低 token 成本。
 - [YangShen-SWE/dsh-plugin-simple-pet](https://github.com/YangShen-SWE/dsh-plugin-simple-pet) — Windows 二次元桌宠：查看 DeepSeek 余额与 Codex 额度，内置 Codex 多账号 OAuth 管理、逐账号额度与模型接入，支持简洁模式和设置自动保存。可选面板一键切号及逐账号授权的每日预热；多账号启动/5h满额触发暂不可用。
+- [yfwu2020/dsh-opencode-go-second](https://github.com/yfwu2020/dsh-opencode-go-second) — 添加独立的 OpenCode Go 连接，支持密钥设置、手动获取模型和按会话发送标识。
 - [yoshino-xiao7/dsh-codex](https://github.com/yoshino-xiao7/dsh-codex) — DeepSeek Harness 社区 Codex 模型接入：支持 ChatGPT OAuth、Codex 模型、图片输入、额度展示、单会话 Fast 与传输控制，以及安全的流式恢复。
 - [yoshino-xiao7/dsh-grok-provider](https://github.com/yoshino-xiao7/dsh-grok-provider) — Grok Build 模型接入插件：使用官方 CLI 浏览器登录，动态发现账号可见模型，支持流式推理、工具调用、额度与模型能力设置页。
 - [young-tim/dsh-llm-governor](https://github.com/young-tim/dsh-llm-governor) — 为 DSH 提供多模型访问控制、月度 Credits、手动/质量优先/额度优先/自动路由、失败重路由与 Usage 审计。
