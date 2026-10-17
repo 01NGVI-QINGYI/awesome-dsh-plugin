@@ -1,0 +1,5 @@
+url: https://github.com/27painter/dsh-moli
+name: 27painter/dsh-moli
+category: browser
+description:
+  en: 'Drives a locally installed Moli headless browser from DeepSeek Harness with two tools: rendered fetch, JavaScript evaluation, Markdown, semantic trees, screenshots and PDFs. Installs Moli when it is missing; verified on Windows and Linux.'
