@@ -1562,6 +1562,7 @@ dsh plugin --profile web add dshmarket
 - [DZQJOKER/dsh-plugin-local-model](https://github.com/DZQJOKER/dsh-plugin-local-model) — DeepSeek Harness 本地模型插件：在设置里管理 GGUF 模型，首条对话自动拉起 llama.cpp，空闲 5 分钟自动卸载释放显存。
 - [edge-sky/dsh-oauth-adapter](https://github.com/edge-sky/dsh-oauth-adapter) — 为 DSH Web 提供 OAuth 账号页面，目前支持 OpenAI Codex、GitHub Copilot、Anthropic、Kimi For Coding、OpenRouter 与 xAI。
 - [eghrhegpe/dsh-connect-qoder](https://github.com/eghrhegpe/dsh-connect-qoder) — 把本机已登录的 Qoder 应用中的模型接入 DeepSeek Harness，无需配置任何令牌，并在设置卡片上显示每个模型的费率与错峰窗口。
+- [elegant01/dsh-codearts](https://github.com/elegant01/dsh-codearts) — 把华为云 CodeArts 接入 DeepSeek Harness：内置华为云 OAuth2 登录（PKCE + DPoP），也支持粘贴 token；登录后即可在 DSH 对话窗口使用 CodeArts 提供的模型，并展示本机按账号统计的请求数与 token 用量。
 - [elizax/dsh-http-proxy](https://github.com/elizax/dsh-http-proxy) — 把 globalThis.fetch 包一层，按目标域名让 DeepSeek Harness 的模型 API 请求走 HTTP/SOCKS 代理、其它请求保持直连，全程不改 Harness 源码。
 - [EmotionG/dsh-llm-config](https://github.com/EmotionG/dsh-llm-config) — 需要 DSH >= 0.2.0-rc.2 < 0.3.0。在设置页配置任意数量的模型供应商：各自独立设置接口地址、密钥与逐模型参数（思考强度、图片输入、重试策略），支持 OpenAI Chat、OpenAI Responses、Anthropic Messages 与 Google Gemini 四种协议。
 - [ethanweave/dsh-connect-workbuddy](https://github.com/ethanweave/dsh-connect-workbuddy) — 在本机运行 OpenAI 兼容网关，让 DSH 使用已登录的腾讯 CodeBuddy（WorkBuddy）账号额度：一键安装脚本（含 SHA256 校验）、登录自启计划任务（带防重复启动）、manage.ps1 统一管理（status/start/stop/restart/logs/update/uninstall），并内置指导安装与排障的 Agent 技能。
@@ -2375,6 +2376,7 @@ dsh plugin --profile web add dshmarket
 - [yushenghai1106/dsh-memory-plugin](https://github.com/yushenghai1106/dsh-memory-plugin) — 为 DeepSeek Harness 提供人工记忆、自动对话保留以及图谱和向量排序召回的持久记忆插件。
 - [yuyolin/dsh-decision-log](https://github.com/yuyolin/dsh-decision-log) — DeepSeek Harness 决策日志：通过 decision_log / decision_list / decision_audit 工具把关键决策（选了什么 + 为什么）沉淀为可版本化的 DECISIONS.md，并在后续会话自动注入摘要，让决策可追溯、不重复、不推翻。
 - [zhang66633/dsh-memvault](https://github.com/zhang66633/dsh-memvault) — 把 DSH 接到本机 MemVault 记忆库：核心记忆块注入系统提示词、结束的轮次经由 MemVault 自己的管线抽取，并提供浏览、追溯、复核与重抽的面板。
+- [zhangj1164/dsh-mega-plugins#dsh-memo](https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/memo/dsh-memo) — 按 ISO 周组织的个人备忘服务：条目按周存储，周/月/季/年四种视图由同一份周期日历解析，支持 AI 分析与 Markdown 报告导出，修改非当前周需要显式确认，并可将遥测失败整理成 GitHub issue 报告。
 - [zhangzhenwen1/qmd-autosearch](https://github.com/zhangzhenwen1/qmd-autosearch) — 模型在知识库目录执行 grep/glob 搜索时自动补充 QMD 语义检索：零依赖 DSH 插件，异步注入下一步上下文，无需手动调用。
 - [zhaoyuntao-wl/dsh-plugin-thread](https://github.com/zhaoyuntao-wl/dsh-plugin-thread) — 带血缘的决策与目标记忆：显式命令与模型工具确定性记录决策，状态卡跨压缩重锚定，无损事件流 + BM25 分词检索兜底，场景级保真回归集作发布门禁。
 - [zhengjy01/dsh-flomo](https://github.com/zhengjy01/dsh-flomo) — 配置一次 flomo API URL / API Key，Agent 即可用 flomo_send 把笔记、摘要、待办写进 flomo（浮墨笔记）。
@@ -4451,6 +4453,7 @@ dsh plugin --profile web add dshmarket
 - [duyanta123/dsh-test-insight](https://github.com/duyanta123/dsh-test-insight) — 测试洞察插件：把仓库事实与变更风险转化为有证据支撑的测试计划与隔离、可人工审查的测试草稿。
 - [dxsdyhm/dsh-adb-logcat](https://github.com/dxsdyhm/dsh-adb-logcat) — Android Studio 风格 ADB logcat 查看器，支持实时过滤与等级配色。
 - [edusrez/dsh-smart-restart](https://github.com/edusrez/dsh-smart-restart) — DSH 重启后唤醒主 agent，让被打断的工作自动接着做；提供一个重启工具，以及可选的探针在启动异常时提前中止并告警。
+- [elegant01/agent-acta](https://github.com/elegant01/agent-acta) — 本地 AI agent 请求日志面板：聚合 atomcode、codebuddy、workbuddy、claude、codex、codearts、gemini、cursor、kimi、dsh 等本地日志，查看每轮耗时、token、缓存、上下文与工具调用。
 - [elk-9527/dsh-vscode#dsh-door](https://github.com/elk-9527/dsh-vscode/tree/main/packages/dsh-door) — 为正在运行的 DeepSeek Harness 内核提供仅监听本机回环地址的 ACP 接入点，供 VS Code 等本机客户端连接，共用模型、工具、记忆和会话，并支持历史查看、权限切换及调用 DSH 插件已注册的能力。
 - [Elohia/dsh-genome](https://github.com/Elohia/dsh-genome) — 能力转化与组装引擎（钱学森工程控制论/系统论框架）：静态常驻层管理 skill/MCP/插件三库、自动吸收技能与工具度量，驱动负反馈进化闭环（scan Sick/Weak → mutate → select 晋升/淘汰 → 30s 回滚）；含 Web UI 面板与 GitHub dsh-plugin 商店桥。
 - [enterhalf/dsh-web-network-optimizer](https://github.com/enterhalf/dsh-web-network-optimizer) — dsh网页端网络优化：通过缓存与压缩技术降低传输，从而大幅提升网页加载速度；同时提供网络断连指示与自动断网重连功能。非常适合追求极致性能或网络不稳定用户使用。
@@ -4702,6 +4705,8 @@ dsh plugin --profile web add dshmarket
 - [zampie/request-frame-preview](https://github.com/zampie/request-frame-preview) — 会话头部按钮：预览并下载 DeepSeek Harness 真正发给模型的请求帧——完整 system prompt、声明的工具数组 tools 与 wire 消息数组（system/user/assistant/tool-result），按 agent loop 读取所用的同一会话折叠重建。
 - [zebbkira/dsh-skills-mcp-manager](https://github.com/zebbkira/dsh-skills-mcp-manager) — DSH Web 设置内的技能与 MCP 管理器：在项目级与用户级技能目录间浏览/启用/导入/删除技能，并管理 stdio/streamable-http 的 MCP 服务器（真实连接，工具注册为 mcp__<server>__<tool>，配置存 ~/.dsh/mcp.json）。
 - [Zenjibad/dsh-plugin-toggle](https://github.com/Zenjibad/dsh-plugin-toggle) — 在 DSH 设置 → 插件页直接启用或停用插件：切换开关即时停止或启动插件（无需重启），并持久化，重启后依旧生效。
+- [zhangj1164/dsh-mega-plugins#dsh-github-issue](https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/github-issue/dsh-github-issue) — 面向 DSH 的 GitHub issue 服务：把遥测失败分析整理成统一格式的 issue 报告，构造预填的新建 issue 链接，并用部署配置的模型把一段自然语言描述改写为结构化 issue。
+- [zhangj1164/dsh-mega-plugins#dsh-telemetry](https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/telemetry/dsh-telemetry) — 面向 DSH 插件的本地遥测服务：把操作轨迹与错误事件写入 storage-domain KV 表，写入前按配置的规则脱敏，并按功能码锚点聚合单个插件的失败事件。
 - [zhangzhenwen1/dsh-task-effort](https://github.com/zhangzhenwen1/dsh-task-effort) — 根据任务自动调整模型推理档位（off/low/high/max）：任务分类判定、\[effort=...] 显式标记、轮内出错升级、DeepSeek 高峰计价时段自动限档省钱并显示切换倒计时、GUI 手动选择优先。
 - [zhengjy01/dsh-start](https://github.com/zhengjy01/dsh-start) — macOS 上 DSH Web 的一键启停启动器：前台/后台启动、停止、状态、防重复启动、自动打开浏览器，并可用脚本构建程序坞版 DSH.app。
 - [zhengjy01/dsh-updater](https://github.com/zhengjy01/dsh-updater) — 跟踪 DSH 官方版本并一键更新：读取 npm dist-tags 与 GitHub 更新说明，列出当前版本到目标版本之间每一个版本的更新点，给出分级风险清单（预发布、破坏性变更措辞、本机多份安装与 PATH 不一致、插件 dsh.engines.dsh 兼容性、备份与回滚可用性），再把安装交给分离助手——用 rename 原子备份当前安装、执行 npm、校验落地结果、用原命令重启，新版本起不来就自动回滚。
