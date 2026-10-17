@@ -362,6 +362,7 @@ dsh plugin --profile web add dshmarket
 - [flyhigao/dsh-file-transfer](https://github.com/flyhigao/dsh-file-transfer) — 在文档预览工具栏与 Files 文件树添加下载按钮（文件夹下载打包为流式 ZIP），并在文件树增加上传按钮：逐个文件流式写入 Host，单文件上限 1 GiB，重名自动改为 (n) 后缀而不覆盖。
 - [flyhigao/dsh-sticky-notes](https://github.com/flyhigao/dsh-sticky-notes) — DSH 工作区极简便签：在各个工作区保存多张 Markdown 便签，记录你的想法和项目进程。
 - [foooold/dsh-message-nav](https://github.com/foooold/dsh-message-nav) — 为 DeepSeek Harness Web UI 添加 Codex 风格的消息导航轨道，方便在长会话中快速定位历史提问。
+- [framefutura/dsh-mode-seat](https://github.com/framefutura/dsh-mode-seat) — 对话框常驻的 Agent 预设（模式）选择条：新任务直接切换模式，运行中的会话可一键设为新任务默认。
 - [Free-corner/dsh-chat-tools](https://github.com/Free-corner/dsh-chat-tools) — 对话列宽度与位置调节、带序号与快捷键跳转的提问历史（支持自动加载更早提问），以及对话区和文件预览区的 Markdown 大纲目录。
 - [Frog755/dsh-prompt-vault](https://github.com/Frog755/dsh-prompt-vault) — 输入框上方的提示词库：📚 按钮展开可搜索面板，点条目一键填入草稿（追加不覆盖）；数据以 JSON 文件保存在 Host 侧。
 - [Frog755/dsh-wallpaper](https://github.com/Frog755/dsh-wallpaper) — DSH Web 持久化背景图/视频插件：在 设置 -> 通用 中提供壁纸卡片，可选本地图片或 MP4（最大 300 MB），调节表层透明度与模糊；检测到 ffmpeg/ffprobe 时在本机把视频压缩为 H.264；媒体保存到 ~/.dsh/wallpapers；并将 Web 服务固定到 9191 端口以便重启后恢复壁纸。
