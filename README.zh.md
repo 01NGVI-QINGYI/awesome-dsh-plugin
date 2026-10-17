@@ -420,7 +420,7 @@ dsh plugin --profile web add dshmarket
 - [GooodWei/arcana](https://github.com/GooodWei/arcana) — DeepSeek Harness 的悬浮命令甲板：把所有斜杠命令列成可执行按钮，悬停看介绍，按使用次数排序。
 - [gorban/dsh-job-stop](https://github.com/gorban/dsh-job-stop) — 在会话头部的后台任务列表里停止正在运行的任务，确认弹窗会再次显示完整命令。
 - [gordan-code/dsh-jev-advisor](https://github.com/gordan-code/dsh-jev-advisor) — 为 DSH 选择题提供面向用户的 TypeSafe Jev 第二意见卡片，展示推荐、概率和置信度，支持推荐分歧提示、复制建议、一键采纳、卡片位置记忆及临时决策偏好，并提供可选发送前预览和常见凭证遮盖。
-- [GuanYang14700/dsh-hermes-panel](https://github.com/GuanYang14700/dsh-hermes-panel) — 把 Hermes 放进 DSH 的侧边栏：给它两个目录——运行时和数据目录——它就来启停网关与 dashboard、跑 Hermes 自带的体检脚本，再捎上 DSH ↔ Hermes 的桥。两个目录都是设置项，不猜路径，也不写死任何一台机器。
+- [GuanYang14700/dsh-hermes-panel](https://github.com/GuanYang14700/dsh-hermes-panel) — 把 Hermes 放进 DSH 的侧边栏：自己找到你的 Hermes，启停它的网关与 dashboard，跑 Hermes 自带的那份体检脚本，再捎上 DSH ↔ Hermes 的桥。任何装法都认——碰上没有那几个维护脚本的安装，三个按钮会礼貌地拒绝按下去，并说明原因。
 - [guchang/draw2code](https://github.com/guchang/draw2code) — 运行在 dsh-better-sidebar 中的 Excalidraw 协作原型插件：结构化澄清产品需求、保护用户手工修改的人机画板更新，以及基于原型的前端生成。
 - [guhanfei-ai/dsh-mindmap](https://github.com/guhanfei-ai/dsh-mindmap) — 对话式 Markdown 思维脑图工作台：逐步编辑完整文档，实时同步右侧可视化，并在工作目录中打开、管理和导出脑图。
 - [gulagala001/dsh-intelligent-ui](https://github.com/gulagala001/dsh-intelligent-ui) — 在 DSH 回复中呈现可本地操作的计算器、图表、表单、清单、模拟与小游戏，支持原生作品展开和界面状态保存恢复。
@@ -559,7 +559,7 @@ dsh plugin --profile web add dshmarket
 - [Lacquervii/smooth-cursor](https://github.com/Lacquervii/smooth-cursor) — 为 DSH Web 输入框提供流畅的彗星光标：以发光的彗星拖尾取代原生闪烁光标，随输入平滑滑动，可配置强调色、粗细与拖尾，并适配中文等 IME 输入。
 - [lakabuji-arch/dsh-model-accordion](https://github.com/lakabuji-arch/dsh-model-accordion) — 为 DSH Web 输入栏提供按 provider 折叠的模型选择器，并使用模型目录中的真实推理档位。
 - [lalalaleo/dsh-draft](https://github.com/lalalaleo/dsh-draft) — 基于 Markdown 的 dsh 草稿板插件，支持实时预览编辑，本地持久化。
-- [LanFeng97/dsh-workspace-create-dialog](https://github.com/LanFeng97/dsh-workspace-create-dialog) — Codex 式的创建工作区对话框：填名称就自动建出目录，或者选文件夹——原生选择窗口会记得你上次在哪。
+- [LanFeng97/dsh-workspace-create-dialog](https://github.com/LanFeng97/dsh-workspace-create-dialog) — Codex 式的创建工作区对话框：填名称就自动建出目录，或者选文件夹——原生选择窗口会记得你上次在哪（原生选择窗口仅 Windows 可用，其它平台请直接填名称）。
 - [langyo/dsh-mobile-upgrade](https://github.com/langyo/dsh-mobile-upgrade) — 需要 DSH 0.1.5-rc.1。dsh web profile 的手机端体验修复：窄屏抽屉与设置标签、全宽模型菜单、卡住请求的网络状态芯片，以及把会话层级、subagent 与后台任务芯片收进一张可点开面板的窄屏头部收纳器。
 - [LaoganR/dsh-novel-reader](https://github.com/LaoganR/dsh-novel-reader) — DSH 右侧栏本地 TXT 小说阅读器：书架三种导入、章节目录跳转、点击翻页与上下滚动、重启后进度恢复、字体/行距/背景/夜间阅读主题。
 - [laoye666-6/dsh-plugin-media-wallpaper](https://github.com/laoye666-6/dsh-plugin-media-wallpaper) — 为 DSH 提供图片/视频壁纸背景：GIF/APNG/动图 WebP/PNG/JPEG/MP4/WebM 魔数自动识别，压暗/亮度/高斯模糊，界面色调与字体颜色自动跟随背景，各组件独立透明度，预置壁纸一键应用。
@@ -1549,7 +1549,7 @@ dsh plugin --profile web add dshmarket
 - [johnsonspirit/ocean-wave-theme](https://github.com/johnsonspirit/ocean-wave-theme) — 整个应用背景铺设动态海浪特效，一条鲸鱼在页面后面游泳，界面各层变为半透明。
 - [Jonah-Wu23/dsh-bg-carousel](https://github.com/Jonah-Wu23/dsh-bg-carousel) — 把媒体目录中的图片与视频自动轮换为 DSH 界面背景，面板可调轮播间隔与界面透明度。
 - [Juryorca/dsh-custom-theme-import](https://github.com/Juryorca/dsh-custom-theme-import) — DSH Web 皮肤管理器：支持主流 DSH 皮肤包本地/GitHub 导入、扫描已安装皮肤、预览/使用/禁用/刷新/删除，宿主持久化。
-- [kang200862/dsh-firefly-spring-skin](https://github.com/kang200862/dsh-firefly-spring-skin) — 流萤「春日手信」主题皮肤。覆盖 87 个 --dsw-alias-* 官方设计令牌（明暗两套），绘制春日橱窗背景与飘落花瓣、萤火；布局两侧各放一张人物立绘，中央用径向聚光遮罩保证文字对比度；在设置里注册分区，提供皮肤与立绘两个开关，选择存在 localStorage。
+- [kang200862/dsh-firefly-spring-skin](https://github.com/kang200862/dsh-firefly-spring-skin) — 流萤「春日手信」主题皮肤。覆盖 74 个 --dsw-alias-* 官方设计令牌（明暗两套），绘制春日橱窗背景与飘落花瓣、萤火；布局两侧各放一张人物立绘，中央用径向聚光遮罩保证文字对比度；在设置里注册分区，提供皮肤与立绘两个开关，选择存在 localStorage。
 - [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) — DSH Web 壁纸皮肤：预设 / 图片 URL / 本地上传，透明度滑块让整面界面透出壁纸。
 - [kiligzzz/dsh-ui-appearance](https://github.com/kiligzzz/dsh-ui-appearance) — 基于 TQSY114514/dsh-ui-appearance 的定制 fork，提供主题调色、壁纸与毛玻璃，并修复与 better-sidebar 0.18.0 共用时的重复留白。
 - [KinGao294/dsh-skin](https://github.com/KinGao294/dsh-skin) — Codex 风格皮肤切换器 + 自定义壁纸层，可调透明度与模糊。
@@ -1795,6 +1795,7 @@ dsh plugin --profile web add dshmarket
 - [GooDAnDReaDY/dsh-model-sync](https://github.com/GooDAnDReaDY/dsh-model-sync) — 自动从服务商同步 API Key 提供方的模型列表，无需手动维护。
 - [GooDAnDReaDY/dsh-subscriptions](https://github.com/GooDAnDReaDY/dsh-subscriptions) — 通过 OAuth 将 ChatGPT Codex、Claude、Grok 与 Antigravity 订阅注册为 DeepSeek Harness 的 LLM 提供方，无需为其配置 API Key。
 - [GrannyProgramming/dsh-dario-sidecar](https://github.com/GrannyProgramming/dsh-dario-sidecar) — 随 DSH 启动并管理 dario 代理（把 Claude/ChatGPT 订阅当 API 用），就绪门控、随停随止，订阅模型路由开箱即用。
+- [greatyao/dsh-connect-cursor](https://github.com/greatyao/dsh-connect-cursor) — 把本机已登录的 Cursor 桌面应用接入 dsh，原生 LlmAdapter 直连：从 state.vscdb 或 auth.json 读登录态，驱动 agent.v1.AgentService/Run 的 HTTP/2 双向流，把 InteractionUpdate 增量翻成 dsh StreamChunk，不走 loopback 代理。支持 macOS / Windows / Linux。
 - [HaoyueQin/dsh-better-reasoning-effort](https://github.com/HaoyueQin/dsh-better-reasoning-effort) — 为第三方供应商模型按模型配置思考强度与输入模态：知识库与原始 /models 端点取证融合建议并标注置信度，在官方「模型」页卡片内直接编辑。
 - [HaydenSmith1121/dsh-opencode-go-plus](https://github.com/HaydenSmith1121/dsh-opencode-go-plus) — 把 OpenCode Go 订阅模型接入 DeepSeek Harness：每隔几分钟重新解析网关实时目录，内置表里没有的模型按同族自动适配，支持流式输出、工具调用、图片输入与订阅额度显示。这是 dsh-opencode-go 的维护分支：与上游包争用 llm-opencode-go 设置命名空间时安静退场，而不是让整棵插件树加载失败；opencode-go 路由已被占用时改用 opencode-go-plus 路由继续服务。
 - [HB00/dsh-llm-failover](https://github.com/HB00/dsh-llm-failover) — 限流或配额耗尽时自动切换模型提供方：可按提供方配置模型，带冷却机制与永久最终兜底。
@@ -3389,7 +3390,7 @@ dsh plugin --profile web add dshmarket
 - [Yijian-quiet/dsh-mol#dsh-ui](https://github.com/Yijian-quiet/dsh-mol/tree/main/dsh-ui) — DSH Web 界面里的化学工作台面板。在 Ketcher 画板上画结构（构建由脚本下载，浏览器本地渲染、不经后端），然后对本机 RDKit 直接计算，不调用模型——分子式、分子量、精确质量、logP、TPSA、氢键供体与受体、环数、Fsp3、立体中心，Lipinski 与 Veber 逐条判定、QED、PAINS/BRENK 结构警报与 Murcko 骨架，另有 SMARTS 子结构匹配、指纹相似度、格式互转、标准化与批量清洗。逆合成页签通过「JSON 进 JSON 出」的单进程协议对接可插拔后端（默认 Retro*），后端没装好时如实说明缺什么，不编造路线。实际计算由本仓库的 Python 包（rdkit）完成，需另外 pip 安装。
 - [Yinxe/deepseek-harness-plugins#mcwiki-search](https://github.com/Yinxe/deepseek-harness-plugins/tree/main/plugins/mcwiki-search) — 查询中文 Minecraft Wiki（MediaWiki API），把搜索结果与页面全文完整转换为 AI 可直接阅读的干净文本——搜索、引言、全文 Markdown、随机条目；模板、引用、图片、跨语言链接等噪声在插件内部全部清洗完毕。
 - [YiRan0/dsh-bangumi](https://github.com/YiRan0/dsh-bangumi) — DSH 追番订阅管理器：Bangumi 查番、nyaa/dmhy 搜种、qBittorrent 自动下载（RSS 判新轮询）、本地媒体库查重，附日历/进度侧边栏 GUI 与 11 个 LLM 工具（bangumi_lookup / bangumi_search / bangumi_subscribe / bangumi_unsubscribe / bangumi_list / bangumi_progress / bangumi_calendar / qb_status / qb_configure / qb_add_torrent / library_scan）。
-- [yiyunet/dsh-dingtalk-connector](https://github.com/yiyunet/dsh-dingtalk-connector) — DSH 插件：包装钉钉官方 dws CLI，读写钉钉 AI 表格，提供 10 个 dingtalk_aitable_* 工具、设置面板与定时 CSV 导出。
+- [yiyunet/dsh-dingtalk-connector](https://github.com/yiyunet/dsh-dingtalk-connector) — DSH 插件：包装钉钉官方 dws CLI，读写钉钉 AI 表格，提供 10 个钉钉 AI 表格工具（9 个 `dingtalk_aitable_*` 加 1 个 `dingtalk_sync_job`）、设置面板与定时 CSV 导出。
 - [yiyunet/dsh-mcp-client-manager](https://github.com/yiyunet/dsh-mcp-client-manager) — DSH 插件：一块设置面板管理 @deepseek-ai/dsh-mcp-client 的 MCP 行——列出、新增、改写、启停，不必再手写 cordis.patch.yml；零构建、零运行依赖。
 - [yoursc/dsh-siyuan](https://github.com/yoursc/dsh-siyuan) — 把思源笔记（SiYuan）接入 DeepSeek Harness：17 个 siyuan_* 宿主工具，覆盖笔记本与文档列表、全文检索、SQL 查询、读取文档与块、新建与追加内容、移动与重命名文档、日记与块属性，另提供一个 Web 设置页配置思源地址、API token 与逐工具开关。
 - [Yu-tao-Li/dsh-computer-use-win](https://github.com/Yu-tao-Li/dsh-computer-use-win) — 为 DeepSeek Harness 提供 Windows 电脑操控：MCP stdio 服务器 + PowerShell UIA 后端，22 个桌面工具（UIA 树、截图、键鼠输入、OCR、窗口管理、急停保护）。
@@ -4216,7 +4217,7 @@ dsh plugin --profile web add dshmarket
 - [Asif2BD/JARVIS-Mission-Control-DeepSeek#dsh-plugin-mission-control](https://github.com/Asif2BD/JARVIS-Mission-Control-DeepSeek/tree/main/integrations/deepseek-harness/dsh-plugin-mission-control) — 把 DeepSeek Harness 的会话、消息、工具活动与每轮结果实时推送到 JARVIS Mission Control 看板，附任务状态与人工复核。
 - [azwosile/dsh-tripo-studio#plugin](https://github.com/azwosile/dsh-tripo-studio/tree/main/plugin) — 用于参考图生成、裁剪、分件 Tripo 3D 建模与本地资产预览的可视化工作台，收费操作须逐次确认。
 - [baosfeng/my-dsh-plugins#dsh-task-reliability](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-task-reliability) — 任务可靠性：模型超时/请求失败自动重试、任务未完成自动继续、独立完成度校验、思考重复检测打断、休眠/重启后任务自动恢复、自主决策模式、远程触发接口（npm: `dsh-task-reliability`）。
-- [bbskye5008/dsh-task-runner](https://github.com/bbskye5008/dsh-task-runner) — 通过 /task-run 或 CLI 协调 PUA 与 Completion Guard 长任务，冻结验收通过且当前候选与 Goal 证书有效后才允许完成，最多 8 轮、90 分钟。已验证 macOS Desktop 0.2.0-rc.2，需先安装 PUA 0.3.27 和 Completion Guard 0.9.0。
+- [bbskye5008/dsh-task-runner](https://github.com/bbskye5008/dsh-task-runner) — 通过 /task-run 或 CLI 协调 PUA 与 Completion Guard 长任务，冻结验收通过且当前候选与 Goal 证书有效后才允许完成，最多 8 轮、90 分钟。已验证 macOS Desktop 0.2.0-rc.2。自 0.3.7 起已内置 PUA 0.3.27、Completion Guard 0.9.0 与 SpecWorkflow 0.1.1，只需安装 Task Runner 本身。
 - [Bear0117/dsh-plan-checkup](https://github.com/Bear0117/dsh-plan-checkup) — 在你同意执行计划前逐步检查每一步，用命令规则加上 Jev 或支持 logprobs 的 OpenAI 兼容端点，在计划审阅卡片上标出无法恢复、影响工作区以外、需求没提到或描述太模糊的步骤。
 - [BillyChen123/qdd](https://github.com/BillyChen123/qdd) — 面向 DeepSeek Harness 的 Question-Driven Discovery 科研工作流，提供 QDD Agent Preset、持久化 Human 和 Auto 运行，以及可审计的研究面板。
 - [BinXie-lixiangdehua/dsh-devflow](https://github.com/BinXie-lixiangdehua/dsh-devflow) — 面向 DeepSeek Harness 的多 Agent 交付编排：总指挥派发 + 固定/临时员工 + 落盘任务状态机，右侧栏提供画布与名册面板。
@@ -5217,7 +5218,7 @@ dsh plugin --profile web add dshmarket
 - [weibaohui/dsh-fde-tools](https://github.com/weibaohui/dsh-fde-tools) — FDE 工具箱全家桶：安装一个插件带上一批常用 dsh 插件（代码仓库 / 挂载盘 / 知识库 / 定时任务 / 自动续跑 / 界面微调 / 自动复盘 / 文件管理 / 智能标题 / 任务看板 / 插件市场 / 上下文 / IM 接入 / 侧栏增强），面板看状态、一键补装。
 - [weibaohui/dsh-sync](https://github.com/weibaohui/dsh-sync) — 多机同步：让多台机器上的 dsh 通过一个私有 GitCode 仓库保持一致——技能、会话、设置、插件清单四类内容各有独立开关；变更走分支 → PR → 合并，推送前自动回填远端新增防误删，支持 AI 智能对齐（语义合并双方改动）与一键解决冲突；强制私有仓库，pull 不覆盖本地改动。
 - [weijiafu14/pi2dsh](https://github.com/weijiafu14/pi2dsh) — Pi Host ABI 兼容引擎：装一次之后，npm 上的 Pi 扩展原包经 `dsh plugin add <pi-package>` 直接作为 DSH 原生插件挂载。已在官方 DSH 上端到端验证 pi-mcp-adapter（完整 MCP 管理面：OAuth、resources、prompts、MCP Apps、elicitation、sampling）、@tintinweb/pi-subagents、pi-code、pi-hermes-memory、pi-background-tasks；`pi2dsh inspect` 在安装前报告一个包的兼容情况。
-- [Why-147369/dsh-line-pool#dsh-line-pool](https://github.com/Why-147369/dsh-line-pool/tree/main/dsh-line-pool) — DSH 出站线路池。内置 15 条种子线路 + 20 条候选池，覆盖 7 类目标（GitHub raw/codeload/main、npm registry、PyPI index、HuggingFace、通用）。线路投入使用前均经验证：上游 IP 表走 **TLS 握手 + 完整证书链校验**（纯 TCP 判据会被本地应答伪造，把死 IP 报成可用）；失败沿 2/5/15 分钟冷却阶梯递进，按目标类型选最快健康线路。线路经四种改写规则之一生效（前缀、registry、index、域名替换），并通过三条路径抵达 git/pip/npm/pnpm/gh/curl/wget：**shell 拦截**（模型跑的每条下载命令自动改写）、**两个注册给模型的工具**（line_pool_status、line_pool_run）、子进程传递。**多行命令保持原有换行、只改下载那一段**；**带凭据的 URL（user:token@host）一律不改写**，避免 token 被转发到第三方镜像；全程不改动任何全局配置。侧边栏面板列出每条线路的延迟、失败原因与冷却倒计时，支持单条重测与启停，并常驻显示 **TUN 开关与本地代理端口**（网卡名 + 回环端口探测，数秒内刷新）；候选池每 24 小时重新验证，自动纳入新可用线路、剔除失效线路。570 项测试、87% 行覆盖率。
+- [Why-147369/dsh-line-pool#dsh-line-pool](https://github.com/Why-147369/dsh-line-pool/tree/main/dsh-line-pool) — DSH 出站线路池。内置 15 条种子线路 + 20 条候选池，覆盖 7 类目标（GitHub raw/codeload/main、npm registry、PyPI index、HuggingFace、通用）。线路投入使用前均经验证：上游 IP 表走 **TLS 握手 + 完整证书链校验**（纯 TCP 判据会被本地应答伪造，把死 IP 报成可用）；失败沿 2/5/15 分钟冷却阶梯递进，按目标类型选最快健康线路。线路经四种改写规则之一生效（前缀、registry、index、域名替换），并通过三条路径抵达 git/pip/npm/pnpm/gh/curl/wget：**shell 拦截**（模型在 bash 工具里跑的下载命令自动改写；被 pwsh 工具包装的命令、宿主自身与渲染进程发起的 fetch 不在覆盖范围）、**两个注册给模型的工具**（line_pool_status、line_pool_run）、子进程传递。**多行命令保持原有换行、只改下载那一段**；**带凭据的 URL（user:token@host）一律不改写**，避免 token 被转发到第三方镜像；全程不改动任何全局配置。侧边栏面板列出每条线路的延迟、失败原因与冷却倒计时，支持单条重测与启停，并常驻显示 **TUN 开关与本地代理端口**（网卡名 + 回环端口探测，数秒内刷新）；候选池每 24 小时重新验证，自动纳入新可用线路、剔除失效线路。570 项测试、87% 行覆盖率。
 - [william-jin-cmu/dsh-evolve](https://github.com/william-jin-cmu/dsh-evolve) — 自进化：agent 在会话内给自己热挂载/卸载持久化插件。
 - [wiyi/dsh-web-service-manager](https://github.com/wiyi/dsh-web-service-manager) — 在设置面板中管理 DSH Web 服务:状态、版本、重启、停止与一键更新。
 - [wjvalue/dsh-mac-keep-awake](https://github.com/wjvalue/dsh-mac-keep-awake) — 仅 macOS：任意 DSH 会话运行期间持有 PreventUserIdleSystemSleep 断言（caffeinate -i -w <宿主 pid>），最后一个会话结束后释放，长时间回合不会因空闲休眠被切断；屏幕仍可正常息屏。它会一直持有跨过 maintenance 阶段——该阶段 Agent.status 报 idle 而手动 /compact 正在跑，靠 compaction/start 与 compaction/end 事件兜住。每 60 秒与 ctx.agents.list() 对账，插件热重载时已在运行的会话立即被接管，不必等到下一个回合边界。持有失败按指数退避重试、上限 60 秒且永不放弃；释放时先 SIGTERM，2 秒未退出升级 SIGKILL；带 -w，宿主崩溃时 caffeinate 自行退出。无前端半身，通过 profile patch 配置。共 51 个测试，其中 2 个在真机上直接读 pmset -g assertions。
