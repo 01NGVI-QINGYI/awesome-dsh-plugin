@@ -1,0 +1,5 @@
+url: https://github.com/MrGnUm/dsh-continue-button
+name: MrGnUm/dsh-continue-button
+category: ui
+description:
+  en: 'Adds a one-click Continue button beside Send that resumes a stopped turn by sending the "continue" prompt; hidden while a turn is running or the session is empty.'
