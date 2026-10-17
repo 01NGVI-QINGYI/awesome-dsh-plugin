@@ -1892,6 +1892,7 @@ dsh plugin --profile web add dshmarket
 - [songoao25/dsh-chatgpt-subscription](https://github.com/songoao25/dsh-chatgpt-subscription) — 通过官方 OAuth 绑定你的 ChatGPT 账号，在 DSH 内直接使用 ChatGPT 模型对话，消耗 Plus/Pro 订阅额度。
 - [songzhiyin/dsh-local-model](https://github.com/songzhiyin/dsh-local-model) — 注册一个本地 LLM provider，把模型请求转发到 OpenAI 兼容端点或 Ollama 原生 API，并在「设置 → 模型」页提供连接测试卡片，无需登录账号。
 - [SpookySandwich/dsh-plugin-rollout-scout](https://github.com/SpookySandwich/dsh-plugin-rollout-scout) — 检测账号当前被分配到哪个对话模型：并发发起一次性探测会话，按段落开头的写法为流式思维链打分，读起来像旧模型的在数秒内中止。附带离线自检，用同一分类器回放 13 条人工标注的思维链。
+- [star-Cosmo/dsh-model-tidy](https://github.com/star-Cosmo/dsh-model-tidy) — DSH 模型列表整理：把任意模型从选择器隐藏、给它改一个自己的显示名（保留厂商计费倍率），并用箭头调整排序；支持搜索、渠道级批量开关与一键恢复。只改显示，不重写任何渠道配置。
 - [starefinger/dsh-llm-qwen-local](https://github.com/starefinger/dsh-llm-qwen-local) — 面向 vLLM OpenAI 兼容端点上本地部署的 Qwen 模型的 LLM 适配器插件,支持按模型多模态开关、完全可配置的推理档位,以及可在前端编辑部署配置的 Web 设置页。
 - [stoneface10/dsh-codex-connect-plus](https://github.com/stoneface10/dsh-codex-connect-plus) — 为 DSH 添加基于 ChatGPT/Codex OAuth 的 Codex 模型及 gpt-image-2 文生图和编辑能力，无需 OpenAI Platform API Key。
 - [Stormycry-cryp/dsh-AuthInOne](https://github.com/Stormycry-cryp/dsh-AuthInOne) — 为 DeepSeek Harness 47f 提供账号登录、API 与自定义 Provider 配置、模型切换、纯文本模型图片兜底，以及 Token 与费用归因。
@@ -5191,6 +5192,7 @@ dsh plugin --profile web add dshmarket
 - [zhangzhenwen1/dsh-task-effort](https://github.com/zhangzhenwen1/dsh-task-effort) — 根据任务自动调整模型推理档位（off/low/high/max）：任务分类判定、\[effort=...] 显式标记、轮内出错升级、DeepSeek 高峰计价时段自动限档省钱并显示切换倒计时、GUI 手动选择优先。
 - [zhengjy01/dsh-start](https://github.com/zhengjy01/dsh-start) — macOS 上 DSH Web 的一键启停启动器：前台/后台启动、停止、状态、防重复启动、自动打开浏览器，并可用脚本构建程序坞版 DSH.app。
 - [zhengjy01/dsh-updater](https://github.com/zhengjy01/dsh-updater) — 跟踪 DSH 官方版本并一键更新：读取 npm dist-tags 与 GitHub 更新说明，列出当前版本到目标版本之间每一个版本的更新点，给出分级风险清单（预发布、破坏性变更措辞、本机多份安装与 PATH 不一致、插件 dsh.engines.dsh 兼容性、备份与回滚可用性），再把安装交给分离助手——用 rename 原子备份当前安装、执行 npm、校验落地结果、用原命令重启，新版本起不来就自动回滚。
+- [zhengqiuyang/dsh-janitor](https://github.com/zhengqiuyang/dsh-janitor) — 注册 janitor_scan 工具：对会话遗留物（计划文档、临时脚本）给出确定性、可审阅的清理计划，逐文件裁决附证据；只扫描，永不删除。
 - [Zhenyu98/dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) — 上下文注入审计：统计指令链/技能目录/工具 schema 的 token 成本，检测重复与冲突。
 - [zhxnix/dsh-wx-preview](https://github.com/zhxnix/dsh-wx-preview) — 在 DSH 右边栏预览原生微信小程序，提供本地运行时与 WXML 源码定位。
 - [zjukop/dsh-time-machine](https://github.com/zjukop/dsh-time-machine) — 创建本地内容寻址工作区存档，提供差异预览和两阶段确认恢复。
@@ -5382,6 +5384,10 @@ dsh plugin --profile web add dshmarket
 - [yzxxy010/dsh-workspace-write-plus](https://github.com/yzxxy010/dsh-workspace-write-plus) — 增加工作区修改++权限档，文件工具仍锁在工作区，可用通配符放行 Git Bash 等程序以跳过 Windows 进程沙箱。
 - [zhang8019/dsh-permission-matrix](https://github.com/zhang8019/dsh-permission-matrix) — 把 DSH 权限拆成 9 个可选预设（3 种沙箱 × 4 种审批），规则 + LLM 双通道四档风险分级，高风险操作需输入批准密码才放行，附 JSONL 审计日志。
 - [zhangmiao03/cloakpack#dsh-cloak](https://github.com/zhangmiao03/cloakpack/tree/main/packages/dsh-cloak) — DeepSeek Harness 的上下文防火墙：成功的纯文本工具结果中的凭据在进入模型之前先变成不透明的 ⟦cloak:category:n⟧ 占位符，原值只保存在进程内存的 agent 级保险库中。36 类内置签名（与 cloakpack git pre-push 守卫共享同一引擎）、针对未知格式的键名规则、自定义正则、dry-run 模式、审计日志与 /cloak 命令。
+- [zhengqiuyang/dsh-egress-gate](https://github.com/zhengqiuyang/dsh-egress-gate) — 确定性网络出口门：网页抓取与搜索在 tools/pre-execute 按目的地白名单校验，越权即拒；shell 抓取动词默认观察，可选拦截。
+- [zhengqiuyang/dsh-freeze](https://github.com/zhengqiuyang/dsh-freeze) — 密闭组合锁：对 profile 的依赖、组合顺序、锁文件与补丁层取指纹；组合漂移时启动告警，strict 模式直接失败（CI 的 --frozen 姿态）。
+- [zhengqiuyang/dsh-mcp-test](https://github.com/zhengqiuyang/dsh-mcp-test) — 工具面快照与漂移门：全量可见工具注册表（含 MCP 工具）基线化为可提交的 JSON，升级新增、移除或改动工具时响亮告警。
+- [zhengqiuyang/dsh-prompt-drift](https://github.com/zhengqiuyang/dsh-prompt-drift) — 系统提示词面漂移门：任何插件或预设注入组装提示词的段落均哈希基线化，对模型被告知内容的静默改写将响亮报错。
 - [zjuhbh/dsh-full-with-approval](https://github.com/zjuhbh/dsh-full-with-approval) — dsh 第四个权限预设：进程全权限（GPU 可用），同时工作区外与受保护文件（.git/**、.env*）的写入逐次向用户审批；纯插件实现，零核心改动。
 - [zoahdev/dsh-poison-guard](https://github.com/zoahdev/dsh-poison-guard) — DSH 插件安装前投毒扫描：AST（JS-X-Ray）+ 去混淆解码 + 正则启发式，发现即非零退出，可作 CI 门禁。
 - [zzstar101/dsh-sandbox-noop-escalation](https://github.com/zzstar101/dsh-sandbox-noop-escalation) — 去掉那些不会让当前沙箱模式变宽的 sandbox_permissions / justification 参数，避免调用报错「sandbox escalation to "workspace-write" is not strictly wider than this call's current "danger-full-access" mode」。GPT 系列模型往往每次调用都会填这两个可选参数，并选 workspace-write，而它比 danger-full-access 更窄。插件在 tools/pre-execute 阶段把请求的模式和会话沙箱策略给出的当前模式做比较：相同或更窄时去掉这两个字段（只有 justification 时也会去掉）。同时兼容 GPT 从 Codex shell 工具带过来的取值：null、空值和 use_default 视为没有请求；会话已经是 danger-full-access 时，任何取值（包括 require_escalated）都会去掉，因为不存在更宽的模式。真正的升权请求、无法识别的模式值，以及没有声明 DSH 升权参数的工具，都原样交给 DSH 处理。不会放宽任何权限。监控的工具列表可配置（默认 bash、pwsh、write、edit、run_code）。零依赖。
