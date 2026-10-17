@@ -1,0 +1,6 @@
+url: https://github.com/WuJiaoJue/dsh-group-status
+name: WuJiaoJue/dsh-group-status
+category: ui
+description:
+  en: 'Aggregated status badges on collapsed workspace folder rows: running (spinner), pending (yellow dot), completed (green dot), plus scheduled and review icons from dsh-later / dsh-gitea-dispatch — hover for details. (folder badge / group status / collapsed status / workspace sidebar)'
+  zh: '收起的文件夹行也能看见活：转圈进行中、黄点待审批、绿点已完成，再挂上定时任务与等待评审图标（来自 dsh-later / dsh-gitea-dispatch），带数字、悬停看明细；展开后一个像素都不改。（折叠徽标 / 分组状态 / 侧栏状态）'
