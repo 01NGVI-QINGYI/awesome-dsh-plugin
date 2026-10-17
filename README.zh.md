@@ -168,6 +168,7 @@ dsh plugin --profile web add dshmarket
 - [AliceLJY/dsh-thumb](https://github.com/AliceLJY/dsh-thumb) — 网页版界面的手机外壳：侧栏改为覆盖式抽屉、点会话自动收起，设置面板改全屏单列，正文排版按手机阅读距离重调。
 - [alingalingling/ui-status-label](https://github.com/alingalingling/ui-status-label) — 把鲸鱼娘思考时的 "deep diving" 状态文案自定义成任意你想要的样子。
 - [Aliuyanfeng/dsh-soul](https://github.com/Aliuyanfeng/dsh-soul) — 为 Agent 提供个性化设置：Web 设置栏目（关于你、回复风格和语调、标题与列表 / 表情符号特质、输出语言、自定义指令）与 `/soul` 命令；昵称 / 职业 / 介绍 / 风格 / 特质 / 语言编译进提示词并推送给所有活动会话。向其他插件暴露 `soulConfig` 服务，并注册 Agent 可调用的 `set_persona` 工具。
+- [ALIve114514awa/dsh-prompt-optimizer](https://github.com/ALIve114514awa/dsh-prompt-optimizer) — 在 Web、桌面端和 TUI 中使用 Harness AI 或原生 Codex 澄清并优化提示词，预览可编辑，确认后仅填入草稿。
 - [All3nCN/dsh-better-sidebar-N23](https://github.com/All3nCN/dsh-better-sidebar-N23) — dsh-better-sidebar 完整工作台 fork：资源管理器、编辑器、终端、Git、浏览器与分屏，外加仿 VSCode 外壳重构（全宽紧凑顶栏与活动栏）；npm 包名 @all3cn/dsh-better-sidebar-n23。
 - [AloneFu/dsh-calendar-plugin](https://github.com/AloneFu/dsh-calendar-plugin) — DSH 右侧栏里的 Obsidian 日记、待办与 Day Planner 时间块：周一起始的月历（带每天的字数点与任务点）、紧凑时间轴（HH:mm 时间块）、选中日的日记摘要与任务列表；勾选状态、任务内容与时间都会写回 Markdown 文件，首次使用有向导，可自动找到知识库或手填路径。
 - [Amengclass/dsh-settings-hub](https://github.com/Amengclass/dsh-settings-hub) — 统一收纳 DeepSeek Harness 里的第三方插件设置：自动发现、分组，并在一个可折叠的导航入口下拖拽排序。
@@ -4451,6 +4452,7 @@ dsh plugin --profile web add dshmarket
 - [JohnXu22786/session-export](https://github.com/JohnXu22786/session-export) — DeepSeek Harness 会话导出与合规归档：确定性脱敏、Markdown/JSONL/PDF 导出、磁盘归档管理与趋势/审计视图。
 - [jorinyang/dsh-clawshell](https://github.com/jorinyang/dsh-clawshell) — 运行时自愈层：资源控制闭环（策略切换 + 修复升级链）、错误风暴与 fiber 失败洞察、跨会话知识传承，附自愈可视化面板与 7 个工具。
 - [jorinyang/dsh-doctor](https://github.com/jorinyang/dsh-doctor) — DSH 环境诊断、分级修复与一键回滚，附带运行时自愈服务。
+- [kaine380/dsh-mcp-unified-panel](https://github.com/kaine380/dsh-mcp-unified-panel) — 一站式 MCP 与技能管理中心，支持特征识别与原生 OAuth 2.1 浏览器鉴权。
 - [kanneiren/dsh-network-settings](https://github.com/kanneiren/dsh-network-settings) — 可视化 DSH 进程在 Windows 或 WSL 上的网络链路（DNS/TCP/TLS/HTTP 分层探测），检测失效的代理配置，并提供带快照回滚的安全修复。
 - [keyiadiannao/dsh-power-button](https://github.com/keyiadiannao/dsh-power-button) — 一个小而自洽的 DSH 电源控制插件：侧边栏电源按钮 + 上拉「重启/关机」菜单 + Windows 关机风格过渡遮罩。自带重启/关机引擎（不依赖其它插件），动态端口适配。
 - [KhaosGx/dsh-stop-service](https://github.com/KhaosGx/dsh-stop-service) — DSH Web 设置页的服务控制面板：实时宿主信息（PID、版本、运行时长、内存/CPU 趋势、活跃会话）、npm 更新提醒，以及带确认的优雅停止——任务运行时发出警告，也可等待任务结束后自动停止。
@@ -4607,6 +4609,7 @@ dsh plugin --profile web add dshmarket
 - [wyzh0117/dsh-port-manager](https://github.com/wyzh0117/dsh-port-manager) — dsh 原生右侧栏页签：列出本机监听的端口及占用它的进程，并可对每个端口执行打开、复制地址、定位工作目录或结束进程。
 - [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) — 开发配套守护：滚动快照、插件失败自动回退、启动失败救援、设置页管理面板。
 - [x2802490130-prog/dsh-shield](https://github.com/x2802490130-prog/dsh-shield) — 脱手模式安全网：agent 删除的目录先进回收站、链接绝不跟随，零审批。
+- [xiaocxiaohai666/dsh-plugin-selfcheck](https://github.com/xiaocxiaohai666/dsh-plugin-selfcheck) — 启动时打印 DeepSeek Harness 插件树中每一行的状态（失败的附异常内容），并检查依赖版本漂移、配置文件合法性、端口可达性与已注册工具。
 - [xiaoso456/dsh-run-config](https://github.com/xiaoso456/dsh-run-config) — DSH 的 IDE 风格运行配置：把常用 LLM 提示词和 Shell 命令保存为可复用的运行配置（全局或按工作区），在会话头部或新会话页一键运行，大模型可通过 task_run_config 工具管理（写操作走审批）。
 - [xiaoyuyu6420/dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) — 一键备份与恢复 DSH 用户数据，附可视化设置面板：定时自动备份、sha256 校验、失败自动回滚的加固恢复、分类型子集备份（--types）、凭据脱敏进本机 vault、GitHub 同步跨机迁移、宿主起不来时的进程外救援通道。/backup doctor 从已知良好备份体检并定点修复损坏会话日志；migrate-check 迁移预检在升级前预测哪些会话打不开（冻结清单、文件名代际等）；凭据哨兵在宿主改写前自动存底；智能备份在宿主升级前快照、损坏日志先隔离再轮换；/backup check-update 与 /backup update 感知并一键更新（先留快照）；覆盖 DSH 0.1.1-rc.2–0.2.0-rc.1，含 0.2.0 起的安装期 peer 闸门。macOS/Linux/Windows。
 - [xiaxingtianxia2-glitch/dsh-auto-exit](https://github.com/xiaxingtianxia2-glitch/dsh-auto-exit) — 关闭 DSH Web UI 后自动退出 CLI 进程（等效 Ctrl+C），支持可配置宽限期与试运行模式。
