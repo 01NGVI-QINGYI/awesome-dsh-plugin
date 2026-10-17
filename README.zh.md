@@ -520,6 +520,7 @@ dsh plugin --profile web add dshmarket
 - [kk112222/dsh-chat-index](https://github.com/kk112222/dsh-chat-index) — DSH Web UI 会话提问索引：右缘时间比例圆点窄条与可展开链面板，展示每次用户提问的问题与时间，含分支/子会话；点击节点跳转并高亮对应消息。
 - [kkbsgg/dsh-balance](https://github.com/kkbsgg/dsh-balance) — 在选择模型与推理强度后，于输入框模型选择器旁显示当前模型提供方的账户余额。
 - [KNGLOKIKO/dsh-plugin-approval-zh](https://github.com/KNGLOKIKO/dsh-plugin-approval-zh) — 在 Web 客户端把 DeepSeek Harness 的权限审批面板本地化为中文：授权原因优先走内置词表翻译，词表未收录的由宿主侧模型路由兜底。
+- [Knight-Zjy/dsh-workspace-categories](https://github.com/Knight-Zjy/dsh-workspace-categories) — DSH 侧边栏工作区浏览器的分类树：工作区与其会话挂到自建分类下（折叠状态记忆），行可在分类间拖拽，新建工作区可直接落进某个分类（走系统目录选择器），分类可原地重命名与删除，底栏开关可把面板切回原生列表。
 - [kongdexu/dsh-nav-pointer](https://github.com/kongdexu/dsh-nav-pointer) — 聊天区左侧的消息指针导轨：每条用户消息一个横条，点击滚动定位，悬停显示预览气泡。
 - [konglong87/dsh-input-list](https://github.com/konglong87/dsh-input-list) — DSH 常用内容、提示词收藏与 Prompt 管理插件：在 composer 输入框旁保存、编辑、删除和一键回填常用提示词、Prompt 模板、工作流指令与可复用文本，不自动发送。
 - [kouyichi/dsh-tui-app](https://github.com/kouyichi/dsh-tui-app) — dsh 交互式终端聊天应用：流式对话、工具卡片、任务面板、全文搜索、轨迹回放、多会话标签与 A2A 派发（Ink 实现）。
@@ -1742,6 +1743,7 @@ dsh plugin --profile web add dshmarket
 - [lninghaha/dsh-coding-subscription-oauth](https://github.com/lninghaha/dsh-coding-subscription-oauth) — 编码订阅 OAuth，支持 SuperGrok / Grok Build、ChatGPT Plus Codex、Kimi Code、Claude Code，并提供可选 loopback OpenAI/Anthropic 网关：本地登录无需粘贴 token，支持 AUTH 刷新重试、grok-4.6 xhigh，并可与 API-key 路由共存。
 - [log-li/dsh-peakrate](https://github.com/log-li/dsh-peakrate) — 为模型选择器（每一行）与 composer 工具行显示峰谷倍率，按每个 provider 自己的时区与时段规则判定；实时目录由 host 经带信任围栏的路由下发。
 - [lovezi0/dsh-model-extension](https://github.com/lovezi0/dsh-model-extension) — 模型+ 设置页:按模型声明推理挡位、输入模态与兼容参数(走官方 settings 管线保存),支持 models.dev 元数据预填与 API 密钥管理。
+- [loyalchiiina/dsh-deepseek-web-free](https://github.com/loyalchiiina/dsh-deepseek-web-free) — 把你已登录的 chat.deepseek.com 账号当作额外模型接入 DSH：注册 `deepseek-web` provider，无需 Open Platform API key；侧边栏底部列出你的网页端会话，「Fork to Workspace」会开一个独立的 Harness 会话、不回写原对话，`default` 模型保持网页端原生搜索，`/clean` 是只发送人类文本的会话开关。本包是 y-wi/dsh-deepseek-web 的 fork，已适配 DSH 0.2.1-alpha.2：放宽 peer 范围以免被兼容性门禁整包拒绝、用 `ctx.settings.configure()` 与配置字段 `.volatile()` 替代被移除的 settings API、更新已改名的客户端图标、并让上游 SSE 错误直接报错（不再返回空消息污染会话历史）。此外还修掉了改名为 `-free` 后遗留的两处问题：会话列表路由原先按旧包名继承下来的硬编码长度切分路径，导致登录正常但每个会话请求都返回 404；侧边栏会话浮层原先用宿主的半透明菜单色，而该色只有配合磨砂背景才像菜单、挂到 body 上的面板无法安装磨砂，现已改用不透明表面色。
 - [loyalchiiina/dsh-model-fold](https://github.com/loyalchiiina/dsh-model-fold) — 把 DSH 模型选择器按来源（provider）分组：菜单只列来源与其模型数，点来源在右侧滑出该来源的模型子面板（默认），或改为在列表内就地展开，双击来源标题即可切换；当前使用的模型一眼可见。纯 DOM 增强、零侵入——面板是插件自建 DOM 并挂载到 body，选择通过程序化点击原菜单真实按钮完成，不移动也不删除任何 React 管理的节点，因此不影响原组件渲染，并能与其他 UI 插件共存。配色与排版跟随宿主：复用官方 --dsw-* 主题变量，背景保证不透明、对比度充足，来源清单与子集清单共用同一套尺寸与色值令牌。不联网、无遥测。适配 DSH 内核 2.0.15-next。
 - [loyalchiiina/dsh-workbuddy-hub](https://github.com/loyalchiiina/dsh-workbuddy-hub) — WorkBuddy 转接中枢：注册 WorkBuddy 模型 provider，并附多账号台账悬浮球——实时额度、每日自动签到、限流冷却追踪与一键切号。
 - [lsdt45/dsh-model-config](https://github.com/lsdt45/dsh-model-config) — 在 DSH 设置面板为 llm-pi-ai 与官方 DeepSeek 提供方按模型配置思考开关与思考等级，并为各模型配置多模态输入类型。
@@ -4906,7 +4908,9 @@ dsh plugin --profile web add dshmarket
 - [ruaibeite/dsh-auto-observe](https://github.com/ruaibeite/dsh-auto-observe) — 当 agent 用 bash（sed/awk/cat）看过文件而非 read 工具时，为编辑目标补登记一次真实版本的观察记录，使文件系统观察策略不再以 FS_NOT_OBSERVED 拒绝编辑；只作用于编辑，整文件盲覆盖仍受保护。
 - [ruanimal/dsh-bash-env](https://github.com/ruanimal/dsh-bash-env) — 替换内置 bash 执行器，按每条命令的工作目录解析环境：可配置的 PATH 追加、Python venv 自动激活与 mise shims，并在 Web UI 设置中提供独立分区。
 - [ruby1304/dsh-preset-anchored-standard](https://github.com/ruby1304/dsh-preset-anchored-standard) — Minimal 锚定的 agent preset：request #1 仅保留真实 bash + str_replace_editor 工具对并剥离自动注入上下文，晋升后开放完整 Standard 工具目录，并注入一次性后台 job 提示纠正 sleep 前台轮询惯性。
+- [runcat-tommy/dsh-mcp-mini-manager](https://github.com/runcat-tommy/dsh-mcp-mini-manager) — DSH 的 MCP 极简管理：与「插件」同级的一页设置，列出运行中 Loader 树里真实存在的 MCP 服务器及其配置摘要、端点与实时状态，并通过 profile 的 cordis.patch.yml 成对标记块停用或恢复任一服务器；环境变量值、请求头值与 `!!js` 表达式只以键名或点路径的形式到达页面。
 - [runcat-tommy/dsh-plugin-runcat-inventory](https://github.com/runcat-tommy/dsh-plugin-runcat-inventory) — DSH 插件总览（逃咪）：以表格视图管理已安装插件，支持状态过滤、HMR 热生效的启停开关、配置查看/复制、卸载与 npm 更新提醒。
+- [runcat-tommy/dsh-skill-mini-manager](https://github.com/runcat-tommy/dsh-skill-mini-manager) — DSH Web 设置里的 skill 管理器页面，与「插件」同级：列出当前安装提供的全部 skill 及其自己的简介、来源与占用，并可逐个移除（移除是移入可恢复的回收站）。
 - [ryubyte/dsh-a2a](https://github.com/ryubyte/dsh-a2a) — 为 DSH 实现 Agent2Agent 协议 v1.0：以标准 A2A server 接收其他 Agent 的调用，以 A2A client 连接远程 Agent，并在可视化设置页统一管理连接。
 - [SaiSenBox/dsh-boot-guard](https://github.com/SaiSenBox/dsh-boot-guard) — 独立于常规客户端插件加载链的 DSH Web 启动救援工具，可定位疑似故障插件、临时跳过，并且只恢复 Boot Guard 写入的配置。
 - [sgzeng/pbfuzz#dsh-kanalyzer](https://github.com/sgzeng/pbfuzz/tree/master/packages/dsh-kanalyzer) — LLVM 静态分析插件，可为 C/C++ 项目构建整程序 LLVM bitcode，并在其上运行 kernel-analyzer（KAMain）可达性分析，向智能体提供 kanalyzer_* 工具，并向其他插件提供 ctx.kanalyzer 服务。
