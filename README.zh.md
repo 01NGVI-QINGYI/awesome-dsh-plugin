@@ -2059,7 +2059,7 @@ dsh plugin --profile web add dshmarket
 - [Ricketts-Guo/dsh-off-peak-message#dsh-offpeak-send](https://github.com/Ricketts-Guo/dsh-off-peak-message/tree/main/dsh-offpeak-send) — 谷时发送调度器：开启谷时模式后输入框消息排队至 DeepSeek 谷时窗口（半价）自动注入会话并得到回复。原生外观输入条、快捷键（Enter 入队 / ⌘+Enter 立即发送 / Esc 退出）、按会话记忆的开关，重启不丢。
 - [robbywang25/dsh-codex-pins](https://github.com/robbywang25/dsh-codex-pins) — 把 DeepSeek Harness 侧边栏分成可独立滚动的置顶栏和最近栏，置顶过的会话不再出现在最近列表里。
 - [rongxingda/dsh-prompt-enhance](https://github.com/rongxingda/dsh-prompt-enhance) — 输入框一键提示词增强——把草稿改写为结构化提示词（角色与目标、可执行步骤、输出格式、验收标准、边界条件），支持前后对比、回填与一键撤销；不改变原意、不凭空编造需求。
-- [ruisenbai/dsh-annotation](https://github.com/ruisenbai/dsh-annotation) — 需要 DSH >= 0.2.0-rc.1。在助手消息、官方文件预览和官方 Diff 中添加注解，再与官方输入框文字和附件合并为一条会话用户消息；模型按顺序逐条回答，并用可悬浮的回复芯片关联原文。
+- [ruisenbai/dsh-annotation](https://github.com/ruisenbai/dsh-annotation) — 选中正文、diff、文件的文字 → 批注 → 随消息发送，回复按批注逐条对照，并支持注解定位方便查询。
 - [RyanZeeee/dsh-chattree](https://github.com/RyanZeeee/dsh-chattree) — 把 DSH 会话画成一张对话画布：每轮问答是一个节点，任意节点都能分叉出真实的子会话，压缩过的上下文收成一个绿色节点、可以从它继续对话；左侧栏按 DSH 工作区分组列出画布，重命名与 DSH 自己的会话标题同步。
 - [RyensX/dsh-message-fold](https://github.com/RyensX/dsh-message-fold) — 为 DeepSeek Harness 提供 Codex 风格的会话消息折叠。
 - [Ryuu-64/dsh-session-tools](https://github.com/Ryuu-64/dsh-session-tools) — 给 AI 四个会话工具：新建会话、给别的会话发消息、列出会话及其状态，以及等另一个会话这一轮跑完并把它的回答取回来。
@@ -4155,7 +4155,7 @@ dsh plugin --profile web add dshmarket
 - [Moon-shiyue/dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) — 在对话框左下角一键连接你的 GitHub 账号（OAuth 设备流或 Personal Access Token），之后 AI 可通过 github_api 工具读取和操作你的 GitHub。
 - [MoonlitDropOfBlood/dsh-git-manager](https://github.com/MoonlitDropOfBlood/dsh-git-manager) — DeepSeek Harness 的 Git 工作区管理：输入框「模式」选择器旁的仓库感知入口，打开与设置同规格的面板，覆盖 diff/commit、分支、冲突、worktree 管理与带分支线的提交历史。
 - [NEAZ71eve/dsh-tool-github](https://github.com/NEAZ71eve/dsh-tool-github) — GitHub REST API 工具 + 浏览器侧边栏面板：仓库/搜索/Issue/PR/评论、账号绑定（凭据库）与一键克隆为工作区。
-- [nightosong/gord-dsh-worktree](https://github.com/nightosong/gord-dsh-worktree) — 为 DeepSeek Harness 提供 Git worktree 管理：把并行开发放进各自独立的目录与分支。随包发布快速模式（Fast mode）。
+- [nightosong/gord-dsh-worktree](https://github.com/nightosong/gord-dsh-worktree) — 为 DeepSeek Harness 管理 git worktree —— 让并行工作各自隔离在自己的目录与分支里。自带快速模式（Fast mode）。
 - [No-PRM/dsh-explorer#dsh-explorer](https://github.com/No-PRM/dsh-explorer/tree/main/dsh-plugins/dsh-explorer) — Git 优先的文件树侧栏：VS Code 风格层级线、M/A/U/D/R git 状态装饰、HEAD 与工作区对照预览、媒体预览、拖拽引用（文件/文件夹/选中代码带行号）—— 纯插件。
 - [Noob-stupid/dsh-github-login](https://github.com/Noob-stupid/dsh-github-login) — 零终端的 GitHub 可视化登录插件：窗口内完成设备码授权，令牌同步进 gh CLI，附宿主端状态与唤起接口。
 - [OMSociety/dsh-git-forge](https://github.com/OMSociety/dsh-git-forge) — 为 DeepSeek Harness 提供项目级 Git 凭据：forge 账号（GitHub、Gitea、GitLab、Bitbucket 或自定义域名）在右侧栏「Git 凭据」标签页里管理并可按项目授权，再由生成的凭据 helper 交给 agent 走 HTTPS 推送，token 不进对话；未授权 host 的推送会被拦截器直接拒绝。
