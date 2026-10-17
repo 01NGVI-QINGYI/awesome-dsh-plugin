@@ -5130,6 +5130,10 @@ dsh plugin --profile web add dshmarket
 - [baixiaoustc/dsh-kidlab#kid-coder](https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-coder) — 小朋友的编程小教室：跑 Python 与海龟画图代码、讲解、练习、点评、分步。
 - [baixiaoustc/dsh-kidlab#kid-memory](https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-memory) — 把内存讲成工作台：当前占用、内存压力、最占内存的程序。
 - [baixiaoustc/dsh-kidlab#kid-network](https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-network) — 网络小旅行：我的身份、DNS 查询、路由追踪、测速、谁在局域网。
+- [baixiaoustc/dsh-kidlab#kid-process](https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-process) — 进程小工人：数量、谁最卖力、家族树、工牌。
+- [baixiaoustc/dsh-kidlab#kid-security](https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-security) — 电脑安全小城堡守卫：防火墙、磁盘加密、锁屏、远程端口、登录记录。
+- [baixiaoustc/dsh-kidlab#kid-storage](https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-storage) — 存储小仓库：磁盘分区、主目录、最占空间的东西。
+- [baixiaoustc/dsh-kidlab#kid-sysmon](https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-sysmon) — 系统小监控：一张卡片看 CPU、内存、磁盘概况。
 - [bigharm/dsh-agentnoodle](https://github.com/bigharm/dsh-agentnoodle) — DeepSeek Harness 插件：可扩展的 AI 群像聊天游戏框架。输入一个行动，多个 NPC 各自回应，每条反应独立成带头像插图的聊天室消息；世界、地点、NPC 与功能扩展（如接入第三方绘图 API 实现 NPC 动态表情动作）都可以在对话框里让 agent 直接添加修改，无需写代码。
 - [BitDG/dsh-plugins#music-player](https://github.com/BitDG/dsh-plugins/tree/main/plugins/music-player) — 提供多公共音源的侧栏音乐浏览、持续后台播放、队列续播，以及经审核安装的 MusicFree 兼容音源扩展。
 - [Bob-Bo1/dsh-stock-watch](https://github.com/Bob-Bo1/dsh-stock-watch) — DSH 本地优先的 A 股持仓与自选监控：侧栏行情、持仓盈亏，以及网页添加、修改、删除和 JSON 保存。
