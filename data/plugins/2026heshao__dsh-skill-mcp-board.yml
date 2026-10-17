@@ -1,6 +1,0 @@
-url: https://github.com/2026heshao/dsh-skill-mcp-board
-name: 2026heshao/dsh-skill-mcp-board
-category: dev
-description:
-  en: 'Four-in-one board for the DSH web UI: MCP management (status, tool schemas, enable/disable, reconnect at global or per-project scope with live-session apply), a Skill panel over the host skill registry, a tool tailor that scans local session logs for per-tool call counts, error rates, latency and schema context cost with one-click pruning of dead tools, and a market tab that installs from WorkBuddy connectors (316), curated built-ins (47) and SkillHub skills (190k+) with per-file sha256 verification; also imports configs from 11 local AI clients.'
-  zh: 'DSH Web 四合一看板：MCP 管理（连接状态、工具 Schema、全局与项目双作用域启停重连，项目级配置写盘即对存活会话生效）；Skill 面板读宿主技能注册表；工具裁缝扫描本机会话日志统计每个工具的调用、错误率、延迟与 Schema 上下文开销，死工具一键裁剪；市场页直连 WorkBuddy 连接器（316 个）、内置精选（47 个）与 SkillHub 技能（19 万+）一键安装，技能逐文件 sha256 校验；另支持从 11 种本机 AI 客户端导入配置。'
