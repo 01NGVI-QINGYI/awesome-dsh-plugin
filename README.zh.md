@@ -211,6 +211,7 @@ dsh plugin --profile web add dshmarket
 - [ayingQAQ/dsh-web-launcher](https://github.com/ayingQAQ/dsh-web-launcher) — DSH Web 的 Windows 桌面启动器插件，创建受管理的快捷方式，后续启动会在后台重启 DSH 并刷新已有浏览器页面。
 - [azazo1/dsh-deep-diving-back](https://github.com/azazo1/dsh-deep-diving-back) — 恢复 DSH 0.1.6 及以前在对话流末尾显示的蓝色流光深度求索中回合状态行.
 - [azazo1/dsh-reduce-effects](https://github.com/azazo1/dsh-reduce-effects) — 在设置里新增 "前端特效" 页, 按分类关掉 DSH Web 的动画与过渡, 加载与进度动画, 毛玻璃, 平滑滚动, 标题 hover 滚动, 阴影, 渐变与 JS 动效, 降低浏览器渲染负担.
+- [Azetus/dsh-quorfloat](https://github.com/Azetus/dsh-quorfloat) — DeepSeek Harness 的系统级悬浮会话窗口，支持全局快捷键、工作区与会话切换及审批处理。
 - [AzureSkyHuHu/dsh-chinese-mode-modern](https://github.com/AzureSkyHuHu/dsh-chinese-mode-modern) — 在输入框左侧加一个中文模式开关，点开可分别切换回复、思考与工具说明的语言，配置随 profile 持久化。
 - [bagpipe1289/dsh-paperflight#plugin](https://github.com/bagpipe1289/dsh-paperflight/tree/main/plugin) — 纸航 PaperFlight 是实验性的未来复古 DSH Web 工作台，提供会话管理、文件预览、审批和按预设启用的可选浏览器与终端工具。
 - [baifagg/dsh-plugin-busy-workspace](https://github.com/baifagg/dsh-plugin-busy-workspace) — 把含“需要注意的会话”的工作区按紧急度排到侧栏会话列表最前——待你处理优先，其次运行中，再次完成未读，最后刚读过的——并为这些行画状态竖条、着色底与着色标题，一次运行结束时播放一次收敛动效。所有颜色都取自当前主题自身的变量；决定完成会话置顶时长的三个窗口都是可配置项。
@@ -1477,6 +1478,7 @@ dsh plugin --profile web add dshmarket
 - [lisongxuan/ds-hentai](https://github.com/lisongxuan/ds-hentai) — ExHentai 皮肤 for DeepSeek Harness。DS Hentai / DeepSeek Hentai，深炭底、浅灰文字、灰色边框；会话列表像画廊索引，发送框像搜索栏。预览Demo：https://dshentai-demo.arkady14.site/
 - [lispking/dsh-qq-skin](https://github.com/lispking/dsh-qq-skin) — 为 DeepSeek Harness 打造的 QQ NT 皮肤：浅色与深色共用一套 QQ NT 语言——浅色干净克制（品牌蓝 #12B7F5、浅蓝气泡），深色为沉稳蓝灰（#101822）——以可逆的 token 与布局两层实现，不改变你的浅色/深色偏好。
 - [Liu-ZA-81/dsh-theme-firefly](https://github.com/Liu-ZA-81/dsh-theme-firefly) — 崩坏：星穹铁道「流萤」主题：立绘/动态壁纸、萤火绿霓虹配色、开屏变身动画、萤火氛围粒子、背景音乐、打字音效与按对话触发的表情包彩蛋。
+- [liushuchang-2012/dsh-skin-liquid-glass](https://github.com/liushuchang-2012/dsh-skin-liquid-glass) — iOS 26 液态玻璃皮肤：整扇窗口是一块盖在中性灰场壁纸上的磨砂玻璃，唯一强调色是系统蓝，浅色/深色两套配色。以 DSH 客户端插件形式安装（165 KB、零依赖），自行注入 CSS、壁纸与 token 覆盖。
 - [liyy996/dsh-theme-windowsxp](https://github.com/liyy996/dsh-theme-windowsxp) — 把 DSH 换成 Windows XP：Luna 蓝皮肤（米色面板、渐变按钮、#7F9DB9 输入框、圆角蓝色滚动条、纯 CSS 绘制的 Bliss 风格桌面），外加一轮跑完时的提示音，以及智能体停下来等你批准时的另一种提示音。
 - [longgege-cd/dsh-skin-pixel-anime](https://github.com/longgege-cd/dsh-skin-pixel-anime) — 像素动态星空主题：五套配色、四套分层文字方案、五款像素字体（含简体中文像素字体）、方角与圆角可选、旋转像素星空与流星、顶栏像素时钟，均在插件设置页配置。
 - [Longxiangjunlin/dsh-endfield-theme](https://github.com/Longxiangjunlin/dsh-endfield-theme) — 《明日方舟：终末地》主题：炭黑与警戒黄的工业 HUD、在外壳渲染前注入的开屏动画、对话区背景，以及重新配色的 Windows 标题栏。侧栏品牌会改为「终末地工业 / ENDFIELD INDUSTRIES」，可用 URL 参数还原。
@@ -2610,6 +2612,7 @@ dsh plugin --profile web add dshmarket
 - [Azhe0306/dsh-connectors#desktop-connector](https://github.com/Azhe0306/dsh-connectors/tree/main/packages/desktop-connector) — Windows 桌面控制连接器：通过 10 个工具截屏（含被遮挡与半出屏窗口）、枚举与置顶窗口、移动/点击/拖拽/滚轮鼠标、发送组合键与任意中文文字。基于 koffi FFI：无需编译器、不每次起子进程，自带 GDI 截图与 PNG 编码。
 - [baddying/dsh-geolibre](https://github.com/baddying/dsh-geolibre) — 把 GeoJSON / 矢量数据渲染成侧边栏「地图」tab 里的交互地图，并让 Agent 通过工具实时操作地图：图层、样式、视图、要素识别、GeoLibre 处理算法与 Whitebox 工具箱（浏览器端 WASM 执行）。
 - [bailinghub/bailinghub-dsh-plugin](https://github.com/bailinghub/bailinghub-dsh-plugin) — 让本地 DeepSeek Harness 智能体通过 BailingHub，直接操作商城、SaaS 或其他业务系统后台，在现有账号权限内查询数据、修改资料并执行已开放的操作。
+- [baiye1997/MEB-DSH#workbench](https://github.com/baiye1997/MEB-DSH/tree/main/workbench) — 面向 DeepSeek Harness 项目的工程造价工作台。
 - [Beatther-c/dsh-api-client](https://github.com/Beatther-c/dsh-api-client) — DeepSeek Harness 的 Agent 原生 API Client：Postman 级调试 UI（右键菜单与完整键盘导航的请求树、可调宽侧栏、自动生成 Header 分层预览——逐项可停用、敏感值恒脱敏），六个 api_client_* Agent 工具与 Human UI 共用同一请求核心、脱敏与审计链，Postman Collection v2.1 导入附迁移报告，环境变量经 SecretRef 间接引用，SSRF 网络策略默认 fail-closed。
 - [beijingwahw/dsh-nuke-plugin](https://github.com/beijingwahw/dsh-nuke-plugin) — 事务化卸载引擎：每个破坏性动作走 validate/preview/execute/undo 四段式并带 Saga 回滚，WAL 崩溃恢复、hash chain 审计、硬链接去重，提交前先知推演成功率。
 - [bescriptkiddie/dsh-wechat-collector](https://github.com/bescriptkiddie/dsh-wechat-collector) — 公众号素材采集：扫码登录的多套凭证档案、带冷却保护的限流安全抓取、RSS 第二水源，以及凭证隔离的 ContentStudio 来源卡交接。
@@ -4963,6 +4966,7 @@ dsh plugin --profile web add dshmarket
 - [xiaxingtianxia2-glitch/dsh-auto-exit](https://github.com/xiaxingtianxia2-glitch/dsh-auto-exit) — 关闭 DSH Web UI 后自动退出 CLI 进程（等效 Ctrl+C），支持可配置宽限期与试运行模式。
 - [xingyingyuzhui/dsh-updater-ui](https://github.com/xingyingyuzhui/dsh-updater-ui) — 设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。
 - [xingzhen199186/dsh-insight-tree](https://github.com/xingzhen199186/dsh-insight-tree) — DeepSeek Harness 的运行可观测与插件运维面板：展示 Profile 插件树、Loader 真实 fiber 状态、能力/依赖/兼容性、本轮会话插件活动与上游来源/版本核验，支持一键关闭/启用/更新/卸载，并提供 DSH 未运行时也能打开的独立启动失败诊断页。
+- [xinspark/dsh-win-pwsh7](https://github.com/xinspark/dsh-win-pwsh7) — 报告 DSH pwsh 执行器各行实际运行的 PowerShell——只认启用中的行，拒绝把带版本号的商店路径当作 pin——并以后台任务安装会自动更新的微软商店版 PowerShell 7；动手前先读连接计费方式，因为 Windows 会推迟按流量计费连接上的商店下载。宿主侧两个工具加一个提示词区段，Web 界面里是配置卡片、诊断区段与重新检测按钮；仅 Windows，零运行时依赖。
 - [xswt442-cmd/dsh-ballast](https://github.com/xswt442-cmd/dsh-ballast) — DSH Web 的上下文窗口归因插件：Mini Utility Dock 面板按各自占用的 token 给会话内的用户消息、助手回复、推理块和工具结果排序，一眼看出窗口被哪些条目占住。面板还显示各条目类型的占比、本机各 live session 里最重的条目，并在宿主提供时显示 provider usage 与 system/tools/messages 的估算构成。面板只读：不估算费用、不修改会话、不触发 compaction。
 - [xswt442-cmd/dsh-instance-manager](https://github.com/xswt442-cmd/dsh-instance-manager) — DSH Web 实例管理器：Mini Utility Dock 面板列出本机可见的全部 dsh web 实例（端口、PID、运行时长、会话数、常驻内存、版本），可在 3080–3129 自动选一个空闲端口或按指定端口启动新实例、把某一行在新标签页打开，并通过目标实例自身的优雅退出停掉单个或全部实例。行内还显示每个实例在跑什么，只读的实例日志与会话概要一点即达。配置了 peer 时，同一个面板会通过带 bearer 鉴权的链路列出并查询其他机器上的实例。所有路由都做回环校验，面向浏览器的操作还要额外通过宿主自身的鉴权。
 - [xswt442-cmd/dsh-treekeeper](https://github.com/xswt442-cmd/dsh-treekeeper) — DSH 宿主的 Windows 进程树对账插件：采样宿主进程树与任务账本，把每个进程归属到创建它的任务，并按置信度标出未归属与孤儿进程，同时提供受保护的整树终止。终止必须满足：目标归属于 DSH 宿主树、在动手前重新采样复核（含创建时间）、目标树内不含受保护后代，因此白名单 PID 不会扩大可杀范围。
