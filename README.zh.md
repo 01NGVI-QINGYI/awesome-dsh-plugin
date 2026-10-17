@@ -2767,6 +2767,7 @@ dsh plugin --profile web add dshmarket
 - [errrepe/dsh-codegraph-plugin](https://github.com/errrepe/dsh-codegraph-plugin) — 将 Codegraph CLI 封装为 DSH 的八个代码智能工具：符号搜索、调用者/被调用者、影响分析、代码库探索、符号/文件读取、索引状态与同步。
 - [EthanYoQ/Invoice-Downloader#dsh-invoice-downloader](https://github.com/EthanYoQ/Invoice-Downloader/tree/main/plugins/dsh-invoice-downloader) — 面向 DeepSeek Harness 的本地 IMAP 发票下载、OCR 识别、归档与 Excel 报销汇总。
 - [everclear077/dsh-progressive-tools](https://github.com/everclear077/dsh-progressive-tools) — 缓存稳定的渐进式工具发现：每次请求使用固定的 tool_search 与 tool_dispatch 工具面，从内存目录搜索后经 Harness 管线分发，发现过程中原生工具列表保持字节稳定。
+- [exoticknight/dsh-system1](https://github.com/exoticknight/dsh-system1) — 为 DeepSeek Harness 提供类型化的 System One 判断服务与智能体工具，支持是非判断、分类和评分。
 - [F1star/dsh-research](https://github.com/F1star/dsh-research) — 提供本地 PDF 阅读、持久论文库、可追溯证据记录，以及跨论文比较与综合工具。
 - [fan56/dsh-dcp](https://github.com/fan56/dsh-dcp) — dsh 的确定性上下文压缩后端：零 LLM 摘要调用，基于规则剪枝，逐字保留路径/命令/报错原文/未完成 todo，约 8 万 token 压到几百。
 - [fan56/dsh-subagent-registry](https://github.com/fan56/dsh-subagent-registry) — 把本地定义的自定义 agent 注册成 dsh 可调用的 subagent：主模型通过 use_agent 工具按名字派活，每个 agent 以独立人格运行，支持断点续跑。
@@ -4206,6 +4207,7 @@ dsh plugin --profile web add dshmarket
 - [LeemanCheung/dsh-task-dag](https://github.com/LeemanCheung/dsh-task-dag) — 由投影驱动的会话子代理与持久工作流实时 DAG：状态与节点导航、深层链路确定性布局、适应/平移画布，以及当前会话内节点拖动重排。
 - [leetom314/dsh-delivery-ledger](https://github.com/leetom314/dsh-delivery-ledger) — 周期性任务调度器 + 只追加的投递账本：按时间窗去重执行，记录失败／放弃行，同窗口重试可重投。
 - [lemoncat7/dsh-partner](https://github.com/lemoncat7/dsh-partner) — 提供隔离记忆、微信渠道、Skill、定时任务、伙伴挂念与依赖任务看板的长期 AI 伙伴。
+- [Leo-sail/dsh-plugin-agent-collaboration#agent-collaboration](https://github.com/Leo-sail/dsh-plugin-agent-collaboration/tree/main/packages/bundle/agent-collaboration) — DSH 里的常驻 Bot 与群聊房间——每个 Bot 都有自己的模型、权限预设、工作区与重启后仍在的会话，每次回答都是一条写进运行记录的 run，侧栏面板据此回放。
 - [LeslieWylie/agent-loop-workflow](https://github.com/LeslieWylie/agent-loop-workflow) — 面向 DeepSeek Harness、与具体项目无关的多智能体协作协议：阻止失控循环的循环守卫、六字段交接格式、按风险分级的评审路由，以及固定的验证→提交→推送→评审→关闭流程。用一个 skill 取代复制粘贴进每个 agent 指令里的相同规则。
 - [LeslieWylie/dsh-ops-kit](https://github.com/LeslieWylie/dsh-ops-kit) — 证据优先的操作套件：六个只读工具（能力清单、分阶段编排计划、随包技能阅读、有上限的本地记忆检索、仓库发布审计、发布清单）加五个随包技能；只规划与审计，不做远程写入。
 - [LeslieWylie/review-workflow](https://github.com/LeslieWylie/review-workflow) — 面向 DeepSeek Harness 的结构化多评审人评审工作流：N 个评审人在相互隔离、彼此不可见的 subagent 中独立打分；一名 chair 先按锚点匹配、再按 Δ 级别裁决来调和分歧；一名独立的 critic 负责审计整个评审过程。适用于设计、代码、论文或项目评审。
