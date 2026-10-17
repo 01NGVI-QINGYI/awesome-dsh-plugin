@@ -164,6 +164,7 @@ dsh plugin --profile web add dshmarket
 - [AKS1st/dock-spreadsheet](https://github.com/AKS1st/dock-spreadsheet) — dock-files 的只读表格查看器，支持 XLSX、XLS、ODS、CSV、TSV 格式以及工作表切换、排序、筛选、搜索和单元格链接。
 - [AKS1st/dsh-sysmon](https://github.com/AKS1st/dsh-sysmon) — DSH Web 右下角系统状态悬浮窗：实时显示 CPU、内存、磁盘占用率，带阈值变色告警。
 - [AL-Yichen/dsh-fullscreen-input](https://github.com/AL-Yichen/dsh-fullscreen-input) — 给 DSH 的输入框加一个全屏输入面板，用于书写多行文本，可移动、可调整大小，与主输入框共用同一份草稿；Enter 只换行、仅 Ctrl+Enter 发送，因此中文输入法不会把 Shift+Enter 变成发送。
+- [AL1ghtm3ter/dsh-right-click-menu](https://github.com/AL1ghtm3ter/dsh-right-click-menu) — DSH Web 界面里的右键菜单，覆盖文件与链接：在文件树一行、对话消息里的文件路径或文件提及、以及超链接上右键，可预览、用默认程序或指定关联程序打开、在资源管理器中定位、复制路径／相对路径／文件名／链接地址／链接文字／文件内容、另存为，并可把 http(s) 链接在侧边栏浏览器或系统浏览器中打开；在非文件非链接处右键仍保留浏览器原生菜单。
 - [AlexPeng07/dsh-custom-plugin](https://github.com/AlexPeng07/dsh-custom-plugin) — DSH Web GUI 便利套件，提供外观控制、时间线导航、项目文件夹、提示词、会话导出、Mermaid 渲染、引用回复，以及 DeepSeek 余额和每日 token 用量。
 - [AlexYin-Tongji/dsh-ui-enhancer](https://github.com/AlexYin-Tongji/dsh-ui-enhancer) — 面向 DSH Web 客户端的桌面化 UI 增强：自适应对比度壁纸、带活动流与投喂玩法的桌面宠物、@file 工作区文件引用，以及可缩放的文件/预览右侧面板。
 - [AliceLJY/dsh-thumb](https://github.com/AliceLJY/dsh-thumb) — 网页版界面的手机外壳：侧栏改为覆盖式抽屉、点会话自动收起，设置面板改全屏单列，正文排版按手机阅读距离重调。
@@ -499,6 +500,7 @@ dsh plugin --profile web add dshmarket
 - [leexiaode4/dsh-launch-buttons](https://github.com/leexiaode4/dsh-launch-buttons) — 对话输入框的多启动项按钮：左键启动默认项，右键弹出列表，每项可绑定一个程序或目录。
 - [left0ver/dsh-file-review](https://github.com/left0ver/dsh-file-review) — 在 Diff 面板中审查 Agent 的文件改动、添加评论以继续修改，并撤销已编辑或新建的文件。
 - [lemonorangeapple/dsh-effort-switcher](https://github.com/lemonorangeapple/dsh-effort-switcher) — 为DSH添加一个类似于Codex的推理强度切换器。
+- [Len7183/DSH-Think-zh](https://github.com/Len7183/DSH-Think-zh) — 思考语言两档可控：默认英文档只让回复跟随提问语言，简体中文档同时锁定思考语言；指令以极小 order 注入 system prompt 并经 assemble 瀑布重排兜底置顶，防其他插件以更小 order 插队；可选开启每轮用户消息前置（带幂等标记）；在「设置 → 通用设置」切换档位，schemastery >= 3.18.3 的宿主上即时生效。
 - [leogottadothebest/dsh-settings-beautify](https://github.com/leogottadothebest/dsh-settings-beautify) — 将 DSH 设置界面归一为同一套设计语言：统一各设置页的排版、卡片、控件、焦点与动效，包括其他插件贡献的页面。
 - [levodoubt/dsh-longtext-input](https://github.com/levodoubt/dsh-longtext-input) — 在输入框工具栏新增「长文本」按钮：在编辑器浮层里写或粘贴正文，保存后写入 <工作区>/.dsh-longtext/<时间戳>_<标题>.md，并把该文件的 @ 路径引用追加到输入框，让正文不进入对话。
 - [LHF198/dsh-prompt-optimizer](https://github.com/LHF198/dsh-prompt-optimizer) — 在发送前优化当前聊天输入，采用前先对比原文与优化结果。
@@ -4860,6 +4862,7 @@ dsh plugin --profile web add dshmarket
 - [btsd321/dsh-remote-explorer](https://github.com/btsd321/dsh-remote-explorer) — 远程开发启动器：通过 SSH（或本机 WSL 发行版）在远端引导安装 dsh，从本地客户端连接，LLM 凭据经反向隧道代理、不离开本机。同时提供独立 CLI 与 dsh 插件双形态，插件含远程会话面板、/remote-explorer 命令及 remote_* agent 工具。
 - [Buzzso/dsh-sev](https://github.com/Buzzso/dsh-sev) — 本地 GUI 管理你自己服务器上的 DSH 分身：SSH 隧道、远程会话混排列表、一键远程 GUI、隧道掉线自动重连。
 - [CCYellowStar2/dsh-astrbot-ingress](https://github.com/CCYellowStar2/dsh-astrbot-ingress) — 把本机 DeepSeek Harness agent 接到 AstrBot，从 QQ 等 IM 渠道驱动它：用 /dsh 派活、引用或 @ 机器人续聊、在聊天里回答审批与 ask_user_question（与 DSH 网页并行），结果、内联图片与文件卡片发回。含会话 / 工作区 / 模型 / 权限命令、/compact 与 /last 找回、三档过程显示、整群共用或按人隔离的会话范围。
+- [chinahhy/DSH-plugins#dsh-tether-ios](https://github.com/chinahhy/DSH-plugins/tree/main/packages/dsh-tether-ios) — 面向 macOS Apple Silicon 上 DSH Desktop 0.2.0-rc.2 的 iOS 远程控制插件，支持配对、审批通知与设备撤销。
 - [cindyguyuehu123/dsh-mobile](https://github.com/cindyguyuehu123/dsh-mobile) — 让 DSH 在 iPhone/iPad 上可用：显式开启的局域网反向代理（改写 Host/Origin 通过回环信任栅栏，含 WebSocket 升级）、iOS PWA 外壳（主屏幕图标、standalone meta、viewport-fit）、触屏/移动端 CSS（安全区、键盘避让、输入框按钮行适配）。
 - [CJYLZS/dsh-remote-development](https://github.com/CJYLZS/dsh-remote-development) — 基于 SSH 的远程开发：把注册机器上的目录选为会话工作区后，文件、shell、bash 与搜索工具即改在远程主机上执行——agent 用与本地相同的工具在那里工作，不新增任何面向模型的工具。
 - [Clarklevis1995/dsh-plugin-mobile-gateway](https://github.com/Clarklevis1995/dsh-plugin-mobile-gateway) — DeepSeek Harness 的设备鉴权移动网关：通过 WebSocket 连接配套原生 iOS 客户端，支持会话、实时事件、任务、Goal、审批、命令和文件传输，并提供二维码配对与设备撤销。
