@@ -451,6 +451,7 @@ dsh plugin --profile web add dshmarket
 - [huanglianqi/dsh-math-render](https://github.com/huanglianqi/dsh-math-render) — 在聊天里渲染 LaTeX：你自己的消息气泡内联渲染公式，输入时还会实时预览草稿里的公式。
 - [huanglianqi/dsh-math-snippets](https://github.com/huanglianqi/dsh-math-snippets) — 输入框里的 LaTeX 片段展开，触发词表直接取自 Obsidian Latex Suite 的默认片段——138 条打完即出，Tab 依次跳 tabstop，142 条全在一份可编辑的 JSON 里。
 - [huangxp12/dsh-plugin-search](https://github.com/huangxp12/dsh-plugin-search) — 在 DeepSeek Harness「插件」页加一条关键词搜索框：边输入边过滤已安装与官方插件卡片，命中范围是卡片标题、描述与包名，空格分隔的多个关键词之间是 AND。
+- [huanleyabo/dsh-selection-translate](https://github.com/huanleyabo/dsh-selection-translate) — 在 DSH 网页客户端里选中文字，选区末尾会出现一个翻译按钮，点击即就地翻译这段文字。翻译走宿主 llm 服务，直接复用当前会话已选的模型，无需另外配置 API Key；也可改用任意 OpenAI 兼容端点。结果在保持于视口内的浮层中展示，支持一键复制、一排语言按钮即时重译，默认智能中英互译（中文译英、其他语言译中）。配置保存在宿主端，其中的 API Key 永不下发到浏览器。
 - [huaxiren6/DSH-QrPairing](https://github.com/huaxiren6/DSH-QrPairing) — DSH WebUI 右下角悬浮「手机连接」二维码按钮：点击在应用内弹层显示配对二维码、6 位短码与倒计时，浏览器与 DSH 桌面端通吃（同源 img 渲染，无 iframe）。
 - [Hudson-Junior-Wang/dsh-search-switcher](https://github.com/Hudson-Junior-Wang/dsh-search-switcher) — 在 DeepSeek Harness 模型选择器旁一键切换搜索服务商的下拉菜单；海外大学网络常拦截 DeepSeek 官方搜索，可借此切到其他引擎规避。
 - [hufeide/dsh-sidebar-assistant](https://github.com/hufeide/dsh-sidebar-assistant) — Web 界面的侧边栏助手插件,在 Web 聊天界面里选中任意文本，在浮层面板里流式显示思考过程与最终答案。
@@ -1929,6 +1930,7 @@ dsh plugin --profile web add dshmarket
 - [xxww0098/dsh-plugin-oauth-subs](https://github.com/xxww0098/dsh-plugin-oauth-subs) — 通过 OAuth 和本地代理，将 ChatGPT Codex、xAI Grok、智谱 GLM、AWS Kiro、Google Antigravity 与 Cursor 订阅接入 DeepSeek Harness。
 - [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) — 在设置页编辑 prompt-inject.md、管理 AGENTS.md 或 CLAUDE.md 规则集、检查插件更新，并对本机包做可回滚的应用或还原。
 - [yupaoa/dsh-persona-switcher](https://github.com/yupaoa/dsh-persona-switcher) — 用 `/role <id>` 就地切换当前会话的人设与说话风格，以独立的 prompt section 追加在部署人设之后（不替换宿主身份行），不动工具与技能；角色是角色库里的 `ROLE.md` 纯文本文件，切换后会在会话里声明一次。
+- [ztl0001/dsh-custom-instructions](https://github.com/ztl0001/dsh-custom-instructions) — 所有工作区共用的长期系统提示词：在 DSH 自己的设置面板里新增「自定义指令」页，文本会加入每个会话（含子代理）的系统提示词，并保存在 profile 而不是任何项目里。
 
 ### 💬 会话与消息
 
@@ -4408,6 +4410,7 @@ dsh plugin --profile web add dshmarket
 - [xbzbing/dsh-git-panel](https://github.com/xbzbing/dsh-git-panel) — DSH Web GUI 里的 IDE 风格 Git 面板：常驻标签页含三栏总览（分支/标签列表、可搜索的提交历史图、含变更文件树与提交信息的提交详情）与变更记录页（统计条、带逐文件暂存/取消/丢弃的未提交列表、含 amend 的提交框）；并排差异带懒加载 highlight.js 语法高亮、块间上下文按需展开与词级行内高亮，图片文件以变更前/后双图对照；另在输入框提供 zsh 风格分支标记。所有 git 命令以 argv 数组经宿主 subprocess 执行、cwd 锁定仓库根。
 - [xiaoksio/dsh-solution-explorer](https://github.com/xiaoksio/dsh-solution-explorer) — DSH Web GUI 右侧边栏：VS Code 风格文件浏览器加源代码管理（git 状态、暂存/取消暂存/放弃变更、提交、差异、提交图形、抓取/拉取/推送同步、分支与远程管理、Git 初始化、多仓库切换、文件状态着色、文件类型图标），并提供打开会话/文件树/源代码管理里任一文件的编辑器视图（Markdown/HTML/PDF/图片预览、15 种语言语法高亮、逐块差异编辑、Ctrl+S 保存）、文件操作（新建/移动/复制/删除、在文件管理器中显示）、可折叠图标窄条、多标签底部终端（ConPTY），以及由宿主已配置模型基于暂存差异生成提交信息。
 - [xiongjiamu/dsh-atomgit](https://github.com/xiongjiamu/dsh-atomgit) — AtomGit 插件包：内置六个 AtomGit 技能（Issue 规划、Issue 实现、PR 审查、PR 合并、CLI 版本发布、GitHub 镜像），并集成 ag CLI 与平台托管的 MCP 工具（仓库/分支/Issue/PR/搜索）。
+- [xzy-nine/dsh-source-control](https://github.com/xzy-nine/dsh-source-control) — DSH Web 右侧 Sidebar 中的类 VSCode 源代码管理页：带引用标记与分页的泳道提交图与逐提交差异、分组的工作区变更与暂存/丢弃/取消暂存，支持修补上一次提交与 AI 生成信息的提交框、并排与统一差异视图、通过 gh CLI 新建仓库与创建 Pull Request，以及 HTTPS 与 SSH 远程地址双向切换。
 - [yangdongzhen590/dsh-knj-version-control](https://github.com/yangdongzhen590/dsh-knj-version-control) — DSH Web 侧栏的版本控制工作台：改动按类型分组，支持单文件与多文件暂存，提交/拉取/推送均先预览再确认，失败时弹窗展示 Git 原始输出。
 - [Yangi-252410/dsh-import-repositories](https://github.com/Yangi-252410/dsh-import-repositories) — 在宿主进程中执行 git，使 push、pull、fetch 在 agent 沙箱内可用；提供 8 个 agent 工具（status、diff、log、stage、commit、push、fetch、pull）与 11 个斜杠命令，包括 /git-status、/git-commit、/git-tag 与 /git-name-set。
 - [yangyongzhen/dsh-git-workflow](https://github.com/yangyongzhen/dsh-git-workflow) — 规范提交（Conventional Commits）、自动 changelog、PR 描述生成与分支推送，纯 git CLI 实现。
