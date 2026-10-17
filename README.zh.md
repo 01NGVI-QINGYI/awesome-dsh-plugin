@@ -343,6 +343,7 @@ dsh plugin --profile web add dshmarket
 - [EugeneVl/dsh_session_folders](https://github.com/EugeneVl/dsh_session_folders) — 为网页侧边栏提供单层会话文件夹——按工作区分组会话，支持拖拽或右键菜单移动、归档与恢复，数据在服务端持久化。
 - [exoticknight/dsh-just-chat](https://github.com/exoticknight/dsh-just-chat) — 为 DeepSeek Harness 提供一键原生对话入口，每次创建独立工作区和会话。
 - [Eyeing0721/dsh-cot-en2cn](https://github.com/Eyeing0721/dsh-cot-en2cn) — 在 DSH 网页对话里把每段英文思考的中文译文显示在原文正下方，不改动会话记录；按译文块缓存、可指定翻译模型，并带设置面板。
+- [Faide-cyber/dsh-model-in-use](https://github.com/Faide-cyber/dsh-model-in-use) — 让 DSH 的模型菜单看见会话占用、记住模型推理档位与折叠状态。
 - [Fakek0f3sT/dsh-mcp-diff](https://github.com/Fakek0f3sT/dsh-mcp-diff) — 把网页对话里的每次文件改动渲染成一张折叠的 diff 卡片并逐行高亮，涵盖 MCP filesystem 的 edit_file/write_file 与内置的 edit/write。
 - [fan56/dsh-tui-pi](https://github.com/fan56/dsh-tui-pi) — DeepSeek Harness 的全功能 TUI：流式对话、powerline 状态栏、实时思考/工具/待办面板、子代理双视图、主题热切换——全部以纯 cordis 插件实现，不 fork、不 patch 上游一行代码。
 - [fangwen9527/dsh-composer-ux](https://github.com/fangwen9527/dsh-composer-ux) — 可配置发送/换行键位、输入框右键菜单三种来源（插件不介入 / 浏览器菜单 / 自定义样式菜单）、带分类的快捷指令面板（每条可设「每次发送都附加」或「仅在本会话第一条消息附加」，并有跨分类移动与新建）、用另一次模型调用把草稿整理成清晰指令的提示词优化、设置面板尺寸记忆，并为 OpenCode 路由自动注入 x-opencode-session 请求头。快捷指令存在全局文件 ~/.dsh/quick-prompts.json 里，与会话、项目无关。
@@ -3720,6 +3721,7 @@ dsh plugin --profile web add dshmarket
 - [SOH4C4759/dsh-plugin-skill-autoroute](https://github.com/SOH4C4759/dsh-plugin-skill-autoroute) — 对每条用户指令自动做一次确定性的技能路由，让技能目录在模型作答之前就被查阅，而不是等它自己想起来。宿主侧只依据指令关键词与目录元数据打分，不调用 LLM 也不做向量检索，然后向该步追加恰好一条带生产者标签的消息：默认是候选排名简报，分数过线时改注入冠军技能的 SKILL.md 正文，也可以只注入一句「立刻调用某个路由技能」。无关指令保持沉默。
 - [STARDUSTLC666/dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) — 同步 HyperFrames by HeyGen 官方上游的二十一技能：HTML 写视频/动画/关键帧/音频与音乐转视频/CLI/注册表/幻灯片/口播重剪/网址·产品·PR 转视频/Studio 时间轴规范等，附随包资源完整性自检。
 - [STARDUSTLC666/dsh-remotion](https://github.com/STARDUSTLC666/dsh-remotion) — Remotion 官方 12 技能：React 编程式视频（动画/音频/字幕/3D/地图/图表/渲染/Studio），安装即用，附随包资源完整性自检。
+- [StarterMonk/dsh-adhd-session-mode](https://github.com/StarterMonk/dsh-adhd-session-mode) — ayghri/i-have-adhd 规则集在 DeepSeek Harness 上的移植。一个系统提示词区段让回复行动先行、步骤编号、复述进度、时间估算用真实单位。模式是单个会话的属性而非全局设置——用 /i-have-adhd on|off 切换，也可以直接打字说 "stop adhd mode"——状态由该会话的日志折叠得出，因此 resume 与 fork 之后依然正确。输入框下方的徽标显示当前会话的状态。
 - [SugarFatFree/dsh-agent-extension](https://github.com/SugarFatFree/dsh-agent-extension) — 从 .dsh 与 .agents 目录发现工作区 Markdown 命令、技能和按路径生效的规则。
 - [SummerSec/SumSec-Skills](https://github.com/SummerSec/SumSec-Skills) — 多平台 Agent Skills 集合，作为 DeepSeek Harness profile bundle 挂载，提供中文写作、Git、插件开发、Taste 与语义边界检测等 Skill。
 - [superdesigndev/superdesign-skill](https://github.com/superdesigndev/superdesign-skill) — 在 Superdesign 画布上做 UI 与营销图的设计技能：先读代码库拿上下文、抽取现有设计系统，再通过 Superdesign CLI 生成并迭代可分支的设计稿、流程页与可复用组件。
