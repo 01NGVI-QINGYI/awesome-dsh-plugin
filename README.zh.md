@@ -2072,6 +2072,7 @@ dsh plugin --profile web add dshmarket
 - [seeingrain/dsh-session-todos](https://github.com/seeingrain/dsh-session-todos) — 会话内悬浮待办面板，支持服务器端跨设备持久化及会话列表未完成任务图标。
 - [Seetraum/harness-session-delete](https://github.com/Seetraum/harness-session-delete) — DSH 会话回收站：侧边栏删除图标、多选还原与彻底删除、活跃会话保护。
 - [Semidia/dsh-session-manager](https://github.com/Semidia/dsh-session-manager) — 会话行右键菜单与侧边栏会话管理：置顶、重命名、归档、分叉、导出、复制工作目录/会话 ID/深链，在资源管理器或新窗口打开。
+- [senyayume/dsh-image-once](https://github.com/senyayume/dsh-image-once) — 同一张图片只在它第一次出现的那一次请求里以 base64 内联；之后的每次请求都携带被标记为 offloaded 的同一个块，由 DSH 自带的图片 offload 投影渲染成带本地只读路径的占位文字。记账键是会话 id、消息 id、内容树路径与 attachment id 的组合，且请求产生第一个 chunk 之后才记账，因此重试不会算作已发送。带 purpose 的辅助请求既不改写也不记账；事后再对同一文件调用 read_image 算一次新的 occurrence 并重新内联一次；插件只改写该次请求的副本，不写回会话。
 - [Sev7eEn7/sieve#dsh-sieve](https://github.com/Sev7eEn7/sieve/tree/main/packages/dsh-sieve) — 为 DSH 0.2.1-alpha.1 过滤工具输出、裁剪陈旧上下文并按需披露技能。
 - [sh1robana/dsh-plugin-message-edit](https://github.com/sh1robana/dsh-plugin-message-edit) — 面向 DSH 桌面端的消息与附件编辑，支持原地保存、分支重生成和版本时间线。
 - [shendeguize/AgentSideCar#plugin](https://github.com/shendeguize/AgentSideCar/tree/main/plugin) — 跨 agent 看板监控本机 AI agent 会话（cursor-ide、claude、codex、copilot、kimi 及 dsh 自身），提供会话时间线，并可经默认关闭的两阶段确认门注入消息。
@@ -3730,7 +3731,7 @@ dsh plugin --profile web add dshmarket
 - [warm-flame-core/new-project-init](https://github.com/warm-flame-core/new-project-init) — 项目文档体系初始化 skill：提问驱动落实文档规范、固化 AI 协作工作流，跨 DSH / Reasonix / Claude Code / Codex 可用。
 - [WaveSpeedAI/wavespeed-dsh-skill](https://github.com/WaveSpeedAI/wavespeed-dsh-skill) — 通过开源 wavespeed CLI 用 WaveSpeed 模型生成与编辑 AI 媒体（图像、视频、音频、3D）：实时目录搜索、逐模型输入 schema 自省、@path 标记本地文件上传、运行前价格查询。
 - [weibaohui/skills-management](https://github.com/weibaohui/skills-management) — 技能市场：一个页面管理本机所有 coding agent 的技能，一键收编进 DSH 用户库；内置 6600+ 技能市场，支持注入开销（≈token）统计与模型可见性治理。
-- [Wenaixi/dsh-ponytail](https://github.com/Wenaixi/dsh-ponytail) — DietrichGebert/ponytail v4.9.0 的 DSH 完整移植：常驻懒人 senior 模式与七阶梯子（YAGNI 到最小实现），含 6 个技能（评审、审计、债务、收益、帮助）且无空 tool。
+- [Wenaixi/dsh-ponytail](https://github.com/Wenaixi/dsh-ponytail) — DeepSeek Harness 插件：DietrichGebert/ponytail 懒人 senior 模式与七阶梯子完美移植，6 个技能描述双语自由切换，各个技能自由开关，零 tool 注册，全场景零缓存破坏。
 - [Wenaixi/dsh-superpower](https://github.com/Wenaixi/dsh-superpower) — obra/superpowers 的 DSH 完整移植：通过原生 SkillProvider（rank 550）注入 14 个方法论技能，覆盖需求澄清、计划拆解、TDD、系统化调试、并行分发等，文档全中文化，开箱即用、零构建安装。
 - [wenyixiaoqingnian/screenshot-review](https://github.com/wenyixiaoqingnian/screenshot-review) — 截图审阅 skill：模型自己打开页面、截图、看图、改代码，反复迭代直到前端效果符合要求。以 dsh.bundle 打包，可用 `dsh plugin add` 一键安装。
 - [westwind2022/dsh-stock-jt](https://github.com/westwind2022/dsh-stock-jt) — A股技术面研判（架梯动力学）插件：基于缠论结构给出挂坡 D⁺/D/D⁻ 与强势起步 E⁺/E/E⁻ 信号，附设置页与工作提示词。
