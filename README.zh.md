@@ -1022,6 +1022,7 @@ dsh plugin --profile web add dshmarket
 - [yangdongzhen590/dsh-knj-menu](https://github.com/yangdongzhen590/dsh-knj-menu) — 第三方菜单管理器：统一收纳第三方插件的新增菜单入口，提供常规折叠与固定菜单项。
 - [yangdongzhen590/dsh-knj-prompts](https://github.com/yangdongzhen590/dsh-knj-prompts) — 提示词场景选择器：下拉选场景即自动开新会话并填充提示词（支持 {变量}），微调即可发送。
 - [yanglingrise/dsh-erii-boot-splash](https://github.com/yanglingrise/dsh-erii-boot-splash) — 绘梨衣（Sakura）主题启动加载动画——樱花瓣飘落、头戴樱花的小怪兽、粉色进度条，约 3 秒自动淡出且不阻挡操作。
+- [YangShen-SWE/dsh-plugin-chat-zoom](https://github.com/YangShen-SWE/dsh-plugin-chat-zoom) — 仅缩放 DSH 聊天消息和输入区（80%–200%），支持 Ctrl 快捷键、设置调节与本地记忆，不缩放侧栏。
 - [yangshen830-eng/dsh-editor](https://github.com/yangshen830-eng/dsh-editor) — VS Code 风格代码编辑器：侧边栏文件树浏览工作区，Monaco 编辑，文件读写，Git 状态与差异，搜索与 Markdown 预览。
 - [yannicksong0106/dsh-550c-boot](https://github.com/yannicksong0106/dsh-550c-boot) — 给 DSH 加一段 550C 全屏开机片头：简易档 4 秒、完整档 16 秒覆写流程，点击或按 Esc 跳过，四套磷光配色。首帧由宿主半边在文档解析阶段注入，DSH 自带的 Loading 卡片不会露脸；桌面窗口右上角那条原生按钮条带在片头期间透明化，按钮像浮在动画上。
 - [YannZhou/dsh-about](https://github.com/YannZhou/dsh-about) — 在 DeepSeek Harness 设置中心增加「关于」分区：版本信息、npm 检查更新与一键安装（自动重启）、GitHub 版本更新记录。
@@ -3498,6 +3499,7 @@ dsh plugin --profile web add dshmarket
 - [robin421/dsh-html-inspector](https://github.com/robin421/dsh-html-inspector) — HTML 选区模式：点选本机 demo 页面中的任意元素，定位信息（选择器、文本、HTML 片段）自动写入对话输入框，供 AI 精准修改。
 - [rogerdigital/dsh-searxng](https://github.com/rogerdigital/dsh-searxng) — 基于 SearXNG 的 web_search provider：通过自建实例的 JSON API 实现免费、免密钥的元搜索，附仅绑定回环地址的 docker-compose 示例。
 - [SciF-Lin/dsh-browsercontrol-mcp](https://github.com/SciF-Lin/dsh-browsercontrol-mcp) — 通过官方 dsh-mcp-client 挂载微软的 Playwright MCP，把浏览器工具以 stdio 接入智能体；一次性的 CDP 授权由提示注入、调用拦截与 /bw-setup 命令引导完成。
+- [SheepofSheep/dsh-doyourweb](https://github.com/SheepofSheep/dsh-doyourweb) — 通过 @ 引用已打开的 Chrome / Edge 标签页，配合浏览器扩展复用登录状态，读取页面、批量操作、截图，并在页面支持时调用 WebMCP 工具。
 - [shinjiyu/dsh-plugin-search](https://github.com/shinjiyu/dsh-plugin-search) — 不用官方 DeepSeek API 也能用内置 web_search：关掉 web-search-deepseek，默认走 Tavily keyless。
 - [sryimnoob123/dsh-web-search-ollama](https://github.com/sryimnoob123/dsh-web-search-ollama) — 让 DSH 的 web_search 工具走 Ollama 联网搜索 API，复用 OLLAMA_API_KEY，无需 DeepSeek 官方 Key。
 - [stormbuf/dsh-tavily-pool](https://github.com/stormbuf/dsh-tavily-pool) — 用 Tavily 接管内置的 web_search 与 web_fetch 提供方，两者各有一个开关：密钥池按余额调度（从 /usage 读取真实余额），失败自动切换，冷却中与额度耗尽的密钥硬排除，并记录调用历史与 14 天额度图表。
@@ -4958,6 +4960,7 @@ dsh plugin --profile web add dshmarket
 - [nicecx/dsh-reset-handoff](https://github.com/nicecx/dsh-reset-handoff) — 把 DSH 重置请求经带版本的 JSON 协议交给外部运维 agent：预检快照、重启前成熟度门禁（无待审批、磁盘充足、冷却期）、重启、健康检查与业务恢复，结果投递回发起会话。
 - [nicecx/dsh-task-queue](https://github.com/nicecx/dsh-task-queue) — DSH↔Hermes 协作的缓存梯队任务队列（reset > approve > review，queue.json 唯一真相源）：全部提审路径入队、租约/认领模型并发 1、优先级 aging 防饿死、原子忙锁；Hermes 侧消费端（cron */1 + monitor 门控）出队执行、单槽检查写审核请求、调用重置 agent。
 - [nirvanaslash/dsh-bat2exe](https://github.com/nirvanaslash/dsh-bat2exe) — 在 DSH 内把 Windows .bat/.cmd 启动器编译成真正的 .exe：用内置位图字体生成图标，生成调用同目录批处理的 C# 薄壳，经 csc.exe（或 dotnet build）编译，并可选写入开始菜单/桌面快捷方式。
+- [niubi6668889595/dsh-autoupdater](https://github.com/niubi6668889595/dsh-autoupdater) — DeepSeek Harness 定时自动更新插件：本体与已装插件一并检查，仅在空闲窗口执行。四种调度模式（每日/每N小时/每N天/每N分钟）、双向白名单、磁盘回读验证、内嵌设置面板热生效。
 - [NormanFxxkingRockwell/harmonyos-dev-mcp-for-dsh](https://github.com/NormanFxxkingRockwell/harmonyos-dev-mcp-for-dsh) — 把 harmonyos-dev-mcp Python MCP 服务桥接进 DSH：鸿蒙设备发现、构建/安装/运行/卸载、UI 自动化（点击/输入/按键/滑动/截图）、E2E 界面树检查、日志与崩溃分析，共 18 个 mcp__harmonyos__* 工具。
 - [nxz1026/dsh-tray](https://github.com/nxz1026/dsh-tray) — DeepSeek Harness Web 的 Windows 托盘启动器：托盘图标一键启动、停止、重启服务，打开 Web UI、查看日志，实时状态图标，并支持开机自启开关。
 - [Octo-o-o-o/dsh-plugin-deploy](https://github.com/Octo-o-o-o/dsh-plugin-deploy) — 一句话把项目部署到 Cloudflare、把做好的插件发布到 npm：首次部署零账号，凭据模型看不到。
