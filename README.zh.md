@@ -678,6 +678,7 @@ dsh plugin --profile web add dshmarket
 - [MoonlitDropOfBlood/DSH-Desktop#whaleharbor-promo](https://github.com/MoonlitDropOfBlood/DSH-Desktop/tree/master/plugins/whaleharbor-promo) — 把浏览器里的 DSH 会话变成鲸港简版客户端：独立 --app 窗口、客户端顶栏与任务通知；后台多源下载完整桌面安装包（SHA-256 校验），完成后提示安装。
 - [Moonshile/moonshile-dsh-plugins#dsh-workspace-sort](https://github.com/Moonshile/moonshile-dsh-plugins/tree/main/plugins/dsh-workspace-sort) — 侧边栏工作区每日按最近活动排序一次，当天顺序稳定。
 - [MorGogh/widget-dock](https://github.com/MorGogh/widget-dock) — 对话两侧空白区的可拖动卡片工作台，28 个小组件（余额、Token 用量、成本、上下文压力、待办、目标、用量热力图、GitHub 仓库、图片中转等），支持 S/M/L/XL 四档尺寸。
+- [MorixMa/dsh-download-progress](https://github.com/MorixMa/dsh-download-progress) — DSH 会话头里的下载进度指示器：读取后台任务名册，把下载器自己已经打印出来的进度（curl --progress-bar、wget、aria2，或 JSON 进度文件）解析成环形进度、动画进度条、传输速率与剩余时间；不上报进度的任务显示为未知进度而不是被隐藏。已完成文件单击即开，也可在文件管理器里定位。不依赖任何第三方插件，运行时零依赖。
 - [mostkia/dsh-htmlui](https://github.com/mostkia/dsh-htmlui) — 让模型写出 HTML/CSS/JS，在会话里以沙箱 iframe 渲染，并通过 POST 与 SSE 与模型互通，支持模板复用。
 - [mostkia/dsh-launcher](https://github.com/mostkia/dsh-launcher) — 为 DSH 侧边栏加一个电源按钮——关机 / 重启（各自二次确认）；并自带 Windows 托盘启动器：无窗口启动 DSH、托管它以让「重启」能自动拉起，并提供同一个开机自启开关。
 - [MrGnUm/dsh-continue-button](https://github.com/MrGnUm/dsh-continue-button) — Adds a one-click Continue button beside Send that resumes a stopped turn by sending the "continue" prompt; hidden while a turn is running or the session is empty.
@@ -916,6 +917,7 @@ dsh plugin --profile web add dshmarket
 - [UndeadSheep/dsh-file-preview#dsh-file-preview](https://github.com/UndeadSheep/dsh-file-preview/tree/main/packages/dsh-file-preview) — Web 客户端悬浮文件预览窗：懒加载文件树、CodeMirror 预览与窗内编辑保存、Markdown 与图片预览、Quick Open 搜索，以及点击会话中的路径直接打开。
 - [UnknowCao/dsh-dock](https://github.com/UnknowCao/dsh-dock) — DeepSeek Harness 的 Windows 桌面启动器：一键鲸鱼图标 + 侧栏「更多」菜单（设置 / 重启/刷新 / 优雅完全退出），冷启动卡片支持可滚动的多 DSH 候选选择。
 - [Utmotc/dsh-balance-card](https://github.com/Utmotc/dsh-balance-card) — 在当前会话所用模型的厂商 API 余额，以 dsh Web 侧边栏卡片常驻展示，含每套餐进度条、货币/积分单位区分、设置页，以及订阅与积分额度监测。
+- [var-lin/dsh-plugin-layout-organizer](https://github.com/var-lin/dsh-plugin-layout-organizer) — 对 DSH 投放到侧边栏顶部、侧边栏底部、对话标签、输入框停靠行与设置页导航的插件按钮做拖拽排序、官方/第三方分隔线与按钮收纳。只改变显示位置，不改动插件注册表。
 - [vibeinging/dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) — 对话轮次导航。
 - [victormshan/dsh-web-relay](https://github.com/victormshan/dsh-web-relay) — dsh 三方协作协议插件：Step List 状态机、五级审核链（含本地 Claude Code 混合审）、alternatives 裁决、无介入续跑与能力持久化体系。
 - [Vinzelles/dsh-clearview](https://github.com/Vinzelles/dsh-clearview) — 为 DSH Web 客户端新增「阅读」页签：按源顺序呈现过程步骤与实时思考，成功轮次收起只留最终回答，原有页签、输入框与工具保持不变。
@@ -4325,6 +4327,7 @@ dsh plugin --profile web add dshmarket
 - [stuarthu/dsh-crew](https://github.com/stuarthu/dsh-crew) — 以角色团队的方式干活：产品经理先写 PRD 或 DoD 并等你确认，再启动架构师、工程师、QA 与各类评审；每个角色的工具集按角色锁定，彼此通过磁盘文件协作。
 - [SuperWheel/dsh-cliworker-now](https://github.com/SuperWheel/dsh-cliworker-now) — 适用于 macOS / Windows 和 DeepSeek Harness 0.2.0-rc.2 的多 CLI 智能体侧栏插件，提供任务派遣、实时对话查看、停止与续聊及自定义角色预设。
 - [tangzheng202202/dsh-sparkos](https://github.com/tangzheng202202/dsh-sparkos) — 自媒体工作台插件：8 tab 看板（今日简报/叙事主线/选题/草稿/知识卡蒸馏审核/信息源/发布表现/系统建议），五守卫硬执行，VAULT 数据与代码分离，intel 模块只读接入并遵守四条红线。
+- [theskywilldawn/dsh-LittleStar-meeting](https://github.com/theskywilldawn/dsh-LittleStar-meeting) — 跨会话会议室：主持人开房定题、定轮次，按顺序邀请其它会话，一位一位发言，轮次用满即收会出纪要。
 - [thissensen/dsh-agent-studio](https://github.com/thissensen/dsh-agent-studio) — 可视化地自定义配置 Agent 的提示词、工具、可见技能、子代理与备用模型，把它们编成一支团队。不写宿主的任何预设文件。
 - [thomasvvugt/dsh-kanban-flow](https://github.com/thomasvvugt/dsh-kanban-flow) — agent 驱动的看板：每个工作区一块看板、每个任务一个 agent 会话，以及带护栏的人机协作流程（Backlog → To Do → In Progress → Review → Done）。
 - [tianjiedadi/dsh-openreelbench](https://github.com/tianjiedadi/dsh-openreelbench) — 四段带审批闸的视频创作管线：立项、脚本、素材、合成，把一句话变成带配音、配图或视频和字幕的解说片；生成走 ComfyUI 工作流或图片/视频 API，合成走 FFmpeg。
