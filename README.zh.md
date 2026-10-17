@@ -1574,6 +1574,7 @@ dsh plugin --profile web add dshmarket
 - [xiyunyunyun/dsh-client-ui-seaglass](https://github.com/xiyunyunyun/dsh-client-ui-seaglass) — Seaglass是一个高自由度的玻璃质感主题。
 - [YE-ZINAN/dsh-skin-im2005](https://github.com/YE-ZINAN/dsh-skin-im2005) — DeepSeek Harness 客户端的 2005 年代即时通讯皮肤：直角 1px 窗框、蓝色渐变标题条、中文界面统一宋体、好友分组式侧栏（含头像档案卡与可编辑签名）、每条消息带名字与时间抬头，皮肤档位三档可实时切换。美术全部为原创 SVG；重绘后的工具条另带跨会话备注框、后台任务面板，以及美式八球、扫雷、Token 农场和德州扑克——插件内置的专注模式会把它们静音。
 - [yefengliu1/dsh-theme-songgrid](https://github.com/yefengliu1/dsh-theme-songgrid) — 宋律 Songgrid —— 宋代美学主题，宣纸（浅）与夜墨（深）双变体；汝窑天青承担交互态、窑铜只用于引用块；另附 4pt 间距阶与 46 个 mask 图标。
+- [yidao2000/dsh-local-background](https://github.com/yidao2000/dsh-local-background) — 用本地文件夹当 DSH Web 壁纸：默认就用当前用户的「图片」库（C:\Users\<用户名>\Pictures），宿主通过同源 HTTP 提供其中的图片，每 N 分钟轮换一张（0-1440，默认 5），洗牌后一轮内不重复；「插件」页的设置界面可用系统原生文件夹对话框换目录，并可调节背景图不透明度（100%）、压暗遮罩（25%）与面板不透明度（15%），改动即时生效。弹窗、对话框与菜单保持默认不透明底色，字更清楚。直接读取 .jpg .jpeg .png .webp .gif .avif .bmp，用户配置写入 $DSH_HOME，升级不会带上你的目录路径。
 - [Yinxe/deepseek-harness-plugins#web-style](https://github.com/Yinxe/deepseek-harness-plugins/tree/main/plugins/web-style) — Web 外观定制套件：7 套主题画廊（每套 122 个 --dsw-* token 全量映射）+ 设置页一键切换并持久化，Material You 壁纸取色一键生成整套动态配色（可导出 MD3 令牌），另带全局圆角三档。主题以官方 overrideTokens 覆盖层叠加在官方亮/暗之上，官方外观行永远合法可用。
 - [ymh0000123/dsh-theme-endfield](https://github.com/ymh0000123/dsh-theme-endfield) — 《明日方舟：终末地》工业编辑风主题：奶油纸底、墨黑文字、全局直角，两套强调色配色（谷地黄信号黄 / 武陵青青碧色）可在设置切换，另有可选的等高线地形背景、ENDFIELD 水印与启动加载屏。
 - [yq1930/dsh-skin-asuka-p01](https://github.com/yq1930/dsh-skin-asuka-p01) — 非官方明日香主题皮肤：双人物精绘立绘、城市穹顶日夜背景，含表现方式、穹顶背景开关、立绘位置、背景强度和人物大小五项设置。
@@ -1863,6 +1864,7 @@ dsh plugin --profile web add dshmarket
 - [xiaomao49/dsh-model-probe](https://github.com/xiaomao49/dsh-model-probe) — 直接实测 llm-pi-ai 端点真正接受的能力——从它自己的模型列表取上下文窗口，从它自己的报错反推输出上限与推理档位，用生成的测试图验证图像支持——再报告与证据不符的声明值，确认后才改写。
 - [xiaozhe7772222/dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) — 0元接入6个免费大模型，免注册免充值，内置6个免费模型，多Key轮换与限流退避。
 - [xingzhen199186/dsh-advisor-group](https://github.com/xingzhen199186/dsh-advisor-group) — 主模型在专业/长尾/高风险或不确定问题上召集多个专家顾问模型，以复古 CRT 聊天组卡片展示：一次 ask_advisors 自动跑满自动深挖流水线（驱动模型追问、顾问接力、综合结论），真流式 SSE、26 个供应商预设、可配置每日配额、停止/继续，以及可选的顾问工具调用。
+- [xingzhen199186/dsh-subagent-custom](https://github.com/xingzhen199186/dsh-subagent-custom) — 子代理模型管控：由 Jev 判定本轮任务类别，再把子代理自身的请求改写为该类别对应的 provider、model 与推理强度（在 agent/request 钩子上执行）；会话内可用继承/自动/手动三种方式指定模型，每个角色可带一条先于任务注入的前置提示词，并可离线回放历史判定。
 - [xuan666-lab/dsh-openrouter-provider-advisor](https://github.com/xuan666-lab/dsh-openrouter-provider-advisor) — 按量化、速度、缓存重度价格、上下文和可用率为当前 DSH 模型推荐 OpenRouter 供应商，并支持一键切换以帮助降低 token 成本。
 - [YangShen-SWE/dsh-plugin-simple-pet](https://github.com/YangShen-SWE/dsh-plugin-simple-pet) — Windows 二次元桌宠：查看 DeepSeek 余额与 Codex 额度，内置 Codex 多账号 OAuth 管理、逐账号额度与模型接入，支持简洁模式和设置自动保存。可选面板一键切号及逐账号授权的每日预热；多账号启动/5h满额触发暂不可用。
 - [yoshino-xiao7/dsh-codex](https://github.com/yoshino-xiao7/dsh-codex) — DeepSeek Harness 社区 Codex 模型接入：支持 ChatGPT OAuth、Codex 模型、图片输入、额度展示、单会话 Fast 与传输控制，以及安全的流式恢复。
@@ -3996,6 +3998,7 @@ dsh plugin --profile web add dshmarket
 - [apheli0os/deepseek-harness-orchestrate](https://github.com/apheli0os/deepseek-harness-orchestrate) — DSH 声明式任务 DAG 编排：校验依赖图，通过工作流子智能体并行执行拓扑任务层，并确定性传播失败。
 - [ArtlexYoung/dsh-super-code](https://github.com/ArtlexYoung/dsh-super-code) — 提供一个更快、更节省、更准确的编码 Agent 预设。在按多维难度规则筛选的 SWE-bench Pro 高难度 100 题评测中，平均耗时减少 36%，平均每题输入 token 减少 17%，正确率提高 5 个百分点。
 - [Asif2BD/JARVIS-Mission-Control-DeepSeek#dsh-plugin-mission-control](https://github.com/Asif2BD/JARVIS-Mission-Control-DeepSeek/tree/main/integrations/deepseek-harness/dsh-plugin-mission-control) — 把 DeepSeek Harness 的会话、消息、工具活动与每轮结果实时推送到 JARVIS Mission Control 看板，附任务状态与人工复核。
+- [azwosile/dsh-tripo-studio#plugin](https://github.com/azwosile/dsh-tripo-studio/tree/main/plugin) — 用于参考图生成、裁剪、分件 Tripo 3D 建模与本地资产预览的可视化工作台，收费操作须逐次确认。
 - [baosfeng/my-dsh-plugins#dsh-task-reliability](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-task-reliability) — 任务可靠性：模型超时/请求失败自动重试、任务未完成自动继续、独立完成度校验、思考重复检测打断、休眠/重启后任务自动恢复、自主决策模式、远程触发接口（npm: `dsh-task-reliability`）。
 - [Bear0117/dsh-plan-checkup](https://github.com/Bear0117/dsh-plan-checkup) — 在你同意执行计划前逐步检查每一步，用命令规则加上 Jev 或支持 logprobs 的 OpenAI 兼容端点，在计划审阅卡片上标出无法恢复、影响工作区以外、需求没提到或描述太模糊的步骤。
 - [BillyChen123/qdd](https://github.com/BillyChen123/qdd) — 面向 DeepSeek Harness 的 Question-Driven Discovery 科研工作流，提供 QDD Agent Preset、持久化 Human 和 Auto 运行，以及可审计的研究面板。
