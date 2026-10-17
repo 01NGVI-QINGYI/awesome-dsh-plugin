@@ -1246,7 +1246,7 @@ dsh plugin --profile web add dshmarket
 - [MoonlitDropOfBlood/dsh-token-stats](https://github.com/MoonlitDropOfBlood/dsh-token-stats) — DeepSeek Harness 的 Token 用量统计：近 7 天/30 天按模型的柱状图、饼图，外加近一年每日活跃热力图。
 - [mov-eax-eax/dsh-token-anxiety](https://github.com/mov-eax-eax/dsh-token-anxiety) — 实时按任务追踪 token 成本的小部件：高峰/低谷定价时段、涨价后预测成本、可排序的每任务成本表、多币种（默认 COP/USD/CNY，另有 40 余种）与汇率，以及一键流式解释高成本任务。
 - [mozhuanzuojing/dsh-liangwengu](https://github.com/mozhuanzuojing/dsh-liangwengu) — 按北京时间提醒 DeepSeek API 定价高峰/空闲时段的游戏化插件：可拖动血条胶囊、日夜主题、隐藏彩蛋与修仙突破动画。
-- [mpinaev/dsh-context-governor](https://github.com/mpinaev/dsh-context-governor) — 上下文占用分档显示、按模型窗口推出的每会话压缩阈值、按缓存读/写单价算出的单步成本、缓存命中率、DeepSeek 余额（含峰谷电价），以及一键交接。它不调用模型，不消耗 token。
+- [mpinaev/dsh-context-governor](https://github.com/mpinaev/dsh-context-governor) — 上下文占用档位、按模型窗口推算的每会话压缩阈值、按缓存读取/写入费率计算的单步费用、缓存命中率、DeepSeek 余额与高峰/低谷费率，以及一键交接。它从不调用模型，也不消耗 token。
 - [mtty-ai/mmx-quota-tool](https://github.com/mtty-ai/mmx-quota-tool) — DSH 网页 MiniMax 配额悬浮卡：会话输入区显示水滴形 5h 已用百分比，点击展开详情面板，列出每个模型的 5h/周用量与重置倒计时，当前默认模型非 MiniMax 时自动隐藏。
 - [Mu-scorpio/token-usage-counter](https://github.com/Mu-scorpio/token-usage-counter) — 持久化 provider 上报的 Token 用量统计，支持按会话、按模型和按日活跃度查看。
 - [MuAllen/dsh-gateway-wallet](https://github.com/MuAllen/dsh-gateway-wallet) — 读取当前 API key 在 Sub2API、New API 或 DeepSeek 官方账本上的剩余额度；站点公布实扣时才显示实扣，不是本地 token 估算。
