@@ -1954,7 +1954,6 @@ dsh plugin --profile web add dshmarket
 - [flow2dream/dsh-msg-rewind](https://github.com/flow2dream/dsh-msg-rewind) — 对话回退：/undo 回退一轮，/rewind 回退到历史消息，悬浮用户气泡可可视化撤回。
 - [fredalxin/dsh-solo-thinking](https://github.com/fredalxin/dsh-solo-thinking) — 可视化分支头脑风暴：为每个方向创建独立 Session，自动处理父子继承、兄弟感知、进展与回传 Handoff，并提供完整树形 Tab 与可选 Better Sidebar 右栏。
 - [Frog755/dsh-client-auto-retry](https://github.com/Frog755/dsh-client-auto-retry) — 回合中断自动续跑：turn/end 因 error / interrupted / max-tokens 结束时自动发送「继续」，支持宽限期、冷却、指数退避、连续次数上限、启动扫描、设置卡片，以及输入框工具行的会话级停止/恢复按钮；不切换模型/provider。
-- [G57651/dsh-session-manager](https://github.com/G57651/dsh-session-manager) — 侧边栏会话管理面板：浏览、归档、软删除与批量管理 DeepSeek Harness 会话，附可恢复回收站。
 - [GengDaPeng/dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) — DeepSeek Harness 跨会话 Agent 通信：支持会话发现、离线投递、投递回执与发送方会话导航。
 - [GooDAnDReaDY/dsh-session-control](https://github.com/GooDAnDReaDY/dsh-session-control) — DSH 侧边栏会话管理：固定对话、搜索内容、读取归档记录并隐藏噪音。
 - [GreenLv/dsh-session-insights](https://github.com/GreenLv/dsh-session-insights) — 回头看看你是怎么使用 AI 的：`/session-insights` 会整理一段时间内的 DSH 会话，找出哪些做法有效、哪些问题总在重复、最终真正留下了哪些成果，并生成一份保存在本机的复盘报告。
