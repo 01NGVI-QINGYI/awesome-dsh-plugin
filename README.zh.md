@@ -660,6 +660,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-cuigengji-plugin](https://github.com/mistnest/dsh-cuigengji-plugin) — 催更姬：DSH 小说写作工作台，支持章节编辑、共享剧情画布、人物与世界设定分组、写作预设和按范围导入导出，供作者与 AI 一起讨论和推进故事。
 - [MitsukiJoe/dsh-better-ux](https://github.com/MitsukiJoe/dsh-better-ux) — DeepSeek Harness 网页交互增强，提供会话重命名与分叉快捷操作、带搜索和供应商筛选的模型选择器、移动端布局、全局字体缩放、上下文用量提醒、DeepSeek 余额与峰谷价格、已发消息导航和对话情况总结。
 - [miuzel/dsh-subagent-ui](https://github.com/miuzel/dsh-subagent-ui) — 搜索、监控、打断与批量归档工作区子代理，支持实时活动/思考流式展示与活跃浮窗。
+- [MM998LI/dsh-dock-vitals](https://github.com/MM998LI/dsh-dock-vitals) — 在输入框下方的状态栏里实时显示 CPU、内存与 GPU 读数：可点击的徽章、详情面板、逐项开关与三档刷新速度。
 - [Mobai-read/dsh-chat-index-rail](https://github.com/Mobai-read/dsh-chat-index-rail) — 纯客户端对话输入目录条：每条用户消息一根横条，两级悬停预览（15 字，移入气泡展开 40 字）、点击跳转、滚动跟随高亮；静态 npm 包，无宿主半。
 - [moeform-re/dsh-review-md-preview](https://github.com/moeform-re/dsh-review-md-preview) — 评审页的 Markdown 预览与渲染态双栏对比。
 - [Mombrane/dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) — Web UI 子代理实时监视面板：侧边栏底部入口 + 右上角常驻卡片面板，实时展示当前会话每个子代理的运行状态（运行中/耗时/终态）、树形缩进，一键跳转子代理会话并支持返回主会话，刷新自恢复、移动端默认隐藏。
@@ -1664,6 +1665,7 @@ dsh plugin --profile web add dshmarket
 - [ChaYeWuu/dsh-hyperworkbuddy](https://github.com/ChaYeWuu/dsh-hyperworkbuddy) — 将本机登录的 WorkBuddy 多账号接入 DSH，国内版与国际版分开管理。支持账号故障自动切换、一键刷新模型目录与积分、国内版每日签到，以及可开关的 OpenAI 兼容端点。
 - [chen704290901chen/dsh-newapi-video](https://github.com/chen704290901chen/dsh-newapi-video) — 在对话中用 @ 引用素材调用 new-api 中转站的视频大模型生成视频，支持 Seedance 2.0 与快乐马的文生视频和图生视频，覆盖四种中转协议。
 - [chengshenyangtai/dsh-workbuddy-trae-qoder-connect](https://github.com/chengshenyangtai/dsh-workbuddy-trae-qoder-connect) — 一个 DSH 插件把 WorkBuddy（个人多账号、企业版与国际版 WorkBuddy AI）、Qoder CN、Trae CN 的模型聚合进同一个模型选择器，共用一套对话历史，支持积分倍率、逐模型思考档位、国际版上游声明的最大上下文窗口，并在渠道有签到活动时自动领取。
+- [chengzhi-c/dsh-wtq-pool](https://github.com/chengzhi-c/dsh-wtq-pool) — 把本机 WorkBuddy、Trae、Qoder 的桌面登录接进 DeepSeek Harness，每家一个 OpenAI 兼容的本地端点，带账号池、限流自动换号与设置面板。
 - [ckanner/dsh-plugin-chatgpt](https://github.com/ckanner/dsh-plugin-chatgpt) — 通过 OAuth 登录 ChatGPT 账号，把该套餐的模型作为 DeepSeek Harness 的 provider 路由提供；调用 api.openai.com/v1/responses 并使用账号的套餐授权范围，而非 Codex 后端。
 - [converk/dsh-tweaks#model-capabilities](https://github.com/converk/dsh-tweaks/tree/main/plugins/model-capabilities) — 在「设置 → 模型」的模型行里补上思考强度档位（llm-pi-ai，含 OpenAI / Anthropic 协议预置）、多模态开关和 1M/128K 上下文与最大输出快捷填入。
 - [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) — 将 WorkBuddy 桌面 App 包含的模型自动接入 DeepSeek Harness，在 DSH 对话窗口里零配置使用。
@@ -1933,6 +1935,7 @@ dsh plugin --profile web add dshmarket
 - [huaizhuanghub/dsh-persona-dafeiyu](https://github.com/huaizhuanghub/dsh-persona-dafeiyu) — 把选中的人设注入系统提示词的 DeepSeek Harness 插件：内置三套人设，支持从文件导入或粘贴自定义人设，并可按 profile 全局生效或按会话单独选择（输入框上方有切换条）。
 - [knopki/dsh-prompt-profiles](https://github.com/knopki/dsh-prompt-profiles) — DeepSeek Harness 的按会话提示词配置：可复用的系统提示词片段组成命名配置，并在会话启动时固化进该会话的提示词。
 - [let-mi-think/agent-manager](https://github.com/let-mi-think/agent-manager) — 在一个设置分区里新建与配置 Agent 预设——人格提示词、勾选后注入系统提示的知识库条目清单、四个知识库工具的独立开关、按 Agent 收窄 MCP 连接，以及知识库批量导入。
+- [Lutisure/cyrene-dsh-plugin](https://github.com/Lutisure/cyrene-dsh-plugin) — 给 DSH 用的昔涟主题 agent，包括可自定义美化主题（配色、壁纸、粒子效果、背景音乐、打字音效）与代码安全扫描。拥有世界书、长期记忆与说话方式修正（一千个人心中有一千个昔涟），剧情检索增强回答。
 - [lw-storm/dsh-plugin-masterprompt](https://github.com/lw-storm/dsh-plugin-masterprompt) — 每对话独立的人设 / 主提示词插件：在输入框工具栏创建、编辑、切换和删除人设模板，最高优先级系统提示注入，附带固定交互护栏、子代理继承、新对话默认继承与本地 JSON 持久化。
 - [m-rui001/dsh-mate-companion](https://github.com/m-rui001/dsh-mate-companion) — 有生物钟、会真实睡觉、有自己的记忆和情绪的 AI 伴侣，主动冲动以独立 turn 投递。
 - [MacilyDots/dsh-prompt-inject](https://github.com/MacilyDots/dsh-prompt-inject) — 注册一个可配置的 prompt 变量，让使用 complete: true 人格的 agent 预设也能收到一段注入文本；插件本身不含内容，文本由配置提供。
