@@ -4883,6 +4883,7 @@ dsh plugin --profile web add dshmarket
 - [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) — 开发配套守护：滚动快照、插件失败自动回退、启动失败救援、设置页管理面板。
 - [x2802490130-prog/dsh-shield](https://github.com/x2802490130-prog/dsh-shield) — 脱手模式安全网：agent 删除的目录先进回收站、链接绝不跟随，零审批。
 - [xiaocxiaohai666/dsh-plugin-selfcheck](https://github.com/xiaocxiaohai666/dsh-plugin-selfcheck) — 启动时打印 DeepSeek Harness 插件树中每一行的状态（失败的附异常内容），并检查依赖版本漂移、配置文件合法性、端口可达性与已注册工具。
+- [xiaolu511/dsh-hot-restart](https://github.com/xiaolu511/dsh-hot-restart) — DSH 窗口里的一个固定按钮，点一下就把 DSH 关掉并自动重开，全程没有控制台窗口；右键它还有内置自检，能生成一份自包含的诊断报告。
 - [xiaoso456/dsh-run-config](https://github.com/xiaoso456/dsh-run-config) — DSH 的 IDE 风格运行配置：把常用 LLM 提示词和 Shell 命令保存为可复用的运行配置（全局或按工作区），在会话头部或新会话页一键运行，大模型可通过 task_run_config 工具管理（写操作走审批）。
 - [xiaoyuyu6420/dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) — 一条命令备份、恢复与迁移 DSH 全部用户数据（~/.dsh），附可视化设置面板：定时自动备份与每日/每周分级保留、sha256 校验、失败自动回滚并回执的加固恢复、分类型子集备份（--types）、凭据脱敏进本机 vault、GitHub 私有仓库同步跨机迁移、宿主起不来也能用的进程外救援通道（备份目录内置零依赖救援网页）。/backup doctor 从已知良好备份体检并定点修复损坏会话日志、轮换前先隔离；migrate-check 迁移预检在升级前静态扫描，预测哪些会话会被新宿主拒绝（冻结清单、文件名代际不匹配、硬链接、旧版凭据布局等）；凭据哨兵在宿主改写前自动存底；智能备份在宿主升级前快照；/backup check-update 与 /backup update 感知并一键更新（先留快照）。恢复链路支持含附件硬链接的归档与超大归档（清单走原始流逐行校验）。当前 npm 版本 0.13.4；覆盖 DSH 0.1.1-rc.2–0.2.0-rc.1，含 0.2.0 起的安装期 peer 闸门。macOS/Linux/Windows。
 - [xiaxingtianxia2-glitch/dsh-auto-exit](https://github.com/xiaxingtianxia2-glitch/dsh-auto-exit) — 关闭 DSH Web UI 后自动退出 CLI 进程（等效 Ctrl+C），支持可配置宽限期与试运行模式。
