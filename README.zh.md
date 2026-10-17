@@ -102,7 +102,7 @@ dsh plugin --profile web add dshmarket
 - [pk14742952-AD/dsh-host-rsi](https://github.com/pk14742952-AD/dsh-host-rsi) — 面向本地与 API 大模型的 DSH 宿主插件：每次使用持续自进化，带反问式自检、批评升级、倒排索引记忆检索、编码循环收敛提示与五态交付护栏。
 - [Qulierm/orbital-agents](https://github.com/Qulierm/orbital-agents) — 为 DeepSeek Harness 提供常驻的 Endeavour 与 Challenger 对等会话：负责规划、按序执行任务，并核验汇报的结果。
 - [samirliu/dsh-goalloop-agentteams](https://github.com/samirliu/dsh-goalloop-agentteams) — 面向 DeepSeek Harness 的确定性目标门控插件：契约先行的 AC 文法（每条检查都是可失败的具名命令），门控自己重跑每条检查、零模型参与；verdict 绑定文件树摘要，文件改动即作废已过审结论；通过 tools/pre-execute 硬拦 update_goal 的完成声明，配合假完成计数，两次被抓住即 BLOCKED；任务级完成声明按作用域分级（strict/goal-only），多任务 Agent Teams 循环不会死锁。
-- [STARDUSTLC666/dsh-dream](https://github.com/STARDUSTLC666/dsh-dream) — DSH 智能体经验记忆与反思插件：任务后自动整理候选经验，经用户审阅采纳后在相关任务中自动召回。支持来源追溯、按项目检索、冲突处理、使用反馈和到期复核；整理与召回可分别开关，写入 AGENTS.md 需预览并手动应用。
+- [STARDUSTLC666/dsh-dream](https://github.com/STARDUSTLC666/dsh-dream) — DSH 智能体经验记忆与反思插件：任务后自动整理候选经验，经用户审阅采纳后在相关任务中自动召回。支持来源追溯、按项目检索、冲突处理、使用反馈和到期复核；整理与召回可分别开关，写入 AGENTS.md 需预览并手动应用。面板内置 4 步首次使用引导，看一次后不再出现。
 - [syyr1987/dsh-linghun](https://github.com/syyr1987/dsh-linghun) — DeepSeek Harness 的判断内核：认知循环让判断有来处、反馈有归因、规划收口；海马体把运行经历沉淀为可复用知识（序时账留痕、情景归档、低置信降权遗忘）；判分身份职责入架构（口径一致、判据绑定来源）；联动 dsh-linghun-assembler 的 A2A 记忆管理团队。需要 DSH ^0.1.0-rc.7（支持 rc.2）。
 - [syyr1987/dsh-linghun-assembler](https://github.com/syyr1987/dsh-linghun-assembler) — 灵魂的记忆提取侧·认知循环团队版：判断→捞取→组装→被判定→校准五步闭环，判官/捞手/史官/辩手/编辑/书记角色化子智能体承载，BM25 检索 + 时序素材 + LLM 组装「有用素材包」注入 linghun。与 dsh-linghun 组合使用。
 - [WDahah/portable-dsh-multi-agent-plugin](https://github.com/WDahah/portable-dsh-multi-agent-plugin) — 把任务派给一个模型、把评审交给另一个模型，并带有资格证据、故障转移与持久日志。
@@ -474,6 +474,7 @@ dsh plugin --profile web add dshmarket
 - [Hudson-Junior-Wang/dsh-search-switcher](https://github.com/Hudson-Junior-Wang/dsh-search-switcher) — 在 DeepSeek Harness 模型选择器旁一键切换搜索服务商的下拉菜单；海外大学网络常拦截 DeepSeek 官方搜索，可借此切到其他引擎规避。
 - [hufeide/dsh-sidebar-assistant](https://github.com/hufeide/dsh-sidebar-assistant) — Web 界面的侧边栏助手插件,在 Web 聊天界面里选中任意文本，在浮层面板里流式显示思考过程与最终答案。
 - [huhu23333/dsh-plugin-subagent-model-route](https://github.com/huhu23333/dsh-plugin-subagent-model-route) — 给每个子代理标注它实际运行使用的模型路由：父会话目录行增加「mode · 活动状态 · 模型」徽标行，子代理会话页头显示同一读数。
+- [HuiHuangDDFS/dsh-codex-mini-pet](https://github.com/HuiHuangDDFS/dsh-codex-mini-pet) — 为 DeepSeek Harness 添加聊天与工作双模式，内嵌 DeepSeek 官方聊天网页，并提供支持快捷聊天和任务完成提醒的桌面伙伴。
 - [huihuangdi/dsh-model-provider-badge](https://github.com/huihuangdi/dsh-model-provider-badge) — 在 DSH Web 输入框工具行、模型选择器左侧显示当前会话所用模型的供应商。
 - [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) — DeepSeek Harness 的终端 UI（TUI）。
 - [HUITianYi/dsh-whale-desktop-launcher](https://github.com/HUITianYi/dsh-whale-desktop-launcher) — DSH 的 Windows 桌面启动器，提供鲸鱼娘图标、后台服务启动和无浏览器工具栏的 Chromium 应用窗口。
@@ -1271,6 +1272,7 @@ dsh plugin --profile web add dshmarket
 - [huangyuheng/dsh-token-use](https://github.com/huangyuheng/dsh-token-use) — 设置中的 Token 用量面板：总量（输入/输出/缓存读/缓存写/推理/调用次数），按模型、按天、按月、按项目的明细，以及最近 30 天的按日趋势折线图；历史在 Worker 线程上一次性重建，之后由会话事件实时累加。
 - [huanyuLv/dsh-balance-tide](https://github.com/huanyuLv/dsh-balance-tide) — 输入框下方显示 DeepSeek 账户余额与本会话花费，余额前带峰/谷价格徽章（北京时间）与距切换倒计时，悬停看两档单价明细与使用建议。
 - [iamfromchangsha/dsh-go-balance](https://github.com/iamfromchangsha/dsh-go-balance) — 输入框工具行右侧的 OpenCode Go 余额胶囊：滚动/每周/每月配额剩余百分比（数据直接来自 Zen 用量接口），悬停查看明细，低余额自动变黄/变红。
+- [iasiv5/dsh-quota-watch](https://github.com/iasiv5/dsh-quota-watch) — 在 DSH 中查看 GLM Coding Plan 与 GitHub Copilot 的服务商额度快照：可拖动悬浮胶囊与详情面板展示额度窗口、重置时间、分模型用量与 Copilot 额度，附默认隐藏的可选侧边栏卡片；凭据由 DSH 宿主解析，不保存额度历史。
 - [ibka512/dsh-ibka-balance](https://github.com/ibka512/dsh-ibka-balance) — 输入框下方常驻余额卡片：实时显示 DeepSeek API 账户余额，每 5 分钟自动刷新，支持手动刷新，余额过低自动变色提醒。
 - [Icstick/dsh-usage-card](https://github.com/Icstick/dsh-usage-card) — 侧栏常驻卡片：按 DeepSeek 官方价目（含峰谷与缓存差价）把本会话 token 折算成人民币，并按来源拆开上下文占比；逐轮计价，另附 Markdown/CSV 历史报告。
 - [igormel81/dsh-chat-cost](https://github.com/igormel81/dsh-chat-cost) — 为 DSH Web UI 的每个对话实时计算 token 费用：本对话、其子代理与整棵会话树，价格来自内置的 models.dev 快照：七家供应商、139 个有价模型，缓存读写费率按供应商实际公布的取值，DeepSeek 则使用其官方峰谷价格表。每个完成的回答都会在对话中显示自身费用，未打开的对话则按日志计价而不是整行消失。费用按区间计价，依据写入项目目录的只追加 JSONL 账本，因此已记录的工作保留当时的费率。此外还提供：按金额预算排布的工作计划、展示值得接入哪些模型的路由方案比较、以英语/中文/俄语生成的计划文档，以及当费用未归入任何计划单元时的提醒。
@@ -3241,7 +3243,7 @@ dsh plugin --profile web add dshmarket
 - [springbrand-lab/dsh-oauth-mcp-client](https://github.com/springbrand-lab/dsh-oauth-mcp-client) — 面向 Streamable HTTP 服务的 OAuth 2.1 MCP 客户端：在设置页添加连接，通过浏览器登录（PKCE + 动态客户端注册），其工具随即注册进 DSH；令牌存于凭据服务，连接写入 profile。
 - [SPYQWER1/dsh-codex-tools](https://github.com/SPYQWER1/dsh-codex-tools) — 基于 Codex 的 `web_search`、`image_gen` 与 `image_vision` 工具，复用 ChatGPT OAuth 登录态为 DeepSeek Harness 提供网页搜索、生图与识图能力。
 - [sryimnoob123/dsh-tool-pwsh-safe](https://github.com/sryimnoob123/dsh-tool-pwsh-safe) — 把 PowerShell 脚本 base64 编码后执行，引号、$、反斜杠、中文全部原样传递，免去转义地狱。走与内置 pwsh 工具相同的沙箱通道。
-- [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) — CalDAV 日历插件：查/建/改/删/搜日程与健康自检，Google/iCloud/Nextcloud/自定义端点，RRULE 重复事件展开；设置页内置月/周/议程面板，连接可在面板内填写并先测后存，周视图支持拖拽改期（15 分钟吸附、5 秒撤销）。
+- [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) — CalDAV 日历插件：查/建/改/删/搜日程与健康自检，Google/iCloud/Nextcloud/自定义端点，RRULE 重复事件展开；设置页内置月/周/议程面板，连接可在面板内填写并先测后存，周视图支持拖拽改期（15 分钟吸附、5 秒撤销）。面板内置 4 步首次使用引导，看一次后不再出现。
 - [STARDUSTLC666/dsh-cite](https://github.com/STARDUSTLC666/dsh-cite) — 参考文献工具：DOI 精确查询与 Crossref 题录检索，GB/T 7714 / APA / MLA / Chicago 格式化，BibTeX 生成、有界并发 DOI 校验与健康自检。
 - [STARDUSTLC666/dsh-codex-port](https://github.com/STARDUSTLC666/dsh-codex-port) — Codex 官方插件一键移植为 DSH 技能（codex_list/port/status/health，实测 186 插件/583 技能，移植 577 个 0 失败）。
 - [STARDUSTLC666/dsh-docker](https://github.com/STARDUSTLC666/dsh-docker) — Docker 工具：ps/images/logs/inspect/exec/manage/health 七工具，JSON 输出、DSH_DOCKER_PATH 环境变量、exec 审批门、零运行时依赖。
@@ -4821,7 +4823,7 @@ dsh plugin --profile web add dshmarket
 - [southsnowL/dsh-bulletin#dsh-bulletin-announce](https://github.com/southsnowL/dsh-bulletin/tree/main/plugins/dsh-bulletin-announce) — 同一台电脑上多个会话共用的公告文件：一个只许追加的纯文本文件。每个会话在下一步之前收到自己还没见过的条目；新会话补看仍在有效期内的；上下文被压缩过的会话会收到一次重发。
 - [sqzw-x/dsh-focus-notify](https://github.com/sqzw-x/dsh-focus-notify) — 焦点感知的 DeepSeek Harness 通知插件：审批、提问、方案确认与回复完成统一为一种提醒，当前对话在窗口失焦后才弹出，后台对话随时提醒，子代理会话不提醒。
 - [STARDUSTLC666/dsh-dingtalk](https://github.com/STARDUSTLC666/dsh-dingtalk) — 钉钉群机器人通知：dingtalk_notify/text/health 三工具，webhook + HMAC 加签，零运行时依赖。
-- [STARDUSTLC666/dsh-email](https://github.com/STARDUSTLC666/dsh-email) — 邮件工具插件：含 email_watch 增量新邮件检查、email_mark（已读/未读/星标/移动文件夹）与 email_reply（回复/回复全部/转发，自动线程头+引文）的十工具，Web 设置页与鲸鱼娘递信新邮件弹窗，since/until 日期范围过滤，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 预设，多账号、连接复用与发信审批门；Outlook OAuth2 设备码登录开箱即用（内置社区客户端，账号仍可填自己的 clientId 覆盖）。
+- [STARDUSTLC666/dsh-email](https://github.com/STARDUSTLC666/dsh-email) — 邮件工具插件：含 email_watch 增量新邮件检查、email_mark（已读/未读/星标/移动文件夹）与 email_reply（回复/回复全部/转发，自动线程头+引文）的十工具，Web 设置页与鲸鱼娘递信新邮件弹窗，since/until 日期范围过滤，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 预设，多账号、连接复用与发信审批门；Outlook OAuth2 设备码登录开箱即用（内置社区客户端，账号仍可填自己的 clientId 覆盖）。面板内置 4 步首次使用引导，看一次后不再出现。
 - [STARDUSTLC666/dsh-slack](https://github.com/STARDUSTLC666/dsh-slack) — Slack 双向通信（notify/channels/inbox/reply/health 五工具），Socket Mode 免公网回调。
 - [stuarthu/dsh-update-notifier](https://github.com/stuarthu/dsh-update-notifier) — 每小时检查 npm 上已安装插件的新版本，并询问升级其中哪些。
 - [suuuuuu-1/dsh-discord](https://github.com/suuuuuu-1/dsh-discord) — DeepSeek Harness 的 Discord 原生远程控制器：通过私信、需提及机器人的服务器频道及 Thread 操作持久化的编程 Agent Session，并支持斜杠命令、进度更新、工具审批、结构化问题、图片和文本附件。
