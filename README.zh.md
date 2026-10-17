@@ -1258,6 +1258,7 @@ dsh plugin --profile web add dshmarket
 - [Shiye-10Pages/dsh-whale-meter](https://github.com/Shiye-10Pages/dsh-whale-meter) — 用量段位与战绩卡片：按本月 token 消耗评 🐟→🐳 五档段位，分位本地估算（零上报）；6 家厂商 46 个模型精准计价，支持国内厂商按输入长度分档；自动回填安装前的历史会话；8·17 调价前后同一份用量的新旧价对比。数据全在本机，无遥测。
 - [ShoTakujo/dsh-platform-usage#plugin](https://github.com/ShoTakujo/dsh-platform-usage/tree/main/plugin) — 在 DSH 设置页查看 DeepSeek 开放平台的账号级用量：52 周热力图、按 API Key 与模型的拆分、实时余额。
 - [Six6stRINgs/dsh-thinking-token-stat](https://github.com/Six6stRINgs/dsh-thinking-token-stat) — 在底部 Dock 添加模型思考 token 统计信息的轻量化插件。
+- [sixzjd/dsh-usage-dash-board](https://github.com/sixzjd/dsh-usage-dash-board) — 本机跨会话用量汇总：把 qfmodel 这类不透明路由键解析为真实模型名，含逐请求明细表与可编辑的四桶价格表（无公开单价的模型标为未计价而非猜测），趋势柱状图按日历日补齐、数值仅在悬浮或键盘聚焦时显示。
 - [skyzhao1223/dsh-agent-token-stats](https://github.com/skyzhao1223/dsh-agent-token-stats) — 跨 Agent 的 token 用量看板:聚合 Claude Code、OpenCode、Cursor、DSH、OpenClaw、CodeWhale、Hermes 等本地对话日志,台账持久化(删除聊天记录后历史仍留存),提供缓存命中率、成本估算、环比对比与当日下钻分析的侧边栏面板。
 - [SoDaZilla-zzz/dsh-liquid-glass-balance-card](https://github.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card) — DSH 网页右上角可拖动 3D 液态玻璃余额卡片：显示 DeepSeek API 余额、累计消费与 Token 统计（今天/昨天/近7天/近30天/全部），玻璃参数/3D 厚度/颜色均可调，内置官方充值入口。
 - [Starlight-bananice/dsh-status-bar](https://github.com/Starlight-bananice/dsh-status-bar) — 输入栏下可配置的 17 段会话状态栏，提供实时 TPS、按模型分别计价的费用估算，以及用量与费用弹窗。
@@ -5030,6 +5031,7 @@ dsh plugin --profile web add dshmarket
 - [wulun811/dsh-plugin-vet](https://github.com/wulun811/dsh-plugin-vet) — DSH 插件信任流水线：确定性静态扫描判定、可选运行时守卫与蜜罐诱饵、agent 审查协议技能与浏览器盾牌状态灯，只报警不执法。
 - [wxlei2004/dsh-plugins#dsh-re-workbench](https://github.com/wxlei2004/dsh-plugins/tree/main/packages/dsh-re-workbench) — 逆向分析工作台：通过 @deepseek-ai/dsh-mcp-client 把本机 IDA Pro 桥接进 DSH，将 ida-pro-mcp 工具集（反编译、xref、重命名、注释）以 mcp__ida__* 注册给模型。自动选择 idalib 无头模式（进程内分析二进制，无需打开 IDA GUI）或 GUI 模式（连接 IDA 插件 RPC，默认 13337 端口）。附带 re_check、re_open、re_status 三个工具；内置 MCP server 为零依赖 stdio 代理，任意 MCP 客户端可直接挂载。
 - [WyattJHayes/dsh-feishu-channel](https://github.com/WyattJHayes/dsh-feishu-channel) — 面向安全的 DeepSeek Harness 飞书通道：提供白名单远程 Agent 访问、工作区路径与符号链接边界校验、风险分级审批、会话隔离、日志脱敏和有界消息队列。
+- [WYR-233/dsh-whale-guard](https://github.com/WYR-233/dsh-whale-guard) — 防呆插件：safe_kill 工具（自动排除自身与全部祖先进程链），bash 命令预检（pkill 自匹配、sudo -S 抢 stdin、rm -rf / 等），以及可扩展规则库（block / warn / hint 三档）。
 - [wzn16/dsh-fs-allowlist](https://github.com/wzn16/dsh-fs-allowlist) — 白名单目录写入免审批——write/edit 文件工具直通白名单栅栏，命中白名单的 bash 沙箱升权自动放行，设置页可视化管理目录与开关。
 - [x2802490130-prog/dsh-lan-pass](https://github.com/x2802490130-prog/dsh-lan-pass) — Web UI 局域网密码门禁：同网手机/平板输共享密钥登录，会话与电脑实时同步，内置 randomUUID polyfill。
 - [xbzbing/dsh-auth-gateway](https://github.com/xbzbing/dsh-auth-gateway) — 为 dsh web 提供密码与 TOTP 双因素认证网关：登录前拦截全部 HTTP/WebSocket 请求，含按来源锁定、全局限流与一次性备份代码。
