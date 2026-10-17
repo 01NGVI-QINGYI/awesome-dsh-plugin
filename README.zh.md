@@ -577,6 +577,7 @@ dsh plugin --profile web add dshmarket
 - [liguobao/dsh-file-viewer](https://github.com/liguobao/dsh-file-viewer) — Web 客户端只读文件预览面板，支持图片、PDF、CSV/TSV、文本、源代码、Markdown、JSON 与 YAML 渲染、大文件分段读取，以及面向非本地内容的 provider API。
 - [lihang-lh/dsh-moon-light](https://github.com/lihang-lh/dsh-moon-light) — DSH Web 界面边缘的跑马灯氛围光环：随会话状态自动变色（运行中绿色流动、完成粉色、有待处理黄色警告），设置面板可调颜色、光圈宽度、转速与闪动频率。
 - [lihang-lh/dsh-task-panel](https://github.com/lihang-lh/dsh-task-panel) — DSH Web 侧边栏任务面板：发布任务、自动蒸馏历史会话，由子代理分阶段（规划/开发/复核）执行，并在面板内验收。
+- [LihiHe/dsh-thinking-slider](https://github.com/LihiHe/dsh-thinking-slider) — 把输入框右侧的「推理等级」从菜单点选换成可拖拽滑条，并接管官方那枚「模型 · 推理等级」chip。拖动中连续跟手，松手吸附到最近档位，且一次拖拽只提交一次会话更新。轨道内自绘填充、刻度点与白圆钮，只有最高档（xhigh/max/ultra）才铺品牌色流动渐变，两端标出最低与最高档名；同一张卡片可展开官方模型清单。方向键移动一档、PageUp/PageDown 移动两档、Home/End 跳到两端，每次移动都会提交。目录对象上的世代计数器丢弃迟到的响应，prefers-reduced-motion 下关闭动画。数据全部取自官方 modelDirectories，不新增任何能力。
 - [lihongxu0221/dsh-workspace-browser](https://github.com/lihongxu0221/dsh-workspace-browser) — 替换出厂侧边栏工作区浏览器，补上最近会话、可添加额外源文件夹的项目编辑器，以及置顶、重命名、派生和归档行操作。
 - [lijinhao315/dsh-question-index](https://github.com/lijinhao315/dsh-question-index) — 提问索引：在会话右侧按序展示你提过的问题列表，可收起；点击某条即可把会话滚动跳转到对应位置。打开会话自动索引全部历史提问并本地持久保存；点击更早的提问会按需翻页加载后跳转。
 - [liliuCourier/dsh-chat-outline](https://github.com/liliuCourier/dsh-chat-outline) — 对话栏左侧常驻大纲：按轮次列出提问与最后回复，关键词过滤与一键跳转，轻便/全面两种历史模式，按住 Ctrl/Shift 单击可跳到轨迹视图同一位置。
@@ -955,6 +956,7 @@ dsh plugin --profile web add dshmarket
 - [winditer/dsh-recent-tasks](https://github.com/winditer/dsh-recent-tasks) — DSH 侧边栏里常驻末位、可折叠的「最近任务」工作区分组：侧边栏入口与 Mod+Alt+N / Mod+Shift+N 快捷键在专用目录里开新对话，对话因此归入这个分组，而不是「未分组」。该分组是真正的工作区记录，而非插件画出来的仿制品，折叠、改名、搜索与拖拽排序都正常可用；目录、分组名、常驻末尾与自动重建都是实时设置。
 - [winditer/dsh-temp-chat](https://github.com/winditer/dsh-temp-chat) — DSH 页面悬浮的半透明 DeepSeek 鲸鱼小精灵：点击打开可拖动、可最小化的临时聊天浮窗，支持跟随会话模型或自定义 OpenAI 兼容端点实时流式输出。
 - [windrover/dsh-minimal-UI-panels](https://github.com/windrover/dsh-minimal-UI-panels) — 给 dsh web 客户端加四个右侧栏面板——产物浏览、长期记忆、终端、记事本——两两配成一个标签、中间可拖拽分栏，因此两个窗格就能同时看到四个面板。宿主侧一并提供：9 个 memory_* 工具、artifacts_list、/memory 命令，以及 /api/artifacts/* 与 /api/terminal-notes/* 路由。终端每行执行一条 bash 命令，带 120 秒期限与终止按钮。需要 dsh 0.1.5 或更新版本——右侧栏正是在那一版取代了旧的 details 列。
+- [windrover/dsh-prompt-optimizer](https://github.com/windrover/dsh-prompt-optimizer) — 给对话输入框工具行加一个提示词优化器：选类别（基础 / 上下文 / 图像）与模板，点优化按钮即原地改写草稿——可取消、显示耗时与 token 用量、支持一键还原。内置 15 个模板：带硬约束的任务指令改写、需求步骤化规划、逆向/安全研究语境改写、系统提示词角色卡、文生图与图生图提示词改写。上下文类模板会读取当前会话最近若干轮对话用于消歧。宿主半身注册两个仅限本机回环的路由，并通过宿主模型服务调用，不直连任何 API；设置分区提供九项配置（提供方与模型覆盖、推理强度、温度、输出 token 上限、超时、输入长度与上下文预算）。输出守卫会检查用户明写的约束是否保留、以及是否凭空多出方法侧约束，只告警不自动重试。适配 dsh 0.2.0-rc.2。
 - [WindyPro-rourou/dsh-code-studio](https://github.com/WindyPro-rourou/dsh-code-studio) — DSH Web UI 的文件修改监视器与代码工作台。Agent 修改代码时实时浮现逐行 Diff，内置语法高亮编辑器，支持一键还原、修改历史、工作区切换与按会话隔离。
 - [Wine-Red/dsh-codex-timeline](https://github.com/Wine-Red/dsh-codex-timeline) — 左侧用户轮次导航轨道：随阅读位置高亮，悬停预览单轮指标与模型回答摘要，支持键盘和点击跳转及本地会话搜索。
 - [Winter-And-You-Gone/dsh-deep-verbs](https://github.com/Winter-And-You-Gone/dsh-deep-verbs) — 把内置 'Deep diving...' 思考状态行扩展为 53 条 deep 系英/中双语短语池：回合开场随机一条，随新思考段/工具调用事件轮换（最短间隔 3 秒），点击状态行切换中英文。
