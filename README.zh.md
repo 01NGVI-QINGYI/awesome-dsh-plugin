@@ -539,12 +539,14 @@ dsh plugin --profile web add dshmarket
 - [Kirkice/dsh-plugin-makima-tui](https://github.com/Kirkice/dsh-plugin-makima-tui) — 面向 dsh 的终端工作台，提供流式对话、工具执行、会话管理、Provider 管理与图片输入。
 - [kk112222/dsh-chat-index](https://github.com/kk112222/dsh-chat-index) — DSH Web UI 会话提问索引：右缘时间比例圆点窄条与可展开链面板，展示每次用户提问的问题与时间，含分支/子会话；点击节点跳转并高亮对应消息。
 - [kkbsgg/dsh-balance](https://github.com/kkbsgg/dsh-balance) — 在选择模型与推理强度后，于输入框模型选择器旁显示当前模型提供方的账户余额。
+- [kkisok0123/dsh-sidechat](https://github.com/kkisok0123/dsh-sidechat) — 从主会话分叉独立侧聊，支持原生会话渲染、划选注释和结论回流。
 - [KNGLOKIKO/dsh-plugin-approval-zh](https://github.com/KNGLOKIKO/dsh-plugin-approval-zh) — 在 Web 客户端把 DeepSeek Harness 的权限审批面板本地化为中文：授权原因优先走内置词表翻译，词表未收录的由宿主侧模型路由兜底。
 - [Knight-Zjy/dsh-workspace-categories](https://github.com/Knight-Zjy/dsh-workspace-categories) — DSH 侧边栏工作区浏览器的分类树：工作区与其会话挂到自建分类下（折叠状态记忆），行可在分类间拖拽，新建工作区可直接落进某个分类（走系统目录选择器），分类可原地重命名与删除，底栏开关可把面板切回原生列表。
 - [kongdexu/dsh-nav-pointer](https://github.com/kongdexu/dsh-nav-pointer) — 聊天区左侧的消息指针导轨：每条用户消息一个横条，点击滚动定位，悬停显示预览气泡。
 - [konglong87/dsh-input-list](https://github.com/konglong87/dsh-input-list) — DSH 常用内容、提示词收藏与 Prompt 管理插件：在 composer 输入框旁保存、编辑、删除和一键回填常用提示词、Prompt 模板、工作流指令与可复用文本，不自动发送。
 - [kouyichi/dsh-tui-app](https://github.com/kouyichi/dsh-tui-app) — dsh 交互式终端聊天应用：流式对话、工具卡片、任务面板、全文搜索、轨迹回放、多会话标签与 A2A 派发（Ink 实现）。
 - [kuanfu0430/dsh-sidebar-branch-chat](https://github.com/kuanfu0430/dsh-sidebar-branch-chat) — 在 dsh-better-sidebar 新增分支对话页签：开出独立封存 session，注入头／中／尾脉络摘要，并使用与主对话相同的工具。
+- [kyanray-dev/dsh-markdown-input](https://github.com/kyanray-dev/dsh-markdown-input) — 输入框 Markdown 书写辅助：发送内容保持原始 Markdown，同时把列表显示为圆点和复选框，实时呈现粗体、斜体、行内代码、删除线、标题、引用与代码块，Shift+Enter 自动续写列表，选中文字可用 Cmd/Ctrl+B、I、E 加格式。
 - [KylinQ01/dsh-startup-animation](https://github.com/KylinQ01/dsh-startup-animation) — DSH 启动动画 + 主界面壁纸：头像、极光、星尘、指针视差与模块组装入场，同一张图兼作主界面壁纸；两张图都能在设置页里更换并实时预览。
 - [l541402398/dsh-file-uploads](https://github.com/l541402398/dsh-file-uploads) — 从 Web 输入框上传任意本地文件，以待发送卡片展示，并在设置中管理已存文件。
 - [Lacquervii/smooth-cursor](https://github.com/Lacquervii/smooth-cursor) — 为 DSH Web 输入框提供流畅的彗星光标：以发光的彗星拖尾取代原生闪烁光标，随输入平滑滑动，可配置强调色、粗细与拖尾，并适配中文等 IME 输入。
@@ -1285,6 +1287,7 @@ dsh plugin --profile web add dshmarket
 - [lkshjd/dsh-balance](https://github.com/lkshjd/dsh-balance) — 会话标题栏实时显示 DeepSeek 账户余额：host 端 /api/balance 路由经凭据 seam 解析 API key（密钥绝不下发浏览器），60 秒自动轮询并支持手动刷新。
 - [LL-cmyk-so/dsh-balance-widget](https://github.com/LL-cmyk-so/dsh-balance-widget) — DSH Web GUI 的余额与成本小部件：侧边栏底部卡片显示账户余额、剩余比例条与今日花费；点击展开四层级成本明细（最近提问 / 本会话 / 今日·本项目 / 今日·全部），带名词解释与一键充值入口。零依赖，兼容 Node 24。
 - [lninghaha/dsh-hub-oauth-gateway](https://github.com/lninghaha/dsh-hub-oauth-gateway) — DSH Web 用量中心：本地 SQLite 历史、HUD 与仪表盘、Hub 账户与额度快照、自定义定价与订阅费用账本、CSV/JSON 导出，并含 coding 计划 OAuth 与可选回环 OpenAI/Anthropic 网关。
+- [lugezuishuai/dsh-token-chart](https://github.com/lugezuishuai/dsh-token-chart) — 统计 DeepSeek Harness 的 Token 用量：会话抽屉与今日 / 近 3 天 / 近 7 天面板，图表与指标可配置。
 - [luokai-demo/dsh-plugins#plugins/dsh-balance-plugin](https://github.com/luokai-demo/dsh-plugins/tree/main/plugins/dsh-balance-plugin) — 侧边栏底部的 DeepSeek 钱包余额：信用卡图标配余额数字，按剩余额度着色（≥ ¥2 绿色、¥0–2 黄色、≤ ¥0 红色），挂载时、每轮对话结束和点击时刷新；余额变动时带符号差额上飘淡出。
 - [luxueliu/luxueliu-usage-command](https://github.com/luxueliu/luxueliu-usage-command) — 本地 LLM 网关当日花费价目卡：/usage 读取 gateway_usage.jsonl，按模型×分小时列出消费，覆盖官方直连、OpenRouter 中转与套餐内计费池。
 - [LZ-jun/dsh-balance-usage](https://github.com/LZ-jun/dsh-balance-usage) — 在侧边栏显示 DeepSeek 账户余额与当前峰谷时段，并按官方高峰/空闲价估算每个会话与每一轮的花费。
@@ -5432,6 +5435,7 @@ dsh plugin --profile web add dshmarket
 - [OMSociety/dsh-ssh-tunnel](https://github.com/OMSociety/dsh-ssh-tunnel) — 多机 SSH 工作台：把远程服务器收进主机库、按项目授权，在右侧栏里开交互式终端或双栏 SFTP；模型用 SSHManager 工具远程执行命令、上传下载文件，密钥不进模型上下文。
 - [ook826092-cloud/dsh-mobile-css](https://github.com/ook826092-cloud/dsh-mobile-css) — DSH Web UI 移动端适配：紧凑排版、全宽输入卡（含光标修复）、抽屉式侧边栏（点击遮罩关闭）、两页式设置流程、响应式表格与统计、安全触控目标。
 - [pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) — 以进程内 Cordis 插件的形式，通过腾讯 iLink bot 协议把微信私聊桥接到 DeepSeek Harness——双向收发文本、图片、文件与语音，微信内 slash 命令经原生命令注册中心解析（DSH 新增命令零改动可用），支持在微信端处理审批与提问，并提供 send_wechat 工具主动推送。
+- [peng456/dsh-plugin-mesh](https://github.com/peng456/dsh-plugin-mesh) — 通过 UDP 组播或端口扫描发现局域网内的其他 DSH 实例，在侧栏面板中列出它们以及各自上报的能力，并可经局域网或自动下载的用户态 Tailscale 节点在两台机器之间双向派发任务。
 - [PerryLink/dsh-reach](https://github.com/PerryLink/dsh-reach) — 把 DSH 的审批卡与提问卡推送到 IM 渠道（先支持微信），可在聊天里直接作答，带会话控制台、逐渠道安全与开放推送服务。
 - [polaris-smart/dsh-devices](https://github.com/polaris-smart/dsh-devices) — 去中心化多设备舰队：mDNS 同网发现、密钥配对、SSH 跨网直连指挥。
 - [Raiyan007-gb/dsh-remote-tunnel-easy](https://github.com/Raiyan007-gb/dsh-remote-tunnel-easy) — 在设置中扫描二维码，通过 cloudflared 快速隧道在手机上于当前会话中打开 DeepSeek Harness 网页端。
