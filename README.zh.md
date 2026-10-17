@@ -2867,6 +2867,7 @@ dsh plugin --profile web add dshmarket
 - [Meteor-system/dsh-codegraph](https://github.com/Meteor-system/dsh-codegraph) — 将当前工作区索引为关系图，向 agent 暴露一个工具 codegraph_explore（可达性、调用者、影响面），并在 Web 右侧栏提供图形面板。
 - [mimosa776/dsh-plugin-recommender](https://github.com/mimosa776/dsh-plugin-recommender) — 按职业/角色推荐 DSH 插件：询问用户是做什么的（程序员、设计师、写作、研究、运维、学生…），推荐适合的插件，并对每个插件做本地静态安全审计（危险代码模式 + 0-100 风险分）与口碑检查（npm 下载量 / GitHub 星数）。
 - [MingShi350/kiwix-wiki](https://github.com/MingShi350/kiwix-wiki) — 通过你自己运行的 kiwix-serve 离线查询维基百科等 ZIM 数据包：wiki_search / wiki_read / wiki_books 三个工具分别做带摘要片段的全文搜索、按精确标题读取全文、列出本地 ZIM 书库。
+- [Minokun/dsh-serper-search](https://github.com/Minokun/dsh-serper-search) — 合并式网页搜索 provider：每次 web_search 并行查询 serper.dev（Google 搜索结果与答案框）与 DeepSeek 原生搜索，按 URL 去重合并来源，任一后端失败自动降级。插件页设置卡片支持凭证域 API key 与原生合并开关。
 - [minyang-chen/dsh-stock-lookup](https://github.com/minyang-chen/dsh-stock-lookup) — 通过 SEC EDGAR 将公司名称或股票代码解析为已验证的股票代号，再从 yahoo-finance2 获取实时行情，包括价格、市盈率、每股收益、市值、52周区间和股息率。
 - [mirror9933/dsh-pixmart](https://github.com/mirror9933/dsh-pixmart) — DSH 电商商品图生成：24 个提示词模块覆盖主图、详情图与广告图，支持参考图风格复刻、批量生成，以及作品库实时预览。
 - [mjylfz/dsh-subagent-codex](https://github.com/mjylfz/dsh-subagent-codex) — 新增 subagent_codex 工具，把任务委派给本机 OpenAI Codex CLI 在独立外部进程中执行，与主对话完全隔离。
@@ -3739,6 +3740,7 @@ dsh plugin --profile web add dshmarket
 - [gongyijie85/mattpocock-skills-dsh-zh](https://github.com/gongyijie85/mattpocock-skills-dsh-zh) — Matt Pocock 25 个技能正文全译中文（技术术语保留英文并附注释）。
 - [GooDAnDReaDY/dsh-goal](https://github.com/GooDAnDReaDY/dsh-goal) — DeepSeek Harness 的目标模式与自主执行插件：顶部吸附横幅在每轮对话中保持当前目标可见，同时 Agent 自主推进完成目标。
 - [goodjin/dsh-superpowers](https://github.com/goodjin/dsh-superpowers) — 把 Superpowers 作为 Agent 预设运行，并在设置表里为每个技能单独指定子代理模型，测试、系统调试与收尾验证不再全部沿用父会话的模型。
+- [goodrain/rainskills](https://github.com/goodrain/rainskills) — 为 DeepSeek Harness 注册 RainSkills 引导技能，用于通过 Rainbond 部署、排障和验证应用。
 - [happpsee/dsh-desktop-app](https://github.com/happpsee/dsh-desktop-app) — 把 DeepSeek Harness 封装成 Tauri 2 桌面应用（macOS + Windows）的技能包：双平台安装、国内镜像加速（含 subagent 超时哨兵）、无管理员 Windows 工具链方案、三路径验收清单。
 - [hatsuyuki0103/dsh-fight-scene-director](https://github.com/hatsuyuki0103/dsh-fight-scene-director) — 把 fight-scene-director 打戏设计技能注册进 DSH，移植自同名 Codex 技能。输出适配 Seedance 2.0/2.5 与 MiniMax H3 的结构化中文提示词，并支持轨迹图与初始站位图生图提示词。
 - [hatsuyuki0103/oh-my-deepseek-harness](https://github.com/hatsuyuki0103/oh-my-deepseek-harness) — OMX 风格工作流技能集：deep-interview、ralplan、ralph、autopilot、team、code-review、visual-ralph、canslim-trader 等 25 个技能，autopilot 默认组队（Agent Teams），基于 DSH 原生工具重写，含视觉支持（参考图/基线 UI 对齐）。
