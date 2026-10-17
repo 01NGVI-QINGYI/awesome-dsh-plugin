@@ -1115,7 +1115,7 @@ dsh plugin --profile web add dshmarket
 - [HaoyueQin/dsh-deepseek-monitor](https://github.com/HaoyueQin/dsh-deepseek-monitor) — 在官方供应商卡片内实时监控 DeepSeek 余额与开放平台用量——输入框工具行模型名称左侧的余额 chip，可展开的账户明细面板含按模型用量与每日堆叠图表。
 - [HaoyueQin/dsh-usage-statistics-panel](https://github.com/HaoyueQin/dsh-usage-statistics-panel) — 用量统计设置面板：26 周活跃热力图、按日 Token 趋势与缓存命中率曲线、模型用量环形图与明细、时间范围筛选、汇总卡片，支持历史会话回扫与无损重建。
 - [haozheou/dsh-discipline-guard](https://github.com/haozheou/dsh-discipline-guard) — DSH Agent 纪律卫士：在 harness 边界强制四道闸门（循环熔断、Token 成本熔断、路由切换警示、计划审批卡），模型无法用文字绕过；🛡 芯片一键解除，daily 档对有缓存路由零打扰，把无缓存失控从每回合数百万 token 封顶到约 50 万。
-- [hb-degithub/dsh-usage-guard](https://github.com/hb-degithub/dsh-usage-guard) — 用量统计面板：静默按模型采集 token、活跃热力图、趋势图、费用估算与每日超限守卫。
+- [hb-degithub/dsh-usage-guard](https://github.com/hb-degithub/dsh-usage-guard) — Web GUI 与桌面端的用量统计面板：静默按模型采集 token、活跃热力图、趋势图、费用估算与每日超限守卫。
 - [hbgdjb/dsh-mimo-quota](https://github.com/hbgdjb/dsh-mimo-quota) — 模型额度面板：自动统计 Token 用量、消费金额、请求次数与趋势构成，内置可编辑定价。
 - [helloworld1631/dsh-volcengine-usage](https://github.com/helloworld1631/dsh-volcengine-usage) — 一个使用本地控制台登录态、可拖动的 DeepSeek Harness Web 火山引擎 Coding Plan 用量卡片。
 - [Hou-DL/dsh-token-pulse](https://github.com/Hou-DL/dsh-token-pulse) — DSH 设置内的本地 Token 用量热图：GitHub 风格周/月/季度/年视图、每日小时级展开、模型与供应商 Top 5，历史持久化，删除会话不丢数据。零联网、零计费。
@@ -2904,6 +2904,7 @@ dsh plugin --profile web add dshmarket
 - [trueRISCOacnt/maa-dsh-skill](https://github.com/trueRISCOacnt/maa-dsh-skill) — 基于 MaaAssistantArknights (MAA) 官方命令行工具 maa-cli 构建的 DeepSeek Harness Skill：让 DeepSeek Harness 直接驱动 MaaCore，自动化完成《明日方舟》日常任务。
 - [TYEclipse/dsh-units](https://github.com/TYEclipse/dsh-units) — 单位换算工具箱：覆盖 20 个类别——长度、质量、温度、面积、体积（含美制烹饪单位）、速度、时长、数据大小（十进制 MB 与二进制 MiB）、数据传输速率（Mbps 与 MB/s）、加速度（含 g-force）、照度（lux 与英尺烛光）、压强、能量、角度、频率、功率（含三种马力定义）、力、扭矩、排版（px/pt/em/rem）与油耗（mpg ↔ L/100km）。提供 convert_unit 与 list_units 两个工具；零运行时依赖，纯算术实现，结果附带所用公式。
 - [TYEclipse/dsh-webfetch](https://github.com/TYEclipse/dsh-webfetch) — 纯文本 agent 的网页阅读工具。五个只读工具：web_fetch（把任意 URL 渲染成干净的 Markdown 或纯文本）、web_links（清单页内链接）、web_feed（RSS 2.0 / Atom 条目解析）、web_headers（不下正文即取 HTTP 状态、响应头与重定向链，HEAD 失败自动回退 GET）、web_table（把 HTML 表格抽成结构化行，含表头识别与 colspan/rowspan 网格展开）。传输层为 Node fetch 加一套零依赖 HTTP 代理实现（CONNECT 隧道、绝对 URI 请求、NO_PROXY 的后缀/通配/IPv4 CIDR 匹配、Proxy-Authorization）。零运行时依赖。
+- [tyjean428/ccreach-dsh-web-search](https://github.com/tyjean428/ccreach-dsh-web-search) — 让 DeepSeek Harness 的 Agent 检索 CCReach 能力目录（数据源、工具、API、MCP、技能与工作流）。
 - [uckkk/dsh-live-data](https://github.com/uckkk/dsh-live-data) — 10 个实时数据工具，覆盖 8 个免密钥公开接口：汇率、天气、npm/PyPI 包版本、GitHub 仓库信息、B站视频数据、A股/大盘/金价行情、IP 归属地；默认参数可在设置面板配置。
 - [uckkk/dsh-pace-calc](https://github.com/uckkk/dsh-pace-calc) — 跑步配速计算：根据距离与时间换算配速（分/公里）与速度（公里/小时）。
 - [unclecode/toolshrink](https://github.com/unclecode/toolshrink) — 按内容语义压缩工具结果：13 个 reducer 在 tools/post-execute 阶段按含义裁剪超长输出（保留失败的测试、丢弃 diff 上下文、对 JSON 与 CSV 抽样、lint 问题按规则归类、依赖库的调用栈帧折叠、文件过多的目录只给计数），完整原文落盘保存并留一个定位符可取回。
@@ -3519,6 +3520,7 @@ dsh plugin --profile web add dshmarket
 - [Whatsmore-nf/dsh-pdf-edit](https://github.com/Whatsmore-nf/dsh-pdf-edit) — 面向 PDF 文档的编辑插件,精确编辑PDF文字
 - [WuShichao/dsh-ipynb-preview](https://github.com/WuShichao/dsh-ipynb-preview) — 在文档预览中渲染 Jupyter 笔记本，支持代码语法高亮、离线 KaTeX 行内与块级公式，以及可缩放的图像查看器。
 - [wx971025/dsh-openspec](https://github.com/wx971025/dsh-openspec) — 在 Web UI 会话标题栏打开当前项目的 openspec/ 目录，浏览、预览、编辑并保存其中的文件，自动跟随会话工作区。
+- [yang1604454533-netizen/dsh-ASD-100](https://github.com/yang1604454533-netizen/dsh-ASD-100) — 强制所有回复和文档按 ASD-STE100 简化技术英语输出。命令：/asd100 on、/asd100 off、/asd100。
 - [yfwu2020/dsh-reply-visual](https://github.com/yfwu2020/dsh-reply-visual) — 在 DSH Web 界面每条定稿回复下加一个「图解」按钮：模型产出单文件 HTML（内联 SVG），右侧栏以沙箱 iframe 渲染；带图解／源码／原文三个视图、命中磁盘缓存即回放（不再调用模型）的会话内历史列表、重画与另存 .html。
 - [yunfeizhu/dsh-pptx-editor](https://github.com/yunfeizhu/dsh-pptx-editor) — 在 DSH 侧栏预览附件中的 PowerPoint 演示文稿，通过对话或手动操作编辑，共享撤销与重做历史，并下载编辑后的 PPTX。
 - [zh851233/docs-mode](https://github.com/zh851233/docs-mode) — 面向 DeepSeek Harness 的技术文档撰写 Agent 模式：模板驱动写作与自学习模板库、技术文档去 AI 味，以及文档质量保障工具集（量化体检、多文档口径一致性校验、图/表编号重排、版本同步检查、Word/PDF 导出与界面截图自动化）。
