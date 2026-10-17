@@ -1075,6 +1075,7 @@ dsh plugin --profile web add dshmarket
 - [ZhaoZeW/dsh-rollback](https://github.com/ZhaoZeW/dsh-rollback) — TRAE 式「回退到本轮对话发起前」：按轮次建立文件检查点，回滚工作区文件并在同一 session id 下原位截断模型上下文，已适配 DSH 0.1.7-rc.2。新增 /rollback doctor 契约自检、按当前磁盘状态实时计算的受影响文件 diff 预览（重启后依然准确）、一键「回退最近一轮」（快捷键 Ctrl+Shift+Z）、「回退后隐藏已回退消息」开关，以及英文界面文案。
 - [dsh-settings-nav-organizer](https://github.com/zhengjy01/dsh-settings-nav-organizer) — 设置面板导航整理：第三方插件入口折叠为可展开的分组行，支持书签式自定义分组、折叠开关与自动分类（市场标签 → 名称规则 → AI 模型三级兜底）。
 - [zhengzeyong9527-droid/ai-input-enhancer](https://github.com/zhengzeyong9527-droid/ai-input-enhancer) — 为 DeepSeek Harness 对话输入框提供提示词优化：优化过程中可取消，完成后可一键撤回。
+- [zheshiyigehenchang/dsh-chat-typography](https://github.com/zheshiyigehenchang/dsh-chat-typography) — 设置DSH Harness对话流字体、字号行间距，以及对话文字到窗口边缘的留白。
 - [zhifengjiang/dsh-hover-archive](https://github.com/zhifengjiang/dsh-hover-archive) — Codex 风格会话归档：鼠标悬浮侧边栏会话行时，最右侧浮现 Archive 图标，一键归档会话。
 - [zhishengplus/dsh-image-annotate](https://github.com/zhishengplus/dsh-image-annotate) — 在 DSH 的图片预览上圈选、画箭头、方框与文字，每一笔都能再选中拖动、缩放或改字，并把原分辨率的标注图作为附件放进输入框。
 - [zhousun55-byte/dsh-postman](https://github.com/zhousun55-byte/dsh-postman) — 把文件与文件夹直接传进对话——图片以真实图片块加入消息，文本内容写入输入框草稿，文件夹按目录结构落盘。
@@ -1698,6 +1699,8 @@ dsh plugin --profile web add dshmarket
 - [Firefox2100/dsh-ai-providers#runtime](https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-providers) — 为 DSH 提供共享凭据以及嵌入、重排序、语音和图像生成服务的 AI 提供商运行时与配置界面。
 - [FishBottle7/opencode2dsh](https://github.com/FishBottle7/opencode2dsh/tree/master/packages/plugin) — 将 OpenCode Zen 免费模型接入 DeepSeek Harness，无需 API Key。
 - [FitBBC/dsh-plugin-tokenmarket](https://github.com/FitBBC/dsh-plugin-tokenmarket) — 将 Token Market 添加为 OpenAI 兼容模型供应商，并提供 DeepSeek V4 Pro、Kimi K3 和 GLM-5.3。
+- [Fleey/deepseek-harness-acp](https://github.com/Fleey/deepseek-harness-acp) — 把 Codex、Claude Code、Gemini CLI 等外部 ACP（Agent Client Protocol）Agent 注册为 DSH 模型提供方：Agent 的 thought_level 选项映射为推理等级菜单，Agent 声明 promptCapabilities.image 时转发图片，权限请求走 DSH 原生审批框；附带 ACP Agents 设置页，可导入 Zed 的 agent_servers JSON 并发现模型。
+- [Fleey/deepseek-harness-trae](https://github.com/Fleey/deepseek-harness-trae) — 仅凭一个个人访问令牌（PAT）把 Trae 企业版模型接入 DeepSeek Harness，直连 llm_raw_chat，不需要 trae2api 或 traecli 进程；启动时从上游拉取模型目录，并显示个人额度包与企业席位的剩余额度。
 - [FNOSP/fnos-dsh#dsh-codebuddy-plugin](https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-codebuddy-plugin) — 为 DeepSeek Harness 接入腾讯 CodeBuddy 模型：用浏览器 OAuth 登录替代 API Key，列出 CodeBuddy 模型目录及每个模型的上下文、输出、工具调用、推理与图片能力，支持多账号并在当前账号不可用时自动切换，在输入区显示额度余量并提供 Token 与积分用量面板，还能按账号完成可自动化的 CodeBuddy 成长任务并查看执行日志。npm 安装：`dsh plugin --profile web add @tnnevol/dsh-codebuddy`。
 - [franksong2702/dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) — 通过 ChatGPT OAuth 将 OpenAI Codex 模型接入 DeepSeek Harness，并提供可选的搜索与图片工具。
 - [frederico-kluser/dsh-orquestrator](https://github.com/frederico-kluser/dsh-orquestrator) — 自己选定子代理运行的模型——附带推理力度上限和输出 token 上限——在代码层面对 DSH 启动的每一个子代理强制执行，无论它由哪个工具启动。
