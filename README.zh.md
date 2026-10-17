@@ -998,6 +998,7 @@ dsh plugin --profile web add dshmarket
 - [wt0812/dsh-vocab-study](https://github.com/wt0812/dsh-vocab-study) — 离线背词面板：输入框旁一颗胶囊点开是词卡，可钉住的分页面板管着今日、进度、生词本与设置。
 - [wucl12/dsh-side-branch](https://github.com/wucl12/dsh-side-branch) — 右侧栏的只读侧枝会话：划选文字即可追问，答案不进入主会话的模型上下文；每轮追问都用主会话最新的已结算内容重建，写操作在执行层被拒，以保住提示词前缀缓存。
 - [wukiQAQ/dsh-enter-using](https://github.com/wukiQAQ/dsh-enter-using) — 审批面板的 Codex 风格键盘应答：按 1 允许一次、2 拒绝、回车确认高亮项、方向键切换高亮、Esc 拒绝，鼠标点按依旧可用。
+- [wuuuuu123-32/dsh-open-artifacts](https://github.com/wuuuuu123-32/dsh-open-artifacts) — 在会话列表菜单和会话标题栏加一个动作：直接打开这个对话的产物文件夹。它读会话日志算出该对话往哪些目录写过文件，再用资源管理器打开，不必自己翻工作区根目录。
 - [wuwaka/dsh-clipboard-menu](https://github.com/wuwaka/dsh-clipboard-menu) — 在没有自带右键菜单的桌面外壳中为 DeepSeek Harness 补上右键菜单：输入框内的剪切、复制、粘贴、全选，别处选中文字的复制与复制为纯文本，以及用可配置引擎在默认浏览器中搜索。
 - [wwumit/dsh-phone#client](https://github.com/wwumit/dsh-phone/tree/main/client) — 苹果风格智能体手机：双面板电话/短信、RCS 群聊（信任门禁）、跨设备智能体消息（registry 收件箱桥）、L0–L4 信任徽章与证据审计。实验性：信任摘要非安全保证，短信/信令经运营方收件箱中继（运营方可见）；E2E 加密为演进方向。
 - [wx-yss/dsh-message-rail](https://github.com/wx-yss/dsh-message-rail) — Codex 风格左侧消息导航轨道：每条用户消息一个刻度，悬停预览、点击跳转，全历史一次索引。
@@ -2313,7 +2314,7 @@ dsh plugin --profile web add dshmarket
 - [shendeguize/AgentSideCar#plugin](https://github.com/shendeguize/AgentSideCar/tree/main/plugin) — 跨 agent 看板监控本机 AI agent 会话（cursor-ide、claude、codex、copilot、kimi 及 dsh 自身），提供会话时间线，并可经默认关闭的两阶段确认门注入消息。
 - [shenhuanageshei/dsh-team-link](https://github.com/shenhuanageshei/dsh-team-link) — 会话深链、全量会话导出（markdown/JSON）、带配对的跨会话消息投递，以及团队 roster / 换届 / 恢复工具。
 - [shuanzhe/dsh-turn-hard-delete](https://github.com/shuanzhe/dsh-turn-hard-delete) — 删除 DeepSeek Harness 会话中的一整轮对话（提问 + 回答 + 工具调用），不影响会话本身。
-- [shuiqian520/dsh-session-delete](https://github.com/shuiqian520/dsh-session-delete) — 在侧栏会话行的「…」菜单里永久删除单个会话;也可点侧栏标题旁的「批量删除」入口进入多选模式,勾选多个会话后「确认删除」一次清掉(会话日志、工作区归属、宿主内存实例、客户端列表行一并清理);另可清理日志已不存在的残留行,用户消息与 AI 回复的复制按钮右侧各有「重试」。
+- [shuiqian520/dsh-session-delete](https://github.com/shuiqian520/dsh-session-delete) — 在侧栏会话行的「…」菜单里永久删除单个会话;也可从侧栏标题旁的「⋯」菜单进入批量删除:在列表里勾选会话(运行中的不能删),再在确认弹窗里一次删掉 —— 会话日志、工作区归属、宿主内存实例、客户端列表行一并清理。同一个「⋯」菜单还收着会话搜索与视图选项;另可清理日志已不存在的残留行,用户消息与 AI 回复的复制按钮右侧各有「重试」。
 - [SilenZerOrz/obsidian-dsh-acp](https://github.com/SilenZerOrz/obsidian-dsh-acp) — 在 Obsidian Agent Client（及其他 ACP 客户端）里驱动 DeepSeek Harness 的 ACP 适配器：会话 list / resume / fork / delete、按会话切换模型、一句话摘要预览、导入外部 ACP 会话，并可把 Obsidian 侧会话拉进 dsh 原生会话库。需 DSH >= 0.1.5-rc.3。
 - [SiriLee/dsh-rewind](https://github.com/SiriLee/dsh-rewind) — 同一会话窗口内的 in-place 对话回退（不 fork，Claude Code /rewind 语义）：每条消息的 ↶ 按钮把模型上下文回退到任意用户消息，可选用磁盘持久化的 before-backups 还原工作区文件。
 - [SkanderBog/dsh-context-manager](https://github.com/SkanderBog/dsh-context-manager) — 预览会话上下文，按对话分组选择保留、摘要或省略，确认后通过 Harness 会话服务持久化压缩结果。
@@ -2365,6 +2366,7 @@ dsh plugin --profile web add dshmarket
 - [wpc0323/deepseek-web-import](https://github.com/wpc0323/deepseek-web-import) — 从设置页把 chat.deepseek.com 网页端对话导入为 DeepSeek Harness 会话，导入后可在其中继续对话。
 - [WSL043/dsh-chat-manager](https://github.com/WSL043/dsh-chat-manager) — 管理 DSH 归档聊天，支持聊天记录搜索、恢复和二次确认的安全永久删除。
 - [wsxwj123/dsh-plugins#dsh-session-manager](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-session-manager) — 会话删除（5 秒可撤销 + 回收站）与归档视图（查看、取消归档）。npm 包名 `@wsxwj123/dsh-session-manager`。
+- [wuuuuu123-32/dsh-session-delete](https://github.com/wuuuuu123-32/dsh-session-delete) — 在会话列表菜单里加删除与批量删除：会话移入 Windows 回收站而不是永久删除，删除前先列出该会话产出过哪些文件，由你决定是否一并清理。
 - [wuxiangru915/dsh-session-manager](https://github.com/wuxiangru915/dsh-session-manager) — DSH Web 会话管理插件：在设置页查看全部与已归档会话，支持恢复（取消归档）、二次确认删除与对话内容预览。
 - [wwwyxsuper/dsh-session-purge](https://github.com/wwwyxsuper/dsh-session-purge) — 在侧栏「已归档」会话的菜单里加一行彻底删除，一次清掉会话日志、投影缓存与工作区登记。
 - [wx-yss/dsh-composer-enter](https://github.com/wx-yss/dsh-composer-enter) — 让 DSH 0.1.5 Web 输入框使用 Enter 换行，同时保留 Cmd/Ctrl+Enter 提交消息。
@@ -4824,7 +4826,7 @@ dsh plugin --profile web add dshmarket
 - [wodongx123/dsh-qq-notify](https://github.com/wodongx123/dsh-qq-notify) — 通过本机 NapCat 机器人向主号 QQ 发送私聊通知：qq_send/qq_status/qq_napcat/qq_deploy 原生工具与一键部署脚本。
 - [wsxwj123/dsh-plugins#dsh-pet-bridge](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-pet-bridge) — dsh ↔ cc-pet 桌面宠物状态桥：把会话状态（思考中 / 读取文件 / 运行命令 / 完成）实时推送到桌面宠物气泡。npm 包名 `dsh-pet-bridge`。
 - [wsz987/dsh-channels#channels](https://github.com/wsz987/dsh-channels/tree/main/packages/channels) — 将微信、QQ、钉钉、飞书和 Telegram 接入 DeepSeek Harness，提供统一配置、私聊与群聊访问范围管理，以及渠道内 Agent 对话和会话指令。
-- [wuuuuu123-32/dsh-mailbox-notify](https://github.com/wuuuuu123-32/dsh-mailbox-notify) — 耗时较长或工具调用较多的任务结束时发邮件到手机，出错、目标完成或目标受阻也发；审批或提问挂起超过设定时间没人处理会另外提醒（正文带问题原文与候选项，提醒不依赖任务档位）。每封新通知会通过 IMAP 删掉上一封，邮箱不会堆积。
+- [wuuuuu123-32/dsh-mailbox-notify](https://github.com/wuuuuu123-32/dsh-mailbox-notify) — 耗时较长或工具调用较多的任务结束时发邮件到手机，出错、目标完成或目标受阻也发；审批或提问挂起超过设定时间没人处理会另外提醒（正文带问题原文与候选项，提醒不依赖任务档位）。每封新通知会通过 IMAP 删掉收件箱里的上一封，收件箱里最多留一封；其它文件夹不扫描。
 - [wz-heng/dsh-feishu-bridge](https://github.com/wz-heng/dsh-feishu-bridge) — Fail-closed 的飞书（Lark）channel 桥：和机器人聊天即驱动 dsh agent turn，可选人在环工具审批（每次 bash 调用前飞书弹 Allow/Deny 卡，超时默认拒绝）。仅经官方 Python SDK 集成（精确锁版）；白名单默认全拒、webhook 验签/时间窗/防重放、按 chat 粘性会话；每日最新 SDK 兼容金丝雀；中英双语文档。
 - [xain/ui-beep](https://github.com/xain/ui-beep) — 为 DSH 网页界面提供 Web Audio 智能体心跳提示：Agent 忙碌时低频心跳、流式输出时滴答声、会话等待输入或工作完成时提示音；支持分音色音量、静音开关与本地音频文件替换。
 - [xchannel1987/dsh-notify-xc](https://github.com/xchannel1987/dsh-notify-xc) — DSH 浏览器通知插件 - 任务完成 / 运行出错 / 需要你回答、批准、审阅计划时弹系统级通知，点击气泡直达会话，三类通知独立开关，主会话等子代理期间不误报完成。
