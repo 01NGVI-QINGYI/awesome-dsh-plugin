@@ -1951,6 +1951,7 @@ dsh plugin --profile web add dshmarket
 - [598829314/oil-dsh-title](https://github.com/598829314/oil-dsh-title) — 在用户消息后为 DeepSeek Harness 维护稳定的 emoji 会话标题，不向原会话追加命名消息。
 - [643048695/dsh-compaction-route](https://github.com/643048695/dsh-compaction-route) — 在 Web 设置页里为会话压缩指定摘要模型，并在主模型出错时改用配置的兜底模型重试。
 - [7vw58n3ftvq7cn89v/dsh-plugin-session-colors](https://github.com/7vw58n3ftvq7cn89v/dsh-plugin-session-colors) — 给 DeepSeek Harness 的每个会话标颜色：悬停侧栏会话行即可选色（12 色），被标色行显示同色竖条，宿主侧持久化。
+- [985451842/dsh-snapshot-manager](https://github.com/985451842/dsh-snapshot-manager) — 记录会话快照并支持回滚到之前的状态。
 - [9Ashwin/dsh-session-rename](https://github.com/9Ashwin/dsh-session-rename) — 给模型一个 rename_session 工具，让 agent 在对话中直接重命名会话。
 - [aa2246740/dsh-compact-saviour](https://github.com/aa2246740/dsh-compact-saviour) — 使用专用模型处理上下文压缩恢复，并在原生上下文弹窗提供手动压缩。
 - [aa2246740/dsh-resume](https://github.com/aa2246740/dsh-resume) — 导入本地编程 Agent 的会话历史，在 DSH 中继续工作。
@@ -2381,6 +2382,7 @@ dsh plugin --profile web add dshmarket
 - [EPCN-fla/dsh-observational-memory](https://github.com/EPCN-fla/dsh-observational-memory) — 在后台将会话工作提炼为观察和反思，以便在上下文压缩后保留会话上下文。
 - [EternalNight996/dsh-memory-eternal](https://github.com/EternalNight996/dsh-memory-eternal) — 给 DeepSeek Harness 装上自研「第二大脑」：对话结束自动把值得复用的内容沉淀成本地 Markdown 知识卡（自研去重、CJK 检索、可 git 管理），设置页提供图形化知识库 + 交互式知识图谱（图例过滤、时间维、框选、合并、导入导出）。
 - [EternalNight996/memory-eternal](https://github.com/EternalNight996/memory-eternal) — 自研 DSH 记忆插件：SQLite 持久存储 + 数据库层审核守卫（enforceAudit）+ 审计日志。对话结束自动沉淀知识卡，Agent 经 memory_recall 按需召回，支持 Claude Code/Codex/Cursor 多智能体共享，零外部依赖。
+- [EvoMap/evolver-dsh-plugin](https://github.com/EvoMap/evolver-dsh-plugin) — 越用越聪明的 harness，告别金鱼记忆。每条 prompt 前，Evolver 从本地经验和 EvoMap 网络召回一条验证过的策略；回合结束后，它凭测试结果、改动是否被保留、你的下一句反馈给策略打分，再回报网络按证据加权。每一次成功都变成下一次的捷径，每一次失败都变成下一次的避坑指南。
 - [fjzzwxp/dsh-mnemosyne-memory](https://github.com/fjzzwxp/dsh-mnemosyne-memory) — DSH 永久记忆插件，支持向量搜索、LLM 反思和知识页面生成。
 - [FleetingEcho/dsh-handoff](https://github.com/FleetingEcho/dsh-handoff) — 每个工作目录与 git 分支自动维护 handoff.md：记录回合、折叠为简洁 Markdown 并注入后续会话，存储于 ~/.agent/agent-handoff，与 pi-handoff 字节级兼容。
 - [flymysql/dsh-memory](https://github.com/flymysql/dsh-memory) — 跨会话记忆库：remember / recall / forget 工具、每轮提示注入与设置页条目浏览。
@@ -3037,6 +3039,7 @@ dsh plugin --profile web add dshmarket
 - [QuantumKuba/dsh-graphify-plugin](https://github.com/QuantumKuba/dsh-graphify-plugin) — 为 DeepSeek Harness 提供原生 Graphify 知识图谱支持，包含 10 个代码智能工具、拓扑搜索、核心节点发现与 PR 影响分析。
 - [QWE13-ART/dsh-tool-folder](https://github.com/QWE13-ART/dsh-tool-folder) — 装了大量 MCP 时折叠工具定义提示面：KV 缓存稳定的静态目录 + BM25/bge-m3 混合 tools_search + tools_schema 批量展开，几百个工具仍可检索，但不必每轮都付完整 schema 的 token。
 - [qwert702/dsh-commander](https://github.com/qwert702/dsh-commander) — dsh 网页端指挥官模式：会话标题栏一键注入协议简报，解析模型回复中的任务块并自动执行，让策略层与执行层分离；通过徽章按钮激活/停用。
+- [R-roker315/dsh-Alist-](https://github.com/R-roker315/dsh-Alist-) — AList v3 文件管理插件：浏览、搜索、上传（本地文件流式与 multipart）、离线下载、压缩包查看、任务轮询与控制，以及存储、用户、角色、元数据、站点设置、搜索索引、分享、标签等管理端操作，共 75 个工具；全部写操作强制走审批，密码与 Token 只写不读。
 - [RaulLazaro/dsh-jev-plugin](https://github.com/RaulLazaro/dsh-jev-plugin) — 为 DSH 增加 `jev` 工具：就同一段文本向 Jev（TypeSafe System One）提出是/否、选择和评分问题，返回概率与置信度；provider 与 API key 在设置中按用户配置，并带判定账本、花费统计以及每日调用与 token 上限。
 - [Realyujie/dsh-us-stocks](https://github.com/Realyujie/dsh-us-stocks) — 美股行情、历史 K 线、财务报表、分析师共识与新闻，数据来自 yahoo-finance2。
 - [rebornace/dsh-tracescope#dsh-tracescope](https://github.com/rebornace/dsh-tracescope/tree/main/packages/dsh-tracescope) — DSH 右侧栏插件：对比两个 git 提交，根据影响面生成手测清单，支持失败备注、截图、任务附件，以及向云效 / GitHub / GitLab / Webhook 提交缺陷。
