@@ -54,13 +54,34 @@ function repositoryOf(url) {
   }
 }
 
+/**
+ * How much of a description the index carries, per language.
+ *
+ * The host fetches the whole document inside a fixed 15 s budget (dsh 0.2.1
+ * `fetchTimeoutMs`), and the list's descriptions run to 4,480 characters —
+ * 1.5 MB of the file for text no card renders past the first few lines.
+ * 160 characters keeps the sentence that says what a plugin does and drops
+ * the rest; the full text stays on the plugin's own page.
+ */
+const DESCRIPTION_LIMIT = 160
+
+/** Cut at a word boundary where one is close enough, else exactly at the limit. */
+function truncate(text) {
+  if (text.length <= DESCRIPTION_LIMIT) return text
+  const cut = text.slice(0, DESCRIPTION_LIMIT)
+  const space = cut.lastIndexOf(' ')
+  // A CJK description has no spaces at all; cutting mid-character is correct
+  // there, so only use the word boundary when it is not leaving a stump.
+  return `${space > DESCRIPTION_LIMIT - 24 ? cut.slice(0, space) : cut}…`
+}
+
 /** A LocalizedText value, or undefined when the entry has no usable text. */
 function localized(description) {
-  if (typeof description === 'string' && description.trim() !== '') return description
+  if (typeof description === 'string' && description.trim() !== '') return truncate(description.trim())
   if (typeof description !== 'object' || description === null) return undefined
   const text = {}
   for (const [language, value] of Object.entries(description)) {
-    if (typeof value === 'string' && value.trim() !== '') text[language] = value
+    if (typeof value === 'string' && value.trim() !== '') text[language] = truncate(value.trim())
   }
   // The format requires `en` in an object form; a lone translation stays usable
   // as a plain string instead of dropping the description entirely.
@@ -100,18 +121,22 @@ export function buildMarketIndex({ entries, npmMap, locales, origin = INDEX_ORIG
     const dsh = typeof record.enginesDsh === 'string' && semver.validRange(record.enginesDsh) !== null
       ? record.enginesDsh
       : undefined
+    const description = localized(entry.description)
     const plugin = {
       name: record.npm,
       title: entry.name,
-      ...(localized(entry.description) === undefined ? {} : { description: localized(entry.description) }),
+      ...(description === undefined ? {} : { description }),
       homepage: `${origin}/p/${slugOf(entry.url)}/`,
       repository: repositoryOf(entry.url),
-      metadata: { category: entry.category, keywords: [] },
+      // Everything the format defaults is left out: `keywords: []` and
+      // `engines: {}` cost bytes in every one of ~3,000 entries and say
+      // nothing. The parser fills both back in.
+      metadata: { category: entry.category },
       versions: [{
         version: record.version,
         publishTimestamp: record.publishedAt,
         source: { type: 'npm' },
-        engines: dsh === undefined ? {} : { dsh },
+        ...(dsh === undefined ? {} : { engines: { dsh } }),
       }],
     }
     // Validate one plugin at a time so a single bad row costs that row, not
