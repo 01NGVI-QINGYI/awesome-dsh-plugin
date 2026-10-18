@@ -613,7 +613,7 @@ dsh plugin --profile web add dshmarket
 - [liudapeng0311/dsh-pwa-launcher](https://github.com/liudapeng0311/dsh-pwa-launcher) — 接管你桌面上已有的浏览器 PWA 快捷方式（保留原图标），双击即静默拉起 dsh web 并以应用窗口打开界面；网页右上角提供重启与 dsh 自助升级（失败自动回滚）两个控件。仅 Windows。
 - [liuhaolong16/dsh-quote-reply](https://github.com/liuhaolong16/dsh-quote-reply) — 把引用与消息正文彻底分开：引用任意助手回合里的段落会打开输入框上方的引用行，随下一回合作为 system-prompt 上下文注入模型（带来源与时间标注），并在回合尾部以可展开的「引用(N)」行显示这一轮到底用了哪几条；引用本地落盘、刷新不丢、按回合认领；宿主与客户端两半体做版本握手并上报兼容结论。
 - [liujia-io/dsh-image-picker](https://github.com/liujia-io/dsh-image-picker) — 在会话输入框添加 📎 选图按钮，通过系统文件选择器选取参考图并注入官方附件管线（缩略图、数量与大小校验、随消息上传），绕开拖拽环境问题。
-- [liumorrisclaw/dsh-composer-input-history](https://github.com/liumorrisclaw/dsh-composer-input-history) — 在 DSH 输入框用 ↑ 调回本会话已发送的消息，用 ↓ 前翻并在末尾恢复原来正在写的草稿。
+- [liumorrisclaw/dsh-composer-input-history](https://github.com/liumorrisclaw/dsh-composer-input-history) — 在 DSH 输入框用 ↑ 调回本会话已发送的消息；↓ 前翻并恢复你正在写的草稿，再按一次 ↓ 丢弃草稿、清空输入框。
 - [liushQAQ/dsh-prompt-optimizer](https://github.com/liushQAQ/dsh-prompt-optimizer) — 提示词智能优化与思考强度动态自适应插件，支持会话输入框胶囊控制条、DSH已配置/自定义第三方双模型来源、一键撤销与重新优化及原生配置面板。
 - [liuzwZYW/dsh-pwa-ui](https://github.com/liuzwZYW/dsh-pwa-ui) — 通过 Window Controls Overlay 让已安装的 dsh Web 应用拥有原生观感的窗口标题栏——清单路由带 display_override 返回，应用自身的侧边栏品牌行与会话 header 成为拖拽区，应用自身右侧控件自动让开浏览器标题栏 chrome。
 - [liweidong1722/dsh-work-list](https://github.com/liweidong1722/dsh-work-list) — 本地优先的 DSH Web 工作清单，支持富文本笔记、分类、折叠、拖拽排序、搜索、JSON 导入导出和可还原回收站。
@@ -702,6 +702,7 @@ dsh plugin --profile web add dshmarket
 - [moeform-re/dsh-review-md-preview](https://github.com/moeform-re/dsh-review-md-preview) — 评审页的 Markdown 预览与渲染态双栏对比。
 - [Mombrane/dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) — Web UI 子代理实时监视面板：侧边栏底部入口 + 右上角常驻卡片面板，实时展示当前会话每个子代理的运行状态（运行中/耗时/终态）、树形缩进，一键跳转子代理会话并支持返回主会话，刷新自恢复、移动端默认隐藏。
 - [Moolight/dsh-shader-workbench](https://github.com/Moolight/dsh-shader-workbench) — 节点式 GLSL 工作台：在画布上连节点图并实时预览，编译成 Shadertoy 兼容的 GLSL（支持 BufferA–D 多 Pass 反馈与热重载），可跨编译导出 HLSL / MSL / SPIR-V，并在本地工作区管理项目、材质、快照与资源（图片 / 音频 / 歌词）。内置 57 个节点、8 个自带示例与 11 个 agent 工具，无运行时依赖。
+- [Mooling0602/dsh-web-file-uploader](https://github.com/Mooling0602/dsh-web-file-uploader) — 为 DeepSeek Harness 设计的文件上传插件。
 - [MoonlitDropOfBlood/DSH-Desktop#whaleharbor-promo](https://github.com/MoonlitDropOfBlood/DSH-Desktop/tree/master/plugins/whaleharbor-promo) — 把浏览器里的 DSH 会话变成鲸港简版客户端：独立 --app 窗口、客户端顶栏与任务通知；后台多源下载完整桌面安装包（SHA-256 校验），完成后提示安装。
 - [Moonshile/moonshile-dsh-plugins#dsh-workspace-sort](https://github.com/Moonshile/moonshile-dsh-plugins/tree/main/plugins/dsh-workspace-sort) — 侧边栏工作区每日按最近活动排序一次，当天顺序稳定。
 - [MorGogh/widget-dock](https://github.com/MorGogh/widget-dock) — 对话两侧空白区的可拖动卡片工作台，28 个小组件（余额、Token 用量、成本、上下文压力、待办、目标、用量热力图、GitHub 仓库、图片中转等），支持 S/M/L/XL 四档尺寸。
