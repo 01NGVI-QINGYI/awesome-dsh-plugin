@@ -2857,6 +2857,7 @@ dsh plugin --profile web add dshmarket
 - [asdasdsdsdasdasdasd/dsh-computer-use](https://github.com/asdasdsdsdasdasdasd/dsh-computer-use) — Linux X11 电脑控制插件：9 个工具（截图、鼠标移动/点击/拖拽/滚轮、输入、快捷键），由零依赖 Python XTest 助手驱动——原生像素坐标、每次操作返回坐标校验、可选自动截图。
 - [Asher-2000/dsh-expert-mode](https://github.com/Asher-2000/dsh-expert-mode) — 专家模式 agent preset（v0.9.2，npm 包 dsh-expert-mode，双语双份）：首席协调官 + 17 位领域专家子代理，按任务特性自动委派。特性：任务调度器（文件系统任务状态机 pending/ready/running/done/failed + 依赖DAG + 原子认领 + 重试 + 崩溃恢复）、质量门禁（高风险任务五段式：需求澄清→实现→验证→独立评审→集成，最多回炉2轮）、五锚约束（每轮回顾/收敛/反跑题/协作检查/资源感知自检）+ 近距离引导（身份/任务/输出格式模板）+ 渐进式披露（省token约28%）+ 专家持久化 + 专家间文件消息总线（P2P直连，零协调官中转）+ 交叉评审 + 经验沉淀 + 简单任务快速通道 + 故障自动重试。专家：数据分析/文案/法务/产品/前端/UI-UX/架构/社交运营/增长/量化/财务/后端/DevOps/数据库/QA/安全/生图短视频。
 - [Astervolans/dsh-literature-search](https://github.com/Astervolans/dsh-literature-search) — 面向 DeepSeek Harness 的文献检索：pubmed_search、pubmed_paper、pubmed_related 走官方 NCBI E-utilities（含 elink 相关文献排序），scholar_search、scholar_cite 走 Google Scholar（MLA/APA/Chicago/Harvard/Vancouver/BibTeX，需 SerpApi 后端）。两个后端统一为同一种 paper 结构，设置卡片可配置 API key、Scholar 后端与速率/条数上限。
+- [Aurum807/dsh-bilibili-video-summary](https://github.com/Aurum807/dsh-bilibili-video-summary) — 用 yt-dlp 下载 B 站视频，产出转写稿与抽帧图，并注册写总结所需的技能；当用户消息只有一条视频链接时自动启用。需 PATH 上有 yt-dlp 与 ffmpeg。
 - [AusertDream/TravelPlanner](https://github.com/AusertDream/TravelPlanner) — 中文旅行规划 agent 预设「旅行规划助手」（面向国内行程）：实时查 12306 余票、飞猪 / 途牛机票与酒店价格、高德真实路线，核实闭馆与天气，交付一份可离线打开的单文件 HTML 路书（可拖动地图、三档酒店、分项预算）；附 9 个技能、引导用户补齐 Key 的环境自检，以及 12306 MCP 的预售期补丁；只规划查询，不代订代付。
 - [Azhe0306/dsh-connectors#desktop-connector](https://github.com/Azhe0306/dsh-connectors/tree/main/packages/desktop-connector) — Windows 桌面控制连接器：通过 10 个工具截屏（含被遮挡与半出屏窗口）、枚举与置顶窗口、移动/点击/拖拽/滚轮鼠标、发送组合键与任意中文文字。基于 koffi FFI：无需编译器、不每次起子进程，自带 GDI 截图与 PNG 编码。
 - [baddying/dsh-geolibre](https://github.com/baddying/dsh-geolibre) — 把 GeoJSON / 矢量数据渲染成侧边栏「地图」tab 里的交互地图，并让 Agent 通过工具实时操作地图：图层、样式、视图、要素识别、GeoLibre 处理算法与 Whitebox 工具箱（浏览器端 WASM 执行）。
@@ -3852,6 +3853,7 @@ dsh plugin --profile web add dshmarket
 - [MicroHEROX/dsh-koboldcpp-hands](https://github.com/MicroHEROX/dsh-koboldcpp-hands) — 给在线模型装上本地双手：koboldcpp_run 与 koboldcpp_vision 工具把重复的文本与视觉（OCR、图像分析、对比）劳动交给本地 KoboldCpp（llama.cpp）服务器，并按需拉起与管理服务器生命周期。
 - [MicroHEROX/dsh-unsloth-hands](https://github.com/MicroHEROX/dsh-unsloth-hands) — 把重复的文本与视觉（OCR、图像分析、对比）劳动交给本地运行的 Unsloth Desktop（Unsloth Studio）服务器：unsloth_run 与 unsloth_vision 两个工具，纯 HTTP 客户端，不拉起也不持有任何进程。
 - [MJorgin/dsh-media-skills](https://github.com/MJorgin/dsh-media-skills) — 面向纯文本模型的免费视觉桥与生图：粘贴读图、GLM-4V-Flash 与 Gemini 引擎故障转移、modlens 同款结构化证据输出，并自动播种免费视觉模型路由。
+- [Monter-code/dsh-image-insight](https://github.com/Monter-code/dsh-image-insight) — 结构化图像识别：本地 sharp 感知 + 云端视觉模型，一次调用拿到描述、带坐标的 OCR、 目标定位与细粒度属性；图片指纹缓存让重复图片毫秒返回且不消耗模型额度。
 - [moon09300731/dsh-vision-tools](https://github.com/moon09300731/dsh-vision-tools) — DeepSeek Harness 视觉能力全家桶：vision_understand 工具（OpenAI 兼容视觉 API，默认免费智谱 GLM-4V-Flash）+ 粘贴/拖拽/按钮三入口识图。
 - [NagasakiSoyo-ui/dsh-llm-deepseek-vision](https://github.com/NagasakiSoyo-ui/dsh-llm-deepseek-vision) — 视觉增强的 DeepSeek 适配器：由视觉模型把图片描述成文字，纯文本 DeepSeek 模型再基于描述推理。
 - [NeoHotaru/dsh-read-animation](https://github.com/NeoHotaru/dsh-read-animation) — 把 gif 和动图 webp 当作动画来读：贴进聊天框的照常播放，模型收到的是横跨整段采样、带帧号与时长的胶片条；工作区里的文件由 read_animation 按需采样。
@@ -5265,6 +5267,7 @@ dsh plugin --profile web add dshmarket
 - [minivv/dsh-agent-skills](https://github.com/minivv/dsh-agent-skills) — 在 DSH 设置面板中浏览、启用、停用和管理来自 Claude Code、Codex、OpenCode、Gemini 及自定义目录的 Agent Skills。
 - [MiraculousGarfield/dsh-ops-health](https://github.com/MiraculousGarfield/dsh-ops-health) — 一键健康检查：侧边栏按钮经纯 HTTP 路由（独立于工具注册表）调用 check-health.ps1 并渲染结构化报告卡片；配色跟随当前主题，Windows/PowerShell。
 - [mkiea/dsh-forge](https://github.com/mkiea/dsh-forge) — DeepSeek Harness 插件组合分析工具：依赖树、冲突检测、风险评估（含预测）、可视化与组合模拟。
+- [Monter-code/dsh-live-reload](https://github.com/Monter-code/dsh-live-reload) — DSH 插件免重启热重载：清模块缓存、按 junction 路径匹配、失败时带版本号重新导入， 并在会话标题栏注册一颗刷新按钮，让页面立刻加载新的插件 bundle。
 - [moon16u/dsh-pouch#dsh-plugin-restart](https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-plugin-restart) — 安全的分离式 DSH 重启：/restart 与 /dsh-restart 斜杠命令（原生候选样式）加 dsh_restart Agent 工具；分离的 worker 在 3 秒后重启 DSH，会话不冻结。
 - [MoonlitDropOfBlood/dsh-deveco](https://github.com/MoonlitDropOfBlood/dsh-deveco) — HarmonyOS 全栈开发套件：右侧边栏提供 HiLog 检查器（实时流与级别/包名/关键词过滤）与 ArkUI Inspector（截图点选高亮、可折叠组件树、节点属性搜索、盒子模型），两种树源——DevEco 调试源（ark 调试链路，提供 padding/margin/border 声明值与自定义组件名）与 uitest 无障碍树；.ets 查看器提供 ArkTS 语法高亮；注册 harmony_ui_tree agent 工具供对话内取组件树；设置页管理 DevEco Studio/CLT 工具链与 USB/网络设备。21 个 Remote 方法，82 个单元测试。
 - [moonquake2004/dsh-doctor#plugin](https://github.com/moonquake2004/dsh-doctor/tree/main/plugin) — 离线诊断工具：环境/Profile/会话共 19 项检查，带设置「诊断」面板与只读 JSON API。
