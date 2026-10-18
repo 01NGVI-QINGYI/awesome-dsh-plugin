@@ -17,6 +17,7 @@ import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
 import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
+import { buildMarketIndex } from './lib/market-index.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
 import { slugOf, termOf } from './lib/terms.mjs'
 
@@ -172,6 +173,20 @@ const N = ordered.length
 // ever written back; git history is the ledger.
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
+
+// The plugin market index (format 1) that hosts read as a market source.
+// Built here rather than in a second pass so the page can tell whether THIS
+// deploy actually carries one: a push build restores the probe cache, and a
+// cache from before the publish-time field existed lists nothing — in that
+// case the panel is left out instead of advertising a URL that 404s.
+const builtIndex = buildMarketIndex({ entries: readEntries(), npmMap, locales: LOCALES, origin: ORIGIN })
+const indexBuilt = builtIndex.index.plugins.length > 0
+if (indexBuilt) fs.writeFileSync('docs/index.json', JSON.stringify(builtIndex.index, null, 1) + '\n')
+{
+  const { index, skipped } = builtIndex
+  const unpublished = skipped.noNpm + skipped.noVersion
+  console.log(`index: ${index.plugins.length} listed (${unpublished} entries have no npm package or version yet${skipped.noPublishTime > 0 ? `, ${skipped.noPublishTime} await a publish-time probe` : ''})`)
+}
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
 // Missing (not yet bootstrapped, or an entry with no npm package) is a
 // normal, permanent state for most entries — unlike stars.json, absence
@@ -652,6 +667,12 @@ function langRedirect(current) {
   return `\n<script>{const p=new URLSearchParams(location.search);const v=p.get('lang');${cases}}</script>`
 }
 
+const INDEX_PANEL = `    <section class="panel">
+      <h2>__T_INDEX_TITLE__</h2>
+      <p>__T_INDEX_BODY__</p>
+      <p class="note">__T_INDEX_NOTE__</p>
+    </section>`
+
 const master = fs.readFileSync('site/template.html', 'utf8')
 
 for (const loc of LOCALES) {
@@ -683,6 +704,7 @@ for (const loc of LOCALES) {
     // this site's CLS. The hero total is the full list. The search counter
     // starts at the baked slice so a no-JS visitor is not told every plugin is
     // on the page; the script rewrites it to the full total before first paint.
+    .replaceAll('__INDEX_PANEL__', () => indexBuilt ? INDEX_PANEL : '')
     .replaceAll('__CARD_COUNT__', () => String(N))
     .replaceAll('__FALLBACK_COUNT__', () => String(Math.min(FALLBACK_CARDS, N)))
     .replaceAll(AD_HEAD_TOKEN, () => adHead())
