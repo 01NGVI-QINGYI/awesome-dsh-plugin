@@ -9,6 +9,10 @@ on:
         description: Re-probe every entry, ignoring cached verdicts
         type: boolean
         default: false
+      skip_probes:
+        description: Skip the probes and build from cached data (deploy or publish only)
+        type: boolean
+        default: false
   # A push made with the default GITHUB_TOKEN does not trigger workflows —
   # GitHub suppresses it to stop recursion — so the `push` trigger below never
   # fires for sync-readme's own commit. That commit is the one that adds the
@@ -165,7 +169,13 @@ jobs:
           # above and the publish conditions below were already written as an
           # allowlist; this was the only denylist left.
           case "${{ github.event_name }}" in
-            schedule|workflow_dispatch) full_probe=1 ;;
+            schedule) full_probe=1 ;;
+            workflow_dispatch)
+              # A manual run is normally a full re-probe, but the deploy-only
+              # path has to exist: it is how a fix reaches the site without
+              # waiting out an hour of probes (2026-10-18, when the index
+              # needed to ship while users were already adding it).
+              if [ "${{ inputs.skip_probes }}" = "true" ]; then full_probe=''; else full_probe=1; fi ;;
             *) full_probe='' ;;
           esac
           if [ -n "$full_probe" ] || [ ! -s data/npm-map.json ]; then
@@ -269,6 +279,15 @@ jobs:
         run: |
           npm install -g npm@latest  # trusted publishing needs npm >= 11.5
           node scripts/publish-catalog.mjs
+      # The market index as its own npm package — see publish-index.mjs for
+      # why it is separate from the catalog and why npm at all: dsh 0.2.1
+      # aborts an index fetch after 15 s, and from mainland China the Pages
+      # copy of a 3 MB document takes longer than that.
+      - name: publish the market index to npm
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          npm install -g npm@latest  # trusted publishing needs npm >= 11.5
+          node scripts/publish-index.mjs
       # The update-notes payload, published to npm for the same reason as the
       # catalog above — Pages IS GitHub, and the proxies that would carry it
       # refuse non-github.com hostnames — but as its OWN package: notes are

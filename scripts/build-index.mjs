@@ -48,6 +48,8 @@ if (checkOnly) {
   const published = parseMarketIndex(JSON.parse(fs.readFileSync(OUT_FILE, 'utf8')), 'https://awesome-dsh-plugin.com/index.json')
   console.log(`check: ${OUT_FILE} is a valid format-1 index (${published.plugins.length} plugins)`)
 } else {
-  fs.writeFileSync(OUT_FILE, JSON.stringify(index, null, 1) + '\n')
+  // Minified: the host that reads this has a fixed 15 s fetch timeout, and
+  // indentation is pure overhead on the wire.
+  fs.writeFileSync(OUT_FILE, JSON.stringify(index) + '\n')
   console.log(`wrote ${OUT_FILE}`)
 }

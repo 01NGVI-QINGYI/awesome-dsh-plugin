@@ -11,6 +11,8 @@ DeepSeek Harness is DeepSeek's open-source agent harness — a runnable coding a
 This list collects community plugins that are installable via `dsh plugin add` (each declares a `dsh.bundle` manifest). [PRs welcome](#contributing).
 
 > 📡 **This list is also a plugin market index.** On dsh 0.2.1+, open **Plugins → Discover → Index sources** and add `https://awesome-dsh-plugin.com/index.json` (or its mirror `https://dshmarket.com/index.json` — the same document). The Discover tab and the `plugin_market` agent tool then search the same entries. The index covers plugins published on npm with a known version; GitHub-only entries still install with the command beside them.
+>
+> If that reports a timeout — dsh gives an index source 15 seconds, and GitHub Pages can be slower than that from some networks — use the npm copy of the same file instead: `https://cdn.jsdelivr.net/npm/dsh-plugin-catalog-index@latest/index.json`.
 
 > 🛒 **Recommended: [dsh-market](https://github.com/dsh-market/dsh-market#readme)** (optional) — the plugin market inside DeepSeek Harness, with every plugin on this list. Simple, friendly UI: one-click plugin install and upgrade, one-click theme switching:
 

@@ -181,7 +181,10 @@ const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_
 // case the panel is left out instead of advertising a URL that 404s.
 const builtIndex = buildMarketIndex({ entries: readEntries(), npmMap, locales: LOCALES, origin: ORIGIN })
 const indexBuilt = builtIndex.index.plugins.length > 0
-if (indexBuilt) fs.writeFileSync('docs/index.json', JSON.stringify(builtIndex.index, null, 1) + '\n')
+// Minified, not pretty: the host that reads this has a fixed 15 s fetch
+// timeout (dsh 0.2.1 `fetchTimeoutMs`), and one-space indentation added 25%
+// to a document already close to that budget on slow networks.
+if (indexBuilt) fs.writeFileSync('docs/index.json', JSON.stringify(builtIndex.index) + '\n')
 {
   const { index, skipped } = builtIndex
   const unpublished = skipped.noNpm + skipped.noVersion
