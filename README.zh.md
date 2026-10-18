@@ -2204,6 +2204,7 @@ dsh plugin --profile web add dshmarket
 - [EIGHTfs/dsh-session-conductor](https://github.com/EIGHTfs/dsh-session-conductor) — DSH 会话管理增强：归档/恢复、批量与条件删除、AI 自动重命名、中断自动续跑、按工作区分组、撤回最后一条消息、三类损坏日志修复（seq-gap/EIO/双格式）、价值分析与全文搜索——另含方案/收尾模板注入（系统提示词 + 上下文）。
 - [EIGHTfs/dsh-session-migrate](https://github.com/EIGHTfs/dsh-session-migrate) — DSH 会话跨版本迁移：扫描旧版会话目录（v0 明文、.zstd 与 .zip 导出包），改写 header cwd 绑定目标工作区并落盘，打开会话时由持久化层自动完成版本升级；设置侧边栏（环境 / 导入 / 列表 / 转换）加 CLI（check / fix / import）。
 - [Enosensu/dsh-fork-relink](https://github.com/Enosensu/dsh-fork-relink) — DSH 的 fork 伴随插件:官方 fork 发生后,把原会话的直接子 agent 复制到 fork 出的新对话下(递归复制整棵子树,副本经官方 agent API 创建),每个副本留在磁盘上成为可被官方恢复路径唤醒的冷会话——新对话保留子代理面板,并能继续给这些子代理发消息;原件仍留在旧分支。
+- [Ersith/akasha-book#akasha-session](https://github.com/Ersith/akasha-book/tree/main/plugins/akasha-session) — 回合结束时把会话档案增量索引进阿卡夏会话层，记录压缩事件，并在运行时上下文里显示每回合节奏条。（配套：Hindsight 仓库记忆 / OpenViking 用户记忆 / 宿主会话检索；见仓库 README） 安装：clone 仓库并复制 core/，把 cordis.patch.yml 里的 <AKASHA_DIR> 换成实际路径（或设 AKASHA_DIR 环境变量）；占位符未替换时插件会明确报错。
 - [EvilIrving/dsh-context-proxy](https://github.com/EvilIrving/dsh-context-proxy) — 按需取回薄层：context_query / context_slice / context_grep 三个工具读取已持久化的历史，引用可回放。
 - [falling-ts/dsh-force-compact](https://github.com/falling-ts/dsh-force-compact) — llama-cpp qwen3.8-27b 低上下文时，强制上下文压缩插件，提示模型使用效率和使用流畅度，外加完善的压缩提示。
 - [fallow5/dsh-pin-sessions](https://github.com/fallow5/dsh-pin-sessions) — 把会话置顶到 Web 侧边栏顶部：独立置顶面板、归档区、原生三点菜单集成。
@@ -2577,6 +2578,10 @@ dsh plugin --profile web add dshmarket
 - [dxxCaO/dsh-self-improvement](https://github.com/dxxCaO/dsh-self-improvement) — 按工作区存放的纯 Markdown 跨会话记忆：重要性加权注入、双时态失效、按 TTL 复查并标注可能失效、凭据脱敏、出错与会话复盘、SOP 技能沉淀，以及需人工确认的自我改进提案。
 - [ECNU/EduWork#dsh-memory](https://github.com/ECNU/EduWork/tree/main/packages/dsh-memory) — 本地语义记忆与过往对话检索，保留来源引用，支持编辑、保留、遗忘、撤销及 JSON 导入导出。
 - [EPCN-fla/dsh-observational-memory](https://github.com/EPCN-fla/dsh-observational-memory) — 在后台将会话工作提炼为观察和反思，以便在上下文压缩后保留会话上下文。
+- [Ersith/akasha-book#akasha-gate](https://github.com/Ersith/akasha-book/tree/main/plugins/akasha-gate) — 阿卡夏之书门控：拦截写入记忆数据目录的工具调用，并把库用法约定与自我层注入系统提示。（配套：Hindsight 仓库记忆 / OpenViking 用户记忆 / 宿主会话检索；见仓库 README） 安装：clone 仓库并复制 core/，把 cordis.patch.yml 里的 <AKASHA_DIR> 换成实际路径（或设 AKASHA_DIR 环境变量）；占位符未替换时插件会明确报错。
+- [Ersith/akasha-book#akasha-hooks](https://github.com/Ersith/akasha-book/tree/main/plugins/akasha-hooks) — 把宿主事件（回合结束、工具结果、agent 错误、空闲切换、assistant 输出）落成 append-only JSONL，供指标、召回检查与输出审计使用。（配套：Hindsight 仓库记忆 / OpenViking 用户记忆 / 宿主会话检索；见仓库 README） 安装：clone 仓库并复制 core/，把 cordis.patch.yml 里的 <AKASHA_DIR> 换成实际路径（或设 AKASHA_DIR 环境变量）；占位符未替换时插件会明确报错。
+- [Ersith/akasha-book#akasha-sleep](https://github.com/Ersith/akasha-book/tree/main/plugins/akasha-sleep) — 空闲或定时触发阿卡夏睡眠蒸馏，并为新会话注入唤醒条、每回合注入库脉搏；可选的空闲续行默认关闭。（配套：Hindsight 仓库记忆 / OpenViking 用户记忆 / 宿主会话检索；见仓库 README） 安装：clone 仓库并复制 core/，把 cordis.patch.yml 里的 <AKASHA_DIR> 换成实际路径（或设 AKASHA_DIR 环境变量）；占位符未替换时插件会明确报错。
+- [Ersith/akasha-book#mcp-akasha](https://github.com/Ersith/akasha-book/tree/main/plugins/mcp-akasha) — 把阿卡夏之书外置记忆层以 stdio 注册进 DSH，暴露 22 个 akasha_* 工具：检索、主题简报、修订链、审计与会话回看。（配套：Hindsight 仓库记忆 / OpenViking 用户记忆 / 宿主会话检索；见仓库 README） 安装：clone 仓库并复制 core/，把 cordis.patch.yml 里的 <AKASHA_DIR> 换成实际路径（或设 AKASHA_DIR 环境变量）；占位符未替换时插件会明确报错。
 - [EternalNight996/dsh-memory-eternal](https://github.com/EternalNight996/dsh-memory-eternal) — 给 DeepSeek Harness 装上自研「第二大脑」：对话结束自动把值得复用的内容沉淀成本地 Markdown 知识卡（自研去重、CJK 检索、可 git 管理），设置页提供图形化知识库 + 交互式知识图谱（图例过滤、时间维、框选、合并、导入导出）。
 - [EternalNight996/memory-eternal](https://github.com/EternalNight996/memory-eternal) — 自研 DSH 记忆插件：SQLite 持久存储 + 数据库层审核守卫（enforceAudit）+ 审计日志。对话结束自动沉淀知识卡，Agent 经 memory_recall 按需召回，支持 Claude Code/Codex/Cursor 多智能体共享，零外部依赖。
 - [EvoMap/evolver-dsh-plugin](https://github.com/EvoMap/evolver-dsh-plugin) — 越用越聪明的 harness，告别金鱼记忆。每条 prompt 前，Evolver 从本地经验和 EvoMap 网络召回一条验证过的策略；回合结束后，它凭测试结果、改动是否被保留、你的下一句反馈给策略打分，再回报网络按证据加权。每一次成功都变成下一次的捷径，每一次失败都变成下一次的避坑指南。
@@ -2801,6 +2806,7 @@ dsh plugin --profile web add dshmarket
 - [439436269-ctrl/dsh-zspace](https://github.com/439436269-ctrl/dsh-zspace) — 把极空间（ZSpace）NAS 变成 agent 的原生工具：列目录、查属性、按名检索、读取、下载、上传、写入、建目录、重命名、移动、复制、删除 NAS 文件。跨网络走桌面客户端中转——不需要同一局域网、不用 WebDAV、不用 SSH；同一网络时自动改走更快的 WebDAV 直连。删除需显式传 confirm: true；写入、上传、建目录、重命名、移动、复制默认直接执行，zspace_write 会覆盖同名文件（除非传 overwrite: false）。
 - [58catmiao/dsh-sciwork](https://github.com/58catmiao/dsh-sciwork) — 给 DSH 的科研库面板与技能组：课题目录、带溯源的图表登记、草稿、文献、数据表、期刊档案、投稿台账，以及面向科研智能体的写作、引用与 Origin 出图纪律（出图需另装 dsh-origin-plugin）。
 - [dsh-douyin-publish](https://github.com/7gzgn/dsh-douyin-publish) — 把本地视频送到抖音投稿页的「待发布」状态：打开投稿页、真实点上传、递文件（回读校验）、填标题、设可见性，然后默认停手——可见性默认仅自己可见、不点发布。
+- [dsh-file-handover](https://github.com/7gzgn/dsh-file-handover) — 把本地文件交给任何程序的「打开文件」对话框：等对话框出现、走剪贴板填路径、读回来逐字核对、再点确认。目标必须显式给，每一步都留证据——文件上传、微信发文件、PS 打开都能用它代劳。仅 Windows（依赖 EnumWindows / UI Automation）。
 - [7gzgn/dsh-gui-guard](https://github.com/7gzgn/dsh-gui-guard) — Windows 窗口操作的可靠性层：先体检目标窗口是否最小化、是否在前台、有没有 DPI 缩放，再点击与输入——坐标口径和激活顺序由它处理。零依赖、纯本地、不联网。
 - [dsh-lighthouse](https://github.com/7gzgn/dsh-lighthouse) — 一屏看清每个作品的现状：本地版本与文件数、GitHub star 与最后推送、市场是否已收录及下载量、收录 PR 等待时长对比上游中位数；全部只读、数字都来自 API，不经模型生成。
 - [dsh-restart-planner](https://github.com/7gzgn/dsh-restart-planner) — 让 agent 自己安排宿主重启：工具立刻返回，等这一轮回复送达、会话日志落盘安静后再停+拉，并留下报告；自带 dry-run、体检与「什么时候可以眨一下眼」的确认。
@@ -3097,6 +3103,7 @@ dsh plugin --profile web add dshmarket
 - [kiligzzz/dsh-agent-dispatch](https://github.com/kiligzzz/dsh-agent-dispatch) — 自定义 Agent + 自动路由 + 小队编排：六个模型工具（agent_dispatch / agent_followup / agent_list / agent_squad / agent_import_skill / agent_upsert），无内置 Agent，原生右 tab 主面板（总览 / Agent / 小队 / 历史）与悬浮活动球。
 - [kingguuu8-svg/dsh-pi-compatible](https://github.com/kingguuu8-svg/dsh-pi-compatible) — 在 DeepSeek Harness 中复刻 Pi 工具组：安装小写 read/write/edit/bash/find/grep/ls 核心工具，并保留 DSH-backed 网页、任务、计划、todo、think 与 slash 扩展。
 - [KitanWang/dsh-figma-plugin](https://github.com/KitanWang/dsh-figma-plugin) — 给 agent 用的 Figma 设计上下文：读取画板的节点树、自动布局、填充与字体，解析节点绑定的设计变量，并渲染截图用于对照代码 —— 另附四个设计转代码技能。点一个按钮即跳转 Figma 官方授权页完成连接；插件自带 OAuth 应用、自动续期令牌，全程不索取也不展示任何 Token。
+- [KJHAJKSLFHA/dsh-computer-use-next](https://github.com/KJHAJKSLFHA/dsh-computer-use-next) — 基于 CuaDriver 的 macOS 跨应用桌面工具，默认隐藏虚拟光标，支持后台窗口选择和操作后界面回读。
 - [klarkxy/dsh-plugin-autoevo](https://github.com/klarkxy/dsh-plugin-autoevo) — AutoEvo v1.0.0 为 DSH Agent 提供 Search-first 能力工作流：优先复用本地工具或审查精确来源插件后再安装；可在受管源码中改造或新建能力；回执区分 installed、loaded、activated、verified，版本工具支持回滚、领养与上游更新。
 - [KLRSL/dsh-packer](https://github.com/KLRSL/dsh-packer) — 为 DeepSeek Harness 打造的 Agent 配置打包器：把本地 Agent 资产（Skills/会话/Profile/全局设置/记忆）打包成 zip，用于迁移或分享；带隐私安全扫描、差异恢复、包管理与设置 UI；记忆以只读 Markdown 镜像入包，不含运行时数据库。
 - [kouyichi/dsh-plugins#dsh-a2a](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-a2a) — dsh 原生 A2A 服务：通过 HTTP JSON-RPC 将本 dsh 暴露为可调用的代理。
