@@ -279,15 +279,6 @@ jobs:
         run: |
           npm install -g npm@latest  # trusted publishing needs npm >= 11.5
           node scripts/publish-catalog.mjs
-      # The market index as its own npm package — see publish-index.mjs for
-      # why it is separate from the catalog and why npm at all: dsh 0.2.1
-      # aborts an index fetch after 15 s, and from mainland China the Pages
-      # copy of a 3 MB document takes longer than that.
-      - name: publish the market index to npm
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-        run: |
-          npm install -g npm@latest  # trusted publishing needs npm >= 11.5
-          node scripts/publish-index.mjs
       # The update-notes payload, published to npm for the same reason as the
       # catalog above — Pages IS GitHub, and the proxies that would carry it
       # refuse non-github.com hostnames — but as its OWN package: notes are

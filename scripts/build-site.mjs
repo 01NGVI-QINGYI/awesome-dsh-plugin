@@ -672,8 +672,8 @@ function langRedirect(current) {
 
 const INDEX_LINE = `    <div class="indexline">
       <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 13l2 2 4-4"/></svg>
-      <span class="lead">__T_INDEX_LEAD__ <code translate="no">cdn.jsdelivr.net/npm/dsh-plugin-catalog-index/index.json</code></span>
-      <button class="copy" type="button" data-cmd="https://cdn.jsdelivr.net/npm/dsh-plugin-catalog-index/index.json">__T_INDEX_COPY__</button>
+      <span class="lead">__T_INDEX_LEAD__ <code translate="no">cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json</code></span>
+      <button class="copy" type="button" data-cmd="https://cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json">__T_INDEX_COPY__</button>
     </div>`
 
 
