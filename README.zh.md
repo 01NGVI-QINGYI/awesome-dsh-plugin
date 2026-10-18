@@ -208,6 +208,7 @@ dsh plugin --profile web add dshmarket
 - [AprilCrystal/dsh-client-ui-gpt-helper](https://github.com/AprilCrystal/dsh-client-ui-gpt-helper) — ChatGPT 桌面风格的模型选择控件：思考档位滑杆带粒子拖尾，另有纯视觉的快速模式开关与长按锁定。
 - [ArcaneOrion/dsh-model-selector-search](https://github.com/ArcaneOrion/dsh-model-selector-search) — 搜索增强的会话模型选择器：两段式宽松匹配（先归一化子串，未命中再退子序列，glm53 命中 GLM-5.3、ds 命中 DeepSeek）、近七天成功调用过的供应商置顶，推理档位面板记住每个模型上次显式选择的档位。
 - [ArcaneOrion/dsh-teaching-board](https://github.com/ArcaneOrion/dsh-teaching-board) — 教学平面视图：agent 生成的自包含 HTML 投影进沙箱 iframe 当板书，可用画笔手写勾画（四色、橡皮、撤销）、在同一块板上增量续写，并把画面截图作为真实用户消息发回对话。
+- [Archaofan/dsh-source-deck](https://github.com/Archaofan/dsh-source-deck) — DSH Desktop 的会话内资料台：由当前对话模型执行搜索轮次，候选以 GitHub 卡片展示，保留/排除反馈、收藏夹与筛选结果都留在同一会话。
 - [ardesp0630/dsh-work-progress](https://github.com/ardesp0630/dsh-work-progress) — 输入框下方常驻的工作进度行：任务完成度、进度条，以及此刻正在做什么（生成回复或执行工具）；展开可见完整任务清单与轮次、步骤、耗时、上下文占用。
 - [ArimaKana-Akane/dsh-whale-tools](https://github.com/ArimaKana-Akane/dsh-whale-tools) — 给 dsh-whale-widget 换图的插件：内置抠图流水线把任意图片替换成小鲸鱼，另有会话头部重启按钮、浏览器心跳，以及默认关闭的挂件补丁自愈（需显式开启）。
 - [Arrosam/dsh-smart-prompt](https://github.com/Arrosam/dsh-smart-prompt) — 在 DSH 输入框一键改写提示词：点「发送」旁的 ✦，按「标准」或「轻」档把草稿改写成 Agent 可直接执行的提示词，可撤回或重试；草稿缺少信息时通过提问卡片追问；校验路径、标识符、数字、URL、行内代码与 @ 提及在改写后逐字保留，丢失的会补回；可使用会话模型，或在插件页面指定专用模型。
@@ -2623,6 +2624,7 @@ dsh plugin --profile web add dshmarket
 - [kkwings/dsh-super-memory](https://github.com/kkwings/dsh-super-memory) — 跨压缩记忆：压缩时把被压掉的内容存到本机，提问时只注入相关的那几段（没有就一点不注入），让模型重新想起你早先定过的事。
 - [KLRSL/dsh-biomemory](https://github.com/KLRSL/dsh-biomemory) — 为 DeepSeek Harness 打造的生物仿生记忆系统：以单一 SQLite 库为唯一事实来源（node:sqlite，WAL），Markdown 树仅作只读镜像；含 memory 工具、会话启动时的冻结快照注入、分级审批门、按需把当前会话抽取成记忆、近重复合并、归档与取代生命周期、记忆代谢（dream）、记忆钉、基于本地嵌入的语义检索，以及 /memory 命令。
 - [knighthongyu/dsh-handoff-compaction](https://github.com/knighthongyu/dsh-handoff-compaction) — 面向小上下文模型的 DSH 上下文压缩插件：压缩大小可视化配置，默认 8k 交接摘要 + 16k 最近上下文，完整历史仍可查询。
+- [kobubu/Rag-Coding](https://github.com/kobubu/Rag-Coding) — Local code memory with automatic source context, symbol lookup, vector search, and dependency graphs for JavaScript and TypeScript projects.
 - [krodon998/dsh-get-memory](https://github.com/krodon998/dsh-get-memory) — 对话开始时自动拉取 GitHub 仓库内容注入上下文，对话结束时提取长期记忆按文件写回并提交；文件权限中心、原生设置页、回合写回指示与全局变动提示。
 - [lanyun077/dsh-project](https://github.com/lanyun077/dsh-project) — 把多个文件夹与会话收纳为「项目」，共享 PROJECT.md 记忆与 AGENTS.md 指令并注入每个会话，附带项目树侧边栏。
 - [LAYZR114/dsh-project-memory](https://github.com/LAYZR114/dsh-project-memory) — 北极星记忆：DeepSeek Harness 本地优先项目记忆插件。每项目一份 .dsh-memory.json（按 cwd 隔离），提供 memory_read/recall/write/update/delete 工具、/memory 命令与设置页；分级注入（用户画像常驻 + 场景触发记忆带 P1/P2/P3 等级）、语义召回（IDF+同义词层）、底线记忆硬守卫机制（识别禁止语义→授权→拦截 AI 删除；用户可确认绕过）。
@@ -3322,6 +3324,7 @@ dsh plugin --profile web add dshmarket
 - [sjh9714/dsh-retry-guard](https://github.com/sjh9714/dsh-retry-guard) — 监视连续相同的工具失败，可在下一个模型步之前选择暂停；保留原始结果与成功的重复调用，并在 DSH Web 里出一份会话内报告。
 - [Smalldy/godot-bridge](https://github.com/Smalldy/godot-bridge) — DSH↔Godot 引擎运行时控制桥：通过游戏内置 TCP 交互服务器启动并操控运行中的 Godot 4.x——16 个工具（约 130 条运行时命令、场景/UI 检查、GDScript eval、输入模拟、截图、headless 静态操作、项目编辑、导出、脚本编译检查、引擎路径设置），替代 godot-mcp。
 - [Snowball-labbot/Portfolio-OS#dsh-portfolio-os](https://github.com/Snowball-labbot/Portfolio-OS/tree/main/plugins/dsh-portfolio-os) — DSH 内的自包含个人资产与投研工作台：支持本地注册、资产导入与配置视图、市场和新闻跟踪、研究库及用户自行配置的 AI 简报；内置 Windows Runtime，数据保存在本机。
+- [soberkeen/dsh-vault](https://github.com/soberkeen/dsh-vault) — 把 DSH 的配置、会话、插件、工作区与 Hindsight 记忆加密分卷打包：AES-256-GCM 卷可用口令、恢复码或本机 DPAPI 免密槽解开，包内自带自包含还原器；GFS 四档滚动保留（最近 / 每日 / 每周 / 每月，另有总体积上限与回收站），支持网络路径与 WebDAV 目标。零外部依赖，只用 node: 内置模块，不需要 7z、openssl 或 rclone。
 - [sojo-negai/dsh-prompt-refine](https://github.com/sojo-negai/dsh-prompt-refine) — 发送按钮左侧的 ✨ 按钮：读取草稿与最近若干轮对话，向已配置的模型要三条建议（每条都是「问题 + 改法」），可逐条勾选并实时预览合并后的提示词，结果写回输入框但不发送。
 - [somnusovis/dsh-multi-workspace](https://github.com/somnusovis/dsh-multi-workspace) — 多工作区沙箱：自动赋予所有已注册工作区的文件写入权限——添加工作区后即可直接写入，无需配置或提权。
 - [songer522/dsh-launcher](https://github.com/songer522/dsh-launcher) — DSH Web 服务的 macOS 菜单栏应用，以及它所读取的 Host 插件：插件把运行中服务的端口、PID 与带 token 的 URL 写入 ~/.config/dsh-launcher/runtime.json，并在停止时删除，因此即使服务器是从终端启动的，也能在状态栏完成启动、打开、重启与停止。
