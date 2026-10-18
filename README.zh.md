@@ -242,7 +242,7 @@ dsh plugin --profile web add dshmarket
 - [better-er/dsh-tool-autoexpand](https://github.com/better-er/dsh-tool-autoexpand) — 自动展开 DSH 界面里新到达的工具调用卡片，侧栏开关在不干预/展开/折叠三态间循环，档位持久化到 localStorage。
 - [BeyondandSharp/dsh-plugin-scaling](https://github.com/BeyondandSharp/dsh-plugin-scaling) — 支持 DSH Web 上的每个面板独立缩放：鼠标悬浮在面板上 Ctrl+滚轮，或对选中的面板 Ctrl+±，Ctrl+0恢复。兼容官方界面风格及皮肤。
 - [bf185003/dsh-favicon-status](https://github.com/bf185003/dsh-favicon-status) — 为 dsh web 绘制浏览器页签状态指示：根据会话列表把 favicon 画成状态圆环（执行中蓝色旋转、等待用户琥珀色、完成绿色）。
-- [big-head-pigeon/dsh-session-menu](https://github.com/big-head-pigeon/dsh-session-menu) — 给 DSH 侧边栏的会话右键菜单补上标记未读、复制会话信息、在访达中显示或换 IDE 打开、永久删除（连子会话一起删），并给会话行加上报错与未读状态点、悬浮卡信息、归档行的一键删除，以及一个可逐项开关菜单的设置面板。
+- [big-head-pigeon/dsh-session-menu](https://github.com/big-head-pigeon/dsh-session-menu) — 给 DSH 侧边栏的会话右键菜单补上标记未读、复制会话信息、在访达中显示或换 IDE 打开、永久删除（连子会话一起删），并给会话行加上报错与未读状态点、悬浮卡信息、归档行的一键删除，以及一个可逐项开关菜单的设置面板；界面提供中英文两套文案。
 - [biggerboy/dsh-conversation-anchors](https://github.com/biggerboy/dsh-conversation-anchors) — 对话区左侧 Codex 风格短横线锚点，悬停预览，点击跳转到对应轮次。
 - [bill9109/dsh-drag-and-drop](https://github.com/bill9109/dsh-drag-and-drop) — 跨平台文件拖拽与原始路径插入，无需复制文件。
 - [bitterSmilezzz/dsh-model-selector](https://github.com/bitterSmilezzz/dsh-model-selector) — 增强 DSH 输入区的模型选择器：可搜索供应商分组、键盘与无障碍支持，以及内联推理强度滑杆。
@@ -815,7 +815,7 @@ dsh plugin --profile web add dshmarket
 - [pyf2818/dsh-bili-widget](https://github.com/pyf2818/dsh-bili-widget) — DSH 里的 B站悬浮看片小窗：置顶窗口，含推荐/热门/排行/精选/关注/AI 频道与搜索，自动连播、迷你专注模式、历史持久化与最小化悬浮球。
 - [qcsjjjjj/dsh-hero-rightbar](https://github.com/qcsjjjjj/dsh-hero-rightbar) — 在没有对话的页面上补回右侧栏的展开入口，位置与外观对齐产品自带控件。
 - [qcsjjjjj/dsh-planner](https://github.com/qcsjjjjj/dsh-planner) — 在中间栏加一个“计划”标签（对话、轨迹的右侧）：周一起始的月历用于选日期，下方是当天的计划卡片，含标题、备注、起止时间、三档重要度与完成勾选框。计划可按每天、每周或工作日重复并带可选截止日期；编辑与删除会询问“仅此一次”还是“整个系列”；完成状态按天独立；一键躺平只跳过重复系列的当天。五个模型工具让 Agent 能在对话里读取、写入、删除、清空与撤销计划。
-- [qgd1850890306-rgb/dsh-todo-checklist](https://github.com/qgd1850890306-rgb/dsh-todo-checklist) — 为 DeepSeek Harness 提供待办清单：把划选的文字存成待办、从对话里捕获待办、在左侧栏面板里查看与处理，并在到期时通过应用内弹窗或机器人推送提醒。
+- [qgd1850890306-rgb/dsh-todo-checklist](https://github.com/qgd1850890306-rgb/dsh-todo-checklist) — 为 DeepSeek Harness 提供待办清单：把划选的文字存成待办、从对话里捕获待办、在左侧栏面板里查看与处理、到期用应用内弹窗或机器人推送提醒，还能把全部记录导出成 HTML、Markdown、Excel、CSV 或 JSON。
 - [qgx1992/dsh-ui-tools](https://github.com/qgx1992/dsh-ui-tools) — 一个插件装五个 Web UI 工具：供应商 + 模型双按钮选择器（含推理等级调节）、侧边栏工作区折叠/展开全部、会话「修改的文件」选项卡（需内核 0.1.2-alpha.1+，旧内核上静默缺席）、会话标题旁的工作区徽章，以及集中开关这些功能的设置页。
 - [qgynisc/dsh-inline-pastes](https://github.com/qgynisc/dsh-inline-pastes) — 在 DeepSeek Harness 输入框里粘贴图片，即在文字中插入 image-1.png 编号胶囊；图片仍走官方附件管线随消息发出。鼠标悬浮名字弹出缩略图预览卡，dock 与已发送气泡的缩略图带序号角标，发送前还会自检「文字里的名字」与「本条消息的图片」是否对得上。
 - [QianLuo-Ly/dsh-weather](https://github.com/QianLuo-Ly/dsh-weather) — DSH Web 顶部居中的天气栏：定位 + 当前天气 + 未来 12 小时/7 天预报与恶劣天气提醒，数据来自 Open-Meteo（免费、无需 API key）。
@@ -1233,6 +1233,7 @@ dsh plugin --profile web add dshmarket
 - [badai147/dsh-ocgo-usage](https://github.com/badai147/dsh-ocgo-usage) — 在 Web 侧边栏左下角显示 OpenCode Go 用量——滚动/本周/本月配额进度与悬停明细卡片，并附按北京时间标记的 DeepSeek 高峰时段进度条。
 - [baosfeng/my-dsh-plugins#dsh-my-context](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-context) — 上下文透镜：可视化每次请求的 token 用量（上下文构成、KV 缓存命中率），并提供每轮 / 每会话预算控制（超限提醒与拦截）（npm: `dsh-my-context`）。
 - [BeiZi6/dsh-opencodego-usage](https://github.com/BeiZi6/dsh-opencodego-usage) — OpenCodeGo 剩余额度监视器：输入框右下角呼吸指示灯（按剩余额度绿/黄/红），液态玻璃面板显示滚动/周/月用量窗口与重置时间，每 30 秒自动刷新，API Key 自动读取 DSH 凭据。
+- [bennett-dsh/dsh-plugin-usage](https://github.com/bennett-dsh/dsh-plugin-usage) — DeepSeek Harness 的用量与参考成本面板，含今日 / 近 7 天 / 近 30 天 / 全部 / 自定义范围并按小时或天聚合；模型筛选与按模型明细（请求数、输入/输出 Token、缓存、参考成本、占比）；按总 Token 显示前 4 个模型、其余归入「其它」的模型占比卡；可配置的每百万 Token 价格表（内置 DeepSeek 常见模型价），参考成本可在 ¥ / $ 间按固定汇率 1 USD = 7 CNY 切换；年度热力图只用主题变量绘制，不引第三方图表库。
 - [better-er/dsh-cache-billing](https://github.com/better-er/dsh-cache-billing) — 在上下文圆环弹层里实时算账：当前步、当前轮、会话累计三块明细，缓存命中/未命中/输出各带 token 与金额，官方峰谷价与模型分价自动判定，第三方中转照常记账。
 - [better-er/dsh-live-token-stats](https://github.com/better-er/dsh-live-token-stats) — 在输入框下方实时渲染 token 状态带：基于 DeepSeek 官方 BPE 分词表显示流式 token/s、输出 token 与首字延迟，并对比每次 step 的估算与实际偏差，用于判断生成是慢还是卡住。
 - [better-er/dsh-peak-block](https://github.com/better-er/dsh-peak-block) — 北京时间工作日高峰时段拦截发往官方 provider 的请求，默认 09:00-12:00、14:00-18:00，可切到配置的中转目标或直接阻止并提示，非高峰正常走官方。
