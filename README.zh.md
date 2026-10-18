@@ -3274,6 +3274,7 @@ dsh plugin --profile web add dshmarket
 - [Realyujie/dsh-us-stocks](https://github.com/Realyujie/dsh-us-stocks) — 美股行情、历史 K 线、财务报表、分析师共识与新闻，数据来自 yahoo-finance2。
 - [rebornace/dsh-tracescope#dsh-tracescope](https://github.com/rebornace/dsh-tracescope/tree/main/packages/dsh-tracescope) — DSH 右侧栏插件：对比两个 git 提交，根据影响面生成手测清单，支持失败备注、截图、任务附件，以及向云效 / GitHub / GitLab / Webhook 提交缺陷。
 - [rebron1900/dsh-web-search-9router](https://github.com/rebron1900/dsh-web-search-9router) — 9router 网页搜索与网页抓取 provider，为 DeepSeek Harness 提供搜索和抓取能力。
+- [residenthiago2011/DSH-Tool-Router](https://github.com/residenthiago2011/DSH-Tool-Router) — 通过决策模型 API 把工具 schema 从模型 prefill 中隐藏，每次按需揭示一个工具。需运行决策模型 API 端点，且 PATH 中有 pnpm。
 - [Rianico/dsh-better-edit](https://github.com/Rianico/dsh-better-edit) — 基于哈希锚定的 read / edit / batch_edit / undo_last_edit 工具：每行分配唯一的 3 字符内容哈希，编辑按哈希而非行号定位；对已提供状态逐行校验，过期范围会被拒绝并回传新锚点。
 - [Roarpeng/GraphFlow](https://github.com/Roarpeng/GraphFlow) — 面向编程 Agent 的本地代码知识图谱：提供 10 个 MCP 工具，覆盖分层上下文压缩、DAG 规划、增量 AST 建图、跨会话技能飞轮、诊断与图谱产物导入导出。
 - [robiteame/dsh-session-tree-extension](https://github.com/robiteame/dsh-session-tree-extension) — Pi 风格的追加式多分支会话树:在任意历史节点开分支或跳转而不删除旧历史,可将分支克隆为新会话,并在 WebUI 树面板中浏览(明暗主题)。在原版 Harness 上优雅降级运行。
@@ -3316,6 +3317,7 @@ dsh plugin --profile web add dshmarket
 - [SIMON-WORLD/dsh-toolkit#dsh-at-file](https://github.com/SIMON-WORLD/dsh-toolkit/tree/main/packages/dsh-at-file) — DSH 的 @ 文件引用工具：注册 at_file_read 工具，把工作区内文件内容注入会话，含目录穿越防护与 50KB 截断（MIT）。
 - [SiriLee/dsh-edit-approval](https://github.com/SiriLee/dsh-edit-approval) — 每次 edit 与 bash 调用前都会询问：编辑前展示红绿行级 diff，命令前展示描述与命令面板——同意一次或拒绝，两个 gate 各带独立总开关（Settings → General）。
 - [siruignaw-sys/dsh-tool-bandit-search](https://github.com/siruignaw-sys/dsh-tool-bandit-search) — 使用上下文赌博机算法（Thompson 采样）学习何时使用快速搜索、何时使用深度搜索的 `search` 工具。 
+- [sixtysevenlf/dsh-blender-plugin](https://github.com/sixtysevenlf/dsh-blender-plugin) — 让 DSH agent 通过直连 TCP 通道驱动本地 Blender，提供 16 个工具：视口帧、自定义视角渲染、Python 执行、无头与作业卸载、事务回滚，以及 28 个 family / 186 个 op 的规划层。
 - [sjh9714/dsh-retry-guard](https://github.com/sjh9714/dsh-retry-guard) — 监视连续相同的工具失败，可在下一个模型步之前选择暂停；保留原始结果与成功的重复调用，并在 DSH Web 里出一份会话内报告。
 - [Smalldy/godot-bridge](https://github.com/Smalldy/godot-bridge) — DSH↔Godot 引擎运行时控制桥：通过游戏内置 TCP 交互服务器启动并操控运行中的 Godot 4.x——16 个工具（约 130 条运行时命令、场景/UI 检查、GDScript eval、输入模拟、截图、headless 静态操作、项目编辑、导出、脚本编译检查、引擎路径设置），替代 godot-mcp。
 - [Snowball-labbot/Portfolio-OS#dsh-portfolio-os](https://github.com/Snowball-labbot/Portfolio-OS/tree/main/plugins/dsh-portfolio-os) — DSH 内的自包含个人资产与投研工作台：支持本地注册、资产导入与配置视图、市场和新闻跟踪、研究库及用户自行配置的 AI 简报；内置 Windows Runtime，数据保存在本机。
@@ -3696,6 +3698,7 @@ dsh plugin --profile web add dshmarket
 - [Noemm/dsh-web-search-glm](https://github.com/Noemm/dsh-web-search-glm) — 智谱 GLM 联网搜索 provider：以 glm 注册到 ctx.web 缝，经 GLM 的 Anthropic 兼容 API 执行原生 web_search 服务端工具（走 Coding Plan 计费）。
 - [Nono-neko/dsh-browser](https://github.com/Nono-neko/dsh-browser) — DSH Web 与 Desktop 端的内置浏览器：为 DeepSeek Harness (DSH) 提供的 AI 原生浏览器工作区，融合了多标签浏览、实时页面批注、轻量级代码编辑、工作区预览，以及跨网页和桌面的智能助手辅助迭代功能。
 - [omdsh-dev/dsh-browser#packages/browser/bridge-browser](https://github.com/omdsh-dev/dsh-browser/tree/main/packages/browser/bridge-browser) — Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。
+- [OrderG-X/dsh-chrome-bridge#plugin](https://github.com/OrderG-X/dsh-chrome-bridge/tree/main/plugin) — 仅 macOS（走 native messaging）；需要 Chrome 116+ 与 Node 18+。操作你已经登录的 Chrome：走 native messaging 与 chrome.debugger，不开监听端口。提供 11 个 browser_* 原生工具和一个 cb 命令行，发送真实 CDP 输入事件，绘制会出现在截图里的页内光标，并带一个工具栏面板（连接状态、正在控制的标签页、暂停开关）。宿主（原生宿主 + MV3 扩展）随本 tarball 一起发：插件首次加载时自己把它们落盘并写好 native messaging 注册，不用 clone 仓库、不用 install.sh、不用 python3——只剩一次手动：到 chrome://extensions 加载一次已解压的扩展，这一步 Chrome 137+ 起谁都自动化不了（插件会替你打开那个页面并把文件夹放进剪贴板，报错里也写着这几步）。Windows / Linux 上插件会明确报出「仅 macOS」这条限制，不会静默失败。
 - [OzzyDeng-JunDeng/dsh-keyless-search](https://github.com/OzzyDeng-JunDeng/dsh-keyless-search) — 为内置 web_search 工具注册免密钥搜索提供方：无需 API Key 即可使用，在 Tavily 与 Firecrawl 官方免密钥通道之间自动降级；若设置了 TAVILY_API_KEY 或 FIRECRAWL_API_KEY 会自动采用。另含两个 Bing 抓取后端，默认关闭。
 - [ParticleLight/dsh-browser-plus](https://github.com/ParticleLight/dsh-browser-plus) — 面向 DSH 的可见 Electron 浏览器：共享一个 BrowserWindow，提供隔离任务视图、显式人机交接、快照引用与原生导航工具、操作轨迹、按需页面缩略图、可靠标签页切换与关闭的 keyed session 恢复，以及按站点清理 Cookie 的登录态维护能力。
 - [PartinGQAQ/dsh-web-search-zhipu](https://github.com/PartinGQAQ/dsh-web-search-zhipu) — GLM(智谱)网页搜索 provider——把 web_search 后端切到智谱 Anthropic 兼容端点的服务端搜索工具,直接复用你现有的 GLM 额度或 Coding Plan,替代 DeepSeek 官方搜索通道,并内置智谱私有响应格式的翻译层。
@@ -4033,6 +4036,7 @@ dsh plugin --profile web add dshmarket
 - [void2anything/dsh-qingagent](https://github.com/void2anything/dsh-qingagent) — 青简写作桥：agent 通过 qing_ 前缀工具起草改稿，右侧宣纸面板排版呈现（mermaid、drawio、表格、公式）；每处修改先摆在纸上供审阅，提交才落稿。需本机运行开源的青简桌面客户端。
 - [w4xxx/dsh-xia-plugins#packages/gameassist-knowledge](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-knowledge) — 树状 Markdown 知识库：为 DSH Agent 提供 kb_list/kb_read/kb_write 工具、目录/正文 HTTP 接口，并配套浏览器面板。
 - [Wanyi424/dsh-markdown-notes](https://github.com/Wanyi424/dsh-markdown-notes) — DSH Markdown 笔记：多文档管理、阅读排版主题、大纲刻度条与本地自动保存。
+- [wct-lab/dsh-docchain](https://github.com/wct-lab/dsh-docchain) — 知识库和文档转换插件：文档文件名、内容与元数据检索，主题查询，文档批量上传，文档转 Markdown，并附带深度研究工作流。除 doc2markdown 外需配置 docchain 服务地址与 API key。
 - [weibaohui/dsh-kb](https://github.com/weibaohui/dsh-kb) — 团队知识库：离线知识共享（FDE 盒子场景），浏览/全文检索/加工入口；raw 入料自动入队、bot 会话串行蒸馏成文（Karpathy LLM Wiki 模式：raw 不可变 / 两步加工 / log 流水 / 月度 lint）。
 - [Whatsmore-nf/dsh-pdf-edit](https://github.com/Whatsmore-nf/dsh-pdf-edit) — 面向 PDF 文档的编辑插件,精确编辑PDF文字
 - [WuShichao/dsh-ipynb-preview](https://github.com/WuShichao/dsh-ipynb-preview) — 在文档预览中渲染 Jupyter 笔记本，支持代码语法高亮、离线 KaTeX 行内与块级公式，以及可缩放的图像查看器。
@@ -4161,6 +4165,7 @@ dsh plugin --profile web add dshmarket
 - [Lohaslee/dsh-super-pm](https://github.com/Lohaslee/dsh-super-pm) — DeepSeek Harness 的产品思考助手：先明确负向边界，拆开事实与假设，经七套产品视角讨论取舍，并将确认的决策沉淀到项目记忆中。
 - [lunw/shopline-ai-toolkit-dsh](https://github.com/lunw/shopline-ai-toolkit-dsh) — SHOPLINE AI 工具包：接入 SHOPLINE 官方开发者 MCP 服务器，内置七个 SHOPLINE 平台技能（Admin REST、GraphQL、OAuth、Webhook、Sline），是 Shopify AI Toolkit 的 SHOPLINE 对应版。
 - [MAOLEIJIN/dsh-mattpocock-skills](https://github.com/MAOLEIJIN/dsh-mattpocock-skills) — 将完整 mattpocock/skills 技能树打包为 DSH 插件，保留上游调用策略，并在自动同步上游时校验和应用精确匹配的 DSH 语义适配层。
+- [Mark-mph/dsh-kb-curator](https://github.com/Mark-mph/dsh-kb-curator) — 捆绑 kb-curator 技能，用本地三层知识库保存资料，未获用户批准前不写入索引。L2 检索层需另装 @kenz1117/dsh-engram，且引擎目前仅支持 Windows。
 - [master1Sun/dsh-prompt-library](https://github.com/master1Sun/dsh-prompt-library) — DSH提示词库插件：支持提示词增删改查、分类标签、导入导出、AI智能优化、选中文本一键剪藏，附带侧边栏与词库助手气泡提醒。
 - [Meteor-system/mattpocock-skills-for-dsh](https://github.com/Meteor-system/mattpocock-skills-for-dsh) — 将 mattpocock/skills 的 25 个正式技能打包为 DeepSeek Harness bundle，附原生 Agent 预设、区分人触发与模型调用的技能 provider，以及轻量 grilling 到 implement 引导。
 - [Meteor-system/superpowers-for-dsh](https://github.com/Meteor-system/superpowers-for-dsh) — 将 obra/superpowers 的 14 个工程技能打包为 DeepSeek Harness bundle，附原生 Agent 预设、自动会话引导和 Windows 沙箱兼容。
