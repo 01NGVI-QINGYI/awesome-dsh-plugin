@@ -657,6 +657,7 @@ dsh plugin --profile web add dshmarket
 - [lucas07814-hub/dsh-pet-guardian-dragon](https://github.com/lucas07814-hub/dsh-pet-guardian-dragon) — 面向 DSH Web 界面的可拖拽桌宠，支持互动动作与成长状态。
 - [lucky01222/dsh-workbench-shell](https://github.com/lucky01222/dsh-workbench-shell) — 为 DSH Web 提供 56px 紧凑应用导航栏、独立对话列表与侧栏展开/收起控制；并在对话模型菜单和 /model 中筛除向量、重排及生图/视频型号。
 - [lumoping/dsh-todo-inbox](https://github.com/lumoping/dsh-todo-inbox) — DSH Web 全局跨会话待办收件箱：任意会话的 agent 通过 inbox_add/inbox_done/inbox_list 登记等待人类处理的事项（合并 MR、审批工单、评审等）；侧边栏入口显示未完成数角标与可展开的待办列表，支持打开与完成，数据持久化到 ~/.dsh/todo-inbox.json。
+- [Lushdawn/dsh-effort-dial](https://github.com/Lushdawn/dsh-effort-dial) — 输入框里的 Codex 风格推理强度卡片：接管模型选择器，显示当前档位、模型行，以及覆盖模型适配器所报全部档位的分段滑块；另带模型列表、重置，以及最高档时的紫色极光与闪烁粒子。
 - [LUX09947-CMYK/dsh-re](https://github.com/LUX09947-CMYK/dsh-re) — 在 DeepSeek Harness 桌面端顶部标题栏「编辑」右边加一个「刷新」按钮，只重载界面、不重启应用。
 - [luxi233/dsh-settings-nav-scroll](https://github.com/luxi233/dsh-settings-nav-scroll) — 当 DSH Web 设置导航的分区超出视口时，为其添加可见的纵向滚动条。
 - [LWLAymh/dsh-tool-emoji](https://github.com/LWLAymh/dsh-tool-emoji) — 把工具卡片前面的图标换成 emoji，同时保留原卡片全部内容。
