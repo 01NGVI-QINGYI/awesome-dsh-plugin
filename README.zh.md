@@ -1597,6 +1597,7 @@ dsh plugin --profile web add dshmarket
 - [MrmoLabs/dsh-yorha-ui](https://github.com/MrmoLabs/dsh-yorha-ui) — 一款面向 DeepSeek Harness Web 的 NieR:Automata / YoRHa 风格工业终端主题，提供沙色与炭黑配色、直角几何和全界面样式。
 - [mumuer1024/dsh-ui-liteglass](https://github.com/mumuer1024/dsh-ui-liteglass) — DeepSeek Harness 轻量级外观皮肤：自定义壁纸、玻璃质感面板与重点色；服务端持久化、多设备一致，不接管原生深浅色。
 - [mux9056-bot/dsh-theme](https://github.com/mux9056-bot/dsh-theme) — DSH Web UI 主题包：30 款即插即用的 CSS 主题，每款含浅色与深色变体，集成于「设置 → 通用」，并提供程序化 API。
+- [nightosong/gord-dsh-saber-theme](https://github.com/nightosong/gord-dsh-saber-theme) — 面向 DeepSeek Harness 0.2.0-rc.2 桌面版和 Web 的 Saber（Fate）主题，提供冰蓝浅色、深色配色与角色背景。
 - [niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme) — 《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
 - [nishuoyang/dsh-wallpaper-bg](https://github.com/nishuoyang/dsh-wallpaper-bg) — DSH 网页界面与桌面端的独立壁纸背景：内置壁纸、本地图片/视频上传（存 IndexedDB）、只读接入本机 Wallpaper Engine 壁纸库（需仓库自带的 wallpaper-engine-api 服务）；支持图片、视频与场景工坊预览渲染，可调浅色雾层/深色遮罩、模糊、亮度与安全放大，并可只读跟随桌面壁纸。
 - [NoNameLeGo/dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) — DSH Web GUI 的 Catppuccin 主题插件：Latte、Frappé、Macchiato、Mocha 四套主题接入原生主题系统，一键切换并记住选择；另附可开关的玻璃质感皮肤，顶栏、侧边栏、输入框、统计行与轨迹视图的磨砂玻璃效果可自由调节。
@@ -4051,6 +4052,7 @@ dsh plugin --profile web add dshmarket
 - [JUNQINGV587/mattpocock-skills-dsh](https://github.com/JUNQINGV587/mattpocock-skills-dsh) — 将 Matt Pocock 的 25 个精选工程与效率 Agent 技能（grilling、TDD、代码审查、领域建模等）移植为 DeepSeek Harness 插件包。
 - [Kenerlee/dsh-moments-aieo](https://github.com/Kenerlee/dsh-moments-aieo) — AIEO（GEO/AEO）交付方法论，挂载为一个独立的 skill provider：0-9 分制的 AI 可见性诊断、产品定位、仅限白名单平台导出数据的搜索热词挖掘、周期性效果监控与 HTML 监控面板，由同一份共享问题库串联，另附一个落地页复刻 skill。
 - [Kirisame1969/dsh-project-based-learning](https://github.com/Kirisame1969/dsh-project-based-learning) — 项目制教学教练：学科无关的教学引擎 + 可替换领域包（随包提供 Unity/C#），同时以 DSH 技能与可安装组合包分发。技能协议强制"先做后教"与分级提示；零依赖校验器会拒绝证据不支撑的能力结论，并在存在未解决阻塞项时阻止阶段通过。
+- [kissfirembx/dsh-skill-map](https://github.com/kissfirembx/dsh-skill-map) — 在右侧栏用一个或多个「工作区」给已加载的 skill 分类：每个工作区有自己的分类表和每个 skill 的归属，分类可就地新建、改名、排序、删除，skill 可拖动或用选择器改归位；首次使用可以让这个 profile 的模型从零分一版，也可以先自己建分类再让模型按分类分配。点击行复制 /skill-name，悬停展开 skill 自带的描述。
 - [kobenfang/Big8](https://github.com/kobenfang/Big8) — AI玄学助手技能：风水、面相、八字、星座、每日一卦与老黄历。
 - [kobenfang/bigA](https://github.com/kobenfang/bigA) — A股智能选股技能：实时行情、技术面择时分、买卖信号与动态股票池。
 - [kobenfang/BigFish](https://github.com/kobenfang/BigFish) — AI钓鱼助手技能：水面照片分析鱼情，结合天气气压推荐鱼种、钓法与饵料。
