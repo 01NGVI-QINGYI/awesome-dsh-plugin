@@ -1608,7 +1608,7 @@ dsh plugin --profile web add dshmarket
 - [lisongxuan/ds-hentai](https://github.com/lisongxuan/ds-hentai) — ExHentai 皮肤 for DeepSeek Harness。DS Hentai / DeepSeek Hentai，深炭底、浅灰文字、灰色边框；会话列表像画廊索引，发送框像搜索栏。预览Demo：https://dshentai-demo.arkady14.site/
 - [lispking/dsh-qq-skin](https://github.com/lispking/dsh-qq-skin) — 为 DeepSeek Harness 打造的 QQ NT 皮肤：浅色与深色共用一套 QQ NT 语言——浅色干净克制（品牌蓝 #12B7F5、浅蓝气泡），深色为沉稳蓝灰（#101822）——以可逆的 token 与布局两层实现，不改变你的浅色/深色偏好。
 - [Liu-ZA-81/dsh-theme-firefly](https://github.com/Liu-ZA-81/dsh-theme-firefly) — 崩坏：星穹铁道「流萤」主题：立绘/动态壁纸、萤火绿霓虹配色、开屏变身动画、萤火氛围粒子、背景音乐、打字音效与按对话触发的表情包彩蛋。
-- [liushuchang-2012/dsh-skin-liquid-glass](https://github.com/liushuchang-2012/dsh-skin-liquid-glass) — iOS 26 液态玻璃皮肤：整扇窗口是一块盖在中性灰场壁纸上的磨砂玻璃，唯一强调色是系统蓝，浅色/深色两套配色。以 DSH 客户端插件形式安装（165 KB、零依赖），自行注入 CSS、壁纸与 token 覆盖。
+- [liushuchang-2012/dsh-skin-liquid-glass](https://github.com/liushuchang-2012/dsh-skin-liquid-glass) — iOS 26 液态玻璃皮肤：整窗共用一层白→灰→淡蓝的静态雾场，雾上只磨一次（blur 40px），左侧栏是悬浮玻璃卡，回复是一条气泡；浅深两套配色，不用照片壁纸，零依赖（33 KB）。
 - [liuyaguang8023/dsh-jcc-theme](https://github.com/liuyaguang8023/dsh-jcc-theme) — 金铲铲同人风格的 DeepSeek Harness Web 界面主题：原创海克斯竞技场背景与金色铲影（浅色为羊皮纸棋盘地图），金/青/紫/蓝四套强化配色与令牌覆盖，界面底层铺六边形棋盘网格，另有可开关的极光与金色浮尘氛围、圆润/锐利棱角切换；右下角「海克斯核心」面板可一键关闭、即时还原原生界面；不含游戏素材。
 - [liyy996/dsh-theme-windowsxp](https://github.com/liyy996/dsh-theme-windowsxp) — 把 DSH 换成 Windows XP：Luna 蓝皮肤（米色面板、渐变按钮、#7F9DB9 输入框、圆角蓝色滚动条、纯 CSS 绘制的 Bliss 风格桌面），外加一轮跑完时的提示音，以及智能体停下来等你批准时的另一种提示音。
 - [longgege-cd/dsh-skin-pixel-anime](https://github.com/longgege-cd/dsh-skin-pixel-anime) — 像素动态星空主题：五套配色、四套分层文字方案、五款像素字体（含简体中文像素字体）、方角与圆角可选、旋转像素星空与流星、顶栏像素时钟，均在插件设置页配置。
