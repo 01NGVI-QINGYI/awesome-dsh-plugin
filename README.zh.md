@@ -105,6 +105,7 @@ dsh plugin --profile web add dshmarket
 - [pk14742952-AD/dsh-host-rsi](https://github.com/pk14742952-AD/dsh-host-rsi) — 面向本地 Qwen3.8 27B/3.8 Flash 及线上 API 的反思进化插件：编码循环收敛器针对 Qwen3.8 27B/Flash 的重复验证大思考加速收敛、减少思考时间；五态交付护栏检测并纠正卡住/死循环；model-agnostic 宿主逻辑，线上 API 多数可通用；每次使用持续自进化，带反问式自检、批评升级、倒排索引记忆检索、编码循环收敛提示与五态交付护栏。
 - [Qulierm/orbital-agents](https://github.com/Qulierm/orbital-agents) — 为 DeepSeek Harness 提供常驻的 Endeavour 与 Challenger 对等会话：负责规划、按序执行任务，并核验汇报的结果。
 - [samirliu/dsh-goalloop-agentteams](https://github.com/samirliu/dsh-goalloop-agentteams) — 面向 DeepSeek Harness 的确定性目标门控插件：契约先行的 AC 文法（每条检查都是可失败的具名命令），门控自己重跑每条检查、零模型参与；verdict 绑定文件树摘要，文件改动即作废已过审结论；通过 tools/pre-execute 硬拦 update_goal 的完成声明，配合假完成计数，两次被抓住即 BLOCKED；任务级完成声明按作用域分级（strict/goal-only），多任务 Agent Teams 循环不会死锁。
+- [sososilencing/dsh-network-engineer](https://github.com/sososilencing/dsh-network-engineer) — 网络工程师助手预设 + 四厂商（迪普/新华三/华为/锐捷）交换机路由器命令知识库：32 篇文档随插件以技能形式分发（含来源链接与 verified 分级），KB 优先检索、跨厂商语法对照、拓扑与回显截图识别、联网查官方手册并注明出处、高危命令强制 ⚠️ 风险标注；只回答网络工程主题。
 - [STARDUSTLC666/dsh-dream](https://github.com/STARDUSTLC666/dsh-dream) — DSH 智能体经验记忆与反思插件：任务后自动整理候选经验，经用户审阅采纳后在相关任务中自动召回。支持来源追溯、按项目检索、冲突处理、使用反馈和到期复核；整理与召回可分别开关，写入 AGENTS.md 需预览并手动应用。面板内置 4 步首次使用引导，看一次后不再出现。
 - [syyr1987/dsh-linghun](https://github.com/syyr1987/dsh-linghun) — DeepSeek Harness 的判断内核：认知循环让判断有来处、反馈有归因、规划收口；海马体把运行经历沉淀为可复用知识（序时账留痕、情景归档、低置信降权遗忘）；判分身份职责入架构（口径一致、判据绑定来源）；联动 dsh-linghun-assembler 的 A2A 记忆管理团队。需要 DSH ^0.1.0-rc.7（支持 rc.2）。
 - [syyr1987/dsh-linghun-assembler](https://github.com/syyr1987/dsh-linghun-assembler) — 灵魂的记忆提取侧·认知循环团队版：判断→捞取→组装→被判定→校准五步闭环，判官/捞手/史官/辩手/编辑/书记角色化子智能体承载，BM25 检索 + 时序素材 + LLM 组装「有用素材包」注入 linghun。与 dsh-linghun 组合使用。
@@ -4548,6 +4549,7 @@ dsh plugin --profile web add dshmarket
 - [delock/dsh-pr-board](https://github.com/delock/dsh-pr-board) — DSH 侧边栏的维护者 + 开发者 PR 看板：五状态评审队列（等我 / 等作者 / 可合并 / 已合并 / 待分诊）、三列 issue 看板、跨仓库跟踪自己 PR 的 mine 视图（我的回合 / 等别人 / 已合并），附 CI 汇总徽章与不活跃过滤，点卡片一键打开或新建对应的评审会话。
 - [dennisrongo/dsh-plugins#dsh-git](https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-git) — Git 更改标签页：暂存、对比、AI 起草提交信息、分支/合并/储藏/工作树操作与同步，通过 fs.watch 加 changeToken 轮询实现实时更新。
 - [DietCokewithSugar/dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) — 帮你发现项目中可能存在的用户体验问题：自动走查 React/TypeScript 源码，定位问题并给出具体优化建议。
+- [dingchenhui0618-arch/dsh-changelog-zh](https://github.com/dingchenhui0618-arch/dsh-changelog-zh) — 从真实 git 历史生成两份中文变更日志（面向用户短版、面向开发者长版）；每条都带 commit SHA 与「已验证／未验证」标记，只有能引用到验证证据时才标「已验证」，提交主题不翻译。
 - [EIGHTfs/dsh-git-push](https://github.com/EIGHTfs/dsh-git-push) — DSH 的 git 提交推送自动化：提交前审计、规则质量评分、SSH 密钥生成与三选项卡设置侧边栏。
 - [dsh-git-graph](https://github.com/enoughpower/dsh-git-graph) — DeepSeek Harness 的 Git 视图：状态、提交图、分支与标签（合并为同一个下拉框，可切换分支或检出标签）、差异、暂存提交、推送拉取与逐行溯源。
 - [f-e-n-g-0531/dsh-code-review](https://github.com/f-e-n-g-0531/dsh-code-review) — 复用当前 DSH Agent 模型只读审查 Git 与 SVN 变更，支持变更预览、显式上下文及经审批的模型请求。
@@ -4882,6 +4884,7 @@ dsh plugin --profile web add dshmarket
 - [zaofan-make/dsh-qqbot](https://github.com/zaofan-make/dsh-qqbot) — 接入 QQ 官方机器人的 DeepSeek Harness 通道(tencent-connect/dsh-qqbot 功能增强 fork): 群/私聊与完整 agent 对话、表情包图库(自动打标+AI 斗图)、群管理(入群审批/禁言)、botplay 互动事件卡与翻页目录、用户扩展注册表(自定义斜杠命令与 QQ 工具)、定时唤醒、QQ 远程审批、悬浮球 dock Web UI。
 - [zepeng-jin/dsh-completion-notifier](https://github.com/zepeng-jin/dsh-completion-notifier) — DeepSeek Harness 原生任务完成通知与审批提醒插件，集成设置面板。
 - [zhang-tod/dsh-win-notify](https://github.com/zhang-tod/dsh-win-notify) — DSH 宿主层 Windows 原生 Toast 通知：回合完成、出错或中断、子代理完成、后台任务完成，以及模型提问与工具审批待处理时的提醒。通知逻辑跑在 DSH 宿主进程里，标签页或浏览器关掉也照响；用 Win32 前台探测，正在看 DSH 时不打扰。仅支持 Windows。
+- [zhangjie-2007/dsh-voice](https://github.com/zhangjie-2007/dsh-voice) — Windows 上的 DeepSeek Harness 语音提示：一轮对话正常结束时朗读一句可自定义的话（默认「已完成当前任务」），智能体需要你做选择时——提问、批准计划或权限确认——朗读第二句（默认「老大老大，等你做选择呢」），开始一个新对话时再按系统时间问候一句（默认「早上好／中午好／下午好／晚上好！有什么工作需要做吗？」）。页面左下角还有一个小悬浮泡，点一下就把所有播报静音或恢复（自带开关音效）。朗读用微软 Edge 神经语音合成（被中断或出错的回合、子代理回合、以及 goal 仍在续跑的回合不朗读），结果缓存在 DSH 主目录并本地播放，网络不可用时回退到系统 SAPI 桌面语音。
 - [zhengjy01/dsh-notify](https://github.com/zhengjy01/dsh-notify) — 系统级桌面通知：回合完成 / 工作流完成横幅，需要审批时弹出模态提醒（macOS osascript / Linux notify-send）。
 - [zhengjy01/dsh-task-dispatcher](https://github.com/zhengjy01/dsh-task-dispatcher) — 滴答清单任务派发器：按间隔从指定清单拉取到期任务写入今日任务文件，仅在任务集变化时通知（微信 ClawBot / flomo / macOS）；可为每个任务单独开一个 headless DSH 会话自动执行（worker 超时可配），并可选只在 DeepSeek 空闲（优惠）时段开跑——高峰期把任务排到下个空闲窗口而不是立刻执行；带 Web 设置面板（延迟回写队列、省钱模式时段与状态）与 dispatcher_status / dispatcher_config / dispatcher_run / dispatcher_report 工具。
 - [zhengjy01/dsh-ticktick](https://github.com/zhengjy01/dsh-ticktick) — 基于官方 OAuth Open API 双向同步滴答清单（TickTick/Dida365）任务：拉取各清单任务、创建/更新/完成/删除、按标题去重的一键同步，带 Web 设置面板。
@@ -5792,6 +5795,7 @@ dsh plugin --profile web add dshmarket
 - [Flycat43/liang-desktop-pet#liang-harness-plugin](https://github.com/Flycat43/liang-desktop-pet/tree/main/plugins/liang-harness-plugin) — DeepSeek Harness Web 人物交互插件，支持六档人物与表达风格、四种任务模式、当前会话交流、公开思考摘要和浏览器语音朗读。
 - [Gastronomicluna/Matrix-code](https://github.com/Gastronomicluna/Matrix-code) — 矩阵风格 CLI 对话页：Agent 思考过程化作绿色代码雨倾泻而下，回复照常流式显示。
 - [Gin-7/dsh-pet-remielle](https://github.com/Gin-7/dsh-pet-remielle) — 蕾米埃尔(绝区零)桌宠：随 DSH 工作状态切换动画表情。
+- [Gjs9178U/dsh-pet-indesktop](https://github.com/Gjs9178U/dsh-pet-indesktop) — 给 DSH 网页界面加一只叫「大肥鱼」的桌宠，八种配色皮肤可以随时切换（深海蓝、樱花粉、薄荷绿、暮光紫、焦糖金、雪白银、墨黑、余烬红）：会上下浮动、左右摇摆、缓慢呼吸，记得你把它放在哪，点一下会说一句中英双语的话。八张皮肤图随插件分发、由插件自己提供，因此没有任何第三方请求。注意：画面带有 OleapCrow 标记、由仓库所有者提供，八种皮肤是同一张画的重新配色；本插件尚未在真实的 DSH 宿主上安装验证过。
 - [guihui2538/Every-token-you-spend-comes-back-as-a-waifu.](https://github.com/guihui2538/Every-token-you-spend-comes-back-as-a-waifu.) — 把 DSH 的 token 消耗变成抽卡小游戏：喂代码怪、攒代币、抽 14 位 AI 娘（Kimi娘/GLM娘/Gemini娘/Claude娘…），圣遗物强化、双件合成与每日签到弹窗，组建小丑牌式战斗阵容，十连出金自动生成分享卡。
 - [hasan-aghayev/dsh-pet-companion](https://github.com/hasan-aghayev/dsh-pet-companion) — 兼容 WSLg 的 DSH 桌面宠物会根据代理活动切换动画，支持向当前会话发送消息，并可加载 Hatch-Pet v2 图集或透明肖像。
 - [hellodigua/dsh-emoji](https://github.com/hellodigua/dsh-emoji) — 为 AI 回复自动添加表情。
