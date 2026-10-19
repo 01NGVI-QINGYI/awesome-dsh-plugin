@@ -2,5 +2,5 @@ url: https://github.com/01NGVI-QINGYI/no-ai-style
 name: 01NGVI-QINGYI/no-ai-style
 category: skill
 description:
-  en: 'Prose-editing skill for academic and professional writing, with a composer entry: the skill removes mechanical AI phrasing, defensive hedging and filler while preserving claims, citations, statistics, methods and limitations, and the composer button inserts one of its three modes (check, polish, draft) into the input box in the interface language (zh / en / ja).'
-  zh: '面向学术与专业写作的润色技能，并提供输入框入口：技能去除机械化的 AI 表达、防御性铺垫与空话，同时保留主张、引用、统计、方法与局限性；输入框按钮按界面语言（中 / 英 / 日）插入检查、润色、起草三种模式之一。'
+  en: 'Prose-editing skill for academic and professional writing. The composer offers three modes: Check — review and suggest without editing, with a verdict when readiness is asked; Polish — improve the wording while keeping the meaning, facts and citations; Draft — draft from the supplied material without adding facts.'
+  zh: '学术与专业写作润色技能，输入框三选一：检查——只检查并给建议；询问能否提交时补充结论，不改原文。润色——改善表达，保留原意、事实和引用。起草——根据现有材料起草，不补充材料外的事实。'
